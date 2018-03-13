@@ -10,6 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
+
   <body>
 
     <div class="navbar-fixed" >
@@ -35,30 +36,29 @@
     </div>
 
     <div id="index-banner" class="parallax-container">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <br><br>
-          <h1 class="header center red-text text-accent-4">makers' lab</h1>
-          <div class="row center">
-            <h5 class="header col s12 light">The best place to learn, make, share. Yourself or with others!</h5>
-          </div>
-          <h5>&nbsp;</h5>
-          <div class="row center">
-            <a href="mailto:contact@em-lyon.com" id="download-button" class="btn-large waves-effect waves-light red accent-4">contact us</a>
-          </div>
-          <br><br>
-
-        </div>
-      </div>
       <div class="parallax" id="video-container">
         <video autoplay loop id="bgvid">
             <source src="media/MBC.mp4" type="video/mp4">
         </video>
       </div>
+
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <h1 class="header center red-text text-accent-4">makers' lab</h1>
+          <h4 class="header col s12 light">The best place to learn, make, share. Yourself or with others!</h4>
+          <h5>&nbsp;</h5>
+            <div class="row center">
+              <a href="#why" id="download-button" class="btn-large waves-effect waves-light red accent-4">why should i come?</a>
+              <a href="#when" id="download-button" class="btn-large waves-effect waves-light red accent-4">when are we open?</a>
+              <a href="#what" id="download-button" class="btn-large waves-effect waves-light red accent-4">what can i make?</a>
+            </div>
+          <h4>&nbsp;<h4>
+        </div>
+      </div>
     </div>
 
-
-    <div class="container">
+    <div class="container" id="why">
       <div class="section">
 
         <!--   Icon Section   -->
@@ -94,76 +94,68 @@
       </div>
     </div>
 
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+        </div>
+      </div>
+      <div class="parallax"><img src="media/laser.jpg"></div>
+    </div>
+
+    <div class="container" id="when">
+        <div class="section no-pad-bot">
+          <div class="container" id="when">
+            <div class="row center">
+              <br><br>
+              <table class="centered">
+                <thead>
+                  <tr>
+                      <th class="center red-text text-accent-4"><i class="small material-icons">location_searching</i></th>
+                      <th><h6>Paris</h6></th>
+                      <th></th>
+                      <th><h6>Saint-Etienne</h6></th>
+                      <th></th>
+                      <th><h6>Lyon</h6></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="center red-text text-accent-4"><i class="small material-icons">access_time</i></td>
+                    <td><h6><b>monday</b><br><br>13h<br>-<br>20h</h6></td>
+                    <td><h6><b>tuesday</b><br><br>09h<br>-<br>18h</h6></td>
+                    <td><h6><b>wednesday</b><br><br>13h<br>-<br>20h</h6></td>
+                    <td><h6><b>thursday</b><br><br>09h<br>-<br>18h</h6></td>
+                    <td><h6><b>friday</b><br><br>09h<br>-<br>18h</h6></td>
+                  </tr>
+                </tbody>
+              </table>
+              <br><br>
+            </div>
+          </div>
+        </div>
+    </div>
 
     <div class="parallax-container valign-wrapper">
       <div class="section no-pad-bot">
         <div class="container">
-          <div class="row center">
-            <table class="centered">
-              <thead>
-                <tr>
-                    <th><i class="medium material-icons">location_searching</i></th>
-                    <th><i class="medium material-icons">location_on</i></th>
-                    <th><i class="medium material-icons">access_time</i></th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Lyon - Ecully</td>
-                  <td>23 avenue Guy de Collongue, 69130 Ecully > Bat C</td>
-                  <td>lundi -- 13h > 20h</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>mardi -- 09h > 18h</td>
-                </tr>
-                <tr>
-                  <td>Paris</td>
-                  <td>15 Boulevard Diderot, 75012 Paris > R+3</td>
-                  <td>mercredi -- 13h > 20h</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>jeudi -- 09h > 18h</td>
-                </tr>
-                <tr>
-                  <td>Saint-Etienne</td>
-                  <td> 51 Cours Fauriel, 42009 Saint-Étienne > RdC</td>
-                  <td>vendredi -- 09h > 18h</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
         </div>
       </div>
-      <div class="parallax"><img src="media/background3.jpg"></div>
+      <div class="parallax"><img src="media/code.jpg"></div>
     </div>
 
-    <div class="container">
+    <div class="container" id="what">
       <div class="section">
-
         <div class="row">
           <div class="col s12 center">
-            <h3><i class="mdi-content-send red-text text-accent-4">Agenda</i></h3>
-            <h4>&nbsp;</h4>
+            <br><br>
             <table class="bordered">
               <thead>
-
                 <tr>
-                    <th>Events</th>
-                    <th>Locations</th>
-                    <th>schedule</th>
+                  <th>Incoming events</th>
+                  <th>Locations</th>
+                  <th>schedule</th>
                 </tr>
               </thead>
-
               <tbody>
                 <tr>
                   <td><a href="#" class="mdi-content-send red-text text-accent-4">Workshop Arduino</a></td>
@@ -185,26 +177,18 @@
                   <td>makers' lab STE</td>
                   <td>26/03 > 30/03 -- 9h > 19h</td>
                 </tr>
-
               </tbody>
             </table>
-
+            <br><br>
           </div>
         </div>
 
       </div>
     </div>
 
-
     <div class="parallax-container valign-wrapper">
       <div class="section no-pad-bot">
         <div class="container">
-          <!-- <div class="row center">
-            <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-          </div> -->
-
-
-
         </div>
       </div>
       <div class="parallax"><img src="media/background2.jpg"></div>
