@@ -67,8 +67,9 @@ video#bgvid {
     }
 }
 
-.highlight tr:hover{
-   cursor:pointer;
+.highlight .agenda tr:hover{
+  color: #d80f0f;
+  cursor:pointer;
 }
 
 footer.page-footer {
