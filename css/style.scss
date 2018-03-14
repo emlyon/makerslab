@@ -43,7 +43,6 @@ video#bgvid {
     }
 }
 
-
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -74,4 +73,10 @@ video#bgvid {
 
 footer.page-footer {
   margin: 0;
+}
+
+.underlined{
+  border-bottom: solid 1px #333;
+  padding-bottom: 15px !important;
+  margin-bottom: -10px;
 }
