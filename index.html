@@ -44,13 +44,11 @@
                 <br><br>
                 <h1 class="header center red-text text-accent-4">makers' lab</h1>
                 <h4 class="header light center">The best place to learn, make, share. Yourself or with others!</h4>
-                <h5>&nbsp;</h5>
-                <div class="center" id="why">
-                    <a href="#why" id="download-button" class="btn-large waves-effect waves-light red accent-4">why should i come?</a>
-                    <a href="#when" id="download-button" class="btn-large waves-effect waves-light red accent-4">when are we open?</a>
-                    <a href="#what" id="download-button" class="btn-large waves-effect waves-light red accent-4">what can i make?</a>
+                <div class="center">
+                    <a data-to="#why" id="download-button" class="btn-large waves-effect waves-light red accent-4">why should i come?</a>
+                    <a data-to="#when" id="download-button" class="btn-large waves-effect waves-light red accent-4">when are we open?</a>
+                    <a data-to="#what" id="download-button" class="btn-large waves-effect waves-light red accent-4">what can i make?</a>
                 </div>
-                <h4>&nbsp;<h4>
         </div>
       </div>
       <div class="parallax" id="video-container">
@@ -96,7 +94,7 @@
       </div>
     </div>
 
-    <div class="parallax-container valign-wrapper" id="when">
+    <div class="parallax-container valign-wrapper">
       <div class="section no-pad-bot">
         <div class="container">
         </div>
@@ -104,7 +102,7 @@
       <div class="parallax"><img src="media/laser.jpg"></div>
     </div>
 
-    <div class="container">
+    <div class="container" id="when">
       <br><br>
       <h6 class="col red-text text-accent-4 s10 underlined"><b>opening time</b></h6>
         <div class="row">
@@ -157,7 +155,7 @@
       <br><br>
     </div>
 
-    <div class="parallax-container valign-wrapper" id="what">
+    <div class="parallax-container valign-wrapper">
       <div class="section no-pad-bot">
         <div class="container">
         </div>
@@ -165,7 +163,7 @@
       <div class="parallax"><img src="media/code.jpg"></div>
     </div>
 
-    <div class="container">
+    <div class="container" id="what">
       <div class="section">
         <div class="row">
           <div class="col s12 center">
@@ -252,6 +250,7 @@
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="js/init.js"></script>
 
     </body>
