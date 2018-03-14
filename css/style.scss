@@ -17,7 +17,7 @@ video#bgvid {
     top: 30%;
     left: 50%;
     width: 100%;
-    // z-index: -1000;
+    z-index: -1000;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -76,7 +76,7 @@ footer.page-footer {
 }
 
 .underlined{
-  border-bottom: solid 1px #333;
+  border-bottom: solid 1px lightgrey;
   padding-bottom: 15px !important;
   margin-bottom: -10px;
 }
