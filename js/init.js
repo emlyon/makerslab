@@ -7,7 +7,7 @@
         a.addEventListener( 'click', e => {
             e.preventDefault();
             // console.log( a.dataset.to );
-            $( window ).scrollTo( $( a.dataset.to ), 500, { offset: -150 }  );
+            $( window ).scrollTo( $( a.dataset.to ), 500, { offset: -150 } );
         } )
     } );
   } ); // end of document ready
