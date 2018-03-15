@@ -4,70 +4,22 @@ p {
 
 h1 {
     font-weight: 600;
-<<<<<<< HEAD
-}
-
-video#bgvid {
-    position: relative;
-    top: 30%;
-    left: 50%;
-    // width: 100%;
-    //z-index: -1000;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
-#video-container {
-    background: url("media/background2.jpg") no-repeat center center fixed;
-    background-size: cover;
-}
-
-.btn-large {
-    background-color: #D50000;
-
-    &:hover {
-        background-color: rgba(213,0,0,0.5);
-    }
-=======
->>>>>>> 308d1906c03833273f51b10c56fd5f54b9070340
 }
 
 .parallax-container {
     min-height: 200px;
     line-height: 0;
     // height: auto;
-<<<<<<< HEAD
-    &.valign-wrapper {
-        height: auto;
-    }
-    color: rgba(255,255,255,.9);
-=======
     color: rgba(255,255,255,.9);
 
     &.valign-wrapper{
         height:auto;
     }
->>>>>>> 308d1906c03833273f51b10c56fd5f54b9070340
 
     .section {
         width: 100%;
     }
 }
-<<<<<<< HEAD
-@media only screen and (min-width : 600px) {
-    #index-banner .section {
-        margin-top: 80px;
-    }
-}
-@media only screen and (max-width : 600px) {
-    #index-banner .section {
-        margin-top: 0;
-    }
-}
-=======
->>>>>>> 308d1906c03833273f51b10c56fd5f54b9070340
 
 .icon-block {
     padding: 0 15px;
@@ -77,32 +29,16 @@ video#bgvid {
     }
 }
 
-<<<<<<< HEAD
-.highlight .agenda tr:hover {
-    color: #d80f0f;
-    cursor: pointer;
-=======
 .highlight .agenda tr:hover{
     color: #d80f0f;
     cursor:pointer;
->>>>>>> 308d1906c03833273f51b10c56fd5f54b9070340
 }
 
 footer.page-footer {
     margin: 0;
 }
 
-<<<<<<< HEAD
-.underlined {
-    border-bottom: solid 1px lightgrey;
-    padding-bottom: 15px !important;
-}
-
-#index-banner a {
-    margin-top: 20px;
-=======
 .underlined{
     border-bottom: solid 1px lightgrey;
     padding-bottom: 15px !important;
->>>>>>> 308d1906c03833273f51b10c56fd5f54b9070340
 }
