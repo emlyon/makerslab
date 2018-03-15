@@ -1,0 +1,42 @@
+#index-banner {
+    video#bgvid {
+        position: relative;
+        top: 30%;
+        left: 50%;
+        // width: 100%;
+        //z-index: -1000;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    #video-container {
+        background: url("media/background2.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .btn-large {
+        background-color: #D50000;
+
+        &:hover {
+            background-color: rgba(213,0,0,0.5);
+        }
+    }
+
+    a {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width : 600px) {
+    #index-banner .section {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    #index-banner .section {
+        margin-top: 0;
+    }
+}

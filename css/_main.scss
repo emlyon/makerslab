@@ -4,6 +4,7 @@ p {
 
 h1 {
     font-weight: 600;
+<<<<<<< HEAD
 }
 
 video#bgvid {
@@ -29,21 +30,32 @@ video#bgvid {
     &:hover {
         background-color: rgba(213,0,0,0.5);
     }
+=======
+>>>>>>> 308d1906c03833273f51b10c56fd5f54b9070340
 }
 
 .parallax-container {
     min-height: 200px;
     line-height: 0;
     // height: auto;
+<<<<<<< HEAD
     &.valign-wrapper {
         height: auto;
     }
     color: rgba(255,255,255,.9);
+=======
+    color: rgba(255,255,255,.9);
+
+    &.valign-wrapper{
+        height:auto;
+    }
+>>>>>>> 308d1906c03833273f51b10c56fd5f54b9070340
 
     .section {
         width: 100%;
     }
 }
+<<<<<<< HEAD
 @media only screen and (min-width : 600px) {
     #index-banner .section {
         margin-top: 80px;
@@ -54,6 +66,8 @@ video#bgvid {
         margin-top: 0;
     }
 }
+=======
+>>>>>>> 308d1906c03833273f51b10c56fd5f54b9070340
 
 .icon-block {
     padding: 0 15px;
@@ -63,15 +77,22 @@ video#bgvid {
     }
 }
 
+<<<<<<< HEAD
 .highlight .agenda tr:hover {
     color: #d80f0f;
     cursor: pointer;
+=======
+.highlight .agenda tr:hover{
+    color: #d80f0f;
+    cursor:pointer;
+>>>>>>> 308d1906c03833273f51b10c56fd5f54b9070340
 }
 
 footer.page-footer {
     margin: 0;
 }
 
+<<<<<<< HEAD
 .underlined {
     border-bottom: solid 1px lightgrey;
     padding-bottom: 15px !important;
@@ -79,4 +100,9 @@ footer.page-footer {
 
 #index-banner a {
     margin-top: 20px;
+=======
+.underlined{
+    border-bottom: solid 1px lightgrey;
+    padding-bottom: 15px !important;
+>>>>>>> 308d1906c03833273f51b10c56fd5f54b9070340
 }
