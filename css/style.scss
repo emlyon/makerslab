@@ -28,10 +28,12 @@ video#bgvid {
     background-size: cover;
 }
 
-.button-collapse {
-  color: #d80f0f;
+.btn-large{
+  background-color: #D50000;
+  &:hover{
+    background-color: rgba(213,0,0,0.5);
+  }
 }
-
 
 .parallax-container {
   min-height: 200px;
@@ -88,5 +90,6 @@ footer.page-footer {
 }
 
 #sidenav-overlay{
-  display: none;
+  // display: none;
+  z-index: 20;
 }
