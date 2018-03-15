@@ -1,0 +1,14 @@
+.navbar-fixed{
+    nav ul a, nav .brand-logo {
+        color: #d80f0f;
+    }
+
+    .material-icons{
+        color: grey;
+    }
+}
+
+#sidenav-overlay{
+    // display: none;
+    z-index: 20;
+}
