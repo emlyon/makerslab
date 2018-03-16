@@ -18,7 +18,6 @@ addEventListener( 'load', e => {
             agenda.innerHTML = '';
             events.forEach( event => {
                 agenda.innerHTML += `<p><b>${ event[ 0 ] }</b><br>makers' lab ${ event[ 1 ] }<br>${ event[ 2 ] } -- ${ event[ 3 ] }<br>${ event[ 4 ] }</p>`;
-                console.log( event[ 4 ] );
             } );
           }
     } ).catch( e => console.warn( e ) );
