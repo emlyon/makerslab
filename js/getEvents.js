@@ -1,4 +1,5 @@
 addEventListener( 'load', e => {
+    
     const formatEvent = ( event, i ) => {
         return `
             <div class="col s12 m6">
