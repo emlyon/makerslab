@@ -1,21 +1,25 @@
 addEventListener( 'load', e => {
-    let xhr = new XMLHttpRequest();
-    xhr.open( 'POST', "https://script.google.com/macros/s/AKfycbzfi_2sF4s85Ypb18H1JoFcQgdwUxTV3kampuD2CIQugCOi_yXI/exec" );
-    xhr.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
-    xhr.onreadystatechange = function() {
-    let response = JSON.parse( xhr.responseText )
-    // console.log( response );
+    let request = new Request( 'https://script.google.com/macros/s/AKfycbzfi_2sF4s85Ypb18H1JoFcQgdwUxTV3kampuD2CIQugCOi_yXI/exec', {
+        method: 'POST',
+        headers: new Headers( {
+            'Content-Type' : 'application/x-www-form-urlencoded'
+        } )
+    } );
 
-    if( response.result == 'success' ){
-        let events = JSON.parse( response.data );
-        let agenda = document.querySelector( '.agenda' );
-        agenda.innerHTML = '';
-        events.forEach( event => {
-            agenda.innerHTML += `<tr data-link="#"><td><b>${ event[ 0 ] }</b></td><td>makers' lab ${ event[ 1 ] }</td><td>${ event[ 2 ] } -- ${ event[ 3 ] }</td></tr>`;
-        } );
-      }
-      return;
-    };
+    fetch( request ).then( response => {
+        return response.text();
+    } ).then( txt => {
+        let json = JSON.parse( txt );
+        // console.log( json );
 
-    xhr.send();
+        if( json.result == 'success' ){
+            let events = JSON.parse( json.data );
+            let agenda = document.querySelector( '.agenda' );
+            agenda.innerHTML = '';
+            events.forEach( event => {
+                agenda.innerHTML += `<p><b>${ event[ 0 ] }</b><br>makers' lab ${ event[ 1 ] }<br>${ event[ 2 ] } -- ${ event[ 3 ] }<br>${ event[ 4 ] }</p>`;
+                console.log( event[ 4 ] );
+            } );
+          }
+    } ).catch( e => console.warn( e ) );
 } );
