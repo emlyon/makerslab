@@ -1,10 +1,10 @@
 addEventListener( 'load', e => {
-    const formatEvent = event => {
+    const formatEvent = ( event, i ) => {
         return `
             <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="https://placeimg.com/640/480/tech">
+                        <img class="activator" src="https://loremflickr.com/640/480?random=${ i }">
                     </div>
 
                     <div class="card-content">
@@ -41,8 +41,8 @@ addEventListener( 'load', e => {
             let events = JSON.parse( json.data );
             let agenda = document.querySelector( '.agenda' );
             agenda.innerHTML = '';
-            events.forEach( event => {
-                agenda.innerHTML += formatEvent( event );
+            events.forEach( ( event, i ) => {
+                agenda.innerHTML += formatEvent( event, i );
             } );
           }
     } ).catch( e => console.warn( e ) );
