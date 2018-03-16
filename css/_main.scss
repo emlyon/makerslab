@@ -35,13 +35,12 @@
         }
     }
 
-    .highlight .agenda tr:hover{
-        color: #d80f0f;
-        cursor:pointer;
-    }
-
     .underlined{
         border-bottom: solid 1px lightgrey;
         padding-bottom: 15px !important;
+    }
+
+    form>.btn{
+        background-color: #D50000;
     }
 }

@@ -4,20 +4,56 @@ addEventListener( 'load', e => {
             <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="https://loremflickr.com/640/480?random=${ i }">
+                        <img class="activator" src="https://loremflickr.com/640/280?random=${ i }">
                     </div>
 
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">${ event[ 0 ] }<i class="material-icons right">more_vert</i></span>
+                        <div class="divider"></div>
+
                         <p>
-                            WHERE: <span class="red-text">makers' lab ${ event[ 1 ] }</span><br>
-                            WHEN: <span class="red-text">${ event[ 2 ] } -- ${ event[ 3 ] }</span>
+                            <span class="red-text darken-4">WHAT:</span> ${ event[ 4 ] }<br>
+                            <span class="red-text darken-4">WHERE:</span> makers' lab ${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }<br>
+                            <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
                         </p>
                     </div>
 
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">${ event[ 0 ] }<i class="material-icons right">close</i></span>
-                        <p>${ event[ 4 ] }</p>
+                        <div class="divider"></div>
+
+                        <p>
+                            <span class="red-text darken-4">WHAT:</span> ${ event[ 4 ] }<br>
+                            <span class="red-text darken-4">WHERE:</span> makers' lab ${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }<br>
+                            <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
+                        </p>
+                        <div class="divider"></div>
+
+                        <form data-event="${ event[ 0 ] }">
+                            <div class="row">
+                                <div class="input-field col m12 l6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text" class="validate">
+                                    <label for="icon_prefix">Name</label>
+                                </div>
+
+                                <div class="input-field col m12 l6">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="telephone" type="tel" class="validate">
+                                    <label for="telephone">Telephone</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">mail</i>
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                                </div>
+                            </div>
+
+                            <a class="waves-effect waves-light btn right"><i class="material-icons left">send</i>register</a>
+                        </form>
                     </div>
                 </div>
             </div>
