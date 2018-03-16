@@ -29,7 +29,7 @@ addEventListener( 'load', e => {
                         </p>
                         <div class="divider"></div>
 
-                        <form data-event="${ event[ 0 ] }">
+                        <form data-event="${ event[ 0 ] + '_' + event[ 1 ] + '_' + event[ 2 ] }">
                             <div class="row">
                                 <div class="input-field col m12 l6">
                                     <i class="material-icons prefix">account_circle</i>
@@ -60,6 +60,23 @@ addEventListener( 'load', e => {
         `;
     };
 
+    const slugify = text => text.toString().toLowerCase()
+        .replace(/\s+/g, '-')           // Replace spaces with -
+        .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+        .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+        .replace(/^-+/, '')             // Trim - from start of text
+        .replace(/-+$/, '');            // Trim - from end of text
+
+    const formSubmission = () => {
+        [].forEach.call( document.querySelectorAll( 'form' ), form => {
+            form.querySelector( '.btn' ).addEventListener( 'click', e => {
+                e.preventDefault();
+
+                console.log( slugify( form.dataset.event ) );
+            } );
+        } );
+    };
+
     let request = new Request( 'https://script.google.com/macros/s/AKfycbzfi_2sF4s85Ypb18H1JoFcQgdwUxTV3kampuD2CIQugCOi_yXI/exec', {
         method: 'POST',
         headers: new Headers( {
@@ -80,6 +97,8 @@ addEventListener( 'load', e => {
             events.forEach( ( event, i ) => {
                 agenda.innerHTML += formatEvent( event, i );
             } );
-          }
+
+            formSubmission();
+        }
     } ).catch( e => console.warn( e ) );
 } );
