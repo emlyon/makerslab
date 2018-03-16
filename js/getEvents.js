@@ -1,4 +1,27 @@
 addEventListener( 'load', e => {
+    const formatEvent = event => {
+        return `
+            <div class="col s12 m6 card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://placeimg.com/640/480/tech">
+                </div>
+
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">${ event[ 0 ] }<i class="material-icons right">more_vert</i></span>
+                    <p>
+                        WHERE: makers' lab ${ event[ 1 ] }<br>
+                        WHEN:${ event[ 2 ] } -- ${ event[ 3 ] }
+                    </p>
+                </div>
+
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">${ event[ 0 ] }<i class="material-icons right">close</i></span>
+                    <p>${ event[ 4 ] }</p>
+                </div>
+            </div>
+        `;
+    };
+
     let request = new Request( 'https://script.google.com/macros/s/AKfycbzfi_2sF4s85Ypb18H1JoFcQgdwUxTV3kampuD2CIQugCOi_yXI/exec', {
         method: 'POST',
         headers: new Headers( {
@@ -17,7 +40,7 @@ addEventListener( 'load', e => {
             let agenda = document.querySelector( '.agenda' );
             agenda.innerHTML = '';
             events.forEach( event => {
-                agenda.innerHTML += `<p><b>${ event[ 0 ] }</b><br>makers' lab ${ event[ 1 ] }<br>${ event[ 2 ] } -- ${ event[ 3 ] }<br>${ event[ 4 ] }</p>`;
+                agenda.innerHTML += formatEvent( event );
             } );
           }
     } ).catch( e => console.warn( e ) );
