@@ -10,8 +10,8 @@ function doPost( e ) {
         Logger.log('The calendar is named "%s".', calendar.getName() );
 
         var now = new Date();
-        var oneMonthFromNow = new Date( now.getTime() + ( 30 * 24 * 60 * 60 * 1000 ) );
-        var events = calendar.getEvents( now, oneMonthFromNow );
+        var threeMonthsFromNow = new Date( now.getTime() + ( 3 * 30 * 24 * 60 * 60 * 1000 ) );
+        var events = calendar.getEvents( now, threeMonthsFromNow );
 
         for( var i = 0; i < events.length; i ++ ){
             var title = events[ i ].getTitle().split( '|' )[ 0 ];
