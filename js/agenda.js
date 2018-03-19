@@ -33,24 +33,34 @@ addEventListener( 'load', e => {
                             <div class="row">
                                 <div class="input-field col l12">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input id="icon_prefix" type="text" class="validate">
-                                    <label for="icon_prefix">Name</label>
+                                    <input id="name" type="text" class="validate">
+                                    <label for="name">Name</label>
                                 </div>
 
                                 <div class="input-field col l12">
                                     <i class="material-icons prefix">phone</i>
-                                    <input id="telephone" type="tel" class="validate">
-                                    <label for="telephone">Telephone</label>
+                                    <input id="phone" type="tel" class="validate">
+                                    <label for="phone">Telephone</label>
                                 </div>
 
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">mail</i>
-                                    <input id="email" type="email" class="validate">
-                                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                                    <input id="mail" type="email" class="validate">
+                                    <label for="mail" data-error="wrong" data-success="right">Email</label>
                                 </div>
                             </div>
 
                             <a class="waves-effect waves-light btn right"><i class="material-icons left">send</i>register</a>
+
+                            <h5 class="on-success hide red-text">
+                                We have received your registration.<br>
+                                Thanks you!
+                            </h5>
+
+                            <h5 class="on-error hide red-text">
+                                A problem happened during registration.<br>
+                                Please try again later!
+                            </h5>
                         </form>
                     </div>
                 </div>
@@ -71,11 +81,36 @@ addEventListener( 'load', e => {
             form.querySelector( '.btn' ).addEventListener( 'click', e => {
                 e.preventDefault();
 
+                let nameEl = form.querySelector( '#name' ),
+                    name = nameEl.value,
+                    phoneEl = form.querySelector( '#phone' ),
+                    phone = phoneEl.value,
+                    mailEl = form.querySelector( '#mail' ),
+                    mail = mailEl.value;
+
+                nameEl.classList.remove( 'invalid' );
+                phoneEl.classList.remove( 'invalid' );
+
+                let invalid = false;
+                if( name == '' ){
+                    nameEl.classList.add( 'invalid' );
+                    invalid = true;
+                }
+                if( phone == '' ){
+                    phoneEl.classList.add( 'invalid' );
+                    invalid = true;
+                }
+                if( mail == '' || mailEl.classList.contains( 'invalid' ) ){
+                    mailEl.classList.add( 'invalid' );
+                    invalid = true;
+                }
+                if( invalid ) return;
+
                 let params = {
                     sheet: slugify( form.dataset.event ),
-                    name: 'lio',
-                    phone: '06'+Math.random(),
-                    mail: 'lio@test.com'
+                    name: name,
+                    phone: phone,
+                    mail: mail
                 };
 
                 let submission = new Request( 'https://script.google.com/macros/s/AKfycbyxVc_cSZ5SNGUDUIJeKYnc0M3VMOuy2eeTjNcEzPqygj64-n9t/exec', {
@@ -94,10 +129,16 @@ addEventListener( 'load', e => {
                     } )
                     .then( json => {
                         console.log( json );
-                        // console.log( JSON.parse( json.data ) );
 
-                        if( json.result == 'success' ){
-                            // let events = JSON.parse( json.data );
+                        form.querySelector( '.row' ).classList.add( 'hide' );
+                        form.querySelector( '.btn' ).classList.add( 'hide' );
+
+                        if( json.result == 'success' ) {
+                            form.querySelector( '.on-success' ).classList.remove( 'hide' );
+                        }
+                        else {
+                            form.querySelector( '.on-error' ).classList.remove( 'hide' );
+
                         }
                     } )
                     .catch( e => console.warn( e ) );
