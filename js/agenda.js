@@ -31,20 +31,18 @@ addEventListener( 'load', e => {
 
                         <form data-event="${ event[ 0 ] + '_' + event[ 1 ] + '_' + event[ 2 ] }">
                             <div class="row">
-                                <div class="input-field col m12 l6">
+                                <div class="input-field col l12">
                                     <i class="material-icons prefix">account_circle</i>
                                     <input id="icon_prefix" type="text" class="validate">
                                     <label for="icon_prefix">Name</label>
                                 </div>
 
-                                <div class="input-field col m12 l6">
+                                <div class="input-field col l12">
                                     <i class="material-icons prefix">phone</i>
                                     <input id="telephone" type="tel" class="validate">
                                     <label for="telephone">Telephone</label>
                                 </div>
-                            </div>
 
-                            <div class="row">
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">mail</i>
                                     <input id="email" type="email" class="validate">
