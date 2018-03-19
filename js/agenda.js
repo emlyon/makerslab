@@ -71,7 +71,36 @@ addEventListener( 'load', e => {
             form.querySelector( '.btn' ).addEventListener( 'click', e => {
                 e.preventDefault();
 
-                console.log( slugify( form.dataset.event ) );
+                let params = {
+                    sheet: slugify( form.dataset.event ),
+                    name: 'lio',
+                    phone: '06'+Math.random(),
+                    mail: 'lio@test.com'
+                };
+
+                let submission = new Request( 'https://script.google.com/macros/s/AKfycbyxVc_cSZ5SNGUDUIJeKYnc0M3VMOuy2eeTjNcEzPqygj64-n9t/exec', {
+                    method: 'POST',
+                    headers: new Headers( {
+                        'Content-Type' : 'application/x-www-form-urlencoded'
+                    } ),
+                    body: Object.keys( params ).map( function( k ) {
+                        return encodeURIComponent( k ) + '=' + encodeURIComponent( params[ k ] );
+                    } ).join( '&' )
+                } );
+
+                fetch( submission )
+                    .then( response => {
+                        return response.json();
+                    } )
+                    .then( json => {
+                        console.log( json );
+                        // console.log( JSON.parse( json.data ) );
+
+                        if( json.result == 'success' ){
+                            // let events = JSON.parse( json.data );
+                        }
+                    } )
+                    .catch( e => console.warn( e ) );
             } );
         } );
     };
@@ -83,21 +112,21 @@ addEventListener( 'load', e => {
         } )
     } );
 
-    fetch( request ).then( response => {
-        return response.text();
-    } ).then( txt => {
-        let json = JSON.parse( txt );
-        // console.log( json );
+    fetch( request )
+        .then( response => {
+            return response.json();
+        } )
+        .then( json => {
+            if( json.result == 'success' ){
+                let events = JSON.parse( json.data );
+                let agenda = document.querySelector( '.agenda' );
+                agenda.innerHTML = '';
+                events.forEach( ( event, i ) => {
+                    agenda.innerHTML += formatEvent( event, i );
+                } );
 
-        if( json.result == 'success' ){
-            let events = JSON.parse( json.data );
-            let agenda = document.querySelector( '.agenda' );
-            agenda.innerHTML = '';
-            events.forEach( ( event, i ) => {
-                agenda.innerHTML += formatEvent( event, i );
-            } );
-
-            formSubmission();
-        }
-    } ).catch( e => console.warn( e ) );
+                formSubmission();
+            }
+        } )
+        .catch( e => console.warn( e ) );
 } );
