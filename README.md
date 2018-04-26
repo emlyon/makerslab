@@ -1,4 +1,4 @@
-# webTemplate
+# makerslab
 https://emlyon.github.io/makerslab/
 
 
