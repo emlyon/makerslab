@@ -4,7 +4,7 @@ addEventListener( 'load', e => {
             <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="https://loremflickr.com/640/280?random=${ i }">
+                        <img class="activator" src="${ event[ 5 ] }">
                     </div>
 
                     <div class="card-content">
