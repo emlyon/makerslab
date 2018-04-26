@@ -10,13 +10,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- Material ScrollTop stylesheet -->
+    <link rel="stylesheet" href="css/material-scrolltop.css">
 </head>
 
 <body>
     <div class="navbar-fixed">
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
-                <a id="logo-container" href="/webTemplate" class="brand-logo"><img src="media/logo.png" alt="makers' lab"/></a>
+                <a id="logo-container" href="../" class="brand-logo"><img src="media/logo.png" alt="makers' lab"/></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="toolbox.html">toolbox</a></li>
                     <li><a href="bootcamps.html">bootcamps</a></li>
@@ -158,8 +160,7 @@
             }, false );
 
             addEventListener( 'message', event => {
-                console.log( '//////////////////////' );
-                console.log( event );
+                // console.log( event );
 
                 // Resize iframe
                 if( event.data.height && event.data.location == iframe.src ) {
@@ -168,6 +169,14 @@
             }, false );
         } );
     </script>
+
+    <!-- material-scrolltop button -->
+    <button class="material-scrolltop red" type="button"></button>
+    <script src="js/material-scrolltop.js"></script>
+    <script>
+        $('body').materialScrollTop();
+    </script>
+
 </body>
 
 </html>
