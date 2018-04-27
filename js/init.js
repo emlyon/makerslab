@@ -3,6 +3,9 @@
     $( '.button-collapse' ).sideNav();
     $( '.parallax' ).parallax();
 
+    var elem = document.querySelector('.collapsible');
+    var instance = M.Collapsible.init(elem, options);
+
     [].forEach.call( document.querySelectorAll( '#index-banner a' ), a => {
         a.addEventListener( 'click', e => {
             e.preventDefault();
