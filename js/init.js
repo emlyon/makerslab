@@ -2,9 +2,7 @@
   $( function(){
     $( '.button-collapse' ).sideNav();
     $( '.parallax' ).parallax();
-
-    var elem = document.querySelector('.collapsible');
-    var instance = M.Collapsible.init(elem, options);
+    $('.collapsible').collapsible();
 
     [].forEach.call( document.querySelectorAll( '#index-banner a' ), a => {
         a.addEventListener( 'click', e => {
