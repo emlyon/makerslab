@@ -2,46 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>makers' toolbox</title>
-
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <!-- Material ScrollTop stylesheet -->
-    <link rel="stylesheet" href="css/material-scrolltop.css">
+    <script src="js/include.js" charset="utf-8"></script>
+    <script src="includes/head.js" charset="utf-8"></script>
 </head>
 
 <body>
-    <div class="navbar-fixed">
-        <nav class="white" role="navigation">
-            <div class="nav-wrapper container">
-                <a id="logo-container" href="." class="brand-logo"><img src="media/logo.png" alt="makers' lab"/></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href=".">makers' lab</a></li>
-                    <li><a href="discover.html">discover</a></li>
-                    <li><a href="experiment.html">experiment</a></li>
-                    <li><a href="learn.html">learn</a></li>
-                    <!-- <li><a href="boosters.html">boosters</a></li> -->
-                    <!-- <li><a href="events.html">events</a></li> -->
-                    <!-- <li><a href="resources.html">resources</a></li> -->
-                </ul>
-
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href=".">makers' lab</a></li>
-                    <li><a href="toolbox.html">toolbox</a></li>
-                    <li><a href="workshops.html">workshops</a></li>
-                    <li><a href="contents.html">contents</a></li>
-                    <!-- <li><a href="boosters.html">boosters</a></li> -->
-                    <!-- <li><a href="events.html">events</a></li> -->
-                    <!-- <li><a href="resources.html">resources</a></li> -->
-                </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-            </div>
-        </nav>
-    </div>
+    <script src="includes/navbar.js" charset="utf-8"></script>
 
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
@@ -116,43 +82,10 @@
         </div>
     </div>
 
-    <footer class="page-footer red accent-4">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Who we are</h5>
-                    <p class="grey-text text-lighten-4">We are a team of makers, designers, enginieers working to support and develop makers' pedagogy for earlymakers' community!</p>
+    <script src="includes/footer.js" charset="utf-8"></script>
 
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text"></h5>
-                    <ul>
-                    </ul>
-                </div>
+    <script src="includes/scripts.js" charset="utf-8"></script>
 
-                <div class="col l3 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul>
-                        <li><a target="_blank" class="white-text" href="https://github.com/emlyon">Github</a></li>
-                        <li><a target="_blank" class="white-text" href="https://twitter.com/makerslab_">Twitter</a></li>
-                        <li><a target="_blank" class="white-text" href="https://www.thingiverse.com/makerslab_emlyon/designs">Thingiverse</a></li>
-                        <li><a target="_blank" class="white-text" href="https://www.facebook.com/makerslabemlyon">Facebook</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Made by <a class="brown-text text-lighten-3" href="http://makerslab.em-lyon.com">makers' lab</a>
-            </div>
-        </div>
-    </footer>
-
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-    <script src="js/init.js"></script>
     <script>
         [].forEach.call( document.querySelectorAll( 'iframe' ), iframe => {
             iframe.addEventListener( 'load', () => {
@@ -173,14 +106,6 @@
             }, false );
         } );
     </script>
-
-    <!-- material-scrolltop button -->
-    <button class="material-scrolltop red" type="button"></button>
-    <script src="js/material-scrolltop.js"></script>
-    <script>
-        $( 'body' ).materialScrollTop();
-    </script>
-
 </body>
 
 </html>
