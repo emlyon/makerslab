@@ -16,6 +16,15 @@
         margin-bottom: 20px;
     }
 
+    .btn-large {
+        background-color: #D50000;
+        color: #fff;
+
+        &:hover {
+            background-color: rgba(213,0,0,0.5);
+        }
+    }
+
     .parallax-container {
         min-height: 200px;
         line-height: 0;
