@@ -5,9 +5,8 @@ include( `
                 <div class="col l6 s12">
                     <h5 class="white-text">Who we are</h5>
 
-                    <p class="grey-text text-lighten-4">makers' lab is a third place working to develop makers' pedagogy for earlymakers' community!<br>
-                    Here you will find machines, tools & peers to make what you want!<br>
-                    Here, you will always find someone to help you to improve your project :)</p>
+                    <p class="grey-text text-lighten-4">makers' lab is a third place working to develop makers' pedagogy for earlymakers' community!
+                    You will find machines, tools & peers to make what you want plus a makers lab manager to to guide you on your learning curve :)</p>
                 </div>
 
                 <div class="col l3 s12">
