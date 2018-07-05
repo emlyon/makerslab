@@ -1,6 +1,6 @@
 const formatEvent = ( event, i ) => {
     return `
-        <div class="col s12 m6">
+        <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="${ event[ 5 ] }">
@@ -22,7 +22,6 @@ const formatEvent = ( event, i ) => {
                     <div class="divider"></div>
 
                     <p>
-                        <span class="red-text darken-4">WHAT:</span> ${ event[ 4 ] }<br>
                         <span class="red-text darken-4">WHERE:</span> makers' lab ${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }<br>
                         <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
                     </p>
