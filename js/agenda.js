@@ -15,6 +15,8 @@ const formatEvent = ( event, i ) => {
                         <span class="red-text darken-4">WHERE:</span> makers' lab ${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }<br>
                         <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
                     </p>
+
+                    <a class="waves-effect waves-light btn right activator">sign up</a>
                 </div>
 
                 <div class="card-reveal">
@@ -25,8 +27,6 @@ const formatEvent = ( event, i ) => {
                         <span class="red-text darken-4">WHERE:</span> makers' lab ${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }<br>
                         <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
                     </p>
-
-                    <a class="waves-effect waves-light btn right activator">sign up</a>
                     <div class="divider"></div>
 
                     <form data-event="${ event[ 0 ] + '_' + event[ 1 ] + '_' + event[ 2 ] }">
