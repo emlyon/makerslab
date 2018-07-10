@@ -17,7 +17,7 @@ const formatEvent = ( event, i ) => {
                     </p>
 
                     <div>
-                        <a class="waves-effect waves-light btn activator">sign up</a>
+                        <a class="waves-effect waves-light btn activator">register</a>
                     </div>
                 </div>
 
