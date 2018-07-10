@@ -169,6 +169,8 @@ fetch( request )
             } );
 
             formSubmission();
+
+            // TODO: set same height to each events
         }
     } )
     .catch( e => console.warn( e ) );
