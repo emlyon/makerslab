@@ -7,6 +7,19 @@
         font-weight: 600;
     }
 
+    .card-reveal{
+        a{
+            color: white;
+        }
+    }
+
+    .card{
+        &:hover{
+            box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+        }
+    }
+
+
     a{
         color: #D50000;
     }
@@ -14,6 +27,15 @@
     #what, #when {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .btn-large {
+        background-color: #D50000;
+        color: #fff;
+
+        &:hover {
+            background-color: rgba(213,0,0,0.5);
+        }
     }
 
     .parallax-container {

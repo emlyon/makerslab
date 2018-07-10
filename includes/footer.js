@@ -5,7 +5,8 @@ include( `
                 <div class="col l6 s12">
                     <h5 class="white-text">Who we are</h5>
 
-                    <p class="grey-text text-lighten-4">We are a team of makers, designers, enginieers working to support and develop makers' pedagogy for earlymakers' community!</p>
+                    <p class="grey-text text-lighten-4">makers' lab is a third place working to develop makers' pedagogy for earlymakers' community!
+                    You will find machines, tools & peers to make what you want plus a makers lab manager to to guide you on your learning curve :)</p>
                 </div>
 
                 <div class="col l3 s12">
@@ -23,12 +24,12 @@ include( `
             </div>
         </div>
 
-        <div class="footer-copyright">
+        <!--<div class="footer-copyright">
             <div class="container">
                 <p>
                     Made by <a class="brown-text text-lighten-3" href="http://makerslab.em-lyon.com">makers' lab</a>
                 </p>
             </div>
-        </div>
+        </div>-->
     </footer>
 ` );
