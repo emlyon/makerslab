@@ -120,9 +120,7 @@ const formSubmission = () => {
                 headers: new Headers( {
                     'Content-Type' : 'application/x-www-form-urlencoded'
                 } ),
-                body: Object.keys( params ).map( function( k ) {
-                    return encodeURIComponent( k ) + '=' + encodeURIComponent( params[ k ] );
-                } ).join( '&' )
+                body: Object.keys( params ).map( k => encodeURIComponent( k ) + '=' + encodeURIComponent( params[ k ] ) ).join( '&' )
             } );
 
             fetch( submission )
@@ -130,7 +128,7 @@ const formSubmission = () => {
                     return response.json();
                 } )
                 .then( json => {
-                    console.log( json );
+                    // console.log( json );
 
                     form.querySelector( '.row' ).classList.add( 'hide' );
                     form.querySelector( '.btn' ).classList.add( 'hide' );
