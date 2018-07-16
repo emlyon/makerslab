@@ -15,6 +15,10 @@ const formatEvent = ( event, i ) => {
                         <span class="red-text darken-4">WHERE:</span> makers' lab ${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }<br>
                         <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
                     </p>
+
+                    <div>
+                        <a class="waves-effect waves-light btn activator">register</a>
+                    </div>
                 </div>
 
                 <div class="card-reveal">
@@ -48,7 +52,7 @@ const formatEvent = ( event, i ) => {
                             </div>
                         </div>
 
-                        <a class="waves-effect waves-light btn right"><i class="material-icons left">send</i>register</a>
+                        <a class="waves-effect waves-light btn right register"><i class="material-icons left">send</i>register</a>
 
                         <h5 class="on-success hide red-text">
                             We have received your registration.<br>
@@ -76,7 +80,7 @@ const slugify = text =>
 
 const formSubmission = () => {
     [].forEach.call( document.querySelectorAll( 'form' ), form => {
-        form.querySelector( '.btn' ).addEventListener( 'click', e => {
+        form.querySelector( '.register' ).addEventListener( 'click', e => {
             e.preventDefault();
 
             let nameEl = form.querySelector( '#name' ),
@@ -116,9 +120,7 @@ const formSubmission = () => {
                 headers: new Headers( {
                     'Content-Type' : 'application/x-www-form-urlencoded'
                 } ),
-                body: Object.keys( params ).map( function( k ) {
-                    return encodeURIComponent( k ) + '=' + encodeURIComponent( params[ k ] );
-                } ).join( '&' )
+                body: Object.keys( params ).map( k => encodeURIComponent( k ) + '=' + encodeURIComponent( params[ k ] ) ).join( '&' )
             } );
 
             fetch( submission )
@@ -126,7 +128,7 @@ const formSubmission = () => {
                     return response.json();
                 } )
                 .then( json => {
-                    console.log( json );
+                    // console.log( json );
 
                     form.querySelector( '.row' ).classList.add( 'hide' );
                     form.querySelector( '.btn' ).classList.add( 'hide' );
@@ -165,6 +167,8 @@ fetch( request )
             } );
 
             formSubmission();
+
+            // TODO: set same height to each events
         }
     } )
     .catch( e => console.warn( e ) );
