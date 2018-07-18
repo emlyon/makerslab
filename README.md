@@ -1,5 +1,5 @@
 # makerslab
-https://emlyon.github.io/makerslab/
+http://makerslab.em-lyon.com/
 
 
 Using [MaterializeCSS](http://materializecss.com/)
