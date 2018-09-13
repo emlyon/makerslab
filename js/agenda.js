@@ -56,7 +56,7 @@ const formatEvent = ( event, i ) => {
 
                         <h5 class="on-success hide red-text">
                             We have received your registration.<br>
-                            Thanks you!
+                            Thank you!
                         </h5>
 
                         <h5 class="on-error hide red-text">
