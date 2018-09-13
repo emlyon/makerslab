@@ -168,7 +168,8 @@ fetch( request )
 
             formSubmission();
 
-            $( '.agenda .card' ).height( 
+            // set same height for all cards in the agenda
+            $( '.agenda .card' ).height(
                 [].map.call( $( '.agenda .card' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ]
             );
         }
