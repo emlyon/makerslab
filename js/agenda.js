@@ -168,7 +168,9 @@ fetch( request )
 
             formSubmission();
 
-            // TODO: set same height to each events
+            $( '.agenda .card' ).height( 
+                [].map.call( $( '.agenda .card' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ]
+            );
         }
     } )
     .catch( e => console.warn( e ) );
