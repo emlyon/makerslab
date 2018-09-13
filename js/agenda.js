@@ -12,7 +12,7 @@ const formatEvent = ( event, i ) => {
 
                     <p>
                         <span class="red-text darken-4">WHAT:</span> ${ event[ 4 ] }<br>
-                        <span class="red-text darken-4">WHERE:</span> makers' lab ${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }<br>
+                        <span class="red-text darken-4">WHERE:</span> makers' lab <b class="red-text">${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }</b><br>
                         <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
                     </p>
 
@@ -26,7 +26,7 @@ const formatEvent = ( event, i ) => {
                     <div class="divider"></div>
 
                     <p>
-                        <span class="red-text darken-4">WHERE:</span> makers' lab ${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }<br>
+                        <span class="red-text darken-4">WHERE:</span> makers' lab <b class="red-text">${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }</b><br>
                         <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
                     </p>
                     <div class="divider"></div>
