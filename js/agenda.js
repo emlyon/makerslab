@@ -3,7 +3,7 @@ const formatEvent = ( event, i ) => {
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="${ event[ 5 ] }" onload="$( '.agenda .card' ).height( [].map.call( $( '.agenda .card' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ])">
+                    <img class="activator" src="${ event[ 5 ] }" onload="$( '.agenda .card-content>p' ).height( [].map.call( $( '.agenda .card-content>p' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ])">
                 </div>
 
                 <div class="card-content">
