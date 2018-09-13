@@ -16,7 +16,7 @@ const formatEvent = ( event, i ) => {
                         <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
                     </p>
 
-                    <div>
+                    <div style="margin-top:15px;">
                         <a class="waves-effect waves-light btn activator">register</a>
                     </div>
                 </div>
