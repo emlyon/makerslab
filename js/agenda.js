@@ -12,11 +12,11 @@ const formatEvent = ( event, i ) => {
 
                     <p>
                         <span class="red-text darken-4">WHAT:</span> ${ event[ 4 ] }<br>
-                        <span class="red-text darken-4">WHERE:</span> makers' lab ${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }<br>
+                        <span class="red-text darken-4">WHERE:</span> makers' lab <b class="red-text">${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }</b><br>
                         <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
                     </p>
 
-                    <div>
+                    <div style="margin-top:15px;">
                         <a class="waves-effect waves-light btn activator">register</a>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const formatEvent = ( event, i ) => {
                     <div class="divider"></div>
 
                     <p>
-                        <span class="red-text darken-4">WHERE:</span> makers' lab ${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }<br>
+                        <span class="red-text darken-4">WHERE:</span> makers' lab <b class="red-text">${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }</b><br>
                         <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
                     </p>
                     <div class="divider"></div>
@@ -168,7 +168,8 @@ fetch( request )
 
             formSubmission();
 
-            // TODO: set same height to each events
+            // set height auto
+            $( '.agenda .card-content>p' ).height( [].map.call( $( '.agenda .card-content>p' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ])
         }
     } )
     .catch( e => console.warn( e ) );
