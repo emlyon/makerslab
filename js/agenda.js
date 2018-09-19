@@ -169,7 +169,7 @@ fetch( request )
             formSubmission();
 
             // set height auto
-            $( '.agenda .card-content>p' ).height( [].map.call( $( '.agenda .card-content>p' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ])
+            // $( '.agenda .card-content>p' ).height( [].map.call( $( '.agenda .card-content>p' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ] )
         }
     } )
     .catch( e => console.warn( e ) );
