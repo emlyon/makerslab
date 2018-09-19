@@ -1,5 +1,6 @@
 const formatEvent = ( event, i ) => {
     return `
+        ${ i % 3 === 0 ? '<div class="row">': '' }
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -67,6 +68,7 @@ const formatEvent = ( event, i ) => {
                 </div>
             </div>
         </div>
+        ${ i % 3 === 2 ? '</div>': '' }
     `;
 };
 
@@ -161,15 +163,19 @@ fetch( request )
         if( json.result == 'success' ){
             let events = JSON.parse( json.data );
             let agenda = document.querySelector( '.agenda' );
-            agenda.innerHTML = '';
+            let html = '';
+
             events.forEach( ( event, i ) => {
-                agenda.innerHTML += formatEvent( event, i );
+                html += formatEvent( event, i );
             } );
+            agenda.innerHTML = html;
 
             formSubmission();
 
             // set height auto
-            // $( '.agenda .card-content>p' ).height( [].map.call( $( '.agenda .card-content>p' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ] )
+            setTimeout( () => {
+                $( '.agenda .card-content>p' ).height( [].map.call( $( '.agenda .card-content>p' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ] )
+            }, 1000 );
         }
     } )
     .catch( e => console.warn( e ) );
