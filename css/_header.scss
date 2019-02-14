@@ -1,31 +1,39 @@
 #index-banner {
-    video#bgvid {
-        position: relative;
-        top: 30%;
-        left: 50%;
-        // width: 100%;
-        //z-index: -1000;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-    }
+    height: calc(100vh - 64px);
+    background: rgb(0,0,0);
+    position: relative;
 
-    #video-container {
-        background: url("../media/background2.jpg") no-repeat center center fixed;
+    .background {
+        position: absolute;
+        height: calc(100vh - 64px);
+        width: 100%;
+        opacity: 0.5;
+        background: url("../media/emlyon1926.jpg") no-repeat center center fixed;
         background-size: cover;
     }
 
-    .btn-large {
-        background-color: #D50000;
+    .content {
+        position: absolute;
+        height: calc(100vh - 64px);
+        margin-top: 0;
+        width: 100%;
 
-        &:hover {
-            background-color: rgba(213,0,0,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn-large {
+            background-color: #E1021A;
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+
+            &:hover {
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+            }
         }
-    }
 
-    a {
-        margin: 20px;
+        a {
+            margin: 20px;
+        }
     }
 }
 

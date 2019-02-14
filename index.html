@@ -17,24 +17,25 @@
 </script>
 
 <body>
-    <script src="includes/navbar.js" charset="utf-8"></script>
+    <script src="includes/navbar.js"></script>
 
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <h1 class="header center red-text text-accent-4"><b>makers' lab</b></h1>
+    <div id="index-banner">
+        <div class="background"></div>
+
+        <div class="content">
+            <div>
+                <!-- <h1 class="header center red-text text-accent-4"><b>makers' lab</b></h1> -->
+                <div style="margin:auto;">
+                    <img style="max-height:40vh;" src="media/logofactory.svg" alt="makers' lab"/>
+                </div>
+
                 <h4 class="header light center white-text">The best place to learn, make, share<br>by yourself or with others!</h4>
                 <div class="row center">
                     <a data-to="#why" class="btn-large waves-light">why join us?</a>
-                    <a data-to="#when" class="btn-large waves-light">opening time</a>
                     <a data-to="#what" class="btn-large waves-light">what's up?</a>
+                    <a data-to="#when" class="btn-large waves-light">opening time</a>
                 </div>
             </div>
-        </div>
-        <div class="parallax" id="video-container">
-            <video autoplay loop id="bgvid">
-            <source src="media/MBC.mp4" type="video/mp4">
-        </video>
         </div>
     </div>
 
@@ -44,36 +45,36 @@
                 <div class="row">
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <h2 class="center red-text text-accent-4"><i class="material-icons">flash_on</i></h2>
+                            <h2 class="center"><i class="material-icons">flash_on</i></h2>
 
-                            <h5 class="center">Improve your development</h5>
+                            <h5>Improve your development</h5>
 
-                            <p class="light">
-                                In a complex, uncertain, constantly moving world, you need to become agile, able to make and find the right information in the shared multitude. The makers' lab is the key, it allows you to test, collaborate, make, learn and fail. Come manipulate technologies and their usages by yourself!
+                            <p>
+                                In a complex, uncertain, constantly moving world, you need to become agile, able to make and find the right information in the shared multitude. The makers' lab is the key, it allows you to test, collaborate, make, learn and fail. Come and manipulate technologies and their usages!
                             </p>
                         </div>
                     </div>
 
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <h2 class="center red-text text-accent-4"><i class="material-icons">build</i></h2>
+                            <h2 class="center"><i class="material-icons">build</i></h2>
 
-                            <h5 class="center">Maker experience focused</h5>
+                            <h5>Maker experience focused</h5>
 
-                            <p class="light">
-                                Through digital tools, innovative pedagogies, and areas dedicated to co-construction, you will develop new skills and a maker spirit. The limit between atom and bit has never been so fine. The lab gives you access to code and materials that will allow you to rethink the world with your own eyes. In the lab, you are the one making!
+                            <p>
+                                Develop new skills and a maker spirit through digital tools, innovative pedagogies, and areas dedicated to co-construction. The lab gives you access to code and materials that will allow you to rethink the world with your own eyes. In the lab, you are the one making!
                             </p>
                         </div>
                     </div>
 
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <h2 class="center red-text text-accent-4"><i class="material-icons">group</i></h2>
+                            <h2 class="center"><i class="material-icons">group</i></h2>
 
-                            <h5 class="center">Learn & share with others</h5>
+                            <h5>Learn & share with others</h5>
 
-                            <p class="light">
-                                We offer tutorials, examples and events to help you get started! Learn how to quickly prototype connected objects, websites, products, mobile apps, or whatever you're thinking about ! Even better, learn how to do it with others…
+                            <p>
+                                We offer online tutorials and examples, as well as regular events to help you get started. Learn how to quickly prototype connected objects, websites, products, mobile apps, or whatever you're thinking about. Even better, learn how to do it with others!
                             </p>
                         </div>
                     </div>
@@ -82,8 +83,21 @@
         </div>
 
         <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/laser.jpg"></div>
+            <div class="parallax"><img src="media/code.png"></div>
         </div>
+
+        <div class="container" id="what">
+            <div class="section">
+                <h6 class="red-text text-accent-4 underlined"><b>incoming events</b></h6>
+
+                <div class="agenda"></div>
+            </div>
+        </div>
+
+        <div class="parallax-container valign-wrapper">
+            <div class="parallax"><img src="media/background2.jpg"></div>
+        </div>
+
 
         <div class="container" id="when">
             <div class="section">
@@ -113,20 +127,36 @@
             </div>
         </div>
 
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/code.png"></div>
-        </div>
-
-        <div class="container" id="what">
+        <div class="container" id="where">
             <div class="section">
-                <h6 class="red-text text-accent-4 underlined"><b>incoming events</b></h6>
+                <h6 class="red-text text-accent-4 underlined"><b>where to find us</b></h6>
 
-                <div class="agenda"></div>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <h6><b>Ecully</b></h6>
+
+                        <p>
+                            On the ground floor of building C
+                        </p>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <h6><b>Paris</b></h6>
+
+                        <p>
+                            Find us in Building C
+                        </p>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <h6><b>Saint-Etienne</b></h6>
+
+                        <p>
+                            Find us in Building C
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/background2.jpg"></div>
         </div>
     </div>
 

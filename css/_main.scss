@@ -19,14 +19,14 @@
         }
 
         a.btn{
-            background-color: #D50000;
+            background-color: #e2001a;
             color: white;
         }
     }
 
 
     a{
-        color: #D50000;
+        color: #e2001a;
     }
 
     #what, #when {
@@ -35,7 +35,7 @@
     }
 
     .btn-large {
-        background-color: #D50000;
+        background-color: #e2001a;
         color: #fff;
 
         &:hover {
@@ -44,7 +44,7 @@
     }
 
     .parallax-container {
-        min-height: 200px;
+        min-height: 150px;
         line-height: 0;
         // height: auto;
         color: rgba(255,255,255,.9);
@@ -63,6 +63,7 @@
 
         .material-icons {
             font-size: inherit;
+            color: #e2001a;
         }
     }
 
@@ -72,7 +73,7 @@
     }
 
     form>.btn{
-        background-color: #D50000;
+        background-color: #e2001a;
     }
 
     .hide{
