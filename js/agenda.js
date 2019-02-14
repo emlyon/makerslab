@@ -4,7 +4,7 @@ const formatEvent = ( event, i ) => {
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="${ event[ 5 ] }">
+                    <img class="activator" style="height:270px;object-fit:cover;" src="${ event[ 5 ] }">
                 </div>
 
                 <div class="card-content">
