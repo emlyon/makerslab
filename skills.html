@@ -20,7 +20,7 @@
     <script src="includes/navbar.js" charset="utf-8"></script>
 
     <div id="index-banner">
-        <div class="background" style="background:url(media/background2.jpg) no-repeat center center fixed; background-size: cover;"></div>
+        <div class="background" style="background:url(media/3D.jpg) no-repeat center center fixed; background-size: cover;"></div>
 
         <div class="content">
             <div>
@@ -171,24 +171,26 @@
     <script src="includes/scripts.js" charset="utf-8"></script>
 
     <script>
-        [].forEach.call( document.querySelectorAll( 'iframe' ), iframe => {
+        document.querySelectorAll( 'iframe' ).forEach( iframe => {
             iframe.addEventListener( 'load', () => {
                 iframe.contentWindow.postMessage( {}, iframe.src );
-
-                addEventListener( 'resize', () => {
-                    iframe.contentWindow.postMessage( {}, iframe.src );
-                }, false );
             }, false );
+        } );
 
-            addEventListener( 'message', event => {
-                // console.log( event );
+        addEventListener( 'resize', () => {
+            document.querySelectorAll( 'iframe' ).forEach( iframe => {
+                iframe.contentWindow.postMessage( {}, iframe.src );
+            } );
+        }, false );
 
+        addEventListener( 'message', event => {
+            document.querySelectorAll( 'iframe' ).forEach( iframe => {
                 // Resize iframe
                 if( event.data.height && event.data.location == iframe.src ) {
                     iframe.height = Math.floor( event.data.height );
                 }
-            }, false );
-        } );
+            } );
+        }, false );
     </script>
 </body>
 
