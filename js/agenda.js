@@ -173,7 +173,7 @@ fetch( request )
             formSubmission();
 
             // set height auto
-            setTimeout( () => {
+            setInterval( () => {
                 $( '.agenda .card-content>p' ).height( [].map.call( $( '.agenda .card-content>p' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ] )
             }, 1000 );
         }
