@@ -175,7 +175,7 @@ fetch( request )
             // set height auto
             setInterval( () => {
                 $( '.agenda .card-content>p' ).height( [].map.call( $( '.agenda .card-content>p' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ] )
-                $( '.agenda .card-image>img' ).height( [].map.call( $( '.agenda .card-content>p' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ] )
+                $( '.agenda .card-image>img' ).height( [].map.call( $( '.agenda .card-image>img' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ] )
             }, 1000 );
         }
     } )
