@@ -17,9 +17,10 @@ include( `
                     <h5 class="white-text">Connect</h5>
                     <ul>
                         <li><a target="_blank" class="white-text" href="https://github.com/emlyon">Github</a></li>
+                        <li><a target="_blank" class="white-text" href="https://www.tinkercad.com/users/7S9lJgsOgYe-makerslab">Tinkercad</a></li>
                         <li><a target="_blank" class="white-text" href="https://twitter.com/makerslab_">Twitter</a></li>
-                        <li><a target="_blank" class="white-text" href="https://www.thingiverse.com/makerslab_emlyon/designs">Thingiverse</a></li>
-                        <li><a target="_blank" class="white-text" href="https://www.facebook.com/makerslabemlyon">Facebook</a></li>
+                        <li><a target="_blank" class="white-text" href="https://www.instagram.com/makerslab_/">Instagram</a></li>
+
                     </ul>
                 </div>
             </div>
