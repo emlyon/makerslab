@@ -19,20 +19,24 @@
 <body>
     <script src="includes/navbar.js" charset="utf-8"></script>
 
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
+    <div id="index-banner">
+        <div class="background" style="background:url(media/background3.jpg) no-repeat center center fixed;background-size: cover;"></div>
+        <div class="content">
+            <div>
                 <h1 class="header center white-text"><b>workshops</b></h1>
                 <h4 class="header light center white-text"><b class="red-text text-accent-4">Learning</b> by doing with others!</h4>
                 <div class="row center">
-                    <a data-to="#after-works" class="btn-large waves-light">afterworks</a>
-                    <a data-to="#bootcamps" class="btn-large waves-light">bootcamps</a>
-                    <a data-to="#boosters" class="btn-large waves-light">boosters</a>
+                    <div class="col m4">
+                        <a data-to="#after-works" class="btn-large waves-light">afterworks</a>
+                    </div>
+                    <div class="col m4">
+                        <a data-to="#bootcamps" class="btn-large waves-light">bootcamps</a>
+                    </div>
+                    <div class="col m4">
+                        <a data-to="#boosters" class="btn-large waves-light">boosters</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="parallax">
-            <div class="parallax"><img src="media/background3.jpg"></div>
         </div>
     </div>
 
@@ -289,10 +293,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/background2.jpg"></div>
-        </div>
     </div>
 
     <script src="includes/footer.js" charset="utf-8"></script>
@@ -300,24 +300,10 @@
     <script src="includes/scripts.js" charset="utf-8"></script>
 
     <script>
-        [].forEach.call( document.querySelectorAll( 'iframe' ), iframe => {
-            iframe.addEventListener( 'load', () => {
-                iframe.contentWindow.postMessage( {}, iframe.src );
-
-                addEventListener( 'resize', () => {
-                    iframe.contentWindow.postMessage( {}, iframe.src );
-                }, false );
-            }, false );
-
-            addEventListener( 'message', event => {
-                // console.log( event );
-
-                // Resize iframe
-                if( event.data.height && event.data.location == iframe.src ) {
-                    iframe.height = Math.floor( event.data.height );
-                }
-            }, false );
-        } );
+    setTimeout( () => {
+        $( '#bootcamps .card' ).height( [].map.call( $( '#bootcamps .card' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ] )
+        $( '#boosters .card' ).css( 'min-height', [].map.call( $( '#boosters .card' ), d => $( d ).height() ).sort( ( a, b ) => b - a )[ 0 ] )
+    }, 100 );
     </script>
 </body>
 
