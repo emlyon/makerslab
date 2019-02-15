@@ -11,9 +11,9 @@ include( `
     <link rel="stylesheet" href="css/material-scrolltop.css">
 
     <!-- Icons -->
-    <link rel="icon" href="icons/m32.jpg" sizes="32x32">
-    <link rel="icon" href="icons/m192.jpg" sizes="192x192">
-    <link rel="icons/m180.jpg">
-    <meta name="icons/m270.jpg">
-    <link rel="icons/m270.jpg">
+    <link rel="icon" href="icons/m32.png" sizes="32x32">
+    <link rel="icon" href="icons/m192.png" sizes="192x192">
+    <link rel="icons/m180.png">
+    <meta name="icons/m270.png">
+    <link rel="icons/m270.png">
 ` );
