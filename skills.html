@@ -19,41 +19,44 @@
 <body>
     <script src="includes/navbar.js" charset="utf-8"></script>
 
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
+    <div id="index-banner">
+        <div class="background" style="background:url(media/3D.jpg) no-repeat center center fixed; background-size: cover;"></div>
+
+        <div class="content">
+            <div style="width: 85%">
                 <h1 class="header center white-text"><b>skills</b></h1>
+
                 <h4 class="header light center white-text"><b class="red-text text-accent-4">Discover</b> new ways to make what you think!</h4>
+
+                <div style="margin-top: 4em;" class="row center">
+                    <div class="col m3 s6">
+                        <a data-to="#3D" style="padding: 0" class="btn-large waves-light">3d&nbsp;printing</a>
+                    </div>
+                    <div class="col m3 s6">
+                        <a data-to="#electronics" style="padding: 0" class="btn-large waves-light">electronics</a>
+                    </div>
+                    <div class="col m3 s6">
+                        <a data-to="#laser" style="padding: 0" class="btn-large waves-light">laser&nbsp;cutting</a>
+                    </div>
+                    <div class="col m3 s6">
+                        <a data-to="#web" style="padding: 0" class="btn-large waves-light">web&nbsp;coding</a>
+                    </div>
+                </div>
                 <div class="row center">
                     <div class="col m3 s6">
-                        <a data-to="#3D" style="width:90%" class="btn-large waves-light">3d printing</a>
+                        <a data-to="#3ddesign" style="padding: 0" class="btn-large waves-light">3d&nbsp;design</a>
                     </div>
                     <div class="col m3 s6">
-                        <a data-to="#electronics" style="width:90%" class="btn-large waves-light">electronics</a>
+                        <a data-to="#uxdesign" style="padding: 0" class="btn-large waves-light">UX&nbsp;design</a>
                     </div>
                     <div class="col m3 s6">
-                        <a data-to="#laser" style="width:90%" class="btn-large waves-light">laser cutting</a>
+                        <a data-to="#2ddesign" style="padding: 0" class="btn-large waves-light">2d&nbsp;design</a>
                     </div>
                     <div class="col m3 s6">
-                        <a data-to="#web" style="width:90%" class="btn-large waves-light">web coding</a>
-                    </div>
-                    <div class="col m3 s6">
-                        <a data-to="#3ddesign" style="width:90%" class="btn-large waves-light">3d design</a>
-                    </div>
-                    <div class="col m3 s6">
-                        <a data-to="#uxdesign" style="width:90%" class="btn-large waves-light">UX design</a>
-                    </div>
-                    <div class="col m3 s6">
-                        <a data-to="#2ddesign" style="width:90%" class="btn-large waves-light">2d design</a>
-                    </div>
-                    <div class="col m3 s6">
-                        <a data-to="#exp" style="width:90%" class="btn-large waves-light">exploration</a>
+                        <a data-to="#exp" style="padding: 0" class="btn-large waves-light">exploration</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="parallax">
-            <div class="parallax"><img src="media/3D.jpg"></div>
         </div>
     </div>
 
@@ -172,24 +175,26 @@
     <script src="includes/scripts.js" charset="utf-8"></script>
 
     <script>
-        [].forEach.call( document.querySelectorAll( 'iframe' ), iframe => {
+        document.querySelectorAll( 'iframe' ).forEach( iframe => {
             iframe.addEventListener( 'load', () => {
                 iframe.contentWindow.postMessage( {}, iframe.src );
-
-                addEventListener( 'resize', () => {
-                    iframe.contentWindow.postMessage( {}, iframe.src );
-                }, false );
             }, false );
+        } );
 
-            addEventListener( 'message', event => {
-                // console.log( event );
+        addEventListener( 'resize', () => {
+            document.querySelectorAll( 'iframe' ).forEach( iframe => {
+                iframe.contentWindow.postMessage( {}, iframe.src );
+            } );
+        }, false );
 
+        addEventListener( 'message', event => {
+            document.querySelectorAll( 'iframe' ).forEach( iframe => {
                 // Resize iframe
                 if( event.data.height && event.data.location == iframe.src ) {
                     iframe.height = Math.floor( event.data.height );
                 }
-            }, false );
-        } );
+            } );
+        }, false );
     </script>
 </body>
 

@@ -15,7 +15,7 @@ include( `
                     <li><a href="/workshops.html">workshops</a></li>
                     <li><a href="/courses.html">courses</a></li>
                 </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i style="color: #e2001a;" class="material-icons">menu</i></a>
             </div>
         </nav>
     </div>

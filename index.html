@@ -17,24 +17,34 @@
 </script>
 
 <body>
-    <script src="includes/navbar.js" charset="utf-8"></script>
+    <script src="includes/navbar.js"></script>
 
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <h1 class="header center red-text text-accent-4"><b>makers' lab</b></h1>
-                <h4 class="header light center white-text">The best place to learn, make, share<br>by yourself or with others!</h4>
+    <div id="index-banner">
+        <div class="background"></div>
+
+        <div class="content">
+            <div style="width: 85%">
                 <div class="row center">
-                    <a data-to="#why" class="btn-large waves-light">why join us?</a>
-                    <a data-to="#when" class="btn-large waves-light">opening time</a>
-                    <a data-to="#what" class="btn-large waves-light">what's up?</a>
+                    <div class="col m4 s3"></div>
+                    <div class="col m4 s6">
+                        <img width="70%"src="media/logofactory.svg" alt="makers' lab"/>
+                    </div>
+                </div>
+
+                <h4 class="header light center white-text">The&nbsp;best&nbsp;place&nbsp;to learn,&nbsp;make,&nbsp;share by&nbsp;yourself or&nbsp;with&nbsp;others!</h4>
+
+                <div style="margin-top: 4em" class="row center">
+                    <div class="col m4 s12">
+                        <a data-to="#why" style="padding: 0" class="btn-large waves-light">why join us?</a>
+                    </div>
+                    <div class="col m4 s12">
+                        <a data-to="#what" style="padding: 0" class="btn-large waves-light">what's up?</a>
+                    </div>
+                    <div class="col m4 s12">
+                        <a data-to="#when" style="padding: 0" class="btn-large waves-light">opening time</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="parallax" id="video-container">
-            <video autoplay loop id="bgvid">
-            <source src="media/MBC.mp4" type="video/mp4">
-        </video>
         </div>
     </div>
 
@@ -44,36 +54,36 @@
                 <div class="row">
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <h2 class="center red-text text-accent-4"><i class="material-icons">flash_on</i></h2>
+                            <h2 class="center"><i class="material-icons">flash_on</i></h2>
 
-                            <h5 class="center">Improve your development</h5>
+                            <h5>Improve your development</h5>
 
-                            <p class="light">
-                                In a complex, uncertain, constantly moving world, you need to become agile, able to make and find the right information in the shared multitude. The makers' lab is the key, it allows you to test, collaborate, make, learn and fail. Come manipulate technologies and their usages by yourself!
+                            <p>
+                                In a complex, uncertain, constantly moving world, you need to become agile, able to make and find the right information in the shared multitude. The makers' lab is the key, it allows you to test, collaborate, make, learn and fail. Come and manipulate technologies and their usages!
                             </p>
                         </div>
                     </div>
 
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <h2 class="center red-text text-accent-4"><i class="material-icons">build</i></h2>
+                            <h2 class="center"><i class="material-icons">build</i></h2>
 
-                            <h5 class="center">Maker experience focused</h5>
+                            <h5>Maker experience focused</h5>
 
-                            <p class="light">
-                                Through digital tools, innovative pedagogies, and areas dedicated to co-construction, you will develop new skills and a maker spirit. The limit between atom and bit has never been so fine. The lab gives you access to code and materials that will allow you to rethink the world with your own eyes. In the lab, you are the one making!
+                            <p>
+                                Develop new skills and a maker spirit through digital tools, innovative pedagogies, and areas dedicated to co-construction. The lab gives you access to code and materials that will allow you to rethink the world with your own eyes. In the lab, you are the one making!
                             </p>
                         </div>
                     </div>
 
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <h2 class="center red-text text-accent-4"><i class="material-icons">group</i></h2>
+                            <h2 class="center"><i class="material-icons">group</i></h2>
 
-                            <h5 class="center">Learn & share with others</h5>
+                            <h5>Learn & share with others</h5>
 
-                            <p class="light">
-                                We offer tutorials, examples and events to help you get started! Learn how to quickly prototype connected objects, websites, products, mobile apps, or whatever you're thinking about ! Even better, learn how to do it with others…
+                            <p>
+                                We offer online tutorials and examples, as well as regular events to help you get started. Learn how to quickly prototype connected objects, websites, products, mobile apps, or whatever you're thinking about. Even better, learn how to do it with others!
                             </p>
                         </div>
                     </div>
@@ -82,8 +92,21 @@
         </div>
 
         <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/laser.jpg"></div>
+            <div class="parallax"><img src="media/code.png"></div>
         </div>
+
+        <div class="container" id="what">
+            <div class="section">
+                <h6 class="red-text text-accent-4 underlined"><b>incoming events</b></h6>
+
+                <div class="agenda"></div>
+            </div>
+        </div>
+
+        <div class="parallax-container valign-wrapper">
+            <div class="parallax"><img src="media/background2.jpg"></div>
+        </div>
+
 
         <div class="container" id="when">
             <div class="section">
@@ -109,24 +132,50 @@
                     <div class="col l2 s4">
                         <h6><b>friday</b><br><br>09:00<br>-<br>18:00</h6>
                     </div>
+
+                    <div class="col l2 s4">
+                        <h6><b>weekend</b><br><br>closed<br>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/code.png"></div>
-        </div>
-
-        <div class="container" id="what">
+        <div class="container" id="where">
             <div class="section">
-                <h6 class="red-text text-accent-4 underlined"><b>incoming events</b></h6>
+                <h6 class="red-text text-accent-4 underlined"><b>where to find us</b></h6>
 
-                <div class="agenda"></div>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <h6><b>Ecully</b></h6>
+
+                        <p>
+                            23 Avenue Guy de Collongue<br>
+                            69130 Écully<br>
+                            on the ground floor (building C)
+                        </p>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <h6><b>Paris</b></h6>
+
+                        <p>
+                            15 Boulevard Diderot<br>
+                            75012 Paris<br>
+                            on the 4th level
+                        </p>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <h6><b>Saint-Etienne</b></h6>
+
+                        <p>
+                            51 Cours Fauriel<br>
+                            42009 Saint-Étienne<br>
+                            on the ground floor
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/background2.jpg"></div>
         </div>
     </div>
 
