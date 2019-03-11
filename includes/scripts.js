@@ -10,8 +10,7 @@ include( `
     <script src="js/material-scrolltop.js"></script>
     <script>
         $( 'body' ).materialScrollTop();
-
+    </script>
     <script src="//www.socialintents.com/api/socialintents.1.3.js#2c9fa563694b5ce801696bffbda8075b" async="async"></script>
 
-    </script>
 ` );
