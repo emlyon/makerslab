@@ -1,0 +1,84 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 324 324">
+
+<style type="text/css">
+
+	text{
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+		font-size: 58px;
+		fill:#E2001A;
+	}
+	.st0{fill:#E2001A;}
+	.st1{fill:#FFFFFF;}
+	polygon{stroke:#E2001A;transform-origin:top;transform: scaleY(0);}
+	#t0{animation: 3s anim infinite;}
+	#t1{animation: 3s anim1 infinite;}
+	#t2{animation: 3s anim2 infinite;}
+
+	@keyframes anim{
+		0%{
+			transform: scaleY(0);
+		}
+
+		40%{
+			transform: scaleY(1);
+		}
+
+		80%{
+			transform: scaleY(1);
+		}
+
+		100%{
+				transform: scaleY(0);
+		}
+	}
+
+	@keyframes anim1{
+		10%{
+			transform: scaleY(0);
+		}
+
+		50%{
+			transform: scaleY(1);
+		}
+
+		80%{
+			transform: scaleY(1);
+		}
+
+		100%{
+				transform: scaleY(0);
+		}
+	}
+
+	@keyframes anim2{
+		20%{
+			transform: scaleY(0);
+		}
+
+		60%{
+			transform: scaleY(1);
+		}
+
+		80%{
+			transform: scaleY(1);
+		}
+
+		100%{
+				transform: scaleY(0);
+		}
+	}
+
+</style>
+<g>
+	<rect class="st0" width="324" height="324"/>
+	<rect x="12" y="12" class="st1" width="300" height="300"/>
+</g>
+
+<polygon id="t2" class="st0" points="12,12 112,12 112,80 "/>
+<polygon id="t1" class="st0" points="112,12 212,12 212,80 "/>
+<polygon id="t0" class="st0" points="212,12 312,12 312,80 "/>
+<text x="33" y="192"></text>
+<text x="33" y="239">story</text>
+<text x="33" y="286">telling</text>
+</svg>

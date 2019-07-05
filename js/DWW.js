@@ -81,7 +81,7 @@ window.addEventListener('load', function(){
             rects
                 .attrs( {
                     opacity: 1.0,
-                    fill: 'rgb( 234, 67, 53 )',
+                    fill: 'rgb( 6, 50, 54 )',
                     y: h / 2,
                     width: 8,
                     height: 0
@@ -322,7 +322,7 @@ window.addEventListener('load', function(){
                 .enter()
                 .append( 'path' )
                 .attr( 'd', arc )
-                .attr( 'fill', 'rgb( 234, 67, 53 )' )
+                .attr( 'fill', 'rgb( 6, 50, 54 )' )
                 .attr( 'transform', function( d ){
                     return 'translate(' + ( 50 + d.x ) + ',' + ( h / 2 ) + ')';
                 } )
@@ -342,7 +342,7 @@ window.addEventListener('load', function(){
                 .enter()
                 .append( 'path' )
                 .attr( 'd', arc )
-                .attr( 'fill', 'rgba( 234, 67, 53, .3 )' )
+                .attr( 'fill', 'rgba( 6, 50, 54, .3 )' )
                 .attr( 'transform', function( d ){
                     return 'translate(' + ( 50 + d.x ) + ',' + ( h / 2 ) + ')';
                 } )
@@ -434,7 +434,7 @@ window.addEventListener('load', function(){
                     x: w / 2,
                     width: 0,
                     height: 0,
-                    fill: 'rgb( 234, 67, 53 )',
+                    fill: 'rgb( 6, 50, 54 )',
                     opacity: 0
                 } )
                 .attr( 'y', function( d ){
@@ -536,7 +536,7 @@ window.addEventListener('load', function(){
                 .enter()
                 .append( 'path' )
                 .attrs( {
-                    stroke: 'rgb( 234, 67, 53 )',
+                    stroke: 'rgb( 6, 50, 54 )',
                     fill: 'none',
                     'stroke-width': ~~( ( h - 100 ) / data.length )
                 } )

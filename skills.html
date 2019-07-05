@@ -23,147 +23,94 @@
         <div class="background" style="background:url(media/3D.jpg) no-repeat center center fixed; background-size: cover;"></div>
 
         <div class="content">
-            <div style="width: 85%">
+            <div style="width: 50%">
                 <h1 class="header center white-text"><b>skills</b></h1>
 
                 <h4 class="header light center white-text"><b class="red-text">Discover</b> new ways to make what you think!</h4>
 
-                <div style="margin-top: 4em;" class="row center">
-                    <div class="col m3 s6">
-                        <a data-to="#3D" style="padding: 0" class="btn-large waves-light">3d&nbsp;printing</a>
+
+                <div style="margin-top: 4em" class="row">
+                    <div class="col m2 s4">
+                        <a class="badge" id="nlp" href="" data-to="#skill"><img src="badges/nlp_2.svg"></a>
                     </div>
-                    <div class="col m3 s6">
-                        <a data-to="#electronics" style="padding: 0" class="btn-large waves-light">electronics</a>
+                    <div class="col m2 s4">
+                        <a class="badge" id="3d-printing" href="" data-to="#skill"><img src="badges/3d-printing_2.svg"></a>
                     </div>
-                    <div class="col m3 s6">
-                        <a data-to="#laser" style="padding: 0" class="btn-large waves-light">laser&nbsp;cutting</a>
+                    <div class="col m2 s4">
+                        <a class="badge" id="web-coding" href="" data-to="#skill"><img src="badges/web-coding_2.svg"></a>
                     </div>
-                    <div class="col m3 s6">
-                        <a data-to="#web" style="padding: 0" class="btn-large waves-light">web&nbsp;coding</a>
+                    <div class="col m2 s4">
+                        <a class="badge" id="exploration" href="" data-to="#skill"><img src="badges/exploration_2.svg"></a>
+                    </div>
+                    <div class="col m2 s4">
+                        <a class="badge" id="chatbot" href="" data-to="#skill"><img src="badges/chatbot_2.svg"></a>
+                    </div>
+                    <div class="col m2 s4">
+                        <a class="badge" id="ux-design" href="" data-to="#skill"><img src="badges/ux-design_2.svg"></a>
                     </div>
                 </div>
-                <div class="row center">
-                    <div class="col m3 s6">
-                        <a data-to="#3ddesign" style="padding: 0" class="btn-large waves-light">3d&nbsp;design</a>
+
+                <div class="row">
+                    <div class="col m2 s4">
+                        <a class="badge" id="2d-design" href="" data-to="#skill"><img src="badges/2d-design_2.svg"></a>
                     </div>
-                    <div class="col m3 s6">
-                        <a data-to="#uxdesign" style="padding: 0" class="btn-large waves-light">UX&nbsp;design</a>
+                    <div class="col m2 s4">
+                        <a class="badge" id="classification" href="" data-to="#skill"><img src="badges/classification_2.svg"></a>
                     </div>
-                    <div class="col m3 s6">
-                        <a data-to="#2ddesign" style="padding: 0" class="btn-large waves-light">2d&nbsp;design</a>
+                    <div class="col m2 s4">
+                        <a class="badge" id="electronics" href="" data-to="#skill"><img src="badges/electronics_2.svg"></a>
                     </div>
-                    <div class="col m3 s6">
-                        <a data-to="#exp" style="padding: 0" class="btn-large waves-light">exploration</a>
+                    <div class="col m2 s4">
+                        <a class="badge" id="laser-cutting" href="" data-to="#skill"><img src="badges/laser-cutting_2.svg"></a>
+                    </div>
+                    <div class="col m2 s4">
+                        <a class="badge" id="programming" href="" data-to="#skill"><img src="badges/programming_2.svg"></a>
+                    </div>
+                    <div class="col m2 s4">
+                        <a class="badge" id="user-testing" href="" data-to="#skill"><img src="badges/user-testing_2.svg"></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col m2 s4">
+                        <a class="badge" id="storytelling" href="" data-to="#skill"><img src="badges/storytelling_2.svg"></a>
+                    </div>
+                    <div class="col m2 s4">
+                        <a class="badge" id="3d-design" href="" data-to="#skill"><img src="badges/3d-design_2.svg"></a>
+                    </div>
+                    <div class="col m2 s4">
+                        <a class="badge" id="api" href="" data-to="#skill"><img src="badges/api_2.svg"></a>
+                    </div>
+                    <div class="col m2 s4">
+                        <a class="badge" id="data-literacy" href="" data-to="#skill"><img src="badges/data-literacy_2.svg"></a>
+                    </div>
+                    <div class="col m2 s4">
+                        <a class="badge" id="computer-vision" href="" data-to="#skill"><img src="badges/computer-vision_2.svg"></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="main">
-        <div class="container" id="3D">
+    <script>
+        [...document.querySelectorAll('.badge>img')].forEach(img => {
+            img.addEventListener('mouseenter', e => {
+                img.style.transition = 'all 0.2s ease-in-out';
+                img.style.transform = 'scale(1.3,1.3)';
+            });
+            img.addEventListener('mouseleave', e => {
+                img.style.transition = 'all 1s ease-in-out';
+                img.style.transform='scale(1,1)';
+            });
+        });
+    </script>
+
+    <div class="main" style="background-color: #f5f4f4;">
+        <div class="container" id="skill">
             <div class="section">
                 <div class="row">
                     <div class="col s12">
-                      <iframe width="100%" frameborder="0" height="2300" src="https://emlyon.github.io/makers-skills/3dprinting.html"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/3D.jpg"></div>
-        </div>
-
-        <div class="container" id="electronics">
-            <div class="section">
-                <div class="row">
-                    <div class="col s12">
-                        <iframe width="100%" frameborder="0" height="2300" src="https://emlyon.github.io/makers-skills/electronics.html"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/code.png"></div>
-        </div>
-
-        <div class="container" id="laser">
-            <div class="section">
-                <div class="row">
-                    <div class="col s12">
-                        <iframe width="100%" frameborder="0" height="2300" src="https://emlyon.github.io/makers-skills/lasercutting.html"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/laser.jpg"></div>
-        </div>
-
-        <div class="container" id="web">
-            <div class="section">
-                <div class="row">
-                    <div class="col s12">
-                        <iframe width="100%" frameborder="0" height="2300" src="https://emlyon.github.io/makers-skills/webcoding.html"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/3D.jpg"></div>
-        </div>
-
-        <div class="container" id="3ddesign">
-            <div class="section">
-                <div class="row">
-                    <div class="col s12">
-                        <iframe width="100%" frameborder="0" height="2300" src="https://emlyon.github.io/makers-skills/3ddesign.html"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/code.png"></div>
-        </div>
-
-        <div class="container" id="uxdesign">
-            <div class="section">
-                <div class="row">
-                    <div class="col s12">
-                        <iframe width="100%" frameborder="0" height="2300" src="https://emlyon.github.io/makers-skills/UXdesign.html"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/laser.jpg"></div>
-        </div>
-
-        <div class="container" id="exp">
-            <div class="section">
-                <div class="row">
-                    <div class="col s12">
-                        <iframe width="100%" frameborder="0" height="2300" src="https://emlyon.github.io/makers-skills/exploration.html"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/code.png"></div>
-        </div>
-
-        <div class="container" id="2ddesign">
-            <div class="section">
-                <div class="row">
-                    <div class="col s12">
-                        <iframe width="100%" frameborder="0" height="2300" src="https://emlyon.github.io/makers-skills/2ddesign.html"></iframe>
+                        <iframe id="content" width="100%" style="height:0;"frameborder="0" src=""></iframe>
                     </div>
                 </div>
             </div>
@@ -175,26 +122,28 @@
     <script src="includes/scripts.js" charset="utf-8"></script>
 
     <script>
-        document.querySelectorAll( 'iframe' ).forEach( iframe => {
-            iframe.addEventListener( 'load', () => {
-                iframe.contentWindow.postMessage( {}, iframe.src );
-            }, false );
-        } );
+        const skill = document.getElementById('content');
 
-        addEventListener( 'resize', () => {
-            document.querySelectorAll( 'iframe' ).forEach( iframe => {
-                iframe.contentWindow.postMessage( {}, iframe.src );
-            } );
-        }, false );
+        document.querySelectorAll('.badge').forEach(badge => badge.addEventListener('click', e => {
+            skill.addEventListener('load', () => {
+                skill.contentWindow.postMessage({}, skill.src);
+            }, false);
+            skill.src = `https://makerslab_emlyon.gitlab.io/skills/${badge.id}`;
+        }));
 
-        addEventListener( 'message', event => {
-            document.querySelectorAll( 'iframe' ).forEach( iframe => {
-                // Resize iframe
-                if( event.data.height && event.data.location == iframe.src ) {
-                    iframe.height = Math.floor( event.data.height );
-                }
-            } );
-        }, false );
+        addEventListener('resize', () => {
+            const skill = document.getElementById('content');
+            skill.contentWindow.postMessage({}, skill.src);
+        }, false);
+
+        addEventListener('message', event => {
+            const skill = document.getElementById('content');
+            console.log(event.data)
+            // Resize iframe
+            if (event.data.type === 'height') {
+                skill.style.height = `${event.data.height}px`;
+            }
+        }, false);
     </script>
 </body>
 
