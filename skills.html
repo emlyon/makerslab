@@ -118,6 +118,7 @@
         const skill = document.getElementById('content');
 
         document.querySelectorAll('.badge').forEach(badge => badge.addEventListener('click', e => {
+            skill.style.height = 0;
             skill.addEventListener('load', () => {
                 skill.contentWindow.postMessage({}, skill.src);
             }, false);
