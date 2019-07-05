@@ -9,11 +9,10 @@
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90298578-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-90298578-1');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-90298578-1');
 </script>
 
 <body>
@@ -107,13 +106,7 @@
 
     <div class="main" style="background-color: #f5f4f4;">
         <div class="container" id="skill">
-            <div class="section">
-                <div class="row">
-                    <div class="col s12">
-                        <iframe id="content" width="100%" style="height:0;"frameborder="0" src=""></iframe>
-                    </div>
-                </div>
-            </div>
+            <iframe id="content" width="100%" style="display:block; height:0;"frameborder="0" src=""></iframe>
         </div>
     </div>
 
@@ -138,7 +131,7 @@
 
         addEventListener('message', event => {
             const skill = document.getElementById('content');
-            console.log(event.data)
+            console.log(event.data);
             // Resize iframe
             if (event.data.type === 'height') {
                 skill.style.height = `${event.data.height}px`;
