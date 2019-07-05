@@ -42,6 +42,18 @@
             </div>
         </div>
     </div>
+    <script>
+        [...document.querySelectorAll('.badge>img')].forEach(img => {
+            img.addEventListener('mouseenter', e => {
+                img.style.transition = 'all 0.2s ease-in-out';
+                img.style.transform = 'scale(1.15,1.15)';
+            });
+            img.addEventListener('mouseleave', e => {
+                img.style.transition = 'all 0.2s ease-in-out';
+                img.style.transform='scale(1,1)';
+            });
+        });
+    </script>
 
     <div class="main">
         <div class="container" id="after-works">
