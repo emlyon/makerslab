@@ -18,7 +18,7 @@ const formatEvent = ( event, i ) => {
                     </p>
 
                     <div style="margin-top:15px;">
-                        <a class="waves-effect waves-light btn activator">register</a>
+                        <a class="waves-effect waves-light btn activator ${event[ 6 ] ? 'disabled' : ''}">${ event[ 6 ] ? 'SOLD OUT' : 'register'}</a>
                     </div>
                 </div>
 
