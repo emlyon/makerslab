@@ -13,7 +13,8 @@ const formatEvent = ( event, i ) => {
 
                     <p>
                         <span class="red-text darken-4">WHAT:</span> ${ event[ 4 ] }<br>
-                        <span class="red-text darken-4">WHERE:</span> makers' lab <b class="red-text">${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }</b><br>
+                        <!--<span class="red-text darken-4">WHERE:</span> makers' lab <b class="red-text">${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }</b><br>-->
+                        <span class="red-text darken-4">WHERE:</span> makers' lab <b class="red-text">${ event[ 1 ] == 'ECU' ? '<a class="red-text" href="https://em-lyon.zoom.us/j/2163009806">makers\'lab Écully sur Zoom</a>' : event[ 1 ] == 'PAR' ? '<a class="red-text" href="https://em-lyon.zoom.us/j/8197947538">makers\'lab Paris sur Zoom</a>' : '<a class="red-text" href="https://em-lyon.zoom.us/j/4825067946">makers\'lab Saint-Étienne sur Zoom</a>' }</b><br>
                         <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
                     </p>
 
@@ -28,7 +29,7 @@ const formatEvent = ( event, i ) => {
 
                     <p>
                         <!--<span class="red-text darken-4">WHERE:</span> makers' lab <b class="red-text">${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : 'Saint-Étienne' }</b><br>-->
-                        <span class="red-text darken-4">WHERE:</span><b class="red-text">${ event[ 1 ] == 'ECU' ? '<a href="https://em-lyon.zoom.us/j/2163009806">makers\'lab Écully sur Zoom</a>' : event[ 1 ] == 'PAR' ? '<a href="https://em-lyon.zoom.us/j/8197947538">makers\'lab Paris sur Zoom</a>' : '<a href="https://em-lyon.zoom.us/j/4825067946">makers\'lab Saint-Étienne sur Zoom</a>' }</b><br>
+                        <span class="red-text darken-4">WHERE:</span><b class="red-text">${ event[ 1 ] == 'ECU' ? '<a class="red-text" href="https://em-lyon.zoom.us/j/2163009806">makers\'lab Écully sur Zoom</a>' : event[ 1 ] == 'PAR' ? '<a class="red-text" href="https://em-lyon.zoom.us/j/8197947538">makers\'lab Paris sur Zoom</a>' : '<a class="red-text" href="https://em-lyon.zoom.us/j/4825067946">makers\'lab Saint-Étienne sur Zoom</a>' }</b><br>
                         <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
                     </p>
                     <div class="divider"></div>
