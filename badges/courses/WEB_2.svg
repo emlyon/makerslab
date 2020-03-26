@@ -81,7 +81,7 @@
 <polygon id="t2" class="st1" points="12,12 112,12 112,80 "/>
 <polygon id="t1" class="st1" points="112,12 212,12 212,80 "/>
 <polygon id="t0" class="st1" points="212,12 312,12 312,80 "/>
-<text x="33" y="192"></text>
-<text x="33" y="239">web</text>
-<text x="33" y="286">design</text>
+<text x="33" y="192">web</text>
+<text x="33" y="239">techno</text>
+<text x="33" y="286">logies</text>
 </svg>
