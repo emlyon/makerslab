@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="js/include.js" charset="utf-8"></script>
+    <script src="includes/head.js" charset="utf-8"></script>
+</head>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90298578-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-90298578-1');
+</script>
+
+<body>
+    <script src="includes/navbar.js" charset="utf-8"></script>
+
+
+
+    <div id="d1" style="text-align: center;font-size: 1rem;">
+        <p><strong>Warning. This version of the course is designed for free listeners. It is not guided or graded. It cannot deliver any certification.</strong><br><a class="red-text" id="togg1" href="#" onclick="return false">Close this banner</a></p>
+    </div>
+
+    <script>
+        let togg1 = document.getElementById("togg1");
+        let d1 = document.getElementById("d1");
+        togg1.addEventListener("click", () => {
+        if(getComputedStyle(d1).display != "none"){
+        d1.style.display = "none";
+        } else {
+        d1.style.display = "block";
+        }
+        })
+    </script>
+
+    <div id="index-banner">
+        <iframe src="https://processing-with-ai.gitlab.io/" width="100%" height="100%"></iframe>
+    </div>
+
+    <script>
+        [...document.querySelectorAll('.badge>img')].forEach(img => {
+            img.addEventListener('mouseenter', e => {
+                img.style.transition = 'all 0.2s ease-in-out';
+                img.style.transform = 'scale(1.15,1.15)';
+            });
+            img.addEventListener('mouseleave', e => {
+                img.style.transition = 'all 0.2s ease-in-out';
+                img.style.transform='scale(1,1)';
+            });
+        });
+    </script>
+
+    <!-- <script src="includes/footer.js" charset="utf-8"></script> -->
+
+    <script src="includes/scripts.js" charset="utf-8"></script>
+</body>
+
+</html>
