@@ -2,7 +2,7 @@
     const split = location.href.split('/');
     let href = split[split.length - 1];
     if (split.includes('dww') || split.includes('pwai') || split.includes('pwf')) href = 'courses.html'
-    document.querySelector(`.navbar-fixed li>a[href="/${href}"]`).classList.add('active');
+    if (document.querySelector(`.navbar-fixed li>a[href="/${href}"]`)) document.querySelector(`.navbar-fixed li>a[href="/${href}"]`).classList.add('active');
     $(function() {
         $('.button-collapse').sideNav();
         $('.parallax').parallax();
