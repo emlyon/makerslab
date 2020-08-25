@@ -98,11 +98,21 @@
         margin: 10px;
     }
 
+    .tutorials {
+        width: 100%;
+    }
+
+    .mob {
+        width: 80%;
+        padding-left: 20%;
+    }
+
     .menu {
         margin-top: 0px !important;
         text-align: left !important;
         overflow-x:scroll;
         overflow-y: hidden;
+        padding-left: 10%;
         .swap {
             width: 800px;
             display: inline-block;
