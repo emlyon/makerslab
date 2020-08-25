@@ -202,7 +202,7 @@
         };
 
         addEventListener('load', e => {
-            const badge = document.querySelector(location.hash);
+            const badge = document.querySelector(`[id='${location.hash}']`);
             if (badge) setSkill(badge.id);
         });
 
