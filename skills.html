@@ -209,7 +209,7 @@
         document.querySelectorAll('.badge').forEach(badge => badge.addEventListener('click', e => setSkill(badge.id)));
 
         addEventListener('resize', () => {
-            skill.contentWindow.postMessage({}, skill.src);
+            skill.contentWindow.postMessage({ type: 'skill' }, skill.src);
         }, false);
 
         addEventListener('message', event => {
