@@ -192,10 +192,9 @@
                         <text id="makers" x="-45" y="45">makers</text>
                     </g>
                 </g>`
-            skill.style.height = 0;
+            // skill.style.height = 0;
             skill.addEventListener('load', () => {
-                skill.contentWindow.postMessage({}, skill.src);
-                setTimeout(() => dispatchEvent(new Event('resize')), 1000);
+                skill.contentWindow.postMessage({ type: 'skill' }, skill.src);
             }, false);
             skill.src = `https://makers-toolbox.gitlab.io/part1/${skillID}`;
             location.hash = skillID;
@@ -208,9 +207,9 @@
 
         document.querySelectorAll('.badge').forEach(badge => badge.addEventListener('click', e => setSkill(badge.id)));
 
-        addEventListener('resize', () => {
-            skill.contentWindow.postMessage({}, skill.src);
-        }, false);
+        // addEventListener('resize', () => {
+        //     skill.contentWindow.postMessage({}, skill.src);
+        // }, false);
 
         addEventListener('message', event => {
             const skill = document.getElementById('content');
