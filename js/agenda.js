@@ -8,7 +8,7 @@ const formatEvent = ( event, i ) => {
                 </div>
 
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">${ event[ 0 ] }<i class="material-icons right">more_vert</i></span>
+                    <span class="card-title activator grey-text text-darken-4">${ event[ 0 ] }${ event[ 6 ] ? '' : '<i class="material-icons right">more_vert</i>'}</span>
                     <div class="divider"></div>
 
                     <p>
@@ -22,7 +22,7 @@ const formatEvent = ( event, i ) => {
                     </div>
                 </div>
 
-                <div class="card-reveal">
+                ${ event[ 6 ] ? '' : `<div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">${ event[ 0 ] }<i class="material-icons right">close</i></span>
                     <div class="divider"></div>
 
@@ -65,7 +65,7 @@ const formatEvent = ( event, i ) => {
                             Please try again later!
                         </h5>
                     </form>
-                </div>
+                </div>` }
             </div>
         </div>
         ${ i % 3 === 2 ? '</div>': '' }
