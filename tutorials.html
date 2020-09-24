@@ -203,8 +203,7 @@
 
     <script>
         const skill = document.getElementById('content');
-        const loader = document.getElementById('loader')
-
+        const loader = document.getElementById('loader');
 
         const setSkill = skillID => {
             loader.style.height = '100vh';
@@ -223,7 +222,7 @@
                         <text id="early" x="-45" y="30">early</text>
                         <text id="makers" x="-45" y="45">makers</text>
                     </g>
-                </g>`
+                </g>`;
             skill.style.height = 0;
             skill.addEventListener('load', () => {
                 skill.contentWindow.postMessage({ type: 'skill' }, skill.src);
