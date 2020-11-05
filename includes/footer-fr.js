@@ -2,7 +2,7 @@ include( `
     <footer class="page-footer" style="background-color: #e2001a;">
         <div class="container">
             <div class="row">
-                <div class="col m6">
+                <div class="col m6 s12">
                     <h5 class="white-text">À propos de nous</h5>
 
                     <p class="grey-text text-lighten-4">
@@ -12,7 +12,7 @@ include( `
 
                 <div class="col m3"></div>
 
-                <div class="col m3" style="text-align:right;">
+                <div class="col m3 s12" style="text-align:left;">
                     <h5 class="white-text">Contacts</h5>
                     <ul>
                         <li><a target="_blank" class="white-text" href="https://twitter.com/makerslab_">Twitter</a></li>
