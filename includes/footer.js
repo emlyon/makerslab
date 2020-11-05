@@ -3,11 +3,10 @@ include( `
         <div class="container">
             <div class="row">
                 <div class="col m6">
-                    <h5 class="white-text">Who we are</h5>
+                    <h5 class="white-text">About us</h5>
 
                     <p class="grey-text text-lighten-4">
-                        Makers' labs are a network of third places dedicated to learning by doing.<br>
-                        We design pedagogical resources to disseminate makers' tools and methods.
+                        Makers' labs are part of AESCRA, a non-profit association governed by the law of 1st July 1901. Its purpose is to organize and manage in France and abroad professional training actions allowing the development of key skills in demand on the job market.
                     </p>
                 </div>
 
