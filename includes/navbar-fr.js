@@ -9,17 +9,17 @@ include( `
                     <li><a href="/fr/evenements.html">événements</a></li>
                     <li><a href="/fr/formations.html">formations</a></li>
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                    <li><a href="/">en</a></li>
-                    <li><a href="/fr/">fr</a></li>
+                    <li class="lang-en"><a href="/">en</a></li>
+                    <li class="lang-fr"><a href="/fr/">fr</a></li>
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
                     <li><a href="/fr/">makers' lab</a></li>
-                    <li><a href="/fr/tutorisls.html">tutoriels</a></li>
+                    <li><a href="/fr/tutorials.html">tutoriels</a></li>
                     <li><a href="/fr/evenements.html">événements</a></li>
                     <li><a href="/fr/formations.html">formations</a></li>
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                    <li><a href="/">en</a></li>
-                    <li><a href="/fr/">fr</a></li>
+                    <li class="lang-en"><a href="/">en</a></li>
+                    <li class="lang-fr"><a href="/fr/">fr</a></li>
                 </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i style="color: #e2001a;" class="material-icons">menu</i></a>
             </div>

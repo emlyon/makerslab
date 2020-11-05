@@ -9,8 +9,8 @@ include( `
                     <li><a href="/events.html">events</a></li>
                     <li><a href="/courses.html">courses</a></li>
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                    <li><a href="/">en</a></li>
-                    <li><a href="/fr/">fr</a></li>
+                    <li class="lang-en"><a href="/">en</a></li>
+                    <li class="lang-fr"><a href="/fr/">fr</a></li>
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
                     <li><a href="/">makers' lab</a></li>
@@ -18,8 +18,8 @@ include( `
                     <li><a href="/events.html">events</a></li>
                     <li><a href="/courses.html">courses</a></li>
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                    <li><a href="/">en</a></li>
-                    <li><a href="/fr/">fr</a></li>
+                    <li class="lang-en"><a href="/">en</a></li>
+                    <li class="lang-fr"><a href="/fr/">fr</a></li>
                 </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i style="color: #e2001a;" class="material-icons">menu</i></a>
             </div>
