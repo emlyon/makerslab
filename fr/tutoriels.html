@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <script src="/js/include.js" charset="utf-8"></script>
+    <script src="/includes/head.js" charset="utf-8"></script>
+    <style>
+        mask {
+            transform: translate(0%, 0);
+            transition: transform .5s ease-out;
+        }
+
+        #mask.hide {
+            transform: translate(100%, 0);
+        }
+
+        #background {
+            fill: white;
+        }
+
+        #group {
+            transform: translate(50%, 50%);
+        }
+
+        #contour{
+            fill: none;
+            stroke: #E1021A;
+            stroke-width: 6px;
+            animation: contour 6s ease-in infinite;
+        }
+
+        @keyframes contour {
+            0% { stroke-dasharray: 0 400; opacity: 1; }
+            15% { stroke-dasharray: 400 0; }
+            50% { opacity: 1; }
+            51% { opacity: 0; }
+            100% { stroke-dasharray: 400 0; opacity: 0; }
+        }
+
+        #back{
+            transform: translate(-53px ,0) scale(0, 1);
+            fill: #E1021A;
+            stroke: none;
+            animation: back 6s ease-in infinite;
+        }
+
+        @keyframes back{
+            0%{ transform: translate(-53px ,0) scale(0, 1); }
+            20%{ transform: translate(-53px ,0) scale(0, 1); }
+            25%{ transform: translate(0 ,0) scale(1, 1); }
+            65%{ transform: translate(0 ,0) scale(1, 1); }
+            70%{ transform: translate(53px ,0) scale(0, 1); }
+            100%{ transform: translate(53px ,0) scale(0, 1); }
+        }
+
+        text{
+            font-family: Roboto, sans-serif;
+            fill: white;
+        }
+    </style>
+</head>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90298578-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-90298578-1');
+</script>
+
+<body>
+    <script src="/includes/navbar-fr.js" charset="utf-8"></script>
+
+    <div id="index-banner">
+        <div class="background" style="background:url(/media/3D.jpg) no-repeat center center fixed; background-size: cover;"></div>
+
+        <div class="content">
+            <div class="tutorials">
+                <h1 class="header mob center white-text"><b>tutoriels</b></h1>
+
+                <h4 class="header mob light center white-text">Découvrez&nbsp;des outils&nbsp;pour&nbsp;donner vie&nbsp;à&nbsp;vos&nbsp;idées!</h4>
+
+                <div class="menu row">
+                    <p class="swap">
+                        <a id="2d-design" data-to="#skill" style="padding: 5 " class="btn-large fab badge waves-effect waves-effect waves-light">conception 2d</a>
+                        <a id="laser-cutting" data-to="#skill" style="padding: 5 " class="btn-large fab badge waves-effect waves-effect waves-light">découpeuse laser</a>
+                        <a id="3d-design" data-to="#skill" style="padding: 5 " class="btn-large fab badge waves-effect waves-effect waves-light">conception 3d</a>
+                        <a id="3d-printing" data-to="#skill" style="padding: 5 " class="btn-large fab badge waves-effect waves-effect waves-light">impression 3d</a>
+                    </p>
+                    <p class="swap">
+                        <a id="exploration" data-to="#skill" style="padding: 5 " class="btn-large badge waves-effect waves-effect waves-light">exploration</a>
+                        <a id="user-testing" data-to="#skill" style="padding: 5 " class="btn-large badge waves-effect waves-effect waves-light">tests utilisateurs</a>
+                        <a id="documentation" data-to="#skill" style="padding: 5 " class="btn-large badge waves-effect waves-effect waves-light">documentation</a>
+                        <a id="storytelling" data-to="#skill" style="padding: 5 " class="btn-large badge waves-effect waves-effect waves-light">storytelling</a>
+                    </p>
+                    <p class="swap">
+                        <a id="chatbot" data-to="#skill" style="padding: 5 " class="btn-large ai badge waves-effect waves-effect waves-light">chatbots</a>
+                        <a id="nlp" data-to="#skill" style="padding: 5 " class="btn-large ai badge waves-effect waves-effect waves-light">NLP NLU</a>
+                        <a id="classification" data-to="#skill" style="padding: 5 " class="btn-large ai badge waves-effect waves-effect waves-light">classification</a>
+                        <a id="computer-vision" data-to="#skill" style="padding: 5 " class="btn-large ai badge waves-effect waves-effect waves-light">vision par ordinateur</a>
+                    </p>
+                    <p class="swap">
+                        <a id="ux-design" data-to="#skill" style="padding: 5 " class="btn-large web badge waves-effect waves-effect waves-light">design UI/UX</a>
+                        <a id="web-coding" data-to="#skill" style="padding: 5 " class="btn-large web badge waves-effect waves-effect waves-light">développement web</a>
+                        <a id="programming" data-to="#skill" style="padding: 5 " class="btn-large web badge waves-effect waves-effect waves-light">programmation JS</a>
+                        <a id="api" data-to="#skill" style="padding: 5 " class="btn-large web badge waves-effect waves-effect waves-light">APIs</a>
+                    </p>
+                    <p class="swap">
+                        <a id="arduino"  data-to="#skill" style="padding: 5 " class="btn-large iot badge waves-effect waves-effect waves-light">arduino</a>
+                        <a id="electronics" data-to="#skill" style="padding: 5 " class="btn-large iot badge waves-effect waves-effect waves-light">electronique</a>
+                        <a id="netsworks" data-to="#skill" style="padding: 5 " class="btn-large iot badge waves-effect waves-effect waves-light">réseaux</a>
+                        <a id="data-literacy" data-to="#skill" style="padding: 5 " class="btn-large iot badge waves-effect waves-effect waves-light">culture des données</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        [...document.querySelectorAll('.badge>img')].forEach(img => {
+            img.addEventListener('mouseenter', e => {
+                img.style.transition = 'all 0.2s ease-in-out';
+                img.style.transform = 'scale(1.3,1.3)';
+            });
+            img.addEventListener('mouseleave', e => {
+                img.style.transition = 'all 0.2s ease-in-out';
+                img.style.transform='scale(1,1)';
+            });
+        });
+    </script>
+
+    <div class="main" style="background-color: #f5f4f4;">
+        <div class="container" id="skill">
+            <iframe id="content" width="100%" style="display:block; height:0;"frameborder="0" src=""></iframe>
+            <svg id="loader" width="100%" style="height:0"></svg>
+        </div>
+    </div>
+
+    <script src="/includes/footer.js" charset="utf-8"></script>
+
+    <script src="/includes/scripts.js" charset="utf-8"></script>
+
+    <script>
+        const skill = document.getElementById('content');
+        const loader = document.getElementById('loader');
+
+        const setSkill = skillID => {
+            loader.style.height = '100vh';
+            loader.innerHTML = `
+                <defs>
+                    <clipPath id="mask">
+                        <rect x="0" y="0" width="100%" height="${window.innerHeight}px" />
+                    </clipPath>
+                </defs>
+
+                <g clip-path="url(#mask)">
+                    <rect id="background" x="0" y="0" width="100%" height="${window.innerHeight}px"></rect>
+                    <g id="group">
+                        <path id="contour" d="M-50 -53 L-50 50 L50 50 L50 -50 L-53 -50"></path>
+                        <rect id="back" x="-53" y="-53" width="106" height="106"></rect>
+                        <text id="early" x="-45" y="30">early</text>
+                        <text id="makers" x="-45" y="45">makers</text>
+                    </g>
+                </g>`;
+            skill.style.height = 0;
+            skill.addEventListener('load', () => {
+                skill.contentWindow.postMessage({ type: 'skill' }, skill.src);
+                setTimeout(() => dispatchEvent(new Event('resize')), 1000);
+            }, false);
+            skill.src = `https://makers-toolbox.gitlab.io/part1/${skillID}`;
+            location.hash = skillID;
+        };
+
+        addEventListener('load', e => {
+            const badge = document.querySelector(`[id='${location.hash}']`);
+            if (badge) setSkill(badge.id);
+        });
+
+        document.querySelectorAll('.badge').forEach(badge => badge.addEventListener('click', e => setSkill(badge.id)));
+
+        addEventListener('resize', () => {
+            skill.contentWindow.postMessage({ type: 'skill' }, skill.src);
+        }, false);
+
+        addEventListener('message', event => {
+            const skill = document.getElementById('content');
+            console.log(event.data);
+            // Resize iframe
+            if (event.data.type === 'height') {
+                skill.style.height = `${event.data.height}px`;
+                loader.style.height = '0';
+            }
+        }, false);
+    </script>
+</body>
+
+</html>
