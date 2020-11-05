@@ -14,7 +14,7 @@ include( `
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
                     <li><a href="/fr/">makers' lab</a></li>
-                    <li><a href="/fr/tutorisls.html">tutoriels</a></li>
+                    <li><a href="/fr/tutorials.html">tutoriels</a></li>
                     <li><a href="/fr/evenements.html">événements</a></li>
                     <li><a href="/fr/formations.html">formations</a></li>
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
