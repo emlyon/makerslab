@@ -19,7 +19,7 @@
         $('.parallax').parallax();
         $('.collapsible').collapsible();
 
-        [].forEach.call(document.querySelectorAll('#index-banner a'), a => {
+        [].forEach.call(document.querySelectorAll('#index-banner a:not(.link)'), a => {
             a.addEventListener('click', e => {
                 e.preventDefault();
                 // console.log(a.dataset.to);
