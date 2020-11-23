@@ -168,7 +168,7 @@
                 skill.contentWindow.postMessage({ type: 'skill' }, skill.src);
                 setTimeout(() => dispatchEvent(new Event('resize')), 1000);
             }, false);
-            skill.src = `https://makers-toolbox.gitlab.io/part1/${skillID}`;
+            skill.src = `https://makers-toolbox.gitlab.io/part1/${skillID}-fr`;
             location.hash = skillID;
         };
 
