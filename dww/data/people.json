@@ -1,3 +1,34 @@
 {
-    
+    "results": 20,
+    "list": [
+        {
+            "name": {
+                "first": "John",
+                "last": "Doe"
+            },
+            "birth_date": "1987-02-21",
+            "email": "john.doe@acme.corp",
+            "job_title": "UI Design Intern",
+            "service": "Product Design",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error perspiciatis ipsa modi eos minima earum deleniti corrupti nam sed, velit dicta possimus quasi eum explicabo amet culpa exercitationem voluptate rem.",
+            "phone": "+33625486312",
+            "address": "15 rue Lorem Ipsum, 69001 Dolor Sit",
+            "image": [
+                {
+                    "url": "https://…",
+                    "size": "small"
+                },
+                {
+                    "url": "https://…",
+                    "size": "medium"
+                },
+                {
+                    "url": "https://…",
+                    "size": "large"
+                }
+            ],
+            "years_of_experience": 3,
+            "salary_claims": 80000
+        }
+    ]
 }

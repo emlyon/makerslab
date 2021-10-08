@@ -1,3 +1,43 @@
 {
-    
+    "from": "2022-01-01",
+    "to": "2022-06-31",
+    "results": 25,
+    "shows": [
+        {
+            "title": "Lorem Ipsum Dolor Sit Amet",
+            "artist": "John Doe",
+            "location": "Stade de France",
+            "category": "concert",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error perspiciatis ipsa modi eos minima earum deleniti corrupti nam sed, velit dicta possimus quasi eum explicabo amet culpa exercitationem voluptate rem.",
+            "price": 39.90,
+            "duration": 120,
+            "poster": {
+                "small": "https://…",
+                "medium": "https://…",
+                "large": "https://…"
+            },
+            "availability": [
+                {
+                    "date": "2022-01-23",
+                    "quantity": 239
+                },
+                {
+                    "date": "2022-01-24",
+                    "quantity": 123
+                },
+                {
+                    "date": "2022-01-26",
+                    "quantity": 134
+                },
+                {
+                    "date": "2022-01-27",
+                    "quantity": 234
+                },
+                {
+                    "date": "2022-01-28",
+                    "quantity": 140
+                }
+            ]
+        }
+    ]
 }

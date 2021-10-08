@@ -1,3 +1,54 @@
-{
-    
-}
+[
+    {
+        "title": "Long sleeves shirt",
+        "price": 39.90,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error perspiciatis ipsa modi eos minima earum deleniti corrupti nam sed, velit dicta possimus quasi eum explicabo amet culpa exercitationem voluptate rem.",
+        "photo": "https://…",
+        "availability": [
+            {
+                "size": "S",
+                "colors": {
+                    "white": 0,
+                    "black": 12,
+                    "yellow": 4,
+                    "red": 0,
+                    "blue": 23,
+                    "green": 0
+                }
+            },
+            {
+                "size": "M",
+                "colors": {
+                    "white": 20,
+                    "black": 1,
+                    "yellow": 34,
+                    "red": 4,
+                    "blue": 2,
+                    "green": 20
+                }
+            },
+            {
+                "size": "L",
+                "colors": {
+                    "white": 10,
+                    "black": 23,
+                    "yellow": 9,
+                    "red": 2,
+                    "blue": 4,
+                    "green": 5
+                }
+            },
+            {
+                "size": "XL",
+                "colors": {
+                    "white": 0,
+                    "black": 12,
+                    "yellow": 4,
+                    "red": 0,
+                    "blue": 23,
+                    "green": 0
+                }
+            }
+        ]
+    }
+]
