@@ -1,522 +1,681 @@
 {
-    
-    "city" : "London",
-    "musicals" : 
-    
-    [
+    "city": "London",
+    "musicals": [
         {
             "title": "Jersey Boys",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/1768-1631897084-jerseyboysencore281020500x500.jpg?itok=8abXKYPt",
             "location": "Trafalgar Theatre",
-            "dates": "To 31 January, 2022",
-            "description": "Special prices available "
+            "dates": {
+                "from": "Tue Dec 07 2021",
+                "to": "Mon Jan 31 2022"
+            },
+            "description": "Special prices available ",
+            "price": "49.00",
+            "tickets_remaining": 196
         },
         {
             "title": "The Prince of Egypt",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7361-1631897945-tpoe1080x1080.jpg?itok=JUvkD3fE",
             "location": "Dominion Theatre",
-            "dates": "To 8 January, 2022",
-            "description": "The Prince of Egypt musical features music and lyrics by Stephen Schwartz, who write the songs of Wicked, with a book by the film's writer Philip LaZebnik and direction by Scott Schwartz. The Prince of Egypt tickets are available on London Theatre now. "
+            "dates": {
+                "from": "Sun Nov 28 2021",
+                "to": "Sat Jan 08 2022"
+            },
+            "description": "The Prince of Egypt musical features music and lyrics by Stephen Schwartz, who write the songs of Wicked, with a book by the film's writer Philip LaZebnik and direction by Scott Schwartz. The Prince of Egypt tickets are available on London Theatre now. ",
+            "price": "59.00",
+            "tickets_remaining": 42
         },
         {
             "title": "Back to the Future: The Musical",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7899-1631880130-bttfencore1080x1080.jpg?itok=6ZGEbSt8",
             "location": "Adelphi Theatre",
-            "dates": "To 2 July, 2022",
-            "description": "Grab your skateboard. Stock up on plutonium. And turn the ignition on your DeLorean because Back to the Future: The Musical is landing in the West End. Based on the iconic 1985 film starring Michael J."
+            "dates": {
+                "from": "Wed May 04 2022",
+                "to": "Sat Jul 02 2022"
+            },
+            "description": "Grab your skateboard. Stock up on plutonium. And turn the ignition on your DeLorean because Back to the Future: The Musical is landing in the West End. Based on the iconic 1985 film starring Michael J.",
+            "price": "69.00",
+            "tickets_remaining": 177
         },
         {
             "title": "Moulin Rouge! The Musical",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/23350-1623406829-mrjun21ttg1080x1080.jpg?itok=7CaErBpq",
             "location": "Piccadilly Theatre",
-            "dates": " 12 November, 2021 To 29 May, 2022",
-            "description": "Moulin Rouge! The Musical will transfer to the West End, with performances at the Piccadilly Theatre from Autumn 2021. "
+            "dates": {
+                "from": "Mon Mar 07 2022",
+                "to": "Sun May 29 2022"
+            },
+            "description": "Moulin Rouge! The Musical will transfer to the West End, with performances at the Piccadilly Theatre from Autumn 2021. ",
+            "price": "39.00",
+            "tickets_remaining": 141
         },
         {
             "title": "Wicked",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/1587-1631897993-wickedfeb20encore500x500.jpg?itok=PtC9yrwu",
             "location": "Apollo Victoria Theatre",
-            "dates": "To 31 May, 2022",
-            "description": "Since opening on Broadway in 2003, Wicked has taken the world of musical theatre by storm."
+            "dates": {
+                "from": "Mon Mar 14 2022",
+                "to": "Tue May 31 2022"
+            },
+            "description": "Since opening on Broadway in 2003, Wicked has taken the world of musical theatre by storm.",
+            "price": "29.00",
+            "tickets_remaining": 249
         },
         {
             "title": "Come From Away",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/6735-1633534619-cfa21q350todaytixbuttons1080x1080.jpg?itok=e6UIXtlJ",
             "location": "Phoenix Theatre",
-            "dates": "To 18 December, 2021",
-            "description": "* Special prices available *"
+            "dates": {
+                "from": "Sat Sep 25 2021",
+                "to": "Sat Dec 18 2021"
+            },
+            "description": "* Special prices available *",
+            "price": "49.00",
+            "tickets_remaining": 277
         },
         {
             "title": "TINA - The Tina Turner Musical",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/6362-1631897980-tinaencore500x500.jpg?itok=ygn3Z7HD",
             "location": "Aldwych Theatre",
-            "dates": "To 26 June, 2022",
-            "description": "Tina – The Tina Turner Musical chronicles the life of the rock ‘n’ roll legend who brought us hit songs like “What’s Love Got to Do With It”, “Proud Mary”, “The Best”, “River Deep Mountain High” and “Better Be Good To Me”. Tina the Musical tickets are available on London Theatre now."
+            "dates": {
+                "from": "Tue Apr 12 2022",
+                "to": "Sun Jun 26 2022"
+            },
+            "description": "Tina – The Tina Turner Musical chronicles the life of the rock ‘n’ roll legend who brought us hit songs like “What’s Love Got to Do With It”, “Proud Mary”, “The Best”, “River Deep Mountain High” and “Better Be Good To Me”. Tina the Musical tickets are available on London Theatre now.",
+            "price": "49.00",
+            "tickets_remaining": 46
         },
         {
             "title": "MAMMA MIA!",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/3134-1632234584-mmsep21ttgingtmg1080x1080.jpg?itok=_shUxx9-",
             "location": "Novello Theatre",
-            "dates": "To 2 April, 2022",
-            "description": "The international hit musical Mamma Mia! continues to run in London's West End at the Novello Theatre where it has been delighting audiences for 20 years after originally opening at the Prince Edward Theatre in 1999."
+            "dates": {
+                "from": "Sat Jan 22 2022",
+                "to": "Sat Apr 02 2022"
+            },
+            "description": "The international hit musical Mamma Mia! continues to run in London's West End at the Novello Theatre where it has been delighting audiences for 20 years after originally opening at the Prince Edward Theatre in 1999.",
+            "price": "19.00",
+            "tickets_remaining": 227
         },
         {
             "title": "Matilda the Musical",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/2906-1629627885-matencore500x500-ltw.jpg?itok=yAh99Idm",
             "location": "Cambridge Theatre",
-            "dates": "To 29 May, 2022",
-            "description": "Adapted from the incomparable children's novel by Roald Dahl, Matilda The Musical is the multi-award winning musical from the Royal Shakespeare Company that continues to delight audiences in the West End."
+            "dates": {
+                "from": "Fri Mar 11 2022",
+                "to": "Sun May 29 2022"
+            },
+            "description": "Adapted from the incomparable children's novel by Roald Dahl, Matilda The Musical is the multi-award winning musical from the Royal Shakespeare Company that continues to delight audiences in the West End.",
+            "price": "59.00",
+            "tickets_remaining": 66
         },
         {
             "title": "Taboo",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/1034-1631802381-taboo250x250.jpg?itok=j19uExGW",
             "location": "London Palladium",
-            "dates": " 30 January, 2022 To 30 January, 2022",
-            "description": "​​Boy George’s award-winning musical Taboo returns to London for one night only to celebrate the 20th anniversary of the show’s original production."
+            "dates": {
+                "from": "Sun Jan 23 2022",
+                "to": "Sun Jan 30 2022"
+            },
+            "description": "​​Boy George’s award-winning musical Taboo returns to London for one night only to celebrate the 20th anniversary of the show’s original production.",
+            "price": "59.00",
+            "tickets_remaining": 116
         },
         {
             "title": "Anything Goes",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/1112-1631880033-agencsfx4250x250.jpg?itok=7r73uPAv",
             "location": "Barbican",
-            "dates": "To 6 November, 2021",
-            "description": "Two-time Tony winner Sutton Foster makes her highly-anticipated West End debut as Reno Sweeney in the London revival of Anything Goes at the Barbican. Set to be the perfect antidote to lockdown blues, get ready to sail towards sunnier skies on the S. S."
+            "dates": {
+                "from": "Fri Aug 20 2021",
+                "to": "Sat Nov 06 2021"
+            },
+            "description": "Two-time Tony winner Sutton Foster makes her highly-anticipated West End debut as Reno Sweeney in the London revival of Anything Goes at the Barbican. Set to be the perfect antidote to lockdown blues, get ready to sail towards sunnier skies on the S. S.",
+            "price": "49.00",
+            "tickets_remaining": 313
         },
         {
             "title": "& Juliet",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7140-1634048562-andjulietltd1080x1080pxsep21.jpg?itok=iB9xZMwi",
             "location": "Shaftesbury Theatre",
-            "dates": "To 13 February, 2022",
-            "description": "& Juliet is a musical making its West End premiere at the Shaftesbury Theatre featuring the songs of pop hit machine Max Martin, who has written songs for Britney Spears, Celine Dion, the Backstreet Boys, Kelly Clarkson, P!nk, Katy Perry, Ariana Grande, and many more. & Juliet tickets are available on London Theatre now."
+            "dates": {
+                "from": "Wed Jan 19 2022",
+                "to": "Sun Feb 13 2022"
+            },
+            "description": "& Juliet is a musical making its West End premiere at the Shaftesbury Theatre featuring the songs of pop hit machine Max Martin, who has written songs for Britney Spears, Celine Dion, the Backstreet Boys, Kelly Clarkson, P!nk, Katy Perry, Ariana Grande, and many more. & Juliet tickets are available on London Theatre now.",
+            "price": "49.00",
+            "tickets_remaining": 120
         },
         {
             "title": "Get Up, Stand Up! The Bob Marley Musical",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7938-1631883110-lsmgusuencorelondontheatreemailonsale1080x1080.jpg?itok=4c-9C5cv",
             "location": "Lyric Theatre",
-            "dates": "To Sunday, 3 April, 2022",
-            "description": "A bold new musical is honouring the Jamaican reggae superstar Bob Marley, whose indelible songs and rebellious spirit continue to inspire millions around the world. Featuring all the big hits, including “No Woman, No Cry,” this promises to be a new West End favourite. Don’t miss out: Get Up, Stand Up tickets are available on London Theatre now."
+            "dates": {
+                "from": "Wed Feb 16 2022",
+                "to": "Sun Apr 03 2022"
+            },
+            "description": "A bold new musical is honouring the Jamaican reggae superstar Bob Marley, whose indelible songs and rebellious spirit continue to inspire millions around the world. Featuring all the big hits, including “No Woman, No Cry,” this promises to be a new West End favourite. Don’t miss out: Get Up, Stand Up tickets are available on London Theatre now.",
+            "price": "29.00",
+            "tickets_remaining": 99
         },
         {
             "title": "The Last Five Years",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/23117-1632311107-250x250.jpg?itok=MxyzhQVR",
             "location": "Garrick Theatre",
-            "dates": "To Sunday, 17 October, 2021",
-            "description": "After two engagements at Southwark Playhouse in 2020, Jason Robert Brown’s The Last Five Years receives its West End premiere at the Garrick Theatre."
+            "dates": {
+                "from": "Sun Oct 17 2021",
+                "to": "Sun Oct 17 2021"
+            },
+            "description": "After two engagements at Southwark Playhouse in 2020, Jason Robert Brown’s The Last Five Years receives its West End premiere at the Garrick Theatre.",
+            "price": "29.00",
+            "tickets_remaining": 78
         },
         {
             "title": "The Book of Mormon",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/3608-1631897458-bomencore500x5002.jpg?itok=7QmkeFoq",
             "location": "Prince of Wales Theatre",
-            "dates": "To Saturday, 2 April, 2022",
-            "description": "Written by the creators of the cult TV hit South Park, The Book of Mormon has been playing in the West End at the Prince of Wales Theatre since 2013. It has fully established itself as one of London’s most popular musicals and one of the hottest tickets in town."
+            "dates": {
+                "from": "Mon Feb 21 2022",
+                "to": "Sat Apr 02 2022"
+            },
+            "description": "Written by the creators of the cult TV hit South Park, The Book of Mormon has been playing in the West End at the Prince of Wales Theatre since 2013. It has fully established itself as one of London’s most popular musicals and one of the hottest tickets in town.",
+            "price": "69.00",
+            "tickets_remaining": 219
         },
         {
             "title": "Everybody's Talking About Jamie",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/6277-1631897025-jamie201080x1080lt.jpg?itok=kpzU-KNw",
             "location": "Apollo Theatre",
-            "dates": "To Sunday, 26 September, 2021",
-            "description": "Everybody’s Talking About Jamie is brought to the West End by Dan Gillespie Sells (singer-songwriter of The Feeling) and Tom MacRae (writer for Doctor Who). Everybody's Talking About Jamie will pause at the Apollo Theatre from 26 September. Read more here."
+            "dates": {
+                "from": "Sat Jul 17 2021",
+                "to": "Sun Sep 26 2021"
+            },
+            "description": "Everybody’s Talking About Jamie is brought to the West End by Dan Gillespie Sells (singer-songwriter of The Feeling) and Tom MacRae (writer for Doctor Who). Everybody's Talking About Jamie will pause at the Apollo Theatre from 26 September. Read more here.",
+            "price": "29.00",
+            "tickets_remaining": 54
         },
         {
             "title": "Dear Evan Hansen",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7275-1631882053-dehjun21ttgingressotmgatg1080x1080.jpg?itok=MrAk2VZ1",
             "location": "Noel Coward Theatre",
-            "dates": "To Saturday, 23 July, 2022",
-            "description": "The smash-hit Broadway musical Dear Evan Hansen, from the writers of La La Land and The Greatest Showman, transferred to London’s Noel Coward Theatre in November 2019. Dear Evan Hansen tickets are available on London Theatre now."
+            "dates": {
+                "from": "Thu May 19 2022",
+                "to": "Sat Jul 23 2022"
+            },
+            "description": "The smash-hit Broadway musical Dear Evan Hansen, from the writers of La La Land and The Greatest Showman, transferred to London’s Noel Coward Theatre in November 2019. Dear Evan Hansen tickets are available on London Theatre now.",
+            "price": "49.00",
+            "tickets_remaining": 62
         },
         {
             "title": "Only Fools and Horses - The Musical",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/6905-1631897330-705303ofahencore1080x1080.jpg?itok=LxrMkZd-",
             "location": "Theatre Royal Haymarket",
-            "dates": "To Tuesday, 22 February, 2022",
-            "description": "A stage adaptation of the classic British sitcom Only Fools and Horses, co-written by Paul Whitehouse, will return to London's West End at the Theatre Royal Haymarket from October 2021."
+            "dates": {
+                "from": "Mon Dec 27 2021",
+                "to": "Tue Feb 22 2022"
+            },
+            "description": "A stage adaptation of the classic British sitcom Only Fools and Horses, co-written by Paul Whitehouse, will return to London's West End at the Theatre Royal Haymarket from October 2021.",
+            "price": "39.00",
+            "tickets_remaining": 206
         },
         {
             "title": "Bring It On",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7837-1631880407-bioenc1080x1080.jpg?itok=UNkbmHv7",
             "location": "Queen Elizabeth Hall",
-            "dates": "Wednesday, 8 December, 2021 To Saturday, 22 January, 2022",
-            "description": "The smash hit Broadway cheerleading musical backflips into the UK, starring Love Island’s Amber Davies and Olympic gymnast Louis Smith. Bring It On: The Musical in London is at Queen Elizabeth Hall this Christmas. Bring It On tickets are available on London Theatre now."
+            "dates": {
+                "from": "Sun Nov 28 2021",
+                "to": "Sat Jan 22 2022"
+            },
+            "description": "The smash hit Broadway cheerleading musical backflips into the UK, starring Love Island’s Amber Davies and Olympic gymnast Louis Smith. Bring It On: The Musical in London is at Queen Elizabeth Hall this Christmas. Bring It On tickets are available on London Theatre now.",
+            "price": "59.00",
+            "tickets_remaining": 135
         },
         {
             "title": "Indecent Proposal",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/21025-1631897014-1080x1080-ip-tt.jpg?itok=BZtUD0A7",
             "location": "Southwark Playhouse",
-            "dates": "Monday, 1 November, 2021 To Saturday, 27 November, 2021",
-            "description": "Special prices available "
+            "dates": {
+                "from": "Wed Nov 17 2021",
+                "to": "Sat Nov 27 2021"
+            },
+            "description": "Special prices available ",
+            "price": "69.00",
+            "tickets_remaining": 255
         },
         {
             "title": "Pretty Woman: The Musical",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7587-1616490616-prettywomansq160321.jpg?itok=68Wm2RRY",
             "location": "Savoy Theatre",
-            "dates": "To Sunday, 3 April, 2022",
-            "description": "Pretty Woman: The Musical is transferring to the Savoy Theatre from 8 July. West End tickets for Pretty Woman: The Musical at the Savoy Theatre are on sale now."
+            "dates": {
+                "from": "Wed Mar 30 2022",
+                "to": "Sun Apr 03 2022"
+            },
+            "description": "Pretty Woman: The Musical is transferring to the Savoy Theatre from 8 July. West End tickets for Pretty Woman: The Musical at the Savoy Theatre are on sale now.",
+            "price": "49.00",
+            "tickets_remaining": 41
         },
         {
             "title": "Frozen the Musical",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/23585-1627376742-frozenjul21todaytix280x280.jpg?itok=rEBmV8FN",
             "location": "Theatre Royal Drury Lane",
-            "dates": "To Sunday, 26 June, 2022",
-            "description": "Disney’s Frozen has opened at the newly-renovated Theatre Royal Drury Lane. Frozen tickets are on sale now."
+            "dates": {
+                "from": "Thu Jun 09 2022",
+                "to": "Sun Jun 26 2022"
+            },
+            "description": "Disney’s Frozen has opened at the newly-renovated Theatre Royal Drury Lane. Frozen tickets are on sale now.",
+            "price": "39.00",
+            "tickets_remaining": 34
         },
         {
             "title": "Cinderella The Musical",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7842-1624891594-cinderellasq28062021.jpg?itok=aChEVdxL",
             "location": "Gillian Lynne Theatre",
-            "dates": "To Sunday, 29 May, 2022",
-            "description": "Andrew Lloyd Webber’s Cinderella is the exciting new musical comedy starring Carrie Hope Fletcher, set to completely reinvent the world’s best-loved fairytale when it opens in London’s West End in July 2021."
+            "dates": {
+                "from": "Sat Apr 09 2022",
+                "to": "Sun May 29 2022"
+            },
+            "description": "Andrew Lloyd Webber’s Cinderella is the exciting new musical comedy starring Carrie Hope Fletcher, set to completely reinvent the world’s best-loved fairytale when it opens in London’s West End in July 2021.",
+            "price": "29.00",
+            "tickets_remaining": 81
         },
         {
             "title": "Disney's The Lion King",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/1001-1631897535-lkmar21encore280x280.jpg?itok=qvHoVWZS",
             "location": "Lyceum Theatre",
-            "dates": "To Tuesday, 30 November, 2021",
-            "description": "Walt Disney's long-running and multi-award winning The Lion King continues to delight audiences in London's West End."
+            "dates": {
+                "from": "Wed Nov 24 2021",
+                "to": "Tue Nov 30 2021"
+            },
+            "description": "Walt Disney's long-running and multi-award winning The Lion King continues to delight audiences in London's West End.",
+            "price": "69.00",
+            "tickets_remaining": 33
         },
         {
             "title": "The Drifters Girl",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7671-1627460629-dg104ttg500x500px.jpg?itok=SfEvs0V0",
             "location": "Garrick Theatre",
-            "dates": "Thursday, 4 November, 2021 To Saturday, 26 March, 2022",
-            "description": "The Queen of British Soul and West End leading lady Beverley Knight stars in the world premiere of brand new musical The Drifters Girl. Discover the remarkable story of The Drifters, one of the world’s greatest vocal groups, and the truth about the woman who made them."
+            "dates": {
+                "from": "Mon Jan 03 2022",
+                "to": "Sat Mar 26 2022"
+            },
+            "description": "The Queen of British Soul and West End leading lady Beverley Knight stars in the world premiere of brand new musical The Drifters Girl. Discover the remarkable story of The Drifters, one of the world’s greatest vocal groups, and the truth about the woman who made them.",
+            "price": "69.00",
+            "tickets_remaining": 119
         },
         {
             "title": "Cabaret",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/Cabaret500.jpg?itok=IDc9WvzM",
             "location": "Playhouse Theatre",
-            "dates": "To Saturday, 16 April, 2022",
-            "description": "From November 2021, Hollywood stars Eddie Redmayne and Jessie Buckley will welcome audiences to the cabaret, as West End venue the Playhouse Theatre is transformed into the Kit Kat Club."
+            "dates": {
+                "from": "Fri Jan 21 2022",
+                "to": "Sat Apr 16 2022"
+            },
+            "description": "From November 2021, Hollywood stars Eddie Redmayne and Jessie Buckley will welcome audiences to the cabaret, as West End venue the Playhouse Theatre is transformed into the Kit Kat Club.",
+            "price": "69.00",
+            "tickets_remaining": 242
         },
         {
             "title": "Hamilton",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/5388-1573115024-hamiltonsq071119.jpg?itok=i2G_BRxY",
             "location": "Victoria Palace Theatre",
-            "dates": "To Sunday, 2 January, 2022",
-            "description": "HAMILTON is the story of America's Founding Father Alexander Hamilton, an immigrant from the West Indies who became George Washington's right-hand man during the Revolutionary War and helped shape the very foundations of the America we know today. The score blends hip-hop, jazz, blues, rap, R&B and Broadway - the story of America then, as told by America now."
-        },
-        {
-            "title": "Hex",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/Hex500.jpg?itok=VwfbdgDr",
-            "location": "Olivier Theatre, National",
-            "dates": "",
-            "description": "Deep in the wood, a lonely fairy longs for someone to bless."
+            "dates": {
+                "from": "Thu Nov 04 2021",
+                "to": "Sun Jan 02 2022"
+            },
+            "description": "HAMILTON is the story of America's Founding Father Alexander Hamilton, an immigrant from the West Indies who became George Washington's right-hand man during the Revolutionary War and helped shape the very foundations of the America we know today. The score blends hip-hop, jazz, blues, rap, R&B and Broadway - the story of America then, as told by America now.",
+            "price": "59.00",
+            "tickets_remaining": 56
         },
         {
             "title": "Sister Act: The Musical",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/2069-1613469400-sisteractsq160221.jpg?itok=Ht1zY2yl",
             "location": "Eventim Apollo",
-            "dates": "To Sunday, 28 August, 2022",
-            "description": "Deloris van Cartier is a Reno lounge singer who witnesses her mobster boyfriend commit a murder, forcing her into witness protection. She's placed in a convent in California, in the hope she will adapt to the quiet lives of the nuns and stay out of trouble. The nuns assign her to the choir, where she naturally transforms them into a soulful gospel group and helps them find their voice. Sister Act will be revived at London's Eventim Apollo in 2022. "
+            "dates": {
+                "from": "Sat Jul 09 2022",
+                "to": "Sun Aug 28 2022"
+            },
+            "description": "Deloris van Cartier is a Reno lounge singer who witnesses her mobster boyfriend commit a murder, forcing her into witness protection. She's placed in a convent in California, in the hope she will adapt to the quiet lives of the nuns and stay out of trouble. The nuns assign her to the choir, where she naturally transforms them into a soulful gospel group and helps them find their voice. Sister Act will be revived at London's Eventim Apollo in 2022. ",
+            "price": "39.00",
+            "tickets_remaining": 96
         },
         {
             "title": "SIX the Musical",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/6451-1544609424-sixsq121218.jpg?itok=ohfCK4p5",
             "location": "Vaudeville Theatre",
-            "dates": "To Wednesday, 1 December, 2021",
-            "description": "DIVORCED. BEHEADED. LIVE IN CONCERT! From Tudor queens to pop princesses, the six wives of Henry VIII finally take the mic to tell their tale, remixing five hundred years of her-storical heartbreak into a 75-minute celebration.\n\n "
-        },
-        {
-            "title": "Spring Awakening",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/SA500.jpg?itok=PCasC1zT",
-            "location": "Almeida Theatre",
-            "dates": "",
-            "description": "Winner of the Tony and Olivier awards for best musical, Spring Awakening tells a story of adolescent anarchy, set to one of the most loved scores of the 21st century."
-        },
-        {
-            "title": "The Rhythmics",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/Rhythmics.png?itok=OemnNLws",
-            "location": "Southwark Playhouse",
-            "dates": "",
-            "description": "Calendar Girls meets The Full Monty in this joyous new British musical."
-        },
-        
-        {
-            "title": "‘West End Musical Christmas’ returns to London for one night only",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/homepage_latest_news/public/news_images/WEMC-300-111021_0.jpg?itok=JW8Hr4zY"
-        },
-        {
-            "title": "‘The Curious Incident of the Dog in the Night-Time’ 10th anniversary tour sets cast",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/homepage_latest_news/public/news_images/Curious-300-111021_0.jpg?itok=SiLzaOAx"
-        },
-        {
-            "title": "Daniel Boys and Emily Tierney to star in ‘Leonard Bernstein’s New York’",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/homepage_latest_news/public/news_images/Waterloo-300-111021_0.jpg?itok=sco7qPzr"
+            "dates": {
+                "from": "Sun Sep 05 2021",
+                "to": "Wed Dec 01 2021"
+            },
+            "description": "DIVORCED. BEHEADED. LIVE IN CONCERT! From Tudor queens to pop princesses, the six wives of Henry VIII finally take the mic to tell their tale, remixing five hundred years of her-storical heartbreak into a 75-minute celebration.\n\n ",
+            "price": "29.00",
+            "tickets_remaining": 297
         }
     ],
-    
-    "comedy" : [
-        
-        
-        {
-            "title": "Wicked",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/1587-1631897993-wickedfeb20encore500x500.jpg?itok=PtC9yrwu",
-            "location": "Apollo Victoria Theatre",
-            "dates": "To 31 May, 2022",
-            "description": "Since opening on Broadway in 2003, Wicked has taken the world of musical theatre by storm."
-        },
+    "comedy": [
         {
             "title": "Blithe Spirit",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/2527-1631880271-blithespirit1000x1000.jpg?itok=FgIyXXPj",
             "location": "Harold Pinter Theatre",
-            "dates": "To 6 November, 2021",
-            "description": "Blithe Spirit is centered on novelist Charles Condomine, who is attempting to conduct research into the occult and clairvoyance for his next novel. This production was first seen on the West End in 1941, running for nearly 2,000 performances."
+            "dates": {
+                "from": "Mon Aug 30 2021",
+                "to": "Sat Nov 06 2021"
+            },
+            "description": "Blithe Spirit is centered on novelist Charles Condomine, who is attempting to conduct research into the occult and clairvoyance for his next novel. This production was first seen on the West End in 1941, running for nearly 2,000 performances.",
+            "price": "29.00",
+            "tickets_remaining": 196
         },
         {
             "title": "The Shark is Broken",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7798-1631897953-tsib21q304ttg1080x1080.jpg?itok=hCd91XIs",
             "location": "Ambassadors Theatre",
-            "dates": "To 15 January, 2022",
-            "description": "The breakout hit of the 2019 Edinburgh Festival, The Shark is Broken is a hilarious and fascinating behind-the-scenes look at the disastrous shoot for what became an iconic blockbuster: Steven Spielberg’s movie Jaws. Now, this show is set to make a splash in the West End, so start planning your trip and get booking."
+            "dates": {
+                "from": "Tue Dec 07 2021",
+                "to": "Sat Jan 15 2022"
+            },
+            "description": "The breakout hit of the 2019 Edinburgh Festival, The Shark is Broken is a hilarious and fascinating behind-the-scenes look at the disastrous shoot for what became an iconic blockbuster: Steven Spielberg’s movie Jaws. Now, this show is set to make a splash in the West End, so start planning your trip and get booking.",
+            "price": "29.00",
+            "tickets_remaining": 133
         },
         {
             "title": "The Play That Goes Wrong",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/3942-1631897937-pt18053encore500x500pxls3.jpg?itok=fhyY2NDE",
             "location": "Duchess Theatre",
-            "dates": "To 30 January, 2022",
-            "description": "Putting Mischief Theatre firmly on the map, The Play That Goes Wrong continues to leave audiences in fits of giggles at the Duchess Theatre."
-        },
-        {
-            "title": "Only Fools and Horses - The Musical",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/6905-1631897330-705303ofahencore1080x1080.jpg?itok=LxrMkZd-",
-            "location": "Theatre Royal Haymarket",
-            "dates": "To 22 February, 2022",
-            "description": "A stage adaptation of the classic British sitcom Only Fools and Horses, co-written by Paul Whitehouse, will return to London's West End at the Theatre Royal Haymarket from October 2021."
-        },
-        {
-            "title": "Pretty Woman: The Musical",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7587-1616490616-prettywomansq160321.jpg?itok=68Wm2RRY",
-            "location": "Savoy Theatre",
-            "dates": "To 3 April, 2022",
-            "description": "Pretty Woman: The Musical is transferring to the Savoy Theatre from 8 July. West End tickets for Pretty Woman: The Musical at the Savoy Theatre are on sale now."
+            "dates": {
+                "from": "Fri Nov 26 2021",
+                "to": "Sun Jan 30 2022"
+            },
+            "description": "Putting Mischief Theatre firmly on the map, The Play That Goes Wrong continues to leave audiences in fits of giggles at the Duchess Theatre.",
+            "price": "59.00",
+            "tickets_remaining": 144
         },
         {
             "title": "Magic Goes Wrong",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7219-1579515496-mgwsq200120.jpg?itok=ukClneu8",
             "location": "Apollo Theatre",
-            "dates": "To 27 February, 2022",
-            "description": "Mischief Theatre collaborate with co-writers for the first time as they bring their new show Magic Goes Wrong, created with stage legends Penn and Teller, to the London stage at the Apollo Theatre."
-        },
-        {
-            "title": "Habeas Corpus",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/HC-500.jpg?itok=qwwX8rON",
-            "location": "Menier Chocolate Factory",
-            "dates": "",
-            "description": "The antics of the Wicksteed home are a darkly satirical merry-go-round in Alan Bennett’s Habeas Corpus.  Family, friends and the quest for sexual pleasures of the body (“corpus”) are the ruling passions in this farcical comedy of ill-manners. Through an escapade of mistaken identities and carnal encounters, one motto holds fast: “He whose lust lasts, lasts longest.”"
-        },
-        {
-            "title": "Peggy For You",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/Peggy-For-You-500.jpg?itok=2VKaluIj",
-            "location": "Hampstead Theatre",
-            "dates": "",
-            "description": "Agents are not supposed to be more famous than their clients – unless, of course, you are the formidable, outrageous and hilarious Peggy Ramsay… Alan Plater’s raucously funny play is peopled with characters who fall under the spell of this unlikely heroine, who believed infinitely more in art than she did in money – or in good manners."
+            "dates": {
+                "from": "Tue Feb 15 2022",
+                "to": "Sun Feb 27 2022"
+            },
+            "description": "Mischief Theatre collaborate with co-writers for the first time as they bring their new show Magic Goes Wrong, created with stage legends Penn and Teller, to the London stage at the Apollo Theatre.",
+            "price": "59.00",
+            "tickets_remaining": 125
         },
         {
             "title": "Pride and Prejudice* (sort of)",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/Pride500.jpg?itok=t2cSc9eg",
             "location": "Criterion Theatre",
-            "dates": "To 14 February, 2022",
-            "description": "It’s a truth universally acknowledged that a Jane Austen novel must be adapted - and this time, 30 years of pop hits and an irreverent all-female cast bring a bold new Pride and Prejudice to the Criterion Theatre!"
+            "dates": {
+                "from": "Sun Nov 28 2021",
+                "to": "Mon Feb 14 2022"
+            },
+            "description": "It’s a truth universally acknowledged that a Jane Austen novel must be adapted - and this time, 30 years of pop hits and an irreverent all-female cast bring a bold new Pride and Prejudice to the Criterion Theatre!",
+            "price": "59.00",
+            "tickets_remaining": 291
         },
         {
             "title": "Sh!t-faced Shakespeare: Macbeth",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7811-1581608284-stfacedsq130220.jpg?itok=l-yIGKiS",
             "location": "Leicester Square Theatre",
-            "dates": "To 11 September, 2021",
-            "description": "Sh!t-faced Shakespeare® is back for the 5th year at Leicester Square Theatre and it’s going to be a bloodbath, with their all-new production of Macbeth. Upon hearing the weird sisters’ prediction, Macbeth and his wily wife take matters into their own hands and burn down everything in their wake. Well, almost. Fair is foul and foul is fair in this tale of prophecy gone slightly off the rails. Perhaps an inebriated actor will help the process along?\n "
-        },
-        {
-            "title": "Sister Act: The Musical",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/2069-1613469400-sisteractsq160221.jpg?itok=Ht1zY2yl",
-            "location": "Eventim Apollo",
-            "dates": "To 28 August, 2022",
-            "description": "Deloris van Cartier is a Reno lounge singer who witnesses her mobster boyfriend commit a murder, forcing her into witness protection. She's placed in a convent in California, in the hope she will adapt to the quiet lives of the nuns and stay out of trouble. The nuns assign her to the choir, where she naturally transforms them into a soulful gospel group and helps them find their voice. Sister Act will be revived at London's Eventim Apollo in 2022. "
-        },
-        
-        {
-            "title": "‘West End Musical Christmas’ returns to London for one night only",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/homepage_latest_news/public/news_images/WEMC-300-111021_0.jpg?itok=JW8Hr4zY"
-        },
-        {
-            "title": "‘The Curious Incident of the Dog in the Night-Time’ 10th anniversary tour sets cast",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/homepage_latest_news/public/news_images/Curious-300-111021_0.jpg?itok=SiLzaOAx"
-        },
-        {
-            "title": "Daniel Boys and Emily Tierney to star in ‘Leonard Bernstein’s New York’",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/homepage_latest_news/public/news_images/Waterloo-300-111021_0.jpg?itok=sco7qPzr"
+            "dates": {
+                "from": "Tue Aug 03 2021",
+                "to": "Sat Sep 11 2021"
+            },
+            "description": "Sh!t-faced Shakespeare® is back for the 5th year at Leicester Square Theatre and it’s going to be a bloodbath, with their all-new production of Macbeth. Upon hearing the weird sisters’ prediction, Macbeth and his wily wife take matters into their own hands and burn down everything in their wake. Well, almost. Fair is foul and foul is fair in this tale of prophecy gone slightly off the rails. Perhaps an inebriated actor will help the process along?\n ",
+            "price": "39.00",
+            "tickets_remaining": 303
         }
-        
     ],
-    
-    
-    "plays & dramas" : [
+    "plays & dramas": [
         {
             "title": "Brian and Roger",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/6367-1633702926-br1080x1080.jpg?itok=n-7kDkc7",
             "location": "Menier Chocolate Factory",
-            "dates": " 21 October, 2021 To 18 December, 2021",
-            "description": "Brian and Roger met at a support group for recently divorced men. Roger was attending because he was genuinely grieving the loss of his marriage. Brian was instructed to attend by his solicitor if he wanted to dodge paying alimony. Roger is in need of guidance and support, which Brian willingly supplies. Both are starting again. Both are finding it hard. One of them is nice."
+            "dates": {
+                "from": "Mon Dec 13 2021",
+                "to": "Sat Dec 18 2021"
+            },
+            "description": "Brian and Roger met at a support group for recently divorced men. Roger was attending because he was genuinely grieving the loss of his marriage. Brian was instructed to attend by his solicitor if he wanted to dodge paying alimony. Roger is in need of guidance and support, which Brian willingly supplies. Both are starting again. Both are finding it hard. One of them is nice.",
+            "price": "59.00",
+            "tickets_remaining": 180
         },
         {
             "title": "The Woman in Black",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/1014-1631897970-wibtodaytix1080x1080may21.jpg?itok=hkEAc4-m",
             "location": "Fortune Theatre",
-            "dates": "To 2 April, 2022",
-            "description": "Special prices available"
+            "dates": {
+                "from": "Tue Mar 08 2022",
+                "to": "Sat Apr 02 2022"
+            },
+            "description": "Special prices available",
+            "price": "59.00",
+            "tickets_remaining": 320
         },
         {
             "title": "The Glass Menagerie",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/5994-1631621808-lsmttgtheglassmenagerie1080x1080.jpg?itok=K8SNsdl1",
             "location": "Duke of York's Theatre",
-            "dates": "To 27 August, 2022",
-            "description": "Six time Academy Award-nominated actress Amy Adams makes her West End debut in a new production of Tennessee Williams's celebrated memory play"
+            "dates": {
+                "from": "Tue Jun 28 2022",
+                "to": "Sat Aug 27 2022"
+            },
+            "description": "Six time Academy Award-nominated actress Amy Adams makes her West End debut in a new production of Tennessee Williams's celebrated memory play",
+            "price": "39.00",
+            "tickets_remaining": 57
         },
         {
             "title": "Harry Potter and the Cursed Child Parts One & Two",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7698-1630405650-hp21q2041ttgbuttons240x240.jpg?itok=vYKkbZ-j",
             "location": "Palace Theatre",
-            "dates": "To 27 March, 2022",
-            "description": "Performances of Harry Potter and the Cursed Child are set to recommence at the Palace Theatre from October 14. Harry Potter and the Cursed Child tickets are on sale now."
+            "dates": {
+                "from": "Tue Mar 15 2022",
+                "to": "Sun Mar 27 2022"
+            },
+            "description": "Performances of Harry Potter and the Cursed Child are set to recommence at the Palace Theatre from October 14. Harry Potter and the Cursed Child tickets are on sale now.",
+            "price": "49.00",
+            "tickets_remaining": 289
         },
         {
             "title": "Indecent",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7813-1631898058-indecent500x500.jpg?itok=411FqrCf",
             "location": "Menier Chocolate Factory",
-            "dates": "To 27 November, 2021",
-            "description": "Rather than being a play-in-a-play, Indecent dramatises the stories that surrounded a play’s opening over a century ago. Opinions have changed and viewpoints have shifted, but was Indecent an immoral take on society, or just ahead of its time."
+            "dates": {
+                "from": "Sun Oct 10 2021",
+                "to": "Sat Nov 27 2021"
+            },
+            "description": "Rather than being a play-in-a-play, Indecent dramatises the stories that surrounded a play’s opening over a century ago. Opinions have changed and viewpoints have shifted, but was Indecent an immoral take on society, or just ahead of its time.",
+            "price": "39.00",
+            "tickets_remaining": 315
         },
         {
             "title": "The Mirror and the Light",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/23366-1631897928-tmatltodaytix1080x1080.jpg?itok=OT38SQ_M",
             "location": "Gielgud Theatre",
-            "dates": "To 23 January, 2022",
-            "description": "Show of the Week - Special prices available "
+            "dates": {
+                "from": "Sun Dec 19 2021",
+                "to": "Sun Jan 23 2022"
+            },
+            "description": "Show of the Week - Special prices available ",
+            "price": "59.00",
+            "tickets_remaining": 198
         },
         {
             "title": "The Mousetrap",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/1031-1630084219-mousetrapjul21encore500x500-copy.jpg?itok=77L9ARUm",
             "location": "St. Martin's Theatre",
-            "dates": "To 30 November, 2021",
-            "description": "Agatha Christie's legendary 'whodunit' is still delighting and thrilling audiences in London's West End, as the show enters its 65th record-breaking year on stage. Running at the St."
-        },
-        {
-            "title": "Blithe Spirit",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/2527-1631880271-blithespirit1000x1000.jpg?itok=FgIyXXPj",
-            "location": "Harold Pinter Theatre",
-            "dates": "To 6 November, 2021",
-            "description": "Blithe Spirit is centered on novelist Charles Condomine, who is attempting to conduct research into the occult and clairvoyance for his next novel. This production was first seen on the West End in 1941, running for nearly 2,000 performances."
+            "dates": {
+                "from": "Wed Sep 22 2021",
+                "to": "Tue Nov 30 2021"
+            },
+            "description": "Agatha Christie's legendary 'whodunit' is still delighting and thrilling audiences in London's West End, as the show enters its 65th record-breaking year on stage. Running at the St.",
+            "price": "59.00",
+            "tickets_remaining": 256
         },
         {
             "title": "The Ocean At The End Of The Lane",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7838-1615201154-oceansq080321.jpg?itok=yf1FTmN9",
             "location": "Duke of York's Theatre",
-            "dates": " 23 October, 2021 To 12 February, 2022",
-            "description": "Following a sold out run at the National Theatre, the acclaimed production of The Ocean at the End of the Lane transfers to the West End in October 2021. Returning to his childhood home, a man finds himself standing beside the pond of the old Sussex farmhouse where he used to play. He’s transported to his 12th birthday when his friend Lettie claimed it wasn’t a pond, but an ocean…Plunged into a magical world, their survival depends on their ability to reckon with ancient forces that threaten to destroy everything around them."
+            "dates": {
+                "from": "Thu Jan 27 2022",
+                "to": "Sat Feb 12 2022"
+            },
+            "description": "Following a sold out run at the National Theatre, the acclaimed production of The Ocean at the End of the Lane transfers to the West End in October 2021. Returning to his childhood home, a man finds himself standing beside the pond of the old Sussex farmhouse where he used to play. He’s transported to his 12th birthday when his friend Lettie claimed it wasn’t a pond, but an ocean…Plunged into a magical world, their survival depends on their ability to reckon with ancient forces that threaten to destroy everything around them.",
+            "price": "59.00",
+            "tickets_remaining": 52
         },
         {
             "title": "The Merchant of Venice - Globe 2021/22",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/5302-1631535353-50311080x1080todaytixs.png?itok=ytaOYtPh",
             "location": "Sam Wanamaker Playhouse",
-            "dates": "To 9 April, 2022",
-            "description": "Director Abigail Graham shines candlelight on Shakespeare's complex exploration of prejudice, patriarchy and capitalism in the Sam Wanamaker Playhouse.\n\nIn a society that exploits minorities to keep the majority in power, identity is everything."
+            "dates": {
+                "from": "Tue Feb 15 2022",
+                "to": "Sat Apr 09 2022"
+            },
+            "description": "Director Abigail Graham shines candlelight on Shakespeare's complex exploration of prejudice, patriarchy and capitalism in the Sam Wanamaker Playhouse.\n\nIn a society that exploits minorities to keep the majority in power, identity is everything.",
+            "price": "49.00",
+            "tickets_remaining": 197
         },
         {
             "title": "Witness for the Prosecution by Agatha Christie",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/6259-1631898000-566607wftpencore500x500noquotes.jpg?itok=CYfTzmjB",
             "location": "London County Hall",
-            "dates": "To 20 March, 2022",
-            "description": "Developed with the support and involvement of the Christie family, the new production is directed by Lucy Bailey and will place the audience in the centre of the action within the courtroom"
+            "dates": {
+                "from": "Sat Mar 19 2022",
+                "to": "Sun Mar 20 2022"
+            },
+            "description": "Developed with the support and involvement of the Christie family, the new production is directed by Lucy Bailey and will place the audience in the centre of the action within the courtroom",
+            "price": "49.00",
+            "tickets_remaining": 327
         },
         {
             "title": "Hamlet - Globe 2021/22",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/3843-1631534252-winter-21-digi-ticket-assets-hamlet1080x1080.png?itok=RRjYQ4XP",
             "location": "Sam Wanamaker Playhouse",
-            "dates": "To 9 April, 2022",
-            "description": "Go inside the mind of Shakespeare's grief stricken prince as Hamlet is performed in the intimate confines of the Sam Wanamaker Playhouse for the first time."
+            "dates": {
+                "from": "Mon Mar 07 2022",
+                "to": "Sat Apr 09 2022"
+            },
+            "description": "Go inside the mind of Shakespeare's grief stricken prince as Hamlet is performed in the intimate confines of the Sam Wanamaker Playhouse for the first time.",
+            "price": "49.00",
+            "tickets_remaining": 315
         },
         {
             "title": "Measure for Measure - Globe 2021/22",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/23770-1631200524-50311080x1080todaytixs2.png?itok=-Yqt5qsl",
             "location": "Sam Wanamaker Playhouse",
-            "dates": "To 15 January, 2022",
-            "description": "Shakespeare's powerful and darkly comic Measure for Measure comes to thrilling life in the Sam Wanamaker Playhouse."
+            "dates": {
+                "from": "Thu Oct 28 2021",
+                "to": "Sat Jan 15 2022"
+            },
+            "description": "Shakespeare's powerful and darkly comic Measure for Measure comes to thrilling life in the Sam Wanamaker Playhouse.",
+            "price": "19.00",
+            "tickets_remaining": 302
         },
         {
             "title": "The Fir Tree - Globe 2021/22",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/23775-1631621053-50311080x1080todaytixs23.png?itok=k0DmGmAJ",
             "location": "Shakespeare's Globe Theatre",
-            "dates": " 20 December, 2021 To 30 December, 2021",
-            "description": "Based on the original fairy tale by Hans Christian Andersen"
-        },
-        {
-            "title": "The Shark is Broken",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7798-1631897953-tsib21q304ttg1080x1080.jpg?itok=hCd91XIs",
-            "location": "Ambassadors Theatre",
-            "dates": "To 15 January, 2022",
-            "description": "The breakout hit of the 2019 Edinburgh Festival, The Shark is Broken is a hilarious and fascinating behind-the-scenes look at the disastrous shoot for what became an iconic blockbuster: Steven Spielberg’s movie Jaws. Now, this show is set to make a splash in the West End, so start planning your trip and get booking."
+            "dates": {
+                "from": "Fri Dec 03 2021",
+                "to": "Thu Dec 30 2021"
+            },
+            "description": "Based on the original fairy tale by Hans Christian Andersen",
+            "price": "49.00",
+            "tickets_remaining": 115
         },
         {
             "title": "Leopoldstadt",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7411-1631897092-buttons1080x1080v1.jpg?itok=BYwu7I8F",
             "location": "Wyndham's Theatre",
-            "dates": "To 30 October, 2021",
-            "description": "A brand new Tom Stoppard play titled Leopoldstadt, which is described as \"likely his most personal play,\" is at the Wyndham's Theatre from August 2021. Leopoldstadt tickets are available on London Theatre now."
+            "dates": {
+                "from": "Mon Aug 23 2021",
+                "to": "Sat Oct 30 2021"
+            },
+            "description": "A brand new Tom Stoppard play titled Leopoldstadt, which is described as \"likely his most personal play,\" is at the Wyndham's Theatre from August 2021. Leopoldstadt tickets are available on London Theatre now.",
+            "price": "59.00",
+            "tickets_remaining": 217
         },
         {
             "title": "The Curious Incident of the Dog in the Night-Time",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/3703-1631881984-cur21q204ttg1080x1080.jpg?itok=Gc2xPSOC",
             "location": "Troubadour Wembley Park Theatre",
-            "dates": "To 9 January, 2022",
-            "description": "The National Theatre’s award-winning adaptation of Mark Haddon’s novel is back on a London stage, playing for seven weeks at the Troubadour Wembley Park Theatre. Don’t miss out on this extraordinary production: plan your trip and get booking tickets."
+            "dates": {
+                "from": "Mon Dec 27 2021",
+                "to": "Sun Jan 09 2022"
+            },
+            "description": "The National Theatre’s award-winning adaptation of Mark Haddon’s novel is back on a London stage, playing for seven weeks at the Troubadour Wembley Park Theatre. Don’t miss out on this extraordinary production: plan your trip and get booking tickets.",
+            "price": "19.00",
+            "tickets_remaining": 114
         },
         {
             "title": "The Comedy of Errors",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/23483-1631897474-ttgingressotmgatg1080x1080.jpg?itok=zYJChQPE",
             "location": "Barbican Theatre",
-            "dates": " 16 November, 2021 To 31 December, 2021",
-            "description": "The Royal Shakespeare Company’s glorious production of the Bard’s peerless farce The Comedy of Errors comes to London’s Barbican Theatre following its hit run in Stratford-upon-Avon. Don’t miss this magical tale of families lost and found, and not one but two sets of identical twins."
+            "dates": {
+                "from": "Thu Nov 25 2021",
+                "to": "Fri Dec 31 2021"
+            },
+            "description": "The Royal Shakespeare Company’s glorious production of the Bard’s peerless farce The Comedy of Errors comes to London’s Barbican Theatre following its hit run in Stratford-upon-Avon. Don’t miss this magical tale of families lost and found, and not one but two sets of identical twins.",
+            "price": "59.00",
+            "tickets_remaining": 49
         },
         {
             "title": "Oleanna",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/23139-1631897337-oleanna500x500.jpg?itok=fjb7uVj2",
             "location": "Arts Theatre",
-            "dates": "To 23 October, 2021",
-            "description": "David Mamet’s Oleanna is in London in 2021. Oleanna is at the Arts Theatre from July 2021. Oleanna tickets are available on London Theatre now."
+            "dates": {
+                "from": "Fri Aug 27 2021",
+                "to": "Sat Oct 23 2021"
+            },
+            "description": "David Mamet’s Oleanna is in London in 2021. Oleanna is at the Arts Theatre from July 2021. Oleanna tickets are available on London Theatre now.",
+            "price": "49.00",
+            "tickets_remaining": 329
         },
         {
             "title": "Life of Pi",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7640-1631897109-lop1000x1000encoreaff.jpg?itok=JDWW_Dq3",
             "location": "Wyndham's Theatre",
-            "dates": "To 27 February, 2022",
-            "description": "Following a critically and commercially successful world premiere at Sheffield’s Crucible Theatre, Life of Pi transfers to Wyndham’s Theatre in London. Life of Pi tickets are available on London Theatre now."
+            "dates": {
+                "from": "Fri Dec 17 2021",
+                "to": "Sun Feb 27 2022"
+            },
+            "description": "Following a critically and commercially successful world premiere at Sheffield’s Crucible Theatre, Life of Pi transfers to Wyndham’s Theatre in London. Life of Pi tickets are available on London Theatre now.",
+            "price": "29.00",
+            "tickets_remaining": 213
         },
         {
             "title": "Romeo & Juliet - Globe 2021",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/10002-1617350640-rjsq310321.jpg?itok=ywP062cQ",
             "location": "Shakespeare's Globe Theatre",
-            "dates": "To 17 October, 2021",
-            "description": "From historic feud to ill-fated union, Shakespeare’s Romeo & Juliet speaks of chance, destiny and fortune, and after some of the most fractious years in recent history, this universal tale finds new significance in 2021."
-        },
-        {
-            "title": "Magic Goes Wrong",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7219-1579515496-mgwsq200120.jpg?itok=ukClneu8",
-            "location": "Apollo Theatre",
-            "dates": "To 27 February, 2022",
-            "description": "Mischief Theatre collaborate with co-writers for the first time as they bring their new show Magic Goes Wrong, created with stage legends Penn and Teller, to the London stage at the Apollo Theatre."
+            "dates": {
+                "from": "Wed Sep 15 2021",
+                "to": "Sun Oct 17 2021"
+            },
+            "description": "From historic feud to ill-fated union, Shakespeare’s Romeo & Juliet speaks of chance, destiny and fortune, and after some of the most fractious years in recent history, this universal tale finds new significance in 2021.",
+            "price": "29.00",
+            "tickets_remaining": 86
         },
         {
             "title": "A Midsummer Night's Dream - Globe 2021",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/10001-1617350666-amsndsq310321.jpg?itok=oH_rz9wQ",
             "location": "Shakespeare's Globe Theatre",
-            "dates": "To 30 October, 2021",
-            "description": "Get ready for a fiesta like no other as the 2019 production of Shakespeare’s A Midsummer Night’s Dream returns with piñatas, streamers, glitter and a cacophony of brass."
+            "dates": {
+                "from": "Mon Oct 11 2021",
+                "to": "Sat Oct 30 2021"
+            },
+            "description": "Get ready for a fiesta like no other as the 2019 production of Shakespeare’s A Midsummer Night’s Dream returns with piñatas, streamers, glitter and a cacophony of brass.",
+            "price": "29.00",
+            "tickets_remaining": 292
         },
         {
             "title": "Twelfth Night - Globe 2021",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/10003-1617351098-12nsq310321.jpg?itok=qccyvegz",
             "location": "Shakespeare's Globe Theatre",
-            "dates": "To 30 October, 2021",
-            "description": "Shakespeare’s comedy of mistaken identity, music and the madness of love, Twelfth Night, finds new life this summer in the Globe Theatre."
+            "dates": {
+                "from": "Fri Aug 27 2021",
+                "to": "Sat Oct 30 2021"
+            },
+            "description": "Shakespeare’s comedy of mistaken identity, music and the madness of love, Twelfth Night, finds new life this summer in the Globe Theatre.",
+            "price": "69.00",
+            "tickets_remaining": 159
         }
-        
     ]
-    
 }
