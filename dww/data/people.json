@@ -2,12 +2,21 @@
     "number_of_results": 20,
     "results": [
         {
-            "name": { "first": "Isaac", "last": "Butler" },
-            "date_of_birth": { "date": "1955-12-03T02:05:33", "age": 66 },
+            "name": {
+                "first": "Isaac",
+                "last": "Butler"
+            },
+            "date_of_birth": {
+                "date": "1955-12-03T02:05:33",
+                "age": 66
+            },
             "email": "isaac.butler@example.com",
             "phone": "+013873 78226",
             "location": {
-                "street": { "number": 8674, "name": "South Street" },
+                "street": {
+                    "number": 8674,
+                    "name": "South Street"
+                },
                 "city": "Chichester",
                 "state": "Hampshire",
                 "country": "United Kingdom",
@@ -25,12 +34,21 @@
             "registered": "2015-05-02T05:20:40"
         },
         {
-            "name": { "first": "Heiko", "last": "Rousseau" },
-            "date_of_birth": { "date": "1975-11-17T19:04:07", "age": 46 },
+            "name": {
+                "first": "Heiko",
+                "last": "Rousseau"
+            },
+            "date_of_birth": {
+                "date": "1975-11-17T19:04:07",
+                "age": 46
+            },
             "email": "heiko.rousseau@example.com",
             "phone": "+077 885 24 32",
             "location": {
-                "street": { "number": 8069, "name": "Rue du Bât-D'Argent" },
+                "street": {
+                    "number": 8069,
+                    "name": "Rue du Bât-D'Argent"
+                },
                 "city": "Staldenried",
                 "state": "Thurgau",
                 "country": "Switzerland",
@@ -48,12 +66,21 @@
             "registered": "2017-03-16T09:53:03"
         },
         {
-            "name": { "first": "Vivan", "last": "Matthews" },
-            "date_of_birth": { "date": "1977-06-07T22:33:15", "age": 44 },
+            "name": {
+                "first": "Vivan",
+                "last": "Matthews"
+            },
+            "date_of_birth": {
+                "date": "1977-06-07T22:33:15",
+                "age": 44
+            },
             "email": "vivan.matthews@example.com",
             "phone": "+01-8859-9669",
             "location": {
-                "street": { "number": 4531, "name": "Central St" },
+                "street": {
+                    "number": 4531,
+                    "name": "Central St"
+                },
                 "city": "Townsville",
                 "state": "New South Wales",
                 "country": "Australia",
@@ -71,12 +98,21 @@
             "registered": "2016-08-11T11:17:56"
         },
         {
-            "name": { "first": "Ofélia", "last": "Viana" },
-            "date_of_birth": { "date": "1966-11-06T04:01:14", "age": 55 },
+            "name": {
+                "first": "Ofélia",
+                "last": "Viana"
+            },
+            "date_of_birth": {
+                "date": "1966-11-06T04:01:14",
+                "age": 55
+            },
             "email": "ofelia.viana@example.com",
             "phone": "+(00) 3070-2552",
             "location": {
-                "street": { "number": 8799, "name": "Rua Duque de Caxias " },
+                "street": {
+                    "number": 8799,
+                    "name": "Rua Duque de Caxias "
+                },
                 "city": "Castanhal",
                 "state": "Santa Catarina",
                 "country": "Brazil",
@@ -94,12 +130,21 @@
             "registered": "2020-05-05T07:29:53"
         },
         {
-            "name": { "first": "Niko", "last": "Kunath" },
-            "date_of_birth": { "date": "1969-07-16T21:16:02", "age": 52 },
+            "name": {
+                "first": "Niko",
+                "last": "Kunath"
+            },
+            "date_of_birth": {
+                "date": "1969-07-16T21:16:02",
+                "age": 52
+            },
             "email": "niko.kunath@example.com",
             "phone": "+0405-9232631",
             "location": {
-                "street": { "number": 1292, "name": "Beethovenstraße" },
+                "street": {
+                    "number": 1292,
+                    "name": "Beethovenstraße"
+                },
                 "city": "Zwiesel",
                 "state": "Thüringen",
                 "country": "Germany",
@@ -117,12 +162,21 @@
             "registered": "2014-04-27T03:47:22"
         },
         {
-            "name": { "first": "Andrea", "last": "Møller" },
-            "date_of_birth": { "date": "1987-07-10T04:27:33", "age": 34 },
+            "name": {
+                "first": "Andrea",
+                "last": "Møller"
+            },
+            "date_of_birth": {
+                "date": "1987-07-10T04:27:33",
+                "age": 34
+            },
             "email": "andrea.moller@example.com",
             "phone": "+03317327",
             "location": {
-                "street": { "number": 1212, "name": "Vejlby Toften" },
+                "street": {
+                    "number": 1212,
+                    "name": "Vejlby Toften"
+                },
                 "city": "Pandrup",
                 "state": "Hovedstaden",
                 "country": "Denmark",
@@ -140,12 +194,21 @@
             "registered": "2019-05-16T06:12:28"
         },
         {
-            "name": { "first": "Jocelaine", "last": "Rodrigues" },
-            "date_of_birth": { "date": "1973-01-19T05:17:19", "age": 48 },
+            "name": {
+                "first": "Jocelaine",
+                "last": "Rodrigues"
+            },
+            "date_of_birth": {
+                "date": "1973-01-19T05:17:19",
+                "age": 48
+            },
             "email": "jocelaine.rodrigues@example.com",
             "phone": "+(48) 2635-3633",
             "location": {
-                "street": { "number": 7709, "name": "Travessa dos Açorianos" },
+                "street": {
+                    "number": 7709,
+                    "name": "Travessa dos Açorianos"
+                },
                 "city": "Araguaína",
                 "state": "Paraíba",
                 "country": "Brazil",
@@ -163,12 +226,21 @@
             "registered": "2015-01-21T11:42:50"
         },
         {
-            "name": { "first": "Albert", "last": "Lord" },
-            "date_of_birth": { "date": "1966-10-07T01:43:41", "age": 55 },
+            "name": {
+                "first": "Albert",
+                "last": "Lord"
+            },
+            "date_of_birth": {
+                "date": "1966-10-07T01:43:41",
+                "age": 55
+            },
             "email": "albert.lord@example.com",
             "phone": "+031-566-0850",
             "location": {
-                "street": { "number": 9948, "name": "Henry Street" },
+                "street": {
+                    "number": 9948,
+                    "name": "Henry Street"
+                },
                 "city": "Midleton",
                 "state": "Wexford",
                 "country": "Ireland",
@@ -186,12 +258,21 @@
             "registered": "2021-09-25T10:28:07"
         },
         {
-            "name": { "first": "Florence", "last": "Gardner" },
-            "date_of_birth": { "date": "1993-09-20T11:57:09", "age": 28 },
+            "name": {
+                "first": "Florence",
+                "last": "Gardner"
+            },
+            "date_of_birth": {
+                "date": "1993-09-20T11:57:09",
+                "age": 28
+            },
             "email": "florence.gardner@example.com",
             "phone": "+(344)-421-2170",
             "location": {
-                "street": { "number": 3409, "name": "E Pecan St" },
+                "street": {
+                    "number": 3409,
+                    "name": "E Pecan St"
+                },
                 "city": "Chandler",
                 "state": "Arizona",
                 "country": "United States",
@@ -209,12 +290,21 @@
             "registered": "2015-09-19T09:58:44"
         },
         {
-            "name": { "first": "Marion", "last": "Fontai" },
-            "date_of_birth": { "date": "1978-04-02T15:56:42", "age": 43 },
+            "name": {
+                "first": "Marion",
+                "last": "Fontai"
+            },
+            "date_of_birth": {
+                "date": "1978-04-02T15:56:42",
+                "age": 43
+            },
             "email": "marion.fontai@example.com",
             "phone": "+02-26-42-87-61",
             "location": {
-                "street": { "number": 515, "name": "Avenue du Château" },
+                "street": {
+                    "number": 515,
+                    "name": "Avenue du Château"
+                },
                 "city": "Toulon",
                 "state": "Hautes-Alpes",
                 "country": "France",
@@ -232,12 +322,21 @@
             "registered": "2015-08-26T09:22:16"
         },
         {
-            "name": { "first": "Julian", "last": "Bailey" },
-            "date_of_birth": { "date": "1975-12-10T11:09:00", "age": 46 },
+            "name": {
+                "first": "Julian",
+                "last": "Bailey"
+            },
+            "date_of_birth": {
+                "date": "1975-12-10T11:09:00",
+                "age": 46
+            },
             "email": "julian.bailey@example.com",
             "phone": "+015242 98932",
             "location": {
-                "street": { "number": 4416, "name": "Park Lane" },
+                "street": {
+                    "number": 4416,
+                    "name": "Park Lane"
+                },
                 "city": "Southampton",
                 "state": "Bedfordshire",
                 "country": "United Kingdom",
@@ -255,12 +354,21 @@
             "registered": "2020-09-03T07:23:02"
         },
         {
-            "name": { "first": "Jerome", "last": "Oliver" },
-            "date_of_birth": { "date": "1984-12-20T01:45:47", "age": 37 },
+            "name": {
+                "first": "Jerome",
+                "last": "Oliver"
+            },
+            "date_of_birth": {
+                "date": "1984-12-20T01:45:47",
+                "age": 37
+            },
             "email": "jerome.oliver@example.com",
             "phone": "+03-7023-0074",
             "location": {
-                "street": { "number": 5914, "name": "Eason Rd" },
+                "street": {
+                    "number": 5914,
+                    "name": "Eason Rd"
+                },
                 "city": "Wagga Wagga",
                 "state": "South Australia",
                 "country": "Australia",
@@ -278,12 +386,21 @@
             "registered": "2018-01-03T10:00:53"
         },
         {
-            "name": { "first": "Adelheid", "last": "Renaud" },
-            "date_of_birth": { "date": "1978-02-09T03:49:49", "age": 43 },
+            "name": {
+                "first": "Adelheid",
+                "last": "Renaud"
+            },
+            "date_of_birth": {
+                "date": "1978-02-09T03:49:49",
+                "age": 43
+            },
             "email": "adelheid.renaud@example.com",
             "phone": "+078 704 59 09",
             "location": {
-                "street": { "number": 5226, "name": "Rue des Jardins" },
+                "street": {
+                    "number": 5226,
+                    "name": "Rue des Jardins"
+                },
                 "city": "Hölstein",
                 "state": "Schaffhausen",
                 "country": "Switzerland",
@@ -301,12 +418,21 @@
             "registered": "2020-03-08T11:06:46"
         },
         {
-            "name": { "first": "Bill", "last": "Chapman" },
-            "date_of_birth": { "date": "1985-04-14T06:36:11", "age": 36 },
+            "name": {
+                "first": "Bill",
+                "last": "Chapman"
+            },
+            "date_of_birth": {
+                "date": "1985-04-14T06:36:11",
+                "age": 36
+            },
             "email": "bill.chapman@example.com",
             "phone": "+01-5219-0553",
             "location": {
-                "street": { "number": 4687, "name": "Parker Rd" },
+                "street": {
+                    "number": 4687,
+                    "name": "Parker Rd"
+                },
                 "city": "Toowoomba",
                 "state": "Queensland",
                 "country": "Australia",
@@ -324,12 +450,21 @@
             "registered": "2017-02-17T04:32:38"
         },
         {
-            "name": { "first": "Ronald", "last": "Cruz" },
-            "date_of_birth": { "date": "1960-08-15T19:24:15", "age": 61 },
+            "name": {
+                "first": "Ronald",
+                "last": "Cruz"
+            },
+            "date_of_birth": {
+                "date": "1960-08-15T19:24:15",
+                "age": 61
+            },
             "email": "ronald.cruz@example.com",
             "phone": "+0117936 083 9836",
             "location": {
-                "street": { "number": 5789, "name": "Queen Street" },
+                "street": {
+                    "number": 5789,
+                    "name": "Queen Street"
+                },
                 "city": "Salford",
                 "state": "County Down",
                 "country": "United Kingdom",
@@ -347,12 +482,21 @@
             "registered": "2021-08-06T07:15:22"
         },
         {
-            "name": { "first": "Lesly", "last": "Den Hoedt" },
-            "date_of_birth": { "date": "1956-07-30T22:40:36", "age": 65 },
+            "name": {
+                "first": "Lesly",
+                "last": "Den Hoedt"
+            },
+            "date_of_birth": {
+                "date": "1956-07-30T22:40:36",
+                "age": 65
+            },
             "email": "lesly.denhoedt@example.com",
             "phone": "+(340)-935-4549",
             "location": {
-                "street": { "number": 9780, "name": "Bergsebosdreef" },
+                "street": {
+                    "number": 9780,
+                    "name": "Bergsebosdreef"
+                },
                 "city": "Oosthem",
                 "state": "Utrecht",
                 "country": "Netherlands",
@@ -370,12 +514,21 @@
             "registered": "2017-09-04T03:12:59"
         },
         {
-            "name": { "first": "Carl", "last": "Thomsen" },
-            "date_of_birth": { "date": "1968-12-23T08:22:08", "age": 53 },
+            "name": {
+                "first": "Carl",
+                "last": "Thomsen"
+            },
+            "date_of_birth": {
+                "date": "1968-12-23T08:22:08",
+                "age": 53
+            },
             "email": "carl.thomsen@example.com",
             "phone": "+86926255",
             "location": {
-                "street": { "number": 7442, "name": "Østerbyvej" },
+                "street": {
+                    "number": 7442,
+                    "name": "Østerbyvej"
+                },
                 "city": "Kongsvinger",
                 "state": "Nordjylland",
                 "country": "Denmark",
@@ -393,12 +546,21 @@
             "registered": "2020-09-29T05:23:32"
         },
         {
-            "name": { "first": "Grace", "last": "Hudson" },
-            "date_of_birth": { "date": "1990-08-20T19:57:14", "age": 31 },
+            "name": {
+                "first": "Grace",
+                "last": "Hudson"
+            },
+            "date_of_birth": {
+                "date": "1990-08-20T19:57:14",
+                "age": 31
+            },
             "email": "grace.hudson@example.com",
             "phone": "+(267)-078-5269",
             "location": {
-                "street": { "number": 8103, "name": "Northaven Rd" },
+                "street": {
+                    "number": 8103,
+                    "name": "Northaven Rd"
+                },
                 "city": "Scurry",
                 "state": "New York",
                 "country": "United States",
@@ -416,12 +578,21 @@
             "registered": "2019-11-28T07:14:29"
         },
         {
-            "name": { "first": "Elma", "last": "Meling" },
-            "date_of_birth": { "date": "1986-07-11T23:54:06", "age": 35 },
+            "name": {
+                "first": "Elma",
+                "last": "Meling"
+            },
+            "date_of_birth": {
+                "date": "1986-07-11T23:54:06",
+                "age": 35
+            },
             "email": "elma.meling@example.com",
             "phone": "+63282890",
             "location": {
-                "street": { "number": 8695, "name": "Elvefaret" },
+                "street": {
+                    "number": 8695,
+                    "name": "Elvefaret"
+                },
                 "city": "Foldrøy",
                 "state": "Vestfold",
                 "country": "Norway",
@@ -439,12 +610,21 @@
             "registered": "2018-03-21T07:53:47"
         },
         {
-            "name": { "first": "Lily", "last": "Montgomery" },
-            "date_of_birth": { "date": "1993-06-26T09:57:57", "age": 28 },
+            "name": {
+                "first": "Lily",
+                "last": "Montgomery"
+            },
+            "date_of_birth": {
+                "date": "1993-06-26T09:57:57",
+                "age": 28
+            },
             "email": "lily.montgomery@example.com",
             "phone": "+015395 56171",
             "location": {
-                "street": { "number": 516, "name": "Broadway" },
+                "street": {
+                    "number": 516,
+                    "name": "Broadway"
+                },
                 "city": "Worcester",
                 "state": "Buckinghamshire",
                 "country": "United Kingdom",
