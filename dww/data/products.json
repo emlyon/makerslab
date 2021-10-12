@@ -80,14 +80,7 @@
         
         "asics" : [
             
-            {
-                "name": "GEL-QUANTUM 180 6",
-                "brand": "ASICS",
-                "price": "€ 140,00",
-                "description": "Soyez sûr d’améliorer votre performance avec l’Asics Gel-Quantum 180 6 !",
-                "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw799244c0/images/hi-res/001488136_101.png?sw=300&sh=300&sm=fit"
-            },
+
             {
                 "name": "GEL-QUANTUM 360 6 UTILITY",
                 "brand": "ASICS",
@@ -103,31 +96,8 @@
                 "description": "The Gel-Quantum 360 6: a high-end running shoe",
                 "gender": "MEN",
                 "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw860ca7af/images/hi-res/001478357_101.png?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "GEL-VENTURE 6",
-                "brand": "ASICS",
-                "price": "€ 85,00",
-                "description": "Devenez un pro du running avec l’Asics Gel-Venture 6 !",
-                "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw47d52749/images/hi-res/001493052_101.png?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "GEL-QUANTUM 360 6",
-                "brand": "ASICS",
-                "price": "€ 170,00",
-                "description": "Sportif en toute circonstance avec les sneakers Gel-Quantum 360 6",
-                "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw8824f384/images/hi-res/001493038_101.png?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "GEL-QUANTUM 360 6 UTILITY",
-                "brand": "ASICS",
-                "price": "€ 170,00",
-                "description": "Réveillez l’athlète qui sommeille en vous avec l’Asics Gel-Quantum 360 6 Trail",
-                "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw3cd510e8/images/hi-res/001493039_101.png?sw=300&sh=300&sm=fit"
             }
+
         ],
         
         "converse" :[
@@ -155,22 +125,7 @@
                 "gender": "WOMEN",
                 "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw0903e4c6/images/hi-res/001493410_101.png?sw=300&sh=300&sm=fit"
             },
-            {
-                "name": "CHUCK TAYLOR ALL STAR HI",
-                "brand": "CONVERSE",
-                "price": "€ 75,00",
-                "description": "null",
-                "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwb109c015/images/hi-res/001493453_101.png?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "CHUCK TAYLOR ALL STAR LIFT HI 2X",
-                "brand": "CONVERSE",
-                "price": "€ 90,00",
-                "description": "La Converse Chuck Taylor All Star High Lift 2X : pour un look audacieux signé Converse !",
-                "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw7affb455/images/hi-res/001492563_101.png?sw=300&sh=300&sm=fit"
-            },
+
             {
                 "name": "CHUCK TAYLOR ALL STAR MOVE OX",
                 "brand": "CONVERSE",
@@ -179,14 +134,7 @@
                 "gender": "WOMEN",
                 "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw0146d97b/images/hi-res/001491224_101.png?sw=300&sh=300&sm=fit"
             },
-            {
-                "name": "CHUCK TAYLOR ALL STAR LIFT HI 2X",
-                "brand": "CONVERSE",
-                "price": "€ 90,00",
-                "description": "Prenez de la hauteur avec les sneakers CTAS Lift Hi",
-                "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw5e1b7bb7/images/hi-res/001492562_101.png?sw=300&sh=300&sm=fit"
-            }
+
         ],
         
         
@@ -228,55 +176,8 @@
                 "description": "Stay on top of the game with the New Balance 327 sneakers",
                 "gender": "MEN",
                 "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwd8cdc9ca/images/hi-res/001490182_101.png?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "574",
-                "brand": "NEW BALANCE",
-                "price": "€ 100,00",
-                "description": "Optez pour un look automnal avec la New Balance 574 !",
-                "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw43a8ce99/images/hi-res/001493942_101.png?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "327",
-                "brand": "NEW BALANCE",
-                "price": "€ 110,00",
-                "description": "Le rétro running n’est jamais démodé avec les sneakers New Balance",
-                "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw0c764d27/images/hi-res/001492850_101.png?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "327 PATCHWORK",
-                "brand": "NEW BALANCE",
-                "price": "€ 110,00",
-                "description": "De la couleur dans votre look sportswear avec les sneakers 327",
-                "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw75a0a636/images/hi-res/001493926_101.png?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "574",
-                "brand": "NEW BALANCE",
-                "price": "€ 100,00",
-                "description": "Optez pour un look haut en couleur avec la New Balance 574 !",
-                "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw0dc94aca/images/hi-res/001492851_101.png?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "327 PATCHWORK",
-                "brand": "NEW BALANCE",
-                "price": "€ 110,00",
-                "description": "Féminine en sportswear avec les sneakers 327 de New Balance",
-                "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwac3e653c/images/hi-res/001493927_101.png?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "574 PASTEL",
-                "brand": "NEW BALANCE",
-                "price": "€ 99,00",
-                "description": "Optez pour un look frais avec la New Balance 574 !",
-                "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwedb83597/images/hi-res/001489342_101.png?sw=300&sh=300&sm=fit"
             }
+
         ],
         
         
@@ -306,14 +207,7 @@
                 "gender": "MEN",
                 "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwd6ecac44/images/hi-res/001492337_101.png?sw=300&sh=300&sm=fit"
             },
-            {
-                "name": "AIR FORCE 1 LUXE",
-                "brand": "NIKE",
-                "price": "€ 150,00",
-                "description": "null",
-                "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw7733e237/images/hi-res/001492348_101.png?sw=300&sh=300&sm=fit"
-            },
+
             {
                 "name": "AIR MAX 96 II",
                 "brand": "NIKE",
@@ -322,22 +216,7 @@
                 "gender": "MEN",
                 "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwfbc8f8df/images/hi-res/001493768_101.png?sw=300&sh=300&sm=fit"
             },
-            {
-                "name": "AIR FORCE 1 LOW NBA 75TH",
-                "brand": "NIKE",
-                "price": "€ 125,00",
-                "description": "null",
-                "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw8e6d8323/images/hi-res/001495754_101.jpg?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "AIR MAX 96 II",
-                "brand": "NIKE",
-                "price": "€ 170,00",
-                "description": "La Nike Air Max 96 II : idéale pour le running !",
-                "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwa952091a/images/hi-res/001495081_101.png?sw=300&sh=300&sm=fit"
-            },
+
             {
                 "name": "AIR FORCE 1 LOW FIRST USE",
                 "brand": "NIKE",
@@ -354,14 +233,7 @@
                 "gender": "MEN",
                 "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw1fca39e9/images/hi-res/001492384_101.png?sw=300&sh=300&sm=fit"
             },
-            {
-                "name": "AIR MAX 90",
-                "brand": "NIKE",
-                "price": "€ 140,00",
-                "description": "Célébrez l’histoire de la marque au Swoosh avec la Nike Air Max 90",
-                "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw31b63726/images/hi-res/001495046_101.png?sw=300&sh=300&sm=fit"
-            },
+
             {
                 "name": "AIR MAX 2021",
                 "brand": "NIKE",
@@ -378,14 +250,7 @@
                 "gender": "MEN",
                 "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw8cc94db9/images/hi-res/001490308_101.png?sw=300&sh=300&sm=fit"
             },
-            {
-                "name": "AIR HUARACHE",
-                "brand": "NIKE",
-                "price": "€ 120,00",
-                "description": "null",
-                "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwa20e1d69/images/hi-res/001493563_101.png?sw=300&sh=300&sm=fit"
-            },
+
             {
                 "name": "REACT VISION SUMMER OF SPORTS",
                 "brand": "NIKE",
@@ -466,30 +331,8 @@
                 "gender": "WOMEN",
                 "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw1a4a1bc2/images/hi-res/001491639_101.png?sw=300&sh=300&sm=fit"
             },
-            {
-                "name": "AIR FORCE 1 LUXE",
-                "brand": "NIKE",
-                "price": "€ 150,00",
-                "description": "La Nike Air Force 1 Luxe : une version premium d’un modèle incontournable !",
-                "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw8fb246dc/images/hi-res/001493901_101.png?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "AIR FORCE 1 SHADOW",
-                "brand": "NIKE",
-                "price": "€ 125,00",
-                "description": "La Nike Air Force 1 Shadow : pour deux fois plus de style !",
-                "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwc3134d5c/images/hi-res/001494940_101.png?sw=300&sh=300&sm=fit"
-            },
-            {
-                "name": "AIR FORCE 1 PIXEL",
-                "brand": "NIKE",
-                "price": "€ 125,00",
-                "description": "null",
-                "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwce72e013/images/hi-res/001494933_101.png?sw=300&sh=300&sm=fit"
-            },
+
+
             {
                 "name": "AIR FORCE 1 LOW",
                 "brand": "NIKE",
@@ -542,15 +385,7 @@
         
         "puma" : [
             
-            
-            {
-                "name": "RS-Z",
-                "brand": "PUMA",
-                "price": "€ 119,00",
-                "description": "Les sneakers Puma RS-Z pour un look sportwear, audacieux et confortable",
-                "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw5409c0a8/images/hi-res/001492024_101.png?sw=300&sh=300&sm=fit"
-            },
+
             {
                 "name": "RS-Z LTH",
                 "brand": "PUMA",
@@ -567,14 +402,7 @@
                 "gender": "WOMEN",
                 "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwa25fe6bb/images/hi-res/001491369_101.png?sw=300&sh=300&sm=fit"
             },
-            {
-                "name": "MAYZE MIX",
-                "brand": "PUMA",
-                "price": "€ 100,00",
-                "description": "Révélez votre féminité avec la Puma Mayze Mix !",
-                "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw954d19ba/images/hi-res/001491511_101.png?sw=300&sh=300&sm=fit"
-            },
+
             {
                 "name": "MAYZE CLASSIC",
                 "brand": "PUMA",
