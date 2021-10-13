@@ -1,0 +1,645 @@
+{
+    "number_of_results": 20,
+    "results": [
+        {
+            "name": {
+                "first": "Isaac",
+                "last": "Butler"
+            },
+            "date_of_birth": {
+                "date": "1985-12-03T02:05:33",
+                "age": 36
+            },
+            "email": "isaac.butler@example.com",
+            "phone": "+013873 78226",
+            "location": {
+                "street": {
+                    "number": 8674,
+                    "name": "South Street"
+                },
+                "city": "Chichester",
+                "state": "Hampshire",
+                "country": "United Kingdom",
+                "postcode": "G6 8TA"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/85.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/85.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/85.jpg"
+            },
+            "company": "VITRICOMP",
+            "isActive": true,
+            "monthly_wage": 1673.99,
+            "about": "Thinker. Coffee enthusiast. Hardcore bacon fan. Infuriatingly humble tv aficionado.",
+            "registered": "2015-05-02T05:20:40"
+        },
+        {
+            "name": {
+                "first": "Heiko",
+                "last": "Rousseau"
+            },
+            "date_of_birth": {
+                "date": "1986-11-17T19:04:07",
+                "age": 35
+            },
+            "email": "heiko.rousseau@example.com",
+            "phone": "+077 885 24 32",
+            "location": {
+                "street": {
+                    "number": 8069,
+                    "name": "Rue du Bât-D'Argent"
+                },
+                "city": "Staldenried",
+                "state": "Thurgau",
+                "country": "Switzerland",
+                "postcode": 8658
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/40.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/40.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/40.jpg"
+            },
+            "company": "XTH",
+            "isActive": false,
+            "monthly_wage": 1680.12,
+            "about": "Music fanatic. Social media geek. Professional creator. Coffee buff. Twitter junkie. Writer. Travel scholar.",
+            "registered": "2017-03-16T09:53:03"
+        },
+        {
+            "name": {
+                "first": "Vivan",
+                "last": "Matthews"
+            },
+            "date_of_birth": {
+                "date": "1977-06-07T22:33:15",
+                "age": 44
+            },
+            "email": "vivan.matthews@example.com",
+            "phone": "+01-8859-9669",
+            "location": {
+                "street": {
+                    "number": 4531,
+                    "name": "Central St"
+                },
+                "city": "Townsville",
+                "state": "New South Wales",
+                "country": "Australia",
+                "postcode": 5830
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/48.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/48.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/48.jpg"
+            },
+            "company": "ZORK",
+            "isActive": true,
+            "monthly_wage": 2944.49,
+            "about": "Lifelong social media aficionado. Infuriatingly humble zombie trailblazer.",
+            "registered": "2016-08-11T11:17:56"
+        },
+        {
+            "name": {
+                "first": "Ofélia",
+                "last": "Viana"
+            },
+            "date_of_birth": {
+                "date": "1986-11-06T04:01:14",
+                "age": 35
+            },
+            "email": "ofelia.viana@example.com",
+            "phone": "+(00) 3070-2552",
+            "location": {
+                "street": {
+                    "number": 8799,
+                    "name": "Rua Duque de Caxias "
+                },
+                "city": "Castanhal",
+                "state": "Santa Catarina",
+                "country": "Brazil",
+                "postcode": 79812
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/16.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/16.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/16.jpg"
+            },
+            "company": "GEEKETRON",
+            "isActive": true,
+            "monthly_wage": 3575.31,
+            "about": "Explorer. Social media nerd. Hipster-friendly reader. Travel specialist. Extreme gamer. Musicaholic. Twitter buff.",
+            "registered": "2020-05-05T07:29:53"
+        },
+        {
+            "name": {
+                "first": "Niko",
+                "last": "Kunath"
+            },
+            "date_of_birth": {
+                "date": "1979-07-16T21:16:02",
+                "age": 42
+            },
+            "email": "niko.kunath@example.com",
+            "phone": "+0405-9232631",
+            "location": {
+                "street": {
+                    "number": 1292,
+                    "name": "Beethovenstraße"
+                },
+                "city": "Zwiesel",
+                "state": "Thüringen",
+                "country": "Germany",
+                "postcode": 49642
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/69.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/69.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/69.jpg"
+            },
+            "company": "BOILICON",
+            "isActive": false,
+            "monthly_wage": 2565.03,
+            "about": "Communicator. Internet guru. Friend of animals everywhere. Entrepreneur. Social media scholar.",
+            "registered": "2014-04-27T03:47:22"
+        },
+        {
+            "name": {
+                "first": "Andrea",
+                "last": "Møller"
+            },
+            "date_of_birth": {
+                "date": "1987-07-10T04:27:33",
+                "age": 34
+            },
+            "email": "andrea.moller@example.com",
+            "phone": "+03317327",
+            "location": {
+                "street": {
+                    "number": 1212,
+                    "name": "Vejlby Toften"
+                },
+                "city": "Pandrup",
+                "state": "Hovedstaden",
+                "country": "Denmark",
+                "postcode": 76358
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/86.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/86.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/86.jpg"
+            },
+            "company": "WEBIOTIC",
+            "isActive": true,
+            "monthly_wage": 2697.37,
+            "about": "Web fan. Zombie scholar. Twitter ninja. Writer. Extreme explorer. Introvert.",
+            "registered": "2019-05-16T06:12:28"
+        },
+        {
+            "name": {
+                "first": "Jocelaine",
+                "last": "Rodrigues"
+            },
+            "date_of_birth": {
+                "date": "1993-01-19T05:17:19",
+                "age": 28
+            },
+            "email": "jocelaine.rodrigues@example.com",
+            "phone": "+(48) 2635-3633",
+            "location": {
+                "street": {
+                    "number": 7709,
+                    "name": "Travessa dos Açorianos"
+                },
+                "city": "Araguaína",
+                "state": "Paraíba",
+                "country": "Brazil",
+                "postcode": 86438
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/12.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/12.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/12.jpg"
+            },
+            "company": "RETROTEX",
+            "isActive": true,
+            "monthly_wage": 2300.16,
+            "about": "Passionate internet junkie. Subtly charming gamer. Twitter buff. Travel specialist.",
+            "registered": "2015-01-21T11:42:50"
+        },
+        {
+            "name": {
+                "first": "Albert",
+                "last": "Lord"
+            },
+            "date_of_birth": {
+                "date": "1966-10-07T01:43:41",
+                "age": 55
+            },
+            "email": "albert.lord@example.com",
+            "phone": "+031-566-0850",
+            "location": {
+                "street": {
+                    "number": 9948,
+                    "name": "Henry Street"
+                },
+                "city": "Midleton",
+                "state": "Wexford",
+                "country": "Ireland",
+                "postcode": 36519
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/13.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/13.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/13.jpg"
+            },
+            "company": "CENTREGY",
+            "isActive": false,
+            "monthly_wage": 1588.14,
+            "about": "Communicator. Twitter advocate. Typical entrepreneur.",
+            "registered": "2021-09-25T10:28:07"
+        },
+        {
+            "name": {
+                "first": "Florence",
+                "last": "Gardner"
+            },
+            "date_of_birth": {
+                "date": "1993-09-20T11:57:09",
+                "age": 28
+            },
+            "email": "florence.gardner@example.com",
+            "phone": "+(344)-421-2170",
+            "location": {
+                "street": {
+                    "number": 3409,
+                    "name": "E Pecan St"
+                },
+                "city": "Chandler",
+                "state": "Arizona",
+                "country": "United States",
+                "postcode": 40943
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/95.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/95.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/95.jpg"
+            },
+            "company": "SENMAO",
+            "isActive": true,
+            "monthly_wage": 2354.84,
+            "about": "Twitter trailblazer. Pop culture evangelist. Music buff. Writer.",
+            "registered": "2015-09-19T09:58:44"
+        },
+        {
+            "name": {
+                "first": "Marion",
+                "last": "Fontai"
+            },
+            "date_of_birth": {
+                "date": "1978-04-02T15:56:42",
+                "age": 43
+            },
+            "email": "marion.fontai@example.com",
+            "phone": "+02-26-42-87-61",
+            "location": {
+                "street": {
+                    "number": 515,
+                    "name": "Avenue du Château"
+                },
+                "city": "Toulon",
+                "state": "Hautes-Alpes",
+                "country": "France",
+                "postcode": 10492
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/53.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/53.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/53.jpg"
+            },
+            "company": "MIRACULA",
+            "isActive": true,
+            "monthly_wage": 1629.51,
+            "about": "Proud web maven. Zombieaholic. Food enthusiast. Coffee lover. Creator. Typical music ninja. Avid internet practitioner. Evil introvert.",
+            "registered": "2015-08-26T09:22:16"
+        },
+        {
+            "name": {
+                "first": "Julian",
+                "last": "Bailey"
+            },
+            "date_of_birth": {
+                "date": "1995-12-10T11:09:00",
+                "age": 26
+            },
+            "email": "julian.bailey@example.com",
+            "phone": "+015242 98932",
+            "location": {
+                "street": {
+                    "number": 4416,
+                    "name": "Park Lane"
+                },
+                "city": "Southampton",
+                "state": "Bedfordshire",
+                "country": "United Kingdom",
+                "postcode": "KM18 6TA"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/42.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/42.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/42.jpg"
+            },
+            "company": "RETRACK",
+            "isActive": false,
+            "monthly_wage": 2874.79,
+            "about": "Hipster-friendly web aficionado. Internet junkie. Wannabe twitter enthusiast. Creator.",
+            "registered": "2020-09-03T07:23:02"
+        },
+        {
+            "name": {
+                "first": "Jerome",
+                "last": "Oliver"
+            },
+            "date_of_birth": {
+                "date": "1984-12-20T01:45:47",
+                "age": 37
+            },
+            "email": "jerome.oliver@example.com",
+            "phone": "+03-7023-0074",
+            "location": {
+                "street": {
+                    "number": 5914,
+                    "name": "Eason Rd"
+                },
+                "city": "Wagga Wagga",
+                "state": "South Australia",
+                "country": "Australia",
+                "postcode": 1358
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/26.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/26.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/26.jpg"
+            },
+            "company": "PUSHCART",
+            "isActive": true,
+            "monthly_wage": 3451.56,
+            "about": "Thinker. Zombie enthusiast. Web fanatic. General coffee ninja. Introvert. Communicator.",
+            "registered": "2018-01-03T10:00:53"
+        },
+        {
+            "name": {
+                "first": "Adelheid",
+                "last": "Renaud"
+            },
+            "date_of_birth": {
+                "date": "1998-02-09T03:49:49",
+                "age": 23
+            },
+            "email": "adelheid.renaud@example.com",
+            "phone": "+078 704 59 09",
+            "location": {
+                "street": {
+                    "number": 5226,
+                    "name": "Rue des Jardins"
+                },
+                "city": "Hölstein",
+                "state": "Schaffhausen",
+                "country": "Switzerland",
+                "postcode": 4356
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/84.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/84.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/84.jpg"
+            },
+            "company": "MAINELAND",
+            "isActive": true,
+            "monthly_wage": 1990.01,
+            "about": "Typical explorer. Tv lover. Wannabe social media specialist. Amateur pop culture junkie. Organizer. Music maven.",
+            "registered": "2020-03-08T11:06:46"
+        },
+        {
+            "name": {
+                "first": "Bill",
+                "last": "Chapman"
+            },
+            "date_of_birth": {
+                "date": "1985-04-14T06:36:11",
+                "age": 36
+            },
+            "email": "bill.chapman@example.com",
+            "phone": "+01-5219-0553",
+            "location": {
+                "street": {
+                    "number": 4687,
+                    "name": "Parker Rd"
+                },
+                "city": "Toowoomba",
+                "state": "Queensland",
+                "country": "Australia",
+                "postcode": 9717
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/63.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/63.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/63.jpg"
+            },
+            "company": "ARCTIQ",
+            "isActive": false,
+            "monthly_wage": 2264.36,
+            "about": "Bacon advocate. Communicator. Travel junkie. Introvert. Tv expert. Gamer. Troublemaker. Explorer. Food geek.",
+            "registered": "2017-02-17T04:32:38"
+        },
+        {
+            "name": {
+                "first": "Ronald",
+                "last": "Cruz"
+            },
+            "date_of_birth": {
+                "date": "1980-08-15T19:24:15",
+                "age": 41
+            },
+            "email": "ronald.cruz@example.com",
+            "phone": "+0117936 083 9836",
+            "location": {
+                "street": {
+                    "number": 5789,
+                    "name": "Queen Street"
+                },
+                "city": "Salford",
+                "state": "County Down",
+                "country": "United Kingdom",
+                "postcode": "O5O 8WP"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/83.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/83.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/83.jpg"
+            },
+            "company": "XYMONK",
+            "isActive": true,
+            "monthly_wage": 2777.28,
+            "about": "Problem solver. Wannabe pop cultureaholic. Coffee nerd. Unapologetic twitter fanatic.",
+            "registered": "2021-08-06T07:15:22"
+        },
+        {
+            "name": {
+                "first": "Lesly",
+                "last": "Den Hoedt"
+            },
+            "date_of_birth": {
+                "date": "1976-07-30T22:40:36",
+                "age": 45
+            },
+            "email": "lesly.denhoedt@example.com",
+            "phone": "+(340)-935-4549",
+            "location": {
+                "street": {
+                    "number": 9780,
+                    "name": "Bergsebosdreef"
+                },
+                "city": "Oosthem",
+                "state": "Utrecht",
+                "country": "Netherlands",
+                "postcode": 31807
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/61.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/61.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/61.jpg"
+            },
+            "company": "FUTURITY",
+            "isActive": false,
+            "monthly_wage": 1857.93,
+            "about": "Unable to type with boxing gloves on. Coffee lover. Food nerd. Travel evangelist. Hipster-friendly writer.",
+            "registered": "2017-09-04T03:12:59"
+        },
+        {
+            "name": {
+                "first": "Carl",
+                "last": "Thomsen"
+            },
+            "date_of_birth": {
+                "date": "1988-12-23T08:22:08",
+                "age": 33
+            },
+            "email": "carl.thomsen@example.com",
+            "phone": "+86926255",
+            "location": {
+                "street": {
+                    "number": 7442,
+                    "name": "Østerbyvej"
+                },
+                "city": "Kongsvinger",
+                "state": "Nordjylland",
+                "country": "Denmark",
+                "postcode": 85065
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/38.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/38.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/38.jpg"
+            },
+            "company": "VELITY",
+            "isActive": false,
+            "monthly_wage": 1949.67,
+            "about": "Creator. Subtly charming introvert. Friendly social mediaholic. General music guru. Zombie expert.",
+            "registered": "2020-09-29T05:23:32"
+        },
+        {
+            "name": {
+                "first": "Grace",
+                "last": "Hudson"
+            },
+            "date_of_birth": {
+                "date": "1990-08-20T19:57:14",
+                "age": 31
+            },
+            "email": "grace.hudson@example.com",
+            "phone": "+(267)-078-5269",
+            "location": {
+                "street": {
+                    "number": 8103,
+                    "name": "Northaven Rd"
+                },
+                "city": "Scurry",
+                "state": "New York",
+                "country": "United States",
+                "postcode": 88965
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/30.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/30.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/30.jpg"
+            },
+            "company": "EARTHWAX",
+            "isActive": false,
+            "monthly_wage": 2353.83,
+            "about": "Future teen idol. Food fanatic. Webaholic. Thinker. Tv scholar. Writer.",
+            "registered": "2019-11-28T07:14:29"
+        },
+        {
+            "name": {
+                "first": "Elma",
+                "last": "Meling"
+            },
+            "date_of_birth": {
+                "date": "1986-07-11T23:54:06",
+                "age": 35
+            },
+            "email": "elma.meling@example.com",
+            "phone": "+63282890",
+            "location": {
+                "street": {
+                    "number": 8695,
+                    "name": "Elvefaret"
+                },
+                "city": "Foldrøy",
+                "state": "Vestfold",
+                "country": "Norway",
+                "postcode": "7489"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/8.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/8.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/8.jpg"
+            },
+            "company": "PHEAST",
+            "isActive": true,
+            "monthly_wage": 3072.16,
+            "about": "Coffee lover. Tv maven. Analyst. Professional food nerd. Social media advocate.",
+            "registered": "2018-03-21T07:53:47"
+        },
+        {
+            "name": {
+                "first": "Lily",
+                "last": "Montgomery"
+            },
+            "date_of_birth": {
+                "date": "1993-06-26T09:57:57",
+                "age": 28
+            },
+            "email": "lily.montgomery@example.com",
+            "phone": "+015395 56171",
+            "location": {
+                "street": {
+                    "number": 516,
+                    "name": "Broadway"
+                },
+                "city": "Worcester",
+                "state": "Buckinghamshire",
+                "country": "United Kingdom",
+                "postcode": "D73 5WB"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/26.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/26.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/26.jpg"
+            },
+            "company": "ANACHO",
+            "isActive": true,
+            "monthly_wage": 2683.39,
+            "about": "Tvaholic. Entrepreneur. Student. Communicator. Typical web nerd.",
+            "registered": "2015-04-03T03:41:00"
+        }
+    ]
+}
