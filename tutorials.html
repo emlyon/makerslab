@@ -233,8 +233,11 @@
         };
 
         addEventListener('load', e => {
-            const badge = document.querySelector(`[id='${location.hash}']`);
-            if (badge) setSkill(badge.id);
+            if (location.hash) {
+                const skillID = location.hash.split('');
+                skillID.pop();
+                setSkill(skillID.join(''));
+            }
         });
 
         document.querySelectorAll('.badge').forEach(badge => badge.addEventListener('click', e => setSkill(badge.id)));
