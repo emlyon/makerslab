@@ -2,12 +2,21 @@
     "number_of_results": 20,
     "results": [
         {
-            "name": { "first": "Isaac", "last": "Butler" },
-            "date_of_birth": { "date": "1955-12-03T02:05:33", "age": 66 },
+            "name": {
+                "first": "Isaac",
+                "last": "Butler"
+            },
+            "date_of_birth": {
+                "date": "1985-12-03T02:05:33",
+                "age": 36
+            },
             "email": "isaac.butler@example.com",
             "phone": "+013873 78226",
             "location": {
-                "street": { "number": 8674, "name": "South Street" },
+                "street": {
+                    "number": 8674,
+                    "name": "South Street"
+                },
                 "city": "Chichester",
                 "state": "Hampshire",
                 "country": "United Kingdom",
@@ -21,16 +30,25 @@
             "company": "VITRICOMP",
             "isActive": true,
             "monthly_wage": 1673.99,
-            "about": "Fugiat ex incididunt aute nulla tempor et Lorem in deserunt consequat aliqua aliquip. Voluptate nulla qui eiusmod tempor sit. Officia ullamco aliqua esse nostrud veniam nostrud sunt. Amet magna officia officia laborum tempor laborum anim anim ex eu qui elit voluptate dolor. Voluptate mollit nostrud quis non nisi ullamco officia adipisicing qui sunt.",
+            "about": "Thinker. Coffee enthusiast. Hardcore bacon fan. Infuriatingly humble tv aficionado.",
             "registered": "2015-05-02T05:20:40"
         },
         {
-            "name": { "first": "Heiko", "last": "Rousseau" },
-            "date_of_birth": { "date": "1975-11-17T19:04:07", "age": 46 },
+            "name": {
+                "first": "Heiko",
+                "last": "Rousseau"
+            },
+            "date_of_birth": {
+                "date": "1986-11-17T19:04:07",
+                "age": 35
+            },
             "email": "heiko.rousseau@example.com",
             "phone": "+077 885 24 32",
             "location": {
-                "street": { "number": 8069, "name": "Rue du Bât-D'Argent" },
+                "street": {
+                    "number": 8069,
+                    "name": "Rue du Bât-D'Argent"
+                },
                 "city": "Staldenried",
                 "state": "Thurgau",
                 "country": "Switzerland",
@@ -44,16 +62,25 @@
             "company": "XTH",
             "isActive": false,
             "monthly_wage": 1680.12,
-            "about": "Sunt dolore magna cillum irure ipsum ea. Ipsum aute eu sint deserunt. Nisi nostrud pariatur mollit labore deserunt proident. Tempor enim adipisicing ea minim ad do sit sunt officia cillum tempor do amet. Ex officia aliqua mollit sint exercitation officia officia duis excepteur elit aliqua nostrud eiusmod excepteur. Dolore deserunt consectetur enim eiusmod occaecat ipsum cillum labore culpa qui. Cillum veniam enim eiusmod voluptate ipsum pariatur dolor exercitation sint.",
+            "about": "Music fanatic. Social media geek. Professional creator. Coffee buff. Twitter junkie. Writer. Travel scholar.",
             "registered": "2017-03-16T09:53:03"
         },
         {
-            "name": { "first": "Vivan", "last": "Matthews" },
-            "date_of_birth": { "date": "1977-06-07T22:33:15", "age": 44 },
+            "name": {
+                "first": "Vivan",
+                "last": "Matthews"
+            },
+            "date_of_birth": {
+                "date": "1977-06-07T22:33:15",
+                "age": 44
+            },
             "email": "vivan.matthews@example.com",
             "phone": "+01-8859-9669",
             "location": {
-                "street": { "number": 4531, "name": "Central St" },
+                "street": {
+                    "number": 4531,
+                    "name": "Central St"
+                },
                 "city": "Townsville",
                 "state": "New South Wales",
                 "country": "Australia",
@@ -67,16 +94,25 @@
             "company": "ZORK",
             "isActive": true,
             "monthly_wage": 2944.49,
-            "about": "Cupidatat consequat ullamco tempor consectetur duis magna nulla qui Lorem duis velit esse anim aliquip. Ex ut proident sunt proident cupidatat aliquip sint excepteur veniam reprehenderit irure. Sunt enim mollit nisi anim duis eiusmod sit duis dolore tempor voluptate dolor. Non aute dolore duis esse est cillum deserunt quis exercitation ad eu dolore. Mollit anim est proident exercitation veniam sint incididunt aliqua irure reprehenderit cupidatat.",
+            "about": "Lifelong social media aficionado. Infuriatingly humble zombie trailblazer.",
             "registered": "2016-08-11T11:17:56"
         },
         {
-            "name": { "first": "Ofélia", "last": "Viana" },
-            "date_of_birth": { "date": "1966-11-06T04:01:14", "age": 55 },
+            "name": {
+                "first": "Ofélia",
+                "last": "Viana"
+            },
+            "date_of_birth": {
+                "date": "1986-11-06T04:01:14",
+                "age": 35
+            },
             "email": "ofelia.viana@example.com",
             "phone": "+(00) 3070-2552",
             "location": {
-                "street": { "number": 8799, "name": "Rua Duque de Caxias " },
+                "street": {
+                    "number": 8799,
+                    "name": "Rua Duque de Caxias "
+                },
                 "city": "Castanhal",
                 "state": "Santa Catarina",
                 "country": "Brazil",
@@ -90,16 +126,25 @@
             "company": "GEEKETRON",
             "isActive": true,
             "monthly_wage": 3575.31,
-            "about": "Dolore magna dolore cillum fugiat aliqua qui. Incididunt in ad incididunt nisi id nisi esse aliqua ullamco ea. Excepteur ut cillum nulla sint officia quis tempor. Reprehenderit dolore aute pariatur do et eiusmod consectetur voluptate nulla pariatur ullamco anim sunt.",
+            "about": "Explorer. Social media nerd. Hipster-friendly reader. Travel specialist. Extreme gamer. Musicaholic. Twitter buff.",
             "registered": "2020-05-05T07:29:53"
         },
         {
-            "name": { "first": "Niko", "last": "Kunath" },
-            "date_of_birth": { "date": "1969-07-16T21:16:02", "age": 52 },
+            "name": {
+                "first": "Niko",
+                "last": "Kunath"
+            },
+            "date_of_birth": {
+                "date": "1979-07-16T21:16:02",
+                "age": 42
+            },
             "email": "niko.kunath@example.com",
             "phone": "+0405-9232631",
             "location": {
-                "street": { "number": 1292, "name": "Beethovenstraße" },
+                "street": {
+                    "number": 1292,
+                    "name": "Beethovenstraße"
+                },
                 "city": "Zwiesel",
                 "state": "Thüringen",
                 "country": "Germany",
@@ -113,16 +158,25 @@
             "company": "BOILICON",
             "isActive": false,
             "monthly_wage": 2565.03,
-            "about": "Ullamco occaecat dolore excepteur sint officia. Elit officia enim Lorem magna do culpa ad nulla non incididunt. Culpa excepteur laborum nisi incididunt labore do et fugiat tempor elit. Reprehenderit eiusmod adipisicing ipsum aute ullamco non aute fugiat sit quis sit deserunt sint. Minim aliquip magna ullamco ad Lorem. Amet dolor esse mollit ipsum ut commodo velit ad eu nostrud in fugiat quis. Enim velit anim duis tempor culpa deserunt pariatur elit laborum do et nisi irure et.",
+            "about": "Communicator. Internet guru. Friend of animals everywhere. Entrepreneur. Social media scholar.",
             "registered": "2014-04-27T03:47:22"
         },
         {
-            "name": { "first": "Andrea", "last": "Møller" },
-            "date_of_birth": { "date": "1987-07-10T04:27:33", "age": 34 },
+            "name": {
+                "first": "Andrea",
+                "last": "Møller"
+            },
+            "date_of_birth": {
+                "date": "1987-07-10T04:27:33",
+                "age": 34
+            },
             "email": "andrea.moller@example.com",
             "phone": "+03317327",
             "location": {
-                "street": { "number": 1212, "name": "Vejlby Toften" },
+                "street": {
+                    "number": 1212,
+                    "name": "Vejlby Toften"
+                },
                 "city": "Pandrup",
                 "state": "Hovedstaden",
                 "country": "Denmark",
@@ -136,16 +190,25 @@
             "company": "WEBIOTIC",
             "isActive": true,
             "monthly_wage": 2697.37,
-            "about": "Aliquip minim incididunt do voluptate elit. Proident incididunt irure occaecat do occaecat excepteur id occaecat laboris fugiat cupidatat dolor eu. Reprehenderit ex irure deserunt deserunt in. Sit do ex enim aute dolore ad ipsum eu fugiat.",
+            "about": "Web fan. Zombie scholar. Twitter ninja. Writer. Extreme explorer. Introvert.",
             "registered": "2019-05-16T06:12:28"
         },
         {
-            "name": { "first": "Jocelaine", "last": "Rodrigues" },
-            "date_of_birth": { "date": "1973-01-19T05:17:19", "age": 48 },
+            "name": {
+                "first": "Jocelaine",
+                "last": "Rodrigues"
+            },
+            "date_of_birth": {
+                "date": "1993-01-19T05:17:19",
+                "age": 28
+            },
             "email": "jocelaine.rodrigues@example.com",
             "phone": "+(48) 2635-3633",
             "location": {
-                "street": { "number": 7709, "name": "Travessa dos Açorianos" },
+                "street": {
+                    "number": 7709,
+                    "name": "Travessa dos Açorianos"
+                },
                 "city": "Araguaína",
                 "state": "Paraíba",
                 "country": "Brazil",
@@ -159,16 +222,25 @@
             "company": "RETROTEX",
             "isActive": true,
             "monthly_wage": 2300.16,
-            "about": "Ea amet minim cupidatat duis incididunt amet aute non laborum. Excepteur ea deserunt ea laboris magna sit ut tempor exercitation ut consequat nisi. Voluptate occaecat mollit anim irure velit do occaecat Lorem. Anim tempor fugiat reprehenderit sint.",
+            "about": "Passionate internet junkie. Subtly charming gamer. Twitter buff. Travel specialist.",
             "registered": "2015-01-21T11:42:50"
         },
         {
-            "name": { "first": "Albert", "last": "Lord" },
-            "date_of_birth": { "date": "1966-10-07T01:43:41", "age": 55 },
+            "name": {
+                "first": "Albert",
+                "last": "Lord"
+            },
+            "date_of_birth": {
+                "date": "1966-10-07T01:43:41",
+                "age": 55
+            },
             "email": "albert.lord@example.com",
             "phone": "+031-566-0850",
             "location": {
-                "street": { "number": 9948, "name": "Henry Street" },
+                "street": {
+                    "number": 9948,
+                    "name": "Henry Street"
+                },
                 "city": "Midleton",
                 "state": "Wexford",
                 "country": "Ireland",
@@ -182,16 +254,25 @@
             "company": "CENTREGY",
             "isActive": false,
             "monthly_wage": 1588.14,
-            "about": "Officia commodo ex sunt dolore id cupidatat culpa voluptate enim ad. Ex irure ut magna exercitation Lorem Lorem deserunt anim officia ut mollit laborum ipsum. Minim non ut ex incididunt Lorem. Aliqua in cupidatat veniam cillum fugiat amet tempor aliqua fugiat officia aute aliqua est. Consequat officia laboris exercitation nostrud quis Lorem adipisicing irure adipisicing ullamco. Mollit exercitation non sit sint do dolore magna reprehenderit aliqua elit dolore sint minim culpa.",
+            "about": "Communicator. Twitter advocate. Typical entrepreneur.",
             "registered": "2021-09-25T10:28:07"
         },
         {
-            "name": { "first": "Florence", "last": "Gardner" },
-            "date_of_birth": { "date": "1993-09-20T11:57:09", "age": 28 },
+            "name": {
+                "first": "Florence",
+                "last": "Gardner"
+            },
+            "date_of_birth": {
+                "date": "1993-09-20T11:57:09",
+                "age": 28
+            },
             "email": "florence.gardner@example.com",
             "phone": "+(344)-421-2170",
             "location": {
-                "street": { "number": 3409, "name": "E Pecan St" },
+                "street": {
+                    "number": 3409,
+                    "name": "E Pecan St"
+                },
                 "city": "Chandler",
                 "state": "Arizona",
                 "country": "United States",
@@ -205,39 +286,57 @@
             "company": "SENMAO",
             "isActive": true,
             "monthly_wage": 2354.84,
-            "about": "Enim occaecat cillum Lorem ipsum magna id tempor cupidatat proident quis. Enim sit nisi cillum dolor pariatur sunt reprehenderit magna quis labore qui ullamco. Ex sit ut occaecat amet officia culpa esse. Est non commodo aliquip excepteur adipisicing eiusmod do nisi. Occaecat cillum aliqua dolore minim laborum culpa culpa tempor culpa id.",
+            "about": "Twitter trailblazer. Pop culture evangelist. Music buff. Writer.",
             "registered": "2015-09-19T09:58:44"
         },
         {
-            "name": { "first": "Marion", "last": "Fontai" },
-            "date_of_birth": { "date": "1978-04-02T15:56:42", "age": 43 },
+            "name": {
+                "first": "Marion",
+                "last": "Fontai"
+            },
+            "date_of_birth": {
+                "date": "1978-04-02T15:56:42",
+                "age": 43
+            },
             "email": "marion.fontai@example.com",
             "phone": "+02-26-42-87-61",
             "location": {
-                "street": { "number": 515, "name": "Avenue du Château" },
+                "street": {
+                    "number": 515,
+                    "name": "Avenue du Château"
+                },
                 "city": "Toulon",
                 "state": "Hautes-Alpes",
                 "country": "France",
                 "postcode": 10492
             },
             "picture": {
-                "large": "https://randomuser.me/api/portraits/women/16.jpg",
-                "medium": "https://randomuser.me/api/portraits/med/women/16.jpg",
-                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/16.jpg"
+                "large": "https://randomuser.me/api/portraits/women/53.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/53.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/53.jpg"
             },
             "company": "MIRACULA",
             "isActive": true,
             "monthly_wage": 1629.51,
-            "about": "Proident aliqua consectetur incididunt sint. Non aute mollit voluptate nisi proident incididunt labore. Veniam ea ipsum velit aliqua veniam in enim labore sit aliquip consectetur duis. Officia ex deserunt occaecat irure esse aute. Sit enim ex magna deserunt magna occaecat labore nulla mollit laborum excepteur. Non eiusmod ipsum laboris minim elit eiusmod dolore labore tempor tempor et est cupidatat. Aliquip irure sit non sint qui sint dolor in sit aliquip excepteur veniam minim ea.",
+            "about": "Proud web maven. Zombieaholic. Food enthusiast. Coffee lover. Creator. Typical music ninja. Avid internet practitioner. Evil introvert.",
             "registered": "2015-08-26T09:22:16"
         },
         {
-            "name": { "first": "Julian", "last": "Bailey" },
-            "date_of_birth": { "date": "1975-12-10T11:09:00", "age": 46 },
+            "name": {
+                "first": "Julian",
+                "last": "Bailey"
+            },
+            "date_of_birth": {
+                "date": "1995-12-10T11:09:00",
+                "age": 26
+            },
             "email": "julian.bailey@example.com",
             "phone": "+015242 98932",
             "location": {
-                "street": { "number": 4416, "name": "Park Lane" },
+                "street": {
+                    "number": 4416,
+                    "name": "Park Lane"
+                },
                 "city": "Southampton",
                 "state": "Bedfordshire",
                 "country": "United Kingdom",
@@ -251,16 +350,25 @@
             "company": "RETRACK",
             "isActive": false,
             "monthly_wage": 2874.79,
-            "about": "Culpa irure culpa consectetur esse est culpa est sint deserunt et commodo deserunt ea officia. Dolore sunt nulla occaecat in elit reprehenderit anim nostrud. Ea elit reprehenderit culpa culpa. Aliquip qui non reprehenderit eu enim. Deserunt nisi anim nostrud consectetur commodo culpa labore cupidatat et non ad.",
+            "about": "Hipster-friendly web aficionado. Internet junkie. Wannabe twitter enthusiast. Creator.",
             "registered": "2020-09-03T07:23:02"
         },
         {
-            "name": { "first": "Jerome", "last": "Oliver" },
-            "date_of_birth": { "date": "1984-12-20T01:45:47", "age": 37 },
+            "name": {
+                "first": "Jerome",
+                "last": "Oliver"
+            },
+            "date_of_birth": {
+                "date": "1984-12-20T01:45:47",
+                "age": 37
+            },
             "email": "jerome.oliver@example.com",
             "phone": "+03-7023-0074",
             "location": {
-                "street": { "number": 5914, "name": "Eason Rd" },
+                "street": {
+                    "number": 5914,
+                    "name": "Eason Rd"
+                },
                 "city": "Wagga Wagga",
                 "state": "South Australia",
                 "country": "Australia",
@@ -274,16 +382,25 @@
             "company": "PUSHCART",
             "isActive": true,
             "monthly_wage": 3451.56,
-            "about": "Veniam adipisicing exercitation officia ut labore est quis eiusmod ut. Non qui commodo sunt velit ipsum ad nisi adipisicing nostrud Lorem culpa anim tempor incididunt. Aute tempor elit veniam minim anim quis magna pariatur velit enim nisi ut.",
+            "about": "Thinker. Zombie enthusiast. Web fanatic. General coffee ninja. Introvert. Communicator.",
             "registered": "2018-01-03T10:00:53"
         },
         {
-            "name": { "first": "Adelheid", "last": "Renaud" },
-            "date_of_birth": { "date": "1978-02-09T03:49:49", "age": 43 },
+            "name": {
+                "first": "Adelheid",
+                "last": "Renaud"
+            },
+            "date_of_birth": {
+                "date": "1998-02-09T03:49:49",
+                "age": 23
+            },
             "email": "adelheid.renaud@example.com",
             "phone": "+078 704 59 09",
             "location": {
-                "street": { "number": 5226, "name": "Rue des Jardins" },
+                "street": {
+                    "number": 5226,
+                    "name": "Rue des Jardins"
+                },
                 "city": "Hölstein",
                 "state": "Schaffhausen",
                 "country": "Switzerland",
@@ -297,16 +414,25 @@
             "company": "MAINELAND",
             "isActive": true,
             "monthly_wage": 1990.01,
-            "about": "Incididunt mollit proident magna non cillum ullamco voluptate sit labore amet do reprehenderit. Minim laboris non cupidatat dolor nostrud duis do cillum sit elit consequat ullamco magna mollit. In mollit aute irure proident non nostrud ea cupidatat elit non elit qui.",
+            "about": "Typical explorer. Tv lover. Wannabe social media specialist. Amateur pop culture junkie. Organizer. Music maven.",
             "registered": "2020-03-08T11:06:46"
         },
         {
-            "name": { "first": "Bill", "last": "Chapman" },
-            "date_of_birth": { "date": "1985-04-14T06:36:11", "age": 36 },
+            "name": {
+                "first": "Bill",
+                "last": "Chapman"
+            },
+            "date_of_birth": {
+                "date": "1985-04-14T06:36:11",
+                "age": 36
+            },
             "email": "bill.chapman@example.com",
             "phone": "+01-5219-0553",
             "location": {
-                "street": { "number": 4687, "name": "Parker Rd" },
+                "street": {
+                    "number": 4687,
+                    "name": "Parker Rd"
+                },
                 "city": "Toowoomba",
                 "state": "Queensland",
                 "country": "Australia",
@@ -320,16 +446,25 @@
             "company": "ARCTIQ",
             "isActive": false,
             "monthly_wage": 2264.36,
-            "about": "Culpa cupidatat incididunt quis consequat irure ea. Fugiat incididunt Lorem tempor consequat laborum eu quis irure reprehenderit dolor eu tempor excepteur elit. Magna ea veniam consectetur minim dolor dolore Lorem aliquip adipisicing culpa.",
+            "about": "Bacon advocate. Communicator. Travel junkie. Introvert. Tv expert. Gamer. Troublemaker. Explorer. Food geek.",
             "registered": "2017-02-17T04:32:38"
         },
         {
-            "name": { "first": "Ronald", "last": "Cruz" },
-            "date_of_birth": { "date": "1960-08-15T19:24:15", "age": 61 },
+            "name": {
+                "first": "Ronald",
+                "last": "Cruz"
+            },
+            "date_of_birth": {
+                "date": "1980-08-15T19:24:15",
+                "age": 41
+            },
             "email": "ronald.cruz@example.com",
             "phone": "+0117936 083 9836",
             "location": {
-                "street": { "number": 5789, "name": "Queen Street" },
+                "street": {
+                    "number": 5789,
+                    "name": "Queen Street"
+                },
                 "city": "Salford",
                 "state": "County Down",
                 "country": "United Kingdom",
@@ -343,16 +478,25 @@
             "company": "XYMONK",
             "isActive": true,
             "monthly_wage": 2777.28,
-            "about": "Nulla culpa irure laboris nostrud. Duis veniam anim fugiat ut elit nulla. Culpa elit velit eiusmod non sint nostrud veniam. Amet et consequat anim in pariatur fugiat eiusmod est minim exercitation. Mollit nisi aute adipisicing ex.",
+            "about": "Problem solver. Wannabe pop cultureaholic. Coffee nerd. Unapologetic twitter fanatic.",
             "registered": "2021-08-06T07:15:22"
         },
         {
-            "name": { "first": "Lesly", "last": "Den Hoedt" },
-            "date_of_birth": { "date": "1956-07-30T22:40:36", "age": 65 },
+            "name": {
+                "first": "Lesly",
+                "last": "Den Hoedt"
+            },
+            "date_of_birth": {
+                "date": "1976-07-30T22:40:36",
+                "age": 45
+            },
             "email": "lesly.denhoedt@example.com",
             "phone": "+(340)-935-4549",
             "location": {
-                "street": { "number": 9780, "name": "Bergsebosdreef" },
+                "street": {
+                    "number": 9780,
+                    "name": "Bergsebosdreef"
+                },
                 "city": "Oosthem",
                 "state": "Utrecht",
                 "country": "Netherlands",
@@ -366,16 +510,25 @@
             "company": "FUTURITY",
             "isActive": false,
             "monthly_wage": 1857.93,
-            "about": "Non excepteur incididunt mollit tempor amet cupidatat cillum magna. Cupidatat laboris duis ipsum incididunt fugiat ex aute ad laboris laborum. Esse reprehenderit adipisicing excepteur amet eu nisi pariatur. Ullamco ex qui do veniam minim proident veniam laborum aliqua. Mollit pariatur proident esse amet ipsum sint duis eu Lorem ullamco sit occaecat. Labore sint qui eu adipisicing. Duis exercitation cillum nisi incididunt qui labore ullamco pariatur.",
+            "about": "Unable to type with boxing gloves on. Coffee lover. Food nerd. Travel evangelist. Hipster-friendly writer.",
             "registered": "2017-09-04T03:12:59"
         },
         {
-            "name": { "first": "Carl", "last": "Thomsen" },
-            "date_of_birth": { "date": "1968-12-23T08:22:08", "age": 53 },
+            "name": {
+                "first": "Carl",
+                "last": "Thomsen"
+            },
+            "date_of_birth": {
+                "date": "1988-12-23T08:22:08",
+                "age": 33
+            },
             "email": "carl.thomsen@example.com",
             "phone": "+86926255",
             "location": {
-                "street": { "number": 7442, "name": "Østerbyvej" },
+                "street": {
+                    "number": 7442,
+                    "name": "Østerbyvej"
+                },
                 "city": "Kongsvinger",
                 "state": "Nordjylland",
                 "country": "Denmark",
@@ -389,62 +542,89 @@
             "company": "VELITY",
             "isActive": false,
             "monthly_wage": 1949.67,
-            "about": "Labore aliqua elit culpa pariatur elit. Quis ea sit tempor elit voluptate ipsum. Est sit mollit esse duis dolore eiusmod occaecat excepteur consequat deserunt do proident nulla exercitation. Laboris in ullamco commodo non amet enim sunt elit cupidatat non velit cillum adipisicing dolor. Irure cupidatat irure ea dolor id amet officia. Fugiat dolore dolor eiusmod est cupidatat adipisicing. Esse Lorem do aliquip labore ullamco eiusmod.",
+            "about": "Creator. Subtly charming introvert. Friendly social mediaholic. General music guru. Zombie expert.",
             "registered": "2020-09-29T05:23:32"
         },
         {
-            "name": { "first": "Grace", "last": "Hudson" },
-            "date_of_birth": { "date": "1990-08-20T19:57:14", "age": 31 },
+            "name": {
+                "first": "Grace",
+                "last": "Hudson"
+            },
+            "date_of_birth": {
+                "date": "1990-08-20T19:57:14",
+                "age": 31
+            },
             "email": "grace.hudson@example.com",
             "phone": "+(267)-078-5269",
             "location": {
-                "street": { "number": 8103, "name": "Northaven Rd" },
+                "street": {
+                    "number": 8103,
+                    "name": "Northaven Rd"
+                },
                 "city": "Scurry",
                 "state": "New York",
                 "country": "United States",
                 "postcode": 88965
             },
             "picture": {
-                "large": "https://randomuser.me/api/portraits/women/51.jpg",
-                "medium": "https://randomuser.me/api/portraits/med/women/51.jpg",
-                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/51.jpg"
+                "large": "https://randomuser.me/api/portraits/women/30.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/30.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/30.jpg"
             },
             "company": "EARTHWAX",
             "isActive": false,
             "monthly_wage": 2353.83,
-            "about": "Mollit sunt aliqua incididunt ea. Enim eiusmod amet duis officia aliquip dolore amet. Veniam est commodo consectetur quis fugiat laborum cillum qui.",
+            "about": "Future teen idol. Food fanatic. Webaholic. Thinker. Tv scholar. Writer.",
             "registered": "2019-11-28T07:14:29"
         },
         {
-            "name": { "first": "Elma", "last": "Meling" },
-            "date_of_birth": { "date": "1986-07-11T23:54:06", "age": 35 },
+            "name": {
+                "first": "Elma",
+                "last": "Meling"
+            },
+            "date_of_birth": {
+                "date": "1986-07-11T23:54:06",
+                "age": 35
+            },
             "email": "elma.meling@example.com",
             "phone": "+63282890",
             "location": {
-                "street": { "number": 8695, "name": "Elvefaret" },
+                "street": {
+                    "number": 8695,
+                    "name": "Elvefaret"
+                },
                 "city": "Foldrøy",
                 "state": "Vestfold",
                 "country": "Norway",
                 "postcode": "7489"
             },
             "picture": {
-                "large": "https://randomuser.me/api/portraits/women/42.jpg",
-                "medium": "https://randomuser.me/api/portraits/med/women/42.jpg",
-                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/42.jpg"
+                "large": "https://randomuser.me/api/portraits/women/8.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/8.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/8.jpg"
             },
             "company": "PHEAST",
             "isActive": true,
             "monthly_wage": 3072.16,
-            "about": "Ullamco aliquip consectetur sit incididunt officia. Dolor esse aliquip nulla exercitation reprehenderit minim reprehenderit. Ut ut velit quis aute reprehenderit Lorem velit pariatur exercitation et eiusmod ipsum id. Enim mollit voluptate dolore id.",
+            "about": "Coffee lover. Tv maven. Analyst. Professional food nerd. Social media advocate.",
             "registered": "2018-03-21T07:53:47"
         },
         {
-            "name": { "first": "Lily", "last": "Montgomery" },
-            "date_of_birth": { "date": "1993-06-26T09:57:57", "age": 28 },
+            "name": {
+                "first": "Lily",
+                "last": "Montgomery"
+            },
+            "date_of_birth": {
+                "date": "1993-06-26T09:57:57",
+                "age": 28
+            },
             "email": "lily.montgomery@example.com",
             "phone": "+015395 56171",
             "location": {
-                "street": { "number": 516, "name": "Broadway" },
+                "street": {
+                    "number": 516,
+                    "name": "Broadway"
+                },
                 "city": "Worcester",
                 "state": "Buckinghamshire",
                 "country": "United Kingdom",
@@ -458,7 +638,7 @@
             "company": "ANACHO",
             "isActive": true,
             "monthly_wage": 2683.39,
-            "about": "Veniam consequat sit sint excepteur reprehenderit cupidatat. Nisi mollit sit cillum reprehenderit ad. Nisi aliquip proident dolore ea officia irure tempor incididunt voluptate est quis enim. Eiusmod et non id elit qui exercitation nostrud est excepteur cillum id occaecat. In reprehenderit velit duis proident ex ea amet id mollit dolore anim enim dolore in. Amet esse veniam excepteur mollit ut laborum in labore voluptate ad quis ea irure.",
+            "about": "Tvaholic. Entrepreneur. Student. Communicator. Typical web nerd.",
             "registered": "2015-04-03T03:41:00"
         }
     ]
