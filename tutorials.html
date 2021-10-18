@@ -235,7 +235,7 @@
         addEventListener('load', e => {
             if (location.hash) {
                 const skillID = location.hash.split('');
-                skillID.pop();
+                skillID.shift();
                 setSkill(skillID.join(''));
             }
         });
