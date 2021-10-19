@@ -1,4 +1,13 @@
 const formatEvent = ( event, i ) => {
+    let [title, campus, date, hour, desc, img, soldout] = event;
+    // console.log({title, campus, date, hour, desc, img, soldout});
+    campus = campus.toUpperCase();
+
+    const [day, month, year] = date.split('/');
+    const ddate = new Date(`${month}/${day}/${year}`);
+    const now = new Date();
+    const comingsoon = ddate - now > 1000 * 3600 * 24 * 14; // more than 2 weeks
+
     return `
         ${ i % 3 === 0 ? '<div class="row">': '' }
         <div class="col s12 m4">
@@ -8,31 +17,31 @@ const formatEvent = ( event, i ) => {
                 </div>
 
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">${ event[ 0 ] }${ event[ 6 ] ? '' : '<i class="material-icons right">more_vert</i>'}</span>
+                    <span class="card-title activator grey-text text-darken-4">${ title }${ (soldout|| comingsoon) ? '' : '<i class="material-icons right">more_vert</i>'}</span>
                     <div class="divider"></div>
 
                     <p>
-                        <span class="red-text darken-4">WHAT:</span> ${ event[ 4 ] }<br>
-                        <span class="red-text darken-4">WHERE:</span> makers' lab <b class="red-text">${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : event[ 1 ] == 'STE' ? 'Saint-Étienne' : 'room Zoom' }</b><br>
-                        <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
+                        <span class="red-text darken-4">WHAT:</span> ${ desc }<br>
+                        <span class="red-text darken-4">WHERE:</span> makers' lab <b class="red-text">${ campus == 'ECU' ? 'Écully' : campus == 'PAR' ? 'Paris' : campus == 'STE' ? 'Saint-Étienne' : 'room Zoom' }</b><br>
+                        <span class="red-text darken-4">WHEN:</span> ${ date } -- ${ hour }
                     </p>
 
                     <div style="margin-top:15px;">
-                        <a class="waves-effect waves-light btn activator ${event[ 6 ] ? 'disabled' : ''}">${ event[ 6 ] ? 'SOLD OUT' : 'register'}</a>
+                        <a class="waves-effect waves-light btn activator ${ (soldout|| comingsoon) ? 'disabled' : ''}">${ soldout ? 'SOLD OUT' : comingsoon ? 'COMING SOON' : 'register'}</a>
                     </div>
                 </div>
 
-                ${ event[ 6 ] ? '' : `<div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">${ event[ 0 ] }<i class="material-icons right">close</i></span>
+                ${ (soldout|| comingsoon) ? '' : `<div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">${ title }<i class="material-icons right">close</i></span>
                     <div class="divider"></div>
 
                     <p>
-                        <span class="red-text darken-4">WHERE:</span> makers' lab <b class="red-text">${ event[ 1 ] == 'ECU' ? 'Écully' : event[ 1 ] == 'PAR' ? 'Paris' : event[ 1 ] == 'STE' ? 'Saint-Étienne' : 'room Zoom' }</b><br>
-                        <span class="red-text darken-4">WHEN:</span> ${ event[ 2 ] } -- ${ event[ 3 ] }
+                        <span class="red-text darken-4">WHERE:</span> makers' lab <b class="red-text">${ campus == 'ECU' ? 'Écully' : campus == 'PAR' ? 'Paris' : campus == 'STE' ? 'Saint-Étienne' : 'room Zoom' }</b><br>
+                        <span class="red-text darken-4">WHEN:</span> ${ date } -- ${ hour }
                     </p>
                     <div class="divider"></div>
 
-                    <form data-event="${ event[ 0 ] + '_' + event[ 1 ] + '_' + event[ 2 ] }">
+                    <form data-event="${ title + '_' + campus + '_' + date }">
                         <div class="row">
                             <div class="input-field col l12">
                                 <i class="material-icons prefix">account_circle</i>
