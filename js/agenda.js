@@ -157,7 +157,7 @@ const formSubmission = () => {
     } );
 };
 
-let request = new Request( 'https://script.google.com/macros/s/AKfycbzfi_2sF4s85Ypb18H1JoFcQgdwUxTV3kampuD2CIQugCOi_yXI/exec', {
+let request = new Request( 'https://script.google.com/macros/s/AKfycbwj6NFquoYdm-Qn_ykGOhytjqBN9qowlYqJ3e_-05y8XrqZs0xDoE1ncK4whust_jB5WA/exec', {
     method: 'POST',
     headers: new Headers( {
         'Content-Type' : 'application/x-www-form-urlencoded'
