@@ -1,10 +1,10 @@
 const formatEvent = ( event, i ) => {
     let [title, campus, date, hour, desc, img, soldout] = event;
-    console.log({title, campus, date, hour, desc, img, soldout});
+    // console.log({title, campus, date, hour, desc, img, soldout});
     campus = campus.toUpperCase();
 
     const [day, month, year] = date.split('/');
-    const ddate = new Date(`${month}/${day}/${year || 21}`);
+    const ddate = new Date(`${month}/${day}/${year}`);
     const now = new Date();
     const comingsoon = ddate - now > 1000 * 3600 * 24 * 14; // more than 2 weeks
 
