@@ -1,12 +1,11 @@
 const formatEvent = ( event, i ) => {
-    let [title, campus, date, hour, desc, img, soldout] = event;
-    // console.log({title, campus, date, hour, desc, img, soldout});
+    let [title, campus, date, hour, desc, img, status] = event;
+    console.log({title, campus, date, hour, desc, img, status});
     campus = campus.toUpperCase();
+    status = status ? status.toUpperCase() : '';
 
-    const [day, month, year] = date.split('/');
-    const ddate = new Date(`${month}/${day}/${year}`);
-    const now = new Date();
-    const comingsoon = ddate - now > 1000 * 3600 * 24 * 14; // more than 2 weeks
+    const soldout = status === 'SOLDOUT';
+    const comingsoon = status === 'COMINGSOON';
 
     return `
         ${ i % 3 === 0 ? '<div class="row">': '' }
@@ -157,7 +156,7 @@ const formSubmission = () => {
     } );
 };
 
-let request = new Request( 'https://script.google.com/macros/s/AKfycbwj6NFquoYdm-Qn_ykGOhytjqBN9qowlYqJ3e_-05y8XrqZs0xDoE1ncK4whust_jB5WA/exec', {
+let request = new Request( 'https://script.google.com/macros/s/AKfycbzEKmxJ0dT4IMWoovoRGGX02UDdPgj60S60XiE169CPx-yPwRCUMU8kTK61uYpoEATnrQ/exec', {
     method: 'POST',
     headers: new Headers( {
         'Content-Type' : 'application/x-www-form-urlencoded'
