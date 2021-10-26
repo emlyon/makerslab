@@ -98,18 +98,6 @@
             "tickets_remaining": 227
         },
         {
-            "title": "Matilda the Musical",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/2906-1629627885-matencore500x500-ltw.jpg?itok=yAh99Idm",
-            "location": "Cambridge Theatre",
-            "dates": {
-                "from": "Fri Mar 11 2022",
-                "to": "Sun May 29 2022"
-            },
-            "description": "Adapted from the incomparable children's novel by Roald Dahl, Matilda The Musical is the multi-award winning musical from the Royal Shakespeare Company that continues to delight audiences in the West End.",
-            "price": "59.00",
-            "tickets_remaining": 66
-        },
-        {
             "title": "Taboo",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/1034-1631802381-taboo250x250.jpg?itok=j19uExGW",
             "location": "London Palladium",
@@ -122,18 +110,6 @@
             "tickets_remaining": 116
         },
         {
-            "title": "Anything Goes",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/1112-1631880033-agencsfx4250x250.jpg?itok=7r73uPAv",
-            "location": "Barbican",
-            "dates": {
-                "from": "Fri Aug 20 2021",
-                "to": "Sat Nov 06 2021"
-            },
-            "description": "Two-time Tony winner Sutton Foster makes her highly-anticipated West End debut as Reno Sweeney in the London revival of Anything Goes at the Barbican. Set to be the perfect antidote to lockdown blues, get ready to sail towards sunnier skies on the S. S.",
-            "price": "49.00",
-            "tickets_remaining": 313
-        },
-        {
             "title": "& Juliet",
             "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7140-1634048562-andjulietltd1080x1080pxsep21.jpg?itok=iB9xZMwi",
             "location": "Shaftesbury Theatre",
@@ -144,18 +120,6 @@
             "description": "& Juliet is a musical making its West End premiere at the Shaftesbury Theatre featuring the songs of pop hit machine Max Martin, who has written songs for Britney Spears, Celine Dion, the Backstreet Boys, Kelly Clarkson, P!nk, Katy Perry, Ariana Grande, and many more. & Juliet tickets are available on London Theatre now.",
             "price": "49.00",
             "tickets_remaining": 120
-        },
-        {
-            "title": "Get Up, Stand Up! The Bob Marley Musical",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/api/7938-1631883110-lsmgusuencorelondontheatreemailonsale1080x1080.jpg?itok=4c-9C5cv",
-            "location": "Lyric Theatre",
-            "dates": {
-                "from": "Wed Feb 16 2022",
-                "to": "Sun Apr 03 2022"
-            },
-            "description": "A bold new musical is honouring the Jamaican reggae superstar Bob Marley, whose indelible songs and rebellious spirit continue to inspire millions around the world. Featuring all the big hits, including “No Woman, No Cry,” this promises to be a new West End favourite. Don’t miss out: Get Up, Stand Up tickets are available on London Theatre now.",
-            "price": "29.00",
-            "tickets_remaining": 99
         },
         {
             "title": "The Last Five Years",
@@ -300,18 +264,6 @@
             "description": "The Queen of British Soul and West End leading lady Beverley Knight stars in the world premiere of brand new musical The Drifters Girl. Discover the remarkable story of The Drifters, one of the world’s greatest vocal groups, and the truth about the woman who made them.",
             "price": "69.00",
             "tickets_remaining": 119
-        },
-        {
-            "title": "Cabaret",
-            "image": "https://www.londontheatre.co.uk/sites/default/files/styles/image_list/public/Cabaret500.jpg?itok=IDc9WvzM",
-            "location": "Playhouse Theatre",
-            "dates": {
-                "from": "Fri Jan 21 2022",
-                "to": "Sat Apr 16 2022"
-            },
-            "description": "From November 2021, Hollywood stars Eddie Redmayne and Jessie Buckley will welcome audiences to the cabaret, as West End venue the Playhouse Theatre is transformed into the Kit Kat Club.",
-            "price": "69.00",
-            "tickets_remaining": 242
         },
         {
             "title": "Hamilton",
