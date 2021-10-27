@@ -1,5 +1,14 @@
 {
     "product": "sneakers",
+    "brands": [
+        "adidas",
+        "asics",
+        "converse",
+        "jordan",
+        "newbalance",
+        "nike",
+        "puma"
+    ],
     "items": {
         "adidas": [
             {
@@ -8,17 +17,44 @@
                 "price": 84.9,
                 "description": "Fall in love with the comfort and timeless design of the white and green Stan Smith Primegreen trainers.",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwaf693623/images/hi-res/001489717_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/stan-smith-primegreen.png",
                 "availability": [
-                    { "size": 36, "quantity": 5 },
-                    { "size": 37, "quantity": 7 },
-                    { "size": 38, "quantity": 0 },
-                    { "size": 39, "quantity": 7 },
-                    { "size": 40, "quantity": 1 },
-                    { "size": 41, "quantity": 3 },
-                    { "size": 42, "quantity": 7 },
-                    { "size": 43, "quantity": 9 },
-                    { "size": 44, "quantity": 9 }
+                    {
+                        "size": 36,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 9
+                    }
                 ]
             },
             {
@@ -27,17 +63,44 @@
                 "price": 79.9,
                 "description": "An urban and colourful look with this Adidas sneaker",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw1299d591/images/hi-res/001491801_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/forum-low-og.png",
                 "availability": [
-                    { "size": 36, "quantity": 4 },
-                    { "size": 37, "quantity": 11 },
-                    { "size": 38, "quantity": 0 },
-                    { "size": 39, "quantity": 2 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 2 },
-                    { "size": 43, "quantity": 2 },
-                    { "size": 44, "quantity": 3 }
+                    {
+                        "size": 36,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 11
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 3
+                    }
                 ]
             },
             {
@@ -46,17 +109,44 @@
                 "price": 79.9,
                 "description": "The Adidas Continental 80 Stripes Tournament: sleek and stylish",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwcb550879/images/hi-res/001494797_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/continental-80-stripes-tournament.png",
                 "availability": [
-                    { "size": 36, "quantity": 6 },
-                    { "size": 37, "quantity": 3 },
-                    { "size": 38, "quantity": 8 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 4 },
-                    { "size": 42, "quantity": 4 },
-                    { "size": 43, "quantity": 2 },
-                    { "size": 44, "quantity": 6 }
+                    {
+                        "size": 36,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 6
+                    }
                 ]
             },
             {
@@ -65,17 +155,44 @@
                 "price": 59.9,
                 "description": "Be trendy at all times with this pair of Adidas sneakers",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwc2becab5/images/hi-res/001491541_101v2.jpg?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/forum-bold.png",
                 "availability": [
-                    { "size": 36, "quantity": 7 },
-                    { "size": 37, "quantity": 9 },
-                    { "size": 38, "quantity": 2 },
-                    { "size": 39, "quantity": 4 },
-                    { "size": 40, "quantity": 4 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 4 },
-                    { "size": 43, "quantity": 7 },
-                    { "size": 44, "quantity": 7 }
+                    {
+                        "size": 36,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 7
+                    }
                 ]
             },
             {
@@ -84,17 +201,44 @@
                 "price": 79.9,
                 "description": "Adopt a timeless, on-trend look with the white and black Stan Smith Primegreens.",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw2a2696f7/images/hi-res/001491372_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/stan-smith-primegreen.png",
                 "availability": [
-                    { "size": 36, "quantity": 4 },
-                    { "size": 37, "quantity": 3 },
-                    { "size": 38, "quantity": 6 },
-                    { "size": 39, "quantity": 1 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 3 },
-                    { "size": 42, "quantity": 6 },
-                    { "size": 43, "quantity": 1 },
-                    { "size": 44, "quantity": 8 }
+                    {
+                        "size": 36,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 8
+                    }
                 ]
             },
             {
@@ -103,17 +247,44 @@
                 "price": 54.9,
                 "description": "The Ozweego Celox for a sporty and feminine look",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwee345b62/images/hi-res/001493948_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/ozweego-celox.png",
                 "availability": [
-                    { "size": 36, "quantity": 13 },
-                    { "size": 37, "quantity": 2 },
-                    { "size": 38, "quantity": 7 },
-                    { "size": 39, "quantity": 4 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 4 },
-                    { "size": 42, "quantity": 5 },
-                    { "size": 43, "quantity": 4 },
-                    { "size": 44, "quantity": 13 }
+                    {
+                        "size": 36,
+                        "quantity": 13
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 13
+                    }
                 ]
             },
             {
@@ -122,17 +293,44 @@
                 "price": 54.9,
                 "description": "The Stan Smith CF Floral: for a feminine springtime look!",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw6fd96015/images/hi-res/001491534_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/stan-smith-cf-floral.png",
                 "availability": [
-                    { "size": 36, "quantity": 4 },
-                    { "size": 37, "quantity": 8 },
-                    { "size": 38, "quantity": 1 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 7 },
-                    { "size": 42, "quantity": 3 },
-                    { "size": 43, "quantity": 10 },
-                    { "size": 44, "quantity": 5 }
+                    {
+                        "size": 36,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 10
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 5
+                    }
                 ]
             },
             {
@@ -141,17 +339,44 @@
                 "price": 54.9,
                 "description": "Embrace the urban sportswear style with the Adidas Forum Bold",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw0e4f103f/images/hi-res/001491584_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/forum-bold.png",
                 "availability": [
-                    { "size": 36, "quantity": 8 },
-                    { "size": 37, "quantity": 3 },
-                    { "size": 38, "quantity": 3 },
-                    { "size": 39, "quantity": 7 },
-                    { "size": 40, "quantity": 5 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 7 },
-                    { "size": 43, "quantity": 3 },
-                    { "size": 44, "quantity": 13 }
+                    {
+                        "size": 36,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 13
+                    }
                 ]
             },
             {
@@ -160,17 +385,44 @@
                 "price": 39.9,
                 "description": "The Superstar Floral sneakers, for style that’s both urban and girly",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwcc3f980b/images/hi-res/001491539_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/superstar-floral.png",
                 "availability": [
-                    { "size": 36, "quantity": 9 },
-                    { "size": 37, "quantity": 11 },
-                    { "size": 38, "quantity": 9 },
-                    { "size": 39, "quantity": 7 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 0 },
-                    { "size": 43, "quantity": 7 },
-                    { "size": 44, "quantity": 12 }
+                    {
+                        "size": 36,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 11
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 12
+                    }
                 ]
             }
         ],
@@ -181,17 +433,44 @@
                 "price": 44.9,
                 "description": "The Asics Gel-Quantum 360 6 Trail: a sneaker that combines comfort and technical performance!",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwdca44312/images/hi-res/001493040_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/gel-quantum-360-6-utility.png",
                 "availability": [
-                    { "size": 36, "quantity": 5 },
-                    { "size": 37, "quantity": 7 },
-                    { "size": 38, "quantity": 7 },
-                    { "size": 39, "quantity": 6 },
-                    { "size": 40, "quantity": 4 },
-                    { "size": 41, "quantity": 4 },
-                    { "size": 42, "quantity": 2 },
-                    { "size": 43, "quantity": 3 },
-                    { "size": 44, "quantity": 10 }
+                    {
+                        "size": 36,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 10
+                    }
                 ]
             },
             {
@@ -200,17 +479,44 @@
                 "price": 74.9,
                 "description": "The Gel-Quantum 360 6: a high-end running shoe",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw860ca7af/images/hi-res/001478357_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/gel-quantum-360-6.png",
                 "availability": [
-                    { "size": 36, "quantity": 11 },
-                    { "size": 37, "quantity": 2 },
-                    { "size": 38, "quantity": 0 },
-                    { "size": 39, "quantity": 1 },
-                    { "size": 40, "quantity": 5 },
-                    { "size": 41, "quantity": 2 },
-                    { "size": 42, "quantity": 2 },
-                    { "size": 43, "quantity": 10 },
-                    { "size": 44, "quantity": 6 }
+                    {
+                        "size": 36,
+                        "quantity": 11
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 10
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 6
+                    }
                 ]
             }
         ],
@@ -221,17 +527,44 @@
                 "price": 84.9,
                 "description": "Elevate your style with the Converse Run Star Hike",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwa33654d8/images/hi-res/001471526_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/run-star-hike.png",
                 "availability": [
-                    { "size": 36, "quantity": 7 },
-                    { "size": 37, "quantity": 8 },
-                    { "size": 38, "quantity": 0 },
-                    { "size": 39, "quantity": 6 },
-                    { "size": 40, "quantity": 5 },
-                    { "size": 41, "quantity": 6 },
-                    { "size": 42, "quantity": 8 },
-                    { "size": 43, "quantity": 4 },
-                    { "size": 44, "quantity": 5 }
+                    {
+                        "size": 36,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 5
+                    }
                 ]
             },
             {
@@ -240,17 +573,44 @@
                 "price": 79.9,
                 "description": "Opt for the original design of the Converse Run Star Hike Hi",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw60795cd5/images/hi-res/001492549_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/run-star-hike-metallic-floral.png",
                 "availability": [
-                    { "size": 36, "quantity": 11 },
-                    { "size": 37, "quantity": 10 },
-                    { "size": 38, "quantity": 2 },
-                    { "size": 39, "quantity": 6 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 6 },
-                    { "size": 42, "quantity": 0 },
-                    { "size": 43, "quantity": 8 },
-                    { "size": 44, "quantity": 9 }
+                    {
+                        "size": 36,
+                        "quantity": 11
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 10
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 9
+                    }
                 ]
             },
             {
@@ -259,17 +619,44 @@
                 "price": 49.9,
                 "description": "Stand tall with the new Chuck Taylor All Star High Lift!",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw0903e4c6/images/hi-res/001493410_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/chuck-taylor-all-star-lift-hi-2x.png",
                 "availability": [
-                    { "size": 36, "quantity": 12 },
-                    { "size": 37, "quantity": 5 },
-                    { "size": 38, "quantity": 5 },
-                    { "size": 39, "quantity": 6 },
-                    { "size": 40, "quantity": 1 },
-                    { "size": 41, "quantity": 1 },
-                    { "size": 42, "quantity": 2 },
-                    { "size": 43, "quantity": 2 },
-                    { "size": 44, "quantity": 13 }
+                    {
+                        "size": 36,
+                        "quantity": 12
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 13
+                    }
                 ]
             },
             {
@@ -278,17 +665,44 @@
                 "price": 79.9,
                 "description": "Go for a super-stylish all-white look with the CTAS OX Move sneakers",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw0146d97b/images/hi-res/001491224_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/chuck-taylor-all-star-move-ox.png",
                 "availability": [
-                    { "size": 36, "quantity": 5 },
-                    { "size": 37, "quantity": 6 },
-                    { "size": 38, "quantity": 8 },
-                    { "size": 39, "quantity": 2 },
-                    { "size": 40, "quantity": 3 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 6 },
-                    { "size": 43, "quantity": 8 },
-                    { "size": 44, "quantity": 10 }
+                    {
+                        "size": 36,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 10
+                    }
                 ]
             }
         ],
@@ -299,17 +713,44 @@
                 "price": 44.9,
                 "description": "Go for a basketball look with the Jordan Max Aura 3",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw703c71ff/images/hi-res/001492325_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/jordan-max-aura-3.png",
                 "availability": [
-                    { "size": 36, "quantity": 9 },
-                    { "size": 37, "quantity": 6 },
-                    { "size": 38, "quantity": 1 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 8 },
-                    { "size": 43, "quantity": 7 },
-                    { "size": 44, "quantity": 12 }
+                    {
+                        "size": 36,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 12
+                    }
                 ]
             },
             {
@@ -318,38 +759,92 @@
                 "price": 59.9,
                 "description": "Discover the new Air Jordan 11 Cmft Low, for a look that’s both retro and on-trend!",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw869b44e8/images/hi-res/001490318_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-jordan-11-cmft-low.png",
                 "availability": [
-                    { "size": 36, "quantity": 12 },
-                    { "size": 37, "quantity": 6 },
-                    { "size": 38, "quantity": 7 },
-                    { "size": 39, "quantity": 2 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 5 },
-                    { "size": 42, "quantity": 4 },
-                    { "size": 43, "quantity": 6 },
-                    { "size": 44, "quantity": 5 }
+                    {
+                        "size": 36,
+                        "quantity": 12
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 5
+                    }
                 ]
             }
         ],
-        "new balance": [
+        "newbalance": [
             {
                 "name": "327",
                 "brand": "NEW BALANCE",
                 "price": 44.9,
                 "description": "Make a statement with the New Balance 327!",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw6967d39c/images/hi-res/001493996_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/327.png",
                 "availability": [
-                    { "size": 36, "quantity": 3 },
-                    { "size": 37, "quantity": 1 },
-                    { "size": 38, "quantity": 0 },
-                    { "size": 39, "quantity": 5 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 5 },
-                    { "size": 42, "quantity": 3 },
-                    { "size": 43, "quantity": 1 },
-                    { "size": 44, "quantity": 8 }
+                    {
+                        "size": 36,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 8
+                    }
                 ]
             },
             {
@@ -358,17 +853,44 @@
                 "price": 64.9,
                 "description": "Stay on top of the game with the New Balance 327 sneakers",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwd8cdc9ca/images/hi-res/001490182_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/327.png",
                 "availability": [
-                    { "size": 36, "quantity": 4 },
-                    { "size": 37, "quantity": 3 },
-                    { "size": 38, "quantity": 6 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 3 },
-                    { "size": 42, "quantity": 2 },
-                    { "size": 43, "quantity": 9 },
-                    { "size": 44, "quantity": 5 }
+                    {
+                        "size": 36,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 5
+                    }
                 ]
             }
         ],
@@ -379,17 +901,44 @@
                 "price": 44.9,
                 "description": "Celebrate the Swoosh’s 50th with the Nike Air Max 90 SE ”First Use”!",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw0cec880b/images/hi-res/001493771_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-max-90-se-first-use.png",
                 "availability": [
-                    { "size": 36, "quantity": 10 },
-                    { "size": 37, "quantity": 6 },
-                    { "size": 38, "quantity": 7 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 5 },
-                    { "size": 41, "quantity": 3 },
-                    { "size": 42, "quantity": 4 },
-                    { "size": 43, "quantity": 7 },
-                    { "size": 44, "quantity": 10 }
+                    {
+                        "size": 36,
+                        "quantity": 10
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 10
+                    }
                 ]
             },
             {
@@ -398,17 +947,44 @@
                 "price": 49.9,
                 "description": "A comfortable sportswear style with the Nike React Vision",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw9ecd657a/images/hi-res/001492415_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/react-vision.png",
                 "availability": [
-                    { "size": 36, "quantity": 10 },
-                    { "size": 37, "quantity": 5 },
-                    { "size": 38, "quantity": 6 },
-                    { "size": 39, "quantity": 5 },
-                    { "size": 40, "quantity": 5 },
-                    { "size": 41, "quantity": 4 },
-                    { "size": 42, "quantity": 6 },
-                    { "size": 43, "quantity": 8 },
-                    { "size": 44, "quantity": 9 }
+                    {
+                        "size": 36,
+                        "quantity": 10
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 9
+                    }
                 ]
             },
             {
@@ -417,17 +993,44 @@
                 "price": 59.9,
                 "description": "The Nike Air Force 1 Low Space Jam: a pair dedicated to adventure and basketball!",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwd6ecac44/images/hi-res/001492337_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-force-1-low-space-jam.png",
                 "availability": [
-                    { "size": 36, "quantity": 10 },
-                    { "size": 37, "quantity": 6 },
-                    { "size": 38, "quantity": 3 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 1 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 2 },
-                    { "size": 43, "quantity": 6 },
-                    { "size": 44, "quantity": 7 }
+                    {
+                        "size": 36,
+                        "quantity": 10
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 7
+                    }
                 ]
             },
             {
@@ -436,17 +1039,44 @@
                 "price": 84.9,
                 "description": "Un look rétro running minimaliste avec les Air Max 96 II",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwfbc8f8df/images/hi-res/001493768_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-max-96-ii.png",
                 "availability": [
-                    { "size": 36, "quantity": 5 },
-                    { "size": 37, "quantity": 3 },
-                    { "size": 38, "quantity": 5 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 1 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 2 },
-                    { "size": 43, "quantity": 7 },
-                    { "size": 44, "quantity": 3 }
+                    {
+                        "size": 36,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 3
+                    }
                 ]
             },
             {
@@ -455,17 +1085,44 @@
                 "price": 59.9,
                 "description": "Celebrate the Swoosh’s 50th with the Nike Air Force 1 Low ”First Use”!",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw79f2adba/images/hi-res/001492344_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-force-1-low-first-use.png",
                 "availability": [
-                    { "size": 36, "quantity": 7 },
-                    { "size": 37, "quantity": 9 },
-                    { "size": 38, "quantity": 6 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 6 },
-                    { "size": 42, "quantity": 7 },
-                    { "size": 43, "quantity": 1 },
-                    { "size": 44, "quantity": 12 }
+                    {
+                        "size": 36,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 12
+                    }
                 ]
             },
             {
@@ -474,17 +1131,44 @@
                 "price": 74.9,
                 "description": "Opt for a sportswear look with the Nike Air Max 96 II",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw1fca39e9/images/hi-res/001492384_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-max-96-ii.png",
                 "availability": [
-                    { "size": 36, "quantity": 5 },
-                    { "size": 37, "quantity": 7 },
-                    { "size": 38, "quantity": 0 },
-                    { "size": 39, "quantity": 7 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 3 },
-                    { "size": 43, "quantity": 11 },
-                    { "size": 44, "quantity": 9 }
+                    {
+                        "size": 36,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 11
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 9
+                    }
                 ]
             },
             {
@@ -493,17 +1177,44 @@
                 "price": 79.9,
                 "description": "A timeless retro look with the Nike Air Max 2021 sneakers",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwd83c476c/images/hi-res/001492353_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-max-2021.png",
                 "availability": [
-                    { "size": 36, "quantity": 8 },
-                    { "size": 37, "quantity": 7 },
-                    { "size": 38, "quantity": 5 },
-                    { "size": 39, "quantity": 5 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 1 },
-                    { "size": 43, "quantity": 4 },
-                    { "size": 44, "quantity": 5 }
+                    {
+                        "size": 36,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 5
+                    }
                 ]
             },
             {
@@ -512,17 +1223,44 @@
                 "price": 54.9,
                 "description": "The new Nike Waffle One is an elegant, everday style!",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw8cc94db9/images/hi-res/001490308_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/waffle-one.png",
                 "availability": [
-                    { "size": 36, "quantity": 5 },
-                    { "size": 37, "quantity": 4 },
-                    { "size": 38, "quantity": 4 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 3 },
-                    { "size": 41, "quantity": 2 },
-                    { "size": 42, "quantity": 3 },
-                    { "size": 43, "quantity": 2 },
-                    { "size": 44, "quantity": 6 }
+                    {
+                        "size": 36,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 6
+                    }
                 ]
             },
             {
@@ -531,17 +1269,44 @@
                 "price": 49.9,
                 "description": "Retro running is an art with the Nike React Vision SOS",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwea439271/images/hi-res/001492417_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/react-vision-summer-of-sports.png",
                 "availability": [
-                    { "size": 36, "quantity": 6 },
-                    { "size": 37, "quantity": 6 },
-                    { "size": 38, "quantity": 0 },
-                    { "size": 39, "quantity": 6 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 7 },
-                    { "size": 42, "quantity": 2 },
-                    { "size": 43, "quantity": 8 },
-                    { "size": 44, "quantity": 6 }
+                    {
+                        "size": 36,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 6
+                    }
                 ]
             },
             {
@@ -550,17 +1315,44 @@
                 "price": 59.9,
                 "description": "Sporty all the way with the Air Vapormax 2021 FK",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwac89d564/images/hi-res/001490286_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-vapormax-2021-fk.png",
                 "availability": [
-                    { "size": 36, "quantity": 4 },
-                    { "size": 37, "quantity": 10 },
-                    { "size": 38, "quantity": 4 },
-                    { "size": 39, "quantity": 3 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 2 },
-                    { "size": 42, "quantity": 0 },
-                    { "size": 43, "quantity": 3 },
-                    { "size": 44, "quantity": 9 }
+                    {
+                        "size": 36,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 10
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 9
+                    }
                 ]
             },
             {
@@ -569,17 +1361,44 @@
                 "price": 69.9,
                 "description": "A bold retro sportswear style with the Blazer Mid 77 SOS sneakers",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwc1f3e6ee/images/hi-res/001492393_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/blazer-mid-77-multi-swoosh.png",
                 "availability": [
-                    { "size": 36, "quantity": 11 },
-                    { "size": 37, "quantity": 7 },
-                    { "size": 38, "quantity": 7 },
-                    { "size": 39, "quantity": 2 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 9 },
-                    { "size": 43, "quantity": 4 },
-                    { "size": 44, "quantity": 6 }
+                    {
+                        "size": 36,
+                        "quantity": 11
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 6
+                    }
                 ]
             },
             {
@@ -588,17 +1407,44 @@
                 "price": 74.9,
                 "description": "A girly, colourful look with the Air Force 1 Shadow from Nike",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw4e03644d/images/hi-res/001491637_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-force-1-shadow.png",
                 "availability": [
-                    { "size": 36, "quantity": 10 },
-                    { "size": 37, "quantity": 10 },
-                    { "size": 38, "quantity": 7 },
-                    { "size": 39, "quantity": 7 },
-                    { "size": 40, "quantity": 4 },
-                    { "size": 41, "quantity": 3 },
-                    { "size": 42, "quantity": 1 },
-                    { "size": 43, "quantity": 3 },
-                    { "size": 44, "quantity": 6 }
+                    {
+                        "size": 36,
+                        "quantity": 10
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 10
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 6
+                    }
                 ]
             },
             {
@@ -607,17 +1453,44 @@
                 "price": 74.9,
                 "description": "Step out of the shadows with the Nike Air Force 1 Shadow\t",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw67f95be7/images/hi-res/001462676_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-force-1-shadow.png",
                 "availability": [
-                    { "size": 36, "quantity": 11 },
-                    { "size": 37, "quantity": 3 },
-                    { "size": 38, "quantity": 9 },
-                    { "size": 39, "quantity": 5 },
-                    { "size": 40, "quantity": 4 },
-                    { "size": 41, "quantity": 3 },
-                    { "size": 42, "quantity": 1 },
-                    { "size": 43, "quantity": 4 },
-                    { "size": 44, "quantity": 4 }
+                    {
+                        "size": 36,
+                        "quantity": 11
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 4
+                    }
                 ]
             },
             {
@@ -626,17 +1499,44 @@
                 "price": 64.9,
                 "description": "Stand tall with the Dunk Hi Rebel sneakers",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw9bd055ef/images/hi-res/001493134_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/dunk-high-up-iron-purple.png",
                 "availability": [
-                    { "size": 36, "quantity": 9 },
-                    { "size": 37, "quantity": 3 },
-                    { "size": 38, "quantity": 2 },
-                    { "size": 39, "quantity": 4 },
-                    { "size": 40, "quantity": 4 },
-                    { "size": 41, "quantity": 4 },
-                    { "size": 42, "quantity": 8 },
-                    { "size": 43, "quantity": 11 },
-                    { "size": 44, "quantity": 11 }
+                    {
+                        "size": 36,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 11
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 11
+                    }
                 ]
             },
             {
@@ -645,17 +1545,44 @@
                 "price": 79.9,
                 "description": "Combine the emblematic and the legendary with the Air Force 1 Low",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw79ae030a/images/hi-res/001435742_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-force-1-low-blanc.png",
                 "availability": [
-                    { "size": 36, "quantity": 11 },
-                    { "size": 37, "quantity": 1 },
-                    { "size": 38, "quantity": 6 },
-                    { "size": 39, "quantity": 6 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 4 },
-                    { "size": 42, "quantity": 0 },
-                    { "size": 43, "quantity": 9 },
-                    { "size": 44, "quantity": 4 }
+                    {
+                        "size": 36,
+                        "quantity": 11
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 4
+                    }
                 ]
             },
             {
@@ -664,17 +1591,44 @@
                 "price": 59.9,
                 "description": "Add some colour to your style with the Dunk Hi Rebel",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw36690848/images/hi-res/001493135_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/dunk-high-up-cashmere.png",
                 "availability": [
-                    { "size": 36, "quantity": 4 },
-                    { "size": 37, "quantity": 6 },
-                    { "size": 38, "quantity": 8 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 6 },
-                    { "size": 42, "quantity": 3 },
-                    { "size": 43, "quantity": 9 },
-                    { "size": 44, "quantity": 6 }
+                    {
+                        "size": 36,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 6
+                    }
                 ]
             },
             {
@@ -683,17 +1637,44 @@
                 "price": 79.9,
                 "description": "Make a bold style statement with the Dunk Hi Rebel sneakers",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwdf0baaf4/images/hi-res/001493133_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/dunk-high-up-summit-white.png",
                 "availability": [
-                    { "size": 36, "quantity": 11 },
-                    { "size": 37, "quantity": 6 },
-                    { "size": 38, "quantity": 7 },
-                    { "size": 39, "quantity": 6 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 3 },
-                    { "size": 43, "quantity": 10 },
-                    { "size": 44, "quantity": 4 }
+                    {
+                        "size": 36,
+                        "quantity": 11
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 10
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 4
+                    }
                 ]
             },
             {
@@ -702,17 +1683,44 @@
                 "price": 49.9,
                 "description": "Choose the Nike Air Force 1 Shadow for twice the style!",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw1a4a1bc2/images/hi-res/001491639_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-force-1-shadow.png",
                 "availability": [
-                    { "size": 36, "quantity": 7 },
-                    { "size": 37, "quantity": 6 },
-                    { "size": 38, "quantity": 0 },
-                    { "size": 39, "quantity": 1 },
-                    { "size": 40, "quantity": 4 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 0 },
-                    { "size": 43, "quantity": 3 },
-                    { "size": 44, "quantity": 4 }
+                    {
+                        "size": 36,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 4
+                    }
                 ]
             },
             {
@@ -721,17 +1729,44 @@
                 "price": 44.9,
                 "description": "Revise your classics with the Nike Air Force 1 Low",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwe1b5b012/images/hi-res/001449806_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-force-1-low.png",
                 "availability": [
-                    { "size": 36, "quantity": 9 },
-                    { "size": 37, "quantity": 2 },
-                    { "size": 38, "quantity": 8 },
-                    { "size": 39, "quantity": 3 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 4 },
-                    { "size": 43, "quantity": 7 },
-                    { "size": 44, "quantity": 5 }
+                    {
+                        "size": 36,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 5
+                    }
                 ]
             },
             {
@@ -740,17 +1775,44 @@
                 "price": 79.9,
                 "description": "Get comfy with the Nike React Vision!",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw43a1f9b1/images/hi-res/001492841_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/react-vision.png",
                 "availability": [
-                    { "size": 36, "quantity": 4 },
-                    { "size": 37, "quantity": 7 },
-                    { "size": 38, "quantity": 9 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 3 },
-                    { "size": 41, "quantity": 3 },
-                    { "size": 42, "quantity": 3 },
-                    { "size": 43, "quantity": 3 },
-                    { "size": 44, "quantity": 12 }
+                    {
+                        "size": 36,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 12
+                    }
                 ]
             },
             {
@@ -759,17 +1821,44 @@
                 "price": 39.9,
                 "description": "You can count the white Blazer Low Platform timeless sneaker",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwd00be1d1/images/hi-res/001490394_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/blazer-low-platform.png",
                 "availability": [
-                    { "size": 36, "quantity": 4 },
-                    { "size": 37, "quantity": 2 },
-                    { "size": 38, "quantity": 4 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 4 },
-                    { "size": 43, "quantity": 3 },
-                    { "size": 44, "quantity": 5 }
+                    {
+                        "size": 36,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 5
+                    }
                 ]
             },
             {
@@ -778,17 +1867,44 @@
                 "price": 54.9,
                 "description": "The Nike Waffle 1 will match any outfit for a sober and spring-like style!",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw8ae7d8fe/images/hi-res/001490396_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/waffle-one.png",
                 "availability": [
-                    { "size": 36, "quantity": 8 },
-                    { "size": 37, "quantity": 5 },
-                    { "size": 38, "quantity": 8 },
-                    { "size": 39, "quantity": 3 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 6 },
-                    { "size": 42, "quantity": 6 },
-                    { "size": 43, "quantity": 5 },
-                    { "size": 44, "quantity": 13 }
+                    {
+                        "size": 36,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 13
+                    }
                 ]
             },
             {
@@ -797,17 +1913,44 @@
                 "price": 84.9,
                 "description": "Go for an on-trend feminine look with the new Air Max 95!",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwa20c84c3/images/hi-res/001490411_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/air-max-95.png",
                 "availability": [
-                    { "size": 36, "quantity": 4 },
-                    { "size": 37, "quantity": 3 },
-                    { "size": 38, "quantity": 0 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 5 },
-                    { "size": 41, "quantity": 4 },
-                    { "size": 42, "quantity": 4 },
-                    { "size": 43, "quantity": 4 },
-                    { "size": 44, "quantity": 7 }
+                    {
+                        "size": 36,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 7
+                    }
                 ]
             },
             {
@@ -816,17 +1959,44 @@
                 "price": 74.9,
                 "description": "Choose an elegant, retro style with the Nike Waffle One!",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw2d3fde13/images/hi-res/001491666_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/waffle-one.png",
                 "availability": [
-                    { "size": 36, "quantity": 11 },
-                    { "size": 37, "quantity": 9 },
-                    { "size": 38, "quantity": 8 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 4 },
-                    { "size": 41, "quantity": 1 },
-                    { "size": 42, "quantity": 2 },
-                    { "size": 43, "quantity": 2 },
-                    { "size": 44, "quantity": 12 }
+                    {
+                        "size": 36,
+                        "quantity": 11
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 8
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 12
+                    }
                 ]
             }
         ],
@@ -837,17 +2007,44 @@
                 "price": 49.9,
                 "description": "Create sporty looks with RS-Z LTH shoes by Puma",
                 "gender": "MEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwca23f326/images/hi-res/001492022_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/rs-z-lth.png",
                 "availability": [
-                    { "size": 36, "quantity": 10 },
-                    { "size": 37, "quantity": 3 },
-                    { "size": 38, "quantity": 3 },
-                    { "size": 39, "quantity": 1 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 4 },
-                    { "size": 42, "quantity": 3 },
-                    { "size": 43, "quantity": 5 },
-                    { "size": 44, "quantity": 9 }
+                    {
+                        "size": 36,
+                        "quantity": 10
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 9
+                    }
                 ]
             },
             {
@@ -856,17 +2053,44 @@
                 "price": 79.9,
                 "description": "Assert your style with the white and beige Mayze Mix",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwa25fe6bb/images/hi-res/001491369_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/mayze-leather.png",
                 "availability": [
-                    { "size": 36, "quantity": 7 },
-                    { "size": 37, "quantity": 3 },
-                    { "size": 38, "quantity": 2 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 0 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 5 },
-                    { "size": 43, "quantity": 7 },
-                    { "size": 44, "quantity": 7 }
+                    {
+                        "size": 36,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 2
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 7
+                    }
                 ]
             },
             {
@@ -875,17 +2099,44 @@
                 "price": 44.9,
                 "description": "Stay sporty to the tips of your toes in the Mayze Leather sneakers",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw667bb5ee/images/hi-res/001491462_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/mayze-classic.png",
                 "availability": [
-                    { "size": 36, "quantity": 4 },
-                    { "size": 37, "quantity": 10 },
-                    { "size": 38, "quantity": 4 },
-                    { "size": 39, "quantity": 0 },
-                    { "size": 40, "quantity": 3 },
-                    { "size": 41, "quantity": 1 },
-                    { "size": 42, "quantity": 9 },
-                    { "size": 43, "quantity": 5 },
-                    { "size": 44, "quantity": 4 }
+                    {
+                        "size": 36,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 10
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 4
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 9
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 4
+                    }
                 ]
             },
             {
@@ -894,17 +2145,44 @@
                 "price": 49.9,
                 "description": "Go for the Puma Fame for an elegant streetwear look",
                 "gender": "WOMEN",
-                "image": "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwa6f38414/images/hi-res/001488204_101.png?sw=300&sh=300&sm=fit",
+                "image": "https://makerslab.em-lyon.com/dww/data/products/cali-star.png",
                 "availability": [
-                    { "size": 36, "quantity": 5 },
-                    { "size": 37, "quantity": 7 },
-                    { "size": 38, "quantity": 5 },
-                    { "size": 39, "quantity": 6 },
-                    { "size": 40, "quantity": 1 },
-                    { "size": 41, "quantity": 0 },
-                    { "size": 42, "quantity": 0 },
-                    { "size": 43, "quantity": 3 },
-                    { "size": 44, "quantity": 12 }
+                    {
+                        "size": 36,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 37,
+                        "quantity": 7
+                    },
+                    {
+                        "size": 38,
+                        "quantity": 5
+                    },
+                    {
+                        "size": 39,
+                        "quantity": 6
+                    },
+                    {
+                        "size": 40,
+                        "quantity": 1
+                    },
+                    {
+                        "size": 41,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 42,
+                        "quantity": 0
+                    },
+                    {
+                        "size": 43,
+                        "quantity": 3
+                    },
+                    {
+                        "size": 44,
+                        "quantity": 12
+                    }
                 ]
             }
         ]
