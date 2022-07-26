@@ -18,6 +18,8 @@
         $('.button-collapse').sideNav();
         $('.parallax').parallax();
         $('.collapsible').collapsible();
+        $('.modal').modal();
+        $('#noticeModal').modal('open');
 
         [].forEach.call(document.querySelectorAll('#index-banner a:not(.link)'), a => {
             a.addEventListener('click', e => {
