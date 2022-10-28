@@ -138,17 +138,14 @@ const formSubmission = () => {
                     return response.json();
                 } )
                 .then( json => {
-                    // console.log( json );
-
                     form.querySelector( '.row' ).classList.add( 'hide' );
                     form.querySelector( '.btn' ).classList.add( 'hide' );
-
                     if( json.result == 'success' ) {
                         form.querySelector( '.on-success' ).classList.remove( 'hide' );
                     }
                     else {
+                        console.log(json);
                         form.querySelector( '.on-error' ).classList.remove( 'hide' );
-
                     }
                 } )
                 .catch( e => console.warn( e ) );
