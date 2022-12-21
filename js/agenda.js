@@ -272,7 +272,7 @@ const eventBriteEvents = [
         }
     },
     {
-        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-ecully-english-486801655857",
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-initiation-saint-etienne-francais-486806008877",
         eventData: {
             title: "Data Literacy with Tableau @makerslab initiation | SAINT ETIENNE | FRANÇAIS",
             campus: "STE",
