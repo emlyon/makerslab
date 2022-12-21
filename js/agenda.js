@@ -1,89 +1,12 @@
-const eventBriteEvents = [
-    // {
-    //     title: "Data Literacy with Tableau @makerslab for beginners | PARIS | ENGLISH",
-    //     campus: "PAR",
-    //     date: "20/02",
-    //     hour: "09:00 > 17:00",
-    //     desc: "A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
-    //     img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
-    //     status: "comingsoon"
-    // }
-    {
-        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-paris-english-486802709007",
-        eventData: [
-            "Data Literacy with Tableau @makerslab for beginners | PARIS | ENGLISH",
-            "PAR",
-            "20/02",
-            "09:00 > 17:00",
-            "A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
-            "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
-            "comingsoon"
-        ]
-    },
-    {
-        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-paris-english-486803421137",
-        eventData: [
-            "Data Literacy with Tableau @makerslab for beginners | PARIS | ENGLISH",
-            "PAR",
-            "21/02",
-            "09:00 > 17:00",
-            "A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
-            "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
-            "comingsoon"
-        ]
-    },
-    {
-        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-ecully-english-486693151317",
-        eventData: [
-            "Data Literacy with Tableau @makerslab for beginners | ECULLY | ENGLISH",
-            "ECU",
-            "20/02",
-            "09:00 > 17:00",
-            "A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
-            "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
-            "comingsoon"
-        ]
-    },
-    {
-        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-ecully-english-486801655857",
-        eventData: [
-            "Data Literacy with Tableau @makerslab for beginners | ECULLY | ENGLISH",
-            "ECU",
-            "21/02",
-            "09:00 > 17:00",
-            "A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
-            "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
-            "comingsoon"
-        ]
-    },
-    {
-        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-ecully-english-486801655857",
-        eventData: [
-            "Data Literacy with Tableau @makerslab initiation | SAINT ETIENNE | FRANÇAIS",
-            "STE",
-            "20/02",
-            "09:00 > 17:00",
-            "Un workshop d'un journée pour apprendre en faisant ! Prêt à visualiser vos données autrement ?",
-            "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
-            "comingsoon"
-        ]
-    },
-    {
-        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-initiation-saint-etienne-francais-486806680887",
-        eventData: [
-            "Data Literacy with Tableau @makerslab initiation | SAINT ETIENNE | FRANÇAIS",
-            "STE",
-            "21/02",
-            "09:00 > 17:00",
-            "Un workshop d'un journée pour apprendre en faisant ! Prêt à visualiser vos données autrement ?",
-            "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
-            "comingsoon"
-        ]
-    },
-];
+const parseEventData = ( eventDataArray ) => {
+    let [title, campus, date, hour, desc, img, status] = eventDataArray;
+    date += '/23';
+    eventData = {title, campus, date, hour, desc, img, status};
+    return {eventData};
+};
 
 const formatEvent = ( event, i, eventBriteUrl ) => {
-    let [title, campus, date, hour, desc, img, status] = event;
+    let {title, campus, date, hour, desc, img, status} = event;
     console.log({title, campus, date, hour, desc, img, status});
     campus = campus.toUpperCase();
     status = status ? status.toUpperCase() : '';
@@ -141,7 +64,7 @@ const formatEvent = ( event, i, eventBriteUrl ) => {
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" style="object-fit:cover;" src="${ event[ 5 ] }">
+                    <img class="activator" style="object-fit:cover;" src="${ img }">
                 </div>
 
                 <div class="card-content">
@@ -262,15 +185,20 @@ fetch( request )
     .then( json => {
         if( json.result == 'success' ){
             let events = JSON.parse( json.data );
-            console.log(events)
             let agenda = document.querySelector( '.agenda' );
             let html = '';
 
-            eventBriteEvents.forEach( ( event, i ) => {
+            parsedCalendarEvents = events.map(e => parseEventData(e))
+            sortedEvents = parsedCalendarEvents.concat(eventBriteEvents).sort((a, b) => {
+                const loadDate = (date) => {
+                    // Convert to mm/dd/yy
+                    formattedDate = date.replace( /(\d{2})\/(\d{2})\/(\d{2})/, '$2/$1/$3' );
+                    return new Date(formattedDate)
+                }
+                return loadDate(a.eventData.date) - loadDate(b.eventData.date)
+            });
+            sortedEvents.forEach( ( event, i ) => {
                 html += formatEvent( event.eventData, i, event.url );
-            } );
-            events.forEach( ( event, i ) => {
-                html += formatEvent( event, i );
             } );
             agenda.innerHTML = html;
 
@@ -284,3 +212,87 @@ fetch( request )
         }
     } )
     .catch( e => console.warn( e ) );
+
+const eventBriteEvents = [
+    // {
+    //     title: "Data Literacy with Tableau @makerslab for beginners | PARIS | ENGLISH",
+    //     campus: "PAR",
+    //     date: "20/02/23",
+    //     hour: "09:00 > 17:00",
+    //     desc: "A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
+    //     img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+    //     status: "comingsoon"
+    // }
+    {
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-paris-english-486802709007",
+        eventData: {
+            title: "Data Literacy with Tableau @makerslab for beginners | PARIS | ENGLISH",
+            campus: "PAR",
+            date: "20/02/23",
+            hour: "09:00 > 17:00",
+            desc:"A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
+            img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+            status: "comingsoon"
+        }
+    },
+    {
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-paris-english-486803421137",
+        eventData: {
+            title: "Data Literacy with Tableau @makerslab for beginners | PARIS | ENGLISH",
+            campus: "PAR",
+            date: "21/02/23",
+            hour: "09:00 > 17:00",
+            desc:"A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
+            img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+            status: "comingsoon"
+        }
+    },
+    {
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-ecully-english-486693151317",
+        eventData: {
+            title: "Data Literacy with Tableau @makerslab for beginners | ECULLY | ENGLISH",
+            campus: "ECU",
+            date: "20/02/23",
+            hour: "09:00 > 17:00",
+            desc:"A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
+            img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+            status: "comingsoon"
+        }
+    },
+    {
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-ecully-english-486801655857",
+        eventData: {
+            title: "Data Literacy with Tableau @makerslab for beginners | ECULLY | ENGLISH",
+            campus: "ECU",
+            date: "21/02/23",
+            hour: "09:00 > 17:00",
+            desc:"A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
+            img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+            status: "comingsoon"
+        }
+    },
+    {
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-ecully-english-486801655857",
+        eventData: {
+            title: "Data Literacy with Tableau @makerslab initiation | SAINT ETIENNE | FRANÇAIS",
+            campus: "STE",
+            date: "20/02/23",
+            hour: "09:00 > 17:00",
+            desc:"Un workshop d'un journée pour apprendre en faisant ! Prêt à visualiser vos données autrement ?",
+            img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+            status: "comingsoon"
+        }
+    },
+    {
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-initiation-saint-etienne-francais-486806680887",
+        eventData: {
+            title: "Data Literacy with Tableau @makerslab initiation | SAINT ETIENNE | FRANÇAIS",
+            campus: "STE",
+            date: "21/02/23",
+            hour: "09:00 > 17:00",
+            desc:"Un workshop d'un journée pour apprendre en faisant ! Prêt à visualiser vos données autrement ?",
+            img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+            status: "comingsoon"
+        }
+    },
+];
