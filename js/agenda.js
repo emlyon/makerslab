@@ -1,4 +1,88 @@
-const formatEvent = ( event, i ) => {
+const eventBriteEvents = [
+    // {
+    //     title: "Data Literacy with Tableau @makerslab for beginners | PARIS | ENGLISH",
+    //     campus: "PAR",
+    //     date: "20/02",
+    //     hour: "09:00 > 17:00",
+    //     desc: "A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
+    //     img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+    //     status: "comingsoon"
+    // }
+    {
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-paris-english-486802709007",
+        eventData: [
+            "Data Literacy with Tableau @makerslab for beginners | PARIS | ENGLISH",
+            "PAR",
+            "20/02",
+            "09:00 > 17:00",
+            "A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
+            "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+            "comingsoon"
+        ]
+    },
+    {
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-paris-english-486803421137",
+        eventData: [
+            "Data Literacy with Tableau @makerslab for beginners | PARIS | ENGLISH",
+            "PAR",
+            "21/02",
+            "09:00 > 17:00",
+            "A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
+            "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+            "comingsoon"
+        ]
+    },
+    {
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-ecully-english-486693151317",
+        eventData: [
+            "Data Literacy with Tableau @makerslab for beginners | ECULLY | ENGLISH",
+            "ECU",
+            "20/02",
+            "09:00 > 17:00",
+            "A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
+            "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+            "comingsoon"
+        ]
+    },
+    {
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-ecully-english-486801655857",
+        eventData: [
+            "Data Literacy with Tableau @makerslab for beginners | ECULLY | ENGLISH",
+            "ECU",
+            "21/02",
+            "09:00 > 17:00",
+            "A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
+            "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+            "comingsoon"
+        ]
+    },
+    {
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-for-beginners-ecully-english-486801655857",
+        eventData: [
+            "Data Literacy with Tableau @makerslab initiation | SAINT ETIENNE | FRANÇAIS",
+            "STE",
+            "20/02",
+            "09:00 > 17:00",
+            "Un workshop d'un journée pour apprendre en faisant ! Prêt à visualiser vos données autrement ?",
+            "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+            "comingsoon"
+        ]
+    },
+    {
+        url: "https://www.eventbrite.com/e/billets-data-literacy-with-tableau-makerslab-initiation-saint-etienne-francais-486806680887",
+        eventData: [
+            "Data Literacy with Tableau @makerslab initiation | SAINT ETIENNE | FRANÇAIS",
+            "STE",
+            "21/02",
+            "09:00 > 17:00",
+            "Un workshop d'un journée pour apprendre en faisant ! Prêt à visualiser vos données autrement ?",
+            "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
+            "comingsoon"
+        ]
+    },
+];
+
+const formatEvent = ( event, i, eventBriteUrl ) => {
     let [title, campus, date, hour, desc, img, status] = event;
     console.log({title, campus, date, hour, desc, img, status});
     campus = campus.toUpperCase();
@@ -6,6 +90,51 @@ const formatEvent = ( event, i ) => {
 
     const soldout = status === 'SOLDOUT';
     const comingsoon = status === 'COMINGSOON';
+
+    let cta
+    if (eventBriteUrl) {
+        cta = `<div style="margin-top:15px;">
+            <a href="${eventBriteUrl}" target="_blank" class="waves-effect waves-light btn activator">register</a>
+        </div>`
+    } else {
+        cta = `<div style="margin-top:15px;">
+            <a class="waves-effect waves-light btn activator ${ (soldout|| comingsoon) ? 'disabled' : ''}">${ soldout ? 'SOLD OUT' : comingsoon ? 'COMING SOON' : 'register'}</a>
+        </div>`
+    }
+    const includeForm = !eventBriteUrl;
+    const htmlForm = `<form data-event="${ title + '_' + campus + '_' + date }">
+        <div class="row">
+            <div class="input-field col l12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="name" type="text" class="validate">
+                <label for="name">Name</label>
+            </div>
+
+            <div class="input-field col l12">
+                <i class="material-icons prefix">phone</i>
+                <input id="phone" type="tel" class="validate">
+                <label for="phone">Telephone</label>
+            </div>
+
+            <div class="input-field col s12">
+                <i class="material-icons prefix">mail</i>
+                <input id="mail" type="email" class="validate">
+                <label for="mail" data-error="wrong" data-success="right">Email</label>
+            </div>
+        </div>
+
+        <a class="waves-effect waves-light btn right register"><i class="material-icons left">send</i>register</a>
+
+        <h5 class="on-success hide red-text">
+            We have received your registration.<br>
+            Thank you!
+        </h5>
+
+        <h5 class="on-error hide red-text">
+            A problem happened during registration.<br>
+            Please try again later!
+        </h5>
+    </form>`
 
     return `
         ${ i % 3 === 0 ? '<div class="row">': '' }
@@ -25,9 +154,7 @@ const formatEvent = ( event, i ) => {
                         <span class="red-text darken-4">WHEN:</span> ${ date } -- ${ hour }
                     </p>
 
-                    <div style="margin-top:15px;">
-                        <a class="waves-effect waves-light btn activator ${ (soldout|| comingsoon) ? 'disabled' : ''}">${ soldout ? 'SOLD OUT' : comingsoon ? 'COMING SOON' : 'register'}</a>
-                    </div>
+                    ${cta}
                 </div>
 
                 ${ (soldout|| comingsoon) ? '' : `<div class="card-reveal">
@@ -40,39 +167,7 @@ const formatEvent = ( event, i ) => {
                     </p>
                     <div class="divider"></div>
 
-                    <form data-event="${ title + '_' + campus + '_' + date }">
-                        <div class="row">
-                            <div class="input-field col l12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="name" type="text" class="validate">
-                                <label for="name">Name</label>
-                            </div>
-
-                            <div class="input-field col l12">
-                                <i class="material-icons prefix">phone</i>
-                                <input id="phone" type="tel" class="validate">
-                                <label for="phone">Telephone</label>
-                            </div>
-
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">mail</i>
-                                <input id="mail" type="email" class="validate">
-                                <label for="mail" data-error="wrong" data-success="right">Email</label>
-                            </div>
-                        </div>
-
-                        <a class="waves-effect waves-light btn right register"><i class="material-icons left">send</i>register</a>
-
-                        <h5 class="on-success hide red-text">
-                            We have received your registration.<br>
-                            Thank you!
-                        </h5>
-
-                        <h5 class="on-error hide red-text">
-                            A problem happened during registration.<br>
-                            Please try again later!
-                        </h5>
-                    </form>
+                    ${ includeForm ? htmlForm : '' }
                 </div>` }
             </div>
         </div>
@@ -167,9 +262,13 @@ fetch( request )
     .then( json => {
         if( json.result == 'success' ){
             let events = JSON.parse( json.data );
+            console.log(events)
             let agenda = document.querySelector( '.agenda' );
             let html = '';
 
+            eventBriteEvents.forEach( ( event, i ) => {
+                html += formatEvent( event.eventData, i, event.url );
+            } );
             events.forEach( ( event, i ) => {
                 html += formatEvent( event, i );
             } );
