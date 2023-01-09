@@ -1,6 +1,5 @@
 const parseEventData = ( eventDataArray ) => {
     let [title, campus, date, hour, desc, img, status] = eventDataArray;
-    date += '/23';
     eventData = {title, campus, date, hour, desc, img, status};
     return {eventData};
 };
@@ -191,6 +190,7 @@ fetch( request )
             parsedCalendarEvents = events.map(e => parseEventData(e))
             sortedEvents = parsedCalendarEvents.concat(eventBriteEvents).sort((a, b) => {
                 const loadDate = (date) => {
+                    date += '/23';
                     // Convert to mm/dd/yy
                     formattedDate = date.replace( /(\d{2})\/(\d{2})\/(\d{2})/, '$2/$1/$3' );
                     return new Date(formattedDate)
@@ -217,7 +217,7 @@ const eventBriteEvents = [
     // {
     //     title: "Data Literacy with Tableau @makerslab for beginners | PARIS | ENGLISH",
     //     campus: "PAR",
-    //     date: "20/02/23",
+    //     date: "20/02",
     //     hour: "09:00 > 17:00",
     //     desc: "A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
     //     img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
@@ -228,7 +228,7 @@ const eventBriteEvents = [
         eventData: {
             title: "Data Literacy with Tableau @makerslab for beginners | PARIS | ENGLISH",
             campus: "PAR",
-            date: "20/02/23",
+            date: "20/02",
             hour: "09:00 > 17:00",
             desc:"A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
             img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
@@ -240,7 +240,7 @@ const eventBriteEvents = [
         eventData: {
             title: "Data Literacy with Tableau @makerslab for beginners | PARIS | ENGLISH",
             campus: "PAR",
-            date: "21/02/23",
+            date: "21/02",
             hour: "09:00 > 17:00",
             desc:"A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
             img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
@@ -252,7 +252,7 @@ const eventBriteEvents = [
         eventData: {
             title: "Data Literacy with Tableau @makerslab for beginners | ECULLY | ENGLISH",
             campus: "ECU",
-            date: "20/02/23",
+            date: "20/02",
             hour: "09:00 > 17:00",
             desc:"A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
             img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
@@ -264,7 +264,7 @@ const eventBriteEvents = [
         eventData: {
             title: "Data Literacy with Tableau @makerslab for beginners | ECULLY | ENGLISH",
             campus: "ECU",
-            date: "21/02/23",
+            date: "21/02",
             hour: "09:00 > 17:00",
             desc:"A one-day workshop to learn a skill by doing! Are you ready to work with data and create interactive visualizations using Tableau Public!",
             img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
@@ -276,7 +276,7 @@ const eventBriteEvents = [
         eventData: {
             title: "Data Literacy with Tableau @makerslab initiation | SAINT ETIENNE | FRANÇAIS",
             campus: "STE",
-            date: "20/02/23",
+            date: "20/02",
             hour: "09:00 > 17:00",
             desc:"Un workshop d'un journée pour apprendre en faisant ! Prêt à visualiser vos données autrement ?",
             img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
@@ -288,7 +288,7 @@ const eventBriteEvents = [
         eventData: {
             title: "Data Literacy with Tableau @makerslab initiation | SAINT ETIENNE | FRANÇAIS",
             campus: "STE",
-            date: "21/02/23",
+            date: "21/02",
             hour: "09:00 > 17:00",
             desc:"Un workshop d'un journée pour apprendre en faisant ! Prêt à visualiser vos données autrement ?",
             img: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F408366299%2F1299734345143%2F1%2Foriginal.20221212-094347?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=5f7da7aa9d75dee7994ff2cea66ec0e4",
