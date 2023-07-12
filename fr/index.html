@@ -1,179 +1,206 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <script src="/js/include.js" charset="utf-8"></script>
     <script src="/includes/head.js" charset="utf-8"></script>
-</head>
+  </head>
 
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90298578-1"></script>
-<script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90298578-1"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-90298578-1');
-</script>
+  </script>
 
-<body>
+  <body>
     <script src="/includes/navbar-fr.js"></script>
 
     <!-- Notice modal : used for temporary warning about the lab-->
     <div id="noticeModal" class="modal">
-        <div class="modal-content">
-            <h4 class="red-text">Horaires d'été et fermeture estivale :</h4>
-            <p><strong>L'ensemble des makers' labs fermeront leurs portes du 28 juillet au soir au 15 août inclus</strong>.
-            <br>Aucune permanence ne sera tenue durant cette période.</p>
-            <p>
-                Veuillez noter que les horaires d'ouverture seront adaptés <strong>du 18 juillet au 5 septembre</strong> : <br>
-                Ouverture <strong>du lundi au vendredi</strong> de <strong>9h à 18h</strong>, en dehors de cette période de fermeture.
-            </p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close btn-flat">OK</a>
-        </div>
+      <div class="modal-content">
+        <h4 class="red-text">Horaires d'été et fermeture estivale :</h4>
+        <p>
+          <strong>L'ensemble des makers' labs fermeront leurs portes du 28 juillet au soir au 15 août inclus</strong>.
+          <br />Aucune permanence ne sera tenue durant cette période.
+        </p>
+        <p>
+          Veuillez noter que les horaires d'ouverture seront adaptés <strong>du 18 juillet au 5 septembre</strong> :
+          <br />
+          Ouverture <strong>du lundi au vendredi</strong> de <strong>9h à 18h</strong>, en dehors de cette période de
+          fermeture.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close btn-flat">OK</a>
+      </div>
     </div>
 
     <div id="index-banner">
-        <div class="background"></div>
+      <div class="background"></div>
 
-        <div class="content">
-            <div style="width: 100%">
-                <h1 class="header center white-text"><b>makers' lab</b></h1>
+      <div class="content">
+        <div style="width: 100%">
+          <h1 class="header center white-text"><b>makers' lab</b></h1>
 
-                <h4 class="header light center white-text">Le&nbsp;meilleur&nbsp;endroit pour&nbsp;apprendre<br> à&nbsp;faire&nbsp;soi&#8209;même ou&nbsp;avec&nbsp;les&nbsp;autres!</h4>
+          <h4 class="header light center white-text">
+            Le&nbsp;meilleur&nbsp;endroit pour&nbsp;apprendre<br />
+            à&nbsp;faire&nbsp;soi&#8209;même ou&nbsp;avec&nbsp;les&nbsp;autres!
+          </h4>
 
-                <div style="margin-top: 4em" class="row center">
-                    <p>
-                        <a data-to="#presentation" style="padding: 5; margin:10px" class="btn-large waves-effect waves-effect waves-light">présentation</a>
-                        <a data-to="#incoming-events" style="padding: 5; margin:10px" class="btn-large waves-effect waves-effect waves-light">prochains événements</a>
-                        <a data-to="#about" style="padding: 5; margin:10px" class="btn-large waves-effect waves-effect waves-light">horaires d'ouverture</a>
-                    </p>
-                </div>
-            </div>
+          <div style="margin-top: 4em" class="row center">
+            <p>
+              <a
+                data-to="#presentation"
+                style="padding: 5; margin: 10px"
+                class="btn-large waves-effect waves-effect waves-light"
+                >présentation</a
+              >
+              <a
+                data-to="#incoming-events"
+                style="padding: 5; margin: 10px"
+                class="btn-large waves-effect waves-effect waves-light"
+                >prochains événements</a
+              >
+              <a
+                data-to="#about"
+                style="padding: 5; margin: 10px"
+                class="btn-large waves-effect waves-effect waves-light"
+                >horaires d'ouverture</a
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="main">
-        <div class="container" id="presentation">
-            <div class="row">
-                <div class="col s12 m4 l2"></div>
-                <div class="col s12 m4 l8">
-                    <p><br></p>
-                    <h5 class="red-text underlined">Faire ensemble</h5>
-                    <p>
-                        Les Makers' labs sont des <strong>laboratoires de fabrication</strong> dédiés à <strong>la créativité et à l'apprentissage par le faire</strong>. Ils contribuent à la réduction des inégalités sociales ou culturelles et à la concrétisation de l'égalité entre les hommes et les femmes en garantissant à tous ceux qui le souhaitent et le peuvent l'accès au développement de leurs compétences professionnelles.
-                        <br><br>
-                    </p>
-                        <h5 class="red-text underlined">Vivez l'expérience maker</h5>
-                    <p>
-                        Donnez vie à vos idées en un temps record grâce aux ressources disponibles : imprimantes 3d, découpeuses laser, fraiseuses CNC, machines à coudre, électronique, etc. Notre équipe d'animateurs vous guidera pour <strong>devenir un maker</strong>!
-                        <br><br>
-                    </p>
-                        <h5 class="red-text underlined">Apprenez comme vous le souhaitez</h5>
-                    <p>
-                        Nous proposons trois styles d'apprentissage pour découvrir le design, le Web, l'Internet des Objets, l'intelligence artificielle et la fabrication numérique : <strong>des tutoriels</strong> en ligne, accessibles quand vous le souhaitez, <strong>des événements</strong> expérientiels pour apprendre ensemble et <strong>des formations</strong> approfondies pour monter en compétences.
-                    </p>
-                    <p><br></p>
-                </div>
-                <div class="col s12 m4 l2">
-                </div>
+      <div class="container" id="presentation">
+        <div class="row">
+          <div class="col s12 m4 l2"></div>
+          <div class="col s12 m4 l8">
+            <p><br /></p>
+            <h5 class="red-text underlined">Faire ensemble</h5>
+            <p>
+              Les Makers' labs sont des <strong>laboratoires de fabrication</strong> dédiés à
+              <strong>la créativité et à l'apprentissage par le faire</strong>. Ils contribuent à la réduction des
+              inégalités sociales ou culturelles et à la concrétisation de l'égalité entre les hommes et les femmes en
+              garantissant à tous ceux qui le souhaitent et le peuvent l'accès au développement de leurs compétences
+              professionnelles. <br /><br />
+            </p>
+            <h5 class="red-text underlined">Vivez l'expérience maker</h5>
+            <p>
+              Donnez vie à vos idées en un temps record grâce aux ressources disponibles : imprimantes 3d, découpeuses
+              laser, fraiseuses CNC, machines à coudre, électronique, etc. Notre équipe d'animateurs vous guidera pour
+              <strong>devenir un maker</strong>! <br /><br />
+            </p>
+            <h5 class="red-text underlined">Apprenez comme vous le souhaitez</h5>
+            <p>
+              Nous proposons trois styles d'apprentissage pour découvrir le design, le Web, l'Internet des Objets,
+              l'intelligence artificielle et la fabrication numérique : <strong>des tutoriels</strong> en ligne,
+              accessibles quand vous le souhaitez, <strong>des événements</strong> expérientiels pour apprendre ensemble
+              et <strong>des formations</strong> approfondies pour monter en compétences.
+            </p>
+            <p><br /></p>
+          </div>
+          <div class="col s12 m4 l2"></div>
+        </div>
+      </div>
+
+      <div class="parallax-container valign-wrapper">
+        <div class="parallax"><img src="/media/code.png" /></div>
+      </div>
+
+      <div class="container" id="incoming-events">
+        <div class="section">
+          <h6 class="red-text underlined"><b>prochains événements</b></h6>
+
+          <div class="agenda"></div>
+        </div>
+      </div>
+
+      <div class="parallax-container valign-wrapper">
+        <div class="parallax"><img src="/media/background2.jpg" /></div>
+      </div>
+
+      <div class="container" id="about">
+        <div class="section">
+          <h6 class="red-text underlined"><b>horaires d'ouverture</b></h6>
+
+          <div class="row">
+            <div class="col l2 s4">
+              <h6><b>lundi</b><br /><br />13:00<br />-<br />20:00</h6>
             </div>
-        </div>
 
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="/media/code.png"></div>
-        </div>
-
-        <div class="container" id="incoming-events">
-            <div class="section">
-                <h6 class="red-text underlined"><b>prochains événements</b></h6>
-
-                <div class="agenda"></div>
+            <div class="col l2 s4">
+              <h6><b>mardi</b><br /><br />09:00<br />-<br />18:00</h6>
             </div>
-        </div>
 
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="/media/background2.jpg"></div>
-        </div>
-
-
-        <div class="container" id="about">
-            <div class="section">
-                <h6 class="red-text underlined"><b>horaires d'ouverture</b></h6>
-
-                <div class="row">
-                    <div class="col l2 s4">
-                        <h6><b>lundi</b><br><br>13:00<br>-<br>20:00</h6>
-                    </div>
-
-                    <div class="col l2 s4">
-                        <h6><b>mardi</b><br><br>09:00<br>-<br>18:00</h6>
-                    </div>
-
-                    <div class="col l2 s4">
-                        <h6><b>mercredi</b><br><br>13:00<br>-<br>20:00</h6>
-                    </div>
-
-                    <div class="col l2 s4">
-                        <h6><b>jeudi</b><br><br>09:00<br>-<br>18:00</h6>
-                    </div>
-
-                    <div class="col l2 s4">
-                        <h6><b>vendredi</b><br><br>09:00<br>-<br>18:00</h6>
-                    </div>
-
-                    <div class="col l2 s4">
-                        <h6><b>weekend</b><br><br>fermé<br>
-                    </div>
-                </div>
+            <div class="col l2 s4">
+              <h6><b>mercredi</b><br /><br />13:00<br />-<br />20:00</h6>
             </div>
-        </div>
 
-        <div class="container" id="where">
-            <div class="section">
-                <h6 class="red-text underlined"><b>où nous trouver</b></h6>
-
-                <div class="row">
-                    <div class="col s12 m4">
-                        <h6><b>Ecully</b></h6>
-
-                        <p>
-                            23 Avenue Guy de Collongue<br>
-                            69130 Écully<br>
-                            au rez-de-chaussée (bâtiment C)
-                        </p>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <h6><b>Paris</b></h6>
-
-                        <p>
-                            15 Boulevard Diderot<br>
-                            75012 Paris<br>
-                            au 3ème étage
-                        </p>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <h6><b>Saint-Etienne</b></h6>
-
-                        <p>
-                            51 Cours Fauriel<br>
-                            42009 Saint-Étienne<br>
-                            au rez-de-chaussée
-                        </p>
-                    </div>
-                </div>
+            <div class="col l2 s4">
+              <h6><b>jeudi</b><br /><br />09:00<br />-<br />18:00</h6>
             </div>
+
+            <div class="col l2 s4">
+              <h6><b>vendredi</b><br /><br />09:00<br />-<br />18:00</h6>
+            </div>
+
+            <div class="col l2 s4">
+              <h6><b>weekend</b><br /><br />fermé<br /></h6>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="container" id="where">
+        <div class="section">
+          <h6 class="red-text underlined"><b>où nous trouver</b></h6>
+
+          <div class="row">
+            <div class="col s12 m4">
+              <h6><b>Ecully</b></h6>
+
+              <p>
+                23 Avenue Guy de Collongue<br />
+                69130 Écully<br />
+                au rez-de-chaussée (bâtiment C)
+              </p>
+            </div>
+
+            <div class="col s12 m4">
+              <h6><b>Paris</b></h6>
+
+              <p>
+                15 Boulevard Diderot<br />
+                75012 Paris<br />
+                au 3ème étage
+              </p>
+            </div>
+
+            <div class="col s12 m4">
+              <h6><b>Saint-Etienne</b></h6>
+
+              <p>
+                51 Cours Fauriel<br />
+                42009 Saint-Étienne<br />
+                au rez-de-chaussée
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="/includes/footer-fr.js" charset="utf-8"></script>
 
     <script src="/includes/scripts.js" charset="utf-8"></script>
     <script src="/js/agenda.js" charset="utf-8"></script>
-</body>
-
+  </body>
 </html>
