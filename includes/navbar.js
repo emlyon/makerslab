@@ -1,4 +1,4 @@
-include( `
+include(`
     <div class="navbar-fixed">
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
@@ -12,7 +12,7 @@ include( `
                     <li class="lang-en"><a href="/">en</a></li>
                     <li class="lang-fr"><a href="/fr/">fr</a></li>
                 </ul>
-                <ul id="nav-mobile" class="side-nav">
+                <ul id="nav-mobile" class="sidenav">
                     <li><a href="/">makers' lab</a></li>
                     <li><a href="/tutorials.html">tutorials</a></li>
                     <li><a href="/events.html">events</a></li>
@@ -25,4 +25,4 @@ include( `
             </div>
         </nav>
     </div>
-` );
+`);
