@@ -18,7 +18,7 @@
   }
 
   $(function () {
-    $('.button-collapse').sidenav();
+    $('.sidenav').sidenav();
     $('.parallax').parallax();
     $('.collapsible').collapsible();
     $('.modal').modal();
