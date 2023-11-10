@@ -1,4 +1,4 @@
-.navbar-fixed{
+.navbar-fixed, .sidenav {
     nav ul a, nav .brand-logo {
         color: #e2001a;
     }
@@ -40,9 +40,4 @@
             }
         }
     }
-}
-
-#sidenav-overlay{
-    // display: none;
-    z-index: 20;
 }
