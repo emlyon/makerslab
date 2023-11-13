@@ -5,7 +5,7 @@ include(`
 
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.2.2/dist/css/materialize.min.css" integrity="sha256-6RMfjqZZbvjhY61grRhzlAPRW0E+ckwhOT1HXzpqV7E=" crossorigin="anonymous">
     <link href="/css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
     <!-- Material ScrollTop stylesheet -->
     <link rel="stylesheet" href="/css/material-scrolltop.css">
