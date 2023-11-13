@@ -1,4 +1,4 @@
 # makerslab
 https://makerslab.em-lyon.com/
 
-Using [MaterializeCSS](http://materializecss.com/)
+Using [MaterializeCSS](https://github.com/materializecss/materialize//)
