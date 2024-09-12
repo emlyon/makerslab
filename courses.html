@@ -1,42 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <script src="/js/include.js" charset="utf-8"></script>
     <script src="/includes/head.js" charset="utf-8"></script>
-</head>
+    <script src="/js/cookies.js"></script>
+  </head>
 
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90298578-1"></script>
-<script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90298578-1"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-90298578-1');
-</script>
+  </script>
 
-<body>
+  <body>
     <script src="/includes/navbar.js" charset="utf-8"></script>
 
     <div id="index-banner">
-        <div class="background" style="background:url(media/junto2.jpg) no-repeat center center fixed; background-size: cover;"></div>
+      <div
+        class="background"
+        style="background: url(media/junto2.jpg) no-repeat center center fixed; background-size: cover"
+      ></div>
 
-        <div class="content">
-            <div style="width: 70%">
-                <h1 class="header center white-text"><b>courses</b></h1>
+      <div class="content">
+        <div style="width: 70%">
+          <h1 class="header center white-text"><b>courses</b></h1>
 
-                <h4 class="header light center white-text">Make&nbsp;the&nbsp;most of&nbsp;techs to&nbsp;prototype almost&nbsp;anything!</h4>
+          <h4 class="header light center white-text">
+            Make&nbsp;the&nbsp;most of&nbsp;techs to&nbsp;prototype almost&nbsp;anything!
+          </h4>
 
-                <div style="margin-top: 4em" class="row center">
-                    <p>
-                        <a data-to="#web" style="padding: 5; margin:10px" class="btn-large web badge waves-effect waves-effect waves-light">Designing with Web</a>
-                        <a data-to="#AI" style="padding: 5; margin:10px" class="btn-large ai badge waves-effect waves-effect waves-light">Processing with AI</a>
-                        <a data-to="#fab" style="padding: 5; margin:10px" class="btn-large fab badge waves-effect waves-effect waves-light">Prototyping with Fab</a>
-                    </p>
-                </div>
+          <div style="margin-top: 4em" class="row center">
+            <p>
+              <a
+                data-to="#web"
+                style="padding: 5; margin: 10px"
+                class="btn-large web badge waves-effect waves-effect waves-light"
+                >Designing with Web</a
+              >
+              <a
+                data-to="#AI"
+                style="padding: 5; margin: 10px"
+                class="btn-large ai badge waves-effect waves-effect waves-light"
+                >Processing with AI</a
+              >
+              <a
+                data-to="#fab"
+                style="padding: 5; margin: 10px"
+                class="btn-large fab badge waves-effect waves-effect waves-light"
+                >Prototyping with Fab</a
+              >
+            </p>
+          </div>
 
-                <!-- <div style="margin-top: 4em" class="row center">
+          <!-- <div style="margin-top: 4em" class="row center">
                     <div class="col m3 s12"></div>
                     <div class="col m2 s4">
                         <a class="badge" data-to="#web"><img src="/badges/courses/WEB_2.svg"></a>
@@ -48,166 +70,207 @@
                         <a class="badge" data-to="#fab"><img src="/badges/courses/FAB_2.svg"></a>
                     </div>
                 </div> -->
-            </div>
         </div>
+      </div>
     </div>
 
     <script>
-        [...document.querySelectorAll('.badge>img')].forEach(img => {
-            img.addEventListener('mouseenter', e => {
-                img.style.transition = 'all 0.2s ease-in-out';
-                img.style.transform = 'scale(1.15,1.15)';
-            });
-            img.addEventListener('mouseleave', e => {
-                img.style.transition = 'all 0.2s ease-in-out';
-                img.style.transform='scale(1,1)';
-            });
+      [...document.querySelectorAll('.badge>img')].forEach((img) => {
+        img.addEventListener('mouseenter', (e) => {
+          img.style.transition = 'all 0.2s ease-in-out';
+          img.style.transform = 'scale(1.15,1.15)';
         });
+        img.addEventListener('mouseleave', (e) => {
+          img.style.transition = 'all 0.2s ease-in-out';
+          img.style.transform = 'scale(1,1)';
+        });
+      });
     </script>
 
     <div class="main">
+      <div class="container" id="web">
+        <h4 style="margin-top: 60px" class="red-text"><b>designing with web</b></h4>
+        <script src="/js/DWW.js"></script>
+        <div id="render"></div>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
 
-        <div class="container" id="web">
-            <h4 style="margin-top:60px" class="red-text"><b>designing with web</b></h4>
-            <script src="/js/DWW.js"></script>
-            <div id="render"></div>
-            <script src="https://d3js.org/d3.v4.min.js"></script>
-            <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+        <p class="grey-text text-darken-1 flow-text">
+          Web is everywhere in our lives and most of us are only using the Web passively without understanding how it
+          works. This course will guide you to dive into web technologies through different projects, providing you with
+          professional resources and tools.
+        </p>
 
-            <p class="grey-text text-darken-1 flow-text">
-                Web is everywhere in our lives and most of us are only using the Web passively without understanding how it works. This course will guide you to dive into web technologies through different projects, providing you with professional resources and tools.
-            </p>
-
-            <div class="row">
-                <div class="col m4 s12">
-                    <p>
-                        <b class="red-text">Basics</b><br>
-                        You learn the basics of web languages, discover tools like frameworks or libraries to help you make your firsts projects.
-                    </p>
-                </div>
-                <div class="col m4 s12">
-                    <p>
-                        <b class="red-text">Explorations</b><br>
-                        You learn about Web Architecture and access different modules to explore following your interests, like AI, databases, APIs…
-                    </p>
-                </div>
-                <div class="col m4 s12">
-                    <p>
-                        <b class="red-text">Project</b><br>
-                        For the third and last part, you work in little groups tutored by a professional, on a project of your own during 4 weeks.<br>
-                    </p>
-                </div>
-            </div>
-
+        <div class="row">
+          <div class="col m4 s12">
             <p>
-                <b class="red-text"> 136 learning hours</b><br>
-                <span class="red-text">36h</span> online - <span class="red-text">36h</span> individual - <span class="red-text">50h</span> collective - <span class="red-text">12h</span> collective with mentoring - <span class="red-text">2h</span> evaluation <br><br>
+              <b class="red-text">Basics</b><br />
+              You learn the basics of web languages, discover tools like frameworks or libraries to help you make your
+              firsts projects.
             </p>
-
+          </div>
+          <div class="col m4 s12">
             <p>
-                <a target="_blank" href="https://makerslab1.typeform.com/to/rpJgb4" style="padding: 5" class="btn-large waves-effect waves-effect waves-light">ask for an executive certification<i class="material-icons right">send</i></a>&nbsp&nbsp&nbsp
-                <a href="/dww" style="padding: 5" class="btn-large white red-text waves-effect waves-red">content preview</a>
-                <br><br><br>
+              <b class="red-text">Explorations</b><br />
+              You learn about Web Architecture and access different modules to explore following your interests, like
+              AI, databases, APIs…
             </p>
+          </div>
+          <div class="col m4 s12">
+            <p>
+              <b class="red-text">Project</b><br />
+              For the third and last part, you work in little groups tutored by a professional, on a project of your own
+              during 4 weeks.<br />
+            </p>
+          </div>
         </div>
 
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="/media/background2.jpg"></div>
+        <p>
+          <b class="red-text"> 136 learning hours</b><br />
+          <span class="red-text">36h</span> online - <span class="red-text">36h</span> individual -
+          <span class="red-text">50h</span> collective - <span class="red-text">12h</span> collective with mentoring -
+          <span class="red-text">2h</span> evaluation <br /><br />
+        </p>
+
+        <p>
+          <a
+            target="_blank"
+            href="https://makerslab1.typeform.com/to/rpJgb4"
+            style="padding: 5"
+            class="btn-large waves-effect waves-effect waves-light"
+            >ask for an executive certification<i class="material-icons right">send</i></a
+          >&nbsp&nbsp&nbsp
+          <a href="/dww" style="padding: 5" class="btn-large white red-text waves-effect waves-red">content preview</a>
+          <br /><br /><br />
+        </p>
+      </div>
+
+      <div class="parallax-container valign-wrapper">
+        <div class="parallax"><img src="/media/background2.jpg" /></div>
+      </div>
+
+      <div class="container" id="AI">
+        <h4 style="margin-top: 60px" class="red-text"><b>processing with AI</b></h4>
+        <img style="margin-top: 30px; object-fit: cover" width="100%" height="315px" src="media/thatme.gif" alt="" />
+
+        <p style="padding-top: 50px" class="grey-text text-darken-1 flow-text">
+          In this course, you will get a better understanding of Artificial Intelligence. How does it really work? How
+          can you use AI in your projects? You will discover and use the main sub-fields of AI and what are their
+          real-world applications and limitations.
+        </p>
+
+        <div class="row">
+          <div class="col m4 s12">
+            <p>
+              <b class="red-text">Basics</b><br />
+              During the first part, you discover the basics of AI by using pre-trained models of NLP, classification,
+              computer vision, etc.
+            </p>
+          </div>
+          <div class="col m4 s12">
+            <p>
+              <b class="red-text">Explorations</b><br />
+              You chose between different modules to dive into AI perspectives and shape a critical understanding of
+              machine learning.
+            </p>
+          </div>
+          <div class="col m4 s12">
+            <p>
+              <b class="red-text">Project</b><br />
+              For the third and last part, you work in little groups tutored by a professional, on a project of your own
+              during 4 weeks.<br />
+            </p>
+          </div>
         </div>
 
-        <div class="container" id="AI">
-            <h4 style="margin-top:60px" class="red-text"><b>processing with AI</b></h4>
-            <img style="margin-top:30px; object-fit: cover;" width="100%" height="315px" src="media/thatme.gif" alt="">
+        <p>
+          <b class="red-text"> 136 learning hours</b><br />
+          <span class="red-text">36h</span> online - <span class="red-text">36h</span> individual -
+          <span class="red-text">50h</span> collective - <span class="red-text">12h</span> collective with mentoring -
+          <span class="red-text">2h</span> evaluation <br /><br />
+        </p>
 
-            <p style="padding-top:50px" class="grey-text text-darken-1 flow-text">
-                In this course, you will get a better understanding of Artificial Intelligence. How does it really work? How can you use AI in your projects? You will discover and use the main sub-fields of AI and what are their real-world applications and limitations.
-            </p>
+        <p>
+          <a
+            target="_blank"
+            href="https://makerslab1.typeform.com/to/rpJgb4"
+            style="padding: 5"
+            class="btn-large waves-effect waves-effect waves-light"
+            >ask for an executive certification<i class="material-icons right">send</i></a
+          >&nbsp&nbsp&nbsp
+          <a href="/pwai" style="padding: 5" class="btn-large white red-text waves-effect waves-red">content preview</a>
+          <br /><br /><br />
+        </p>
+      </div>
 
-            <div class="row">
-                <div class="col m4 s12">
-                    <p>
-                        <b class="red-text">Basics</b><br>
-                        During the first part, you discover the basics of AI by using pre-trained models of NLP, classification, computer vision, etc.
-                    </p>
-                </div>
-                <div class="col m4 s12">
-                    <p>
-                        <b class="red-text">Explorations</b><br>
-                        You chose between different modules to dive into AI perspectives and shape a critical understanding of machine learning.
-                    </p>
-                </div>
-                <div class="col m4 s12">
-                    <p>
-                        <b class="red-text">Project</b><br>
-                        For the third and last part, you work in little groups tutored by a professional, on a project of your own during 4 weeks.<br>
-                    </p>
-                </div>
-            </div>
+      <div class="parallax-container valign-wrapper">
+        <div class="parallax"><img src="media/code.png" /></div>
+      </div>
 
+      <div class="container" id="fab">
+        <h4 style="margin-top: 60px" class="red-text"><b>prototyping with fab</b></h4>
+
+        <iframe
+          style="margin-top: 30px"
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/IdLVtZ3u190?rel=0&amp;showinfo=0"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+
+        <p style="padding-top: 50px" class="grey-text text-darken-1 flow-text">
+          In a fast changing world entrepreneurs have to be able to anticipate by doing faster than others. In this
+          course you'll learn to use digital fabrication to go quickly from a concept to a working prototype.
+        </p>
+
+        <div class="row">
+          <div class="col m4 s12">
             <p>
-                <b class="red-text"> 136 learning hours</b><br>
-                <span class="red-text">36h</span> online - <span class="red-text">36h</span> individual - <span class="red-text">50h</span> collective - <span class="red-text">12h</span> collective with mentoring - <span class="red-text">2h</span> evaluation <br><br>
+              <b class="red-text">Basics</b><br />
+              During this first part, you discover the basics of digital fabrication: 3d modeling & printing, laser
+              cutting, electronics.
             </p>
-
+          </div>
+          <div class="col m4 s12">
             <p>
-                <a target="_blank" href="https://makerslab1.typeform.com/to/rpJgb4" style="padding: 5" class="btn-large waves-effect waves-effect waves-light">ask for an executive certification<i class="material-icons right">send</i></a>&nbsp&nbsp&nbsp
-                <a href="/pwai" style="padding: 5" class="btn-large white red-text waves-effect waves-red">content preview</a>
-                <br><br><br>
+              <b class="red-text">Explorations</b><br />
+              You make your first opensource project to dive into digital fabrication perspectives and shape a personal
+              understanding.
             </p>
+          </div>
+          <div class="col m4 s12">
+            <p>
+              <b class="red-text">Project</b><br />
+              For the third and last part, you work in little groups tutored by a professional, on a project of your own
+              during 4 weeks.<br />
+            </p>
+          </div>
         </div>
 
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="media/code.png"></div>
-        </div>
+        <p>
+          <b class="red-text"> 136 learning hours</b><br />
+          <span class="red-text">36h</span> online - <span class="red-text">36h</span> individual -
+          <span class="red-text">50h</span> collective - <span class="red-text">12h</span> collective with mentoring -
+          <span class="red-text">2h</span> evaluation <br /><br />
+        </p>
 
-        <div class="container" id="fab">
-            <h4 style="margin-top:60px" class="red-text"><b>prototyping with fab</b></h4>
-
-            <iframe style="margin-top:30px" width="100%" height="315" src="https://www.youtube.com/embed/IdLVtZ3u190?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-
-            <p style="padding-top:50px" class="grey-text text-darken-1 flow-text">
-                In a fast changing world entrepreneurs have to be able to anticipate by doing faster than others. In this course you'll learn to use digital fabrication to go quickly from a concept to a working prototype.
-            </p>
-
-            <div class="row">
-                <div class="col m4 s12">
-                    <p>
-                        <b class="red-text">Basics</b><br>
-                        During this first part, you discover the basics of digital fabrication: 3d modeling & printing, laser cutting, electronics.
-                    </p>
-                </div>
-                <div class="col m4 s12">
-                    <p>
-                        <b class="red-text">Explorations</b><br>
-                        You make your first opensource project to dive into digital fabrication perspectives and shape a personal understanding.
-                    </p>
-                </div>
-                <div class="col m4 s12">
-                    <p>
-                        <b class="red-text">Project</b><br>
-                        For the third and last part, you work in little groups tutored by a professional, on a project of your own during 4 weeks.<br>
-                    </p>
-                </div>
-            </div>
-
-            <p>
-                <b class="red-text"> 136 learning hours</b><br>
-                <span class="red-text">36h</span> online - <span class="red-text">36h</span> individual - <span class="red-text">50h</span> collective - <span class="red-text">12h</span> collective with mentoring - <span class="red-text">2h</span> evaluation <br><br>
-            </p>
-
-            <p>
-                <a target="_blank" href="https://makerslab1.typeform.com/to/rpJgb4" style="padding: 5" class="btn-large waves-effect waves-effect waves-light">ask for an executive certification<i class="material-icons right">send</i></a>&nbsp&nbsp&nbsp
-                <a href="/pwf" style="padding: 5" class="btn-large white red-text waves-effect waves-red">content preview</a>
-                <br><br><br>
-            </p>
-        </div>
-
+        <p>
+          <a
+            target="_blank"
+            href="https://makerslab1.typeform.com/to/rpJgb4"
+            style="padding: 5"
+            class="btn-large waves-effect waves-effect waves-light"
+            >ask for an executive certification<i class="material-icons right">send</i></a
+          >&nbsp&nbsp&nbsp
+          <a href="/pwf" style="padding: 5" class="btn-large white red-text waves-effect waves-red">content preview</a>
+          <br /><br /><br />
+        </p>
+      </div>
     </div>
-
 
     <script src="includes/footer.js" charset="utf-8"></script>
 
     <script src="includes/scripts.js" charset="utf-8"></script>
-</body>
-
+  </body>
 </html>
