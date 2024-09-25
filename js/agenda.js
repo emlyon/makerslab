@@ -1,80 +1,106 @@
-// Assuming you have a <ul> element with id 'eventsList' in your HTML
-const eventsList = document.getElementById('eventsList');
+// Main function to fetch and display events
+async function main() {
+  try {
+    const events = await fetchEvents();
+    appendEvents(events);
+  } catch (error) {
+    console.error('Error in main function:', error);
+  }
+}
 
 // Fetch events.json file
-fetch('workshops-data/events.json')
-  .then((response) => response.json())
-  .then((events) => {
-    let eventRow;
-    events.forEach((event, index) => {
-      const card = document.createElement('div');
-      card.classList.add('card');
-      const cardImage = document.createElement('div');
-      cardImage.classList.add('card-image');
-      cardImage.innerHTML = `<img style="object-fit:cover;" src="${event.logo?.url}">`;
+async function fetchEvents() {
+  try {
+    const response = await fetch('workshops-data/events.json');
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching events:', error);
+    throw error;
+  }
+}
 
-      card.appendChild(cardImage);
+// Create event card
+function createEventCard(event) {
+  const card = document.createElement('div');
+  card.classList.add('card');
 
-      const cardContent = document.createElement('div');
-      cardContent.classList.add('card-content');
-      cardContent.innerHTML = `<span class="card-title grey-text text-darken-4">${event.name.text}</span>`;
-      cardContent.innerHTML += `<div class="divider"></div>`;
-      cardContent.innerHTML += `<p>${event.description.text}</p>`;
-      // We could use ${event.venue.name} instead of 'makers' lab emlyon', but the city is also mentioned in the name, so we avoid redundancy.
-      cardContent.innerHTML += `<span class="red-text darken-4">📍</span> <strong class="red-text">${event.venue.address.city}</strong> - <strong>makers' lab emlyon</strong> <br>`;
+  const cardImage = document.createElement('div');
+  cardImage.classList.add('card-image');
+  cardImage.innerHTML = `<img style="object-fit:cover;" src="${event.logo?.url}">`;
+  card.appendChild(cardImage);
 
-      // Display user friendly date and time
-      const startDate = new Date(event.start.local);
-      const endDate = new Date(event.end.local);
-      const options = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      };
-      const formatStartDate = startDate.toLocaleDateString('en-UK', options);
-      const formatEndDate = endDate.toLocaleDateString('en-UK', options);
-      const startHour = startDate.toLocaleTimeString('en-UK', { hour: '2-digit', minute: '2-digit' });
-      const endHour = endDate.toLocaleTimeString('en-UK', { hour: '2-digit', minute: '2-digit' });
-      // If an event is on a single day, we display the date and the time separately.
-      if (formatStartDate === formatEndDate) {
-        const dateInfo = formatStartDate;
-        cardContent.innerHTML += `<p><span class="red-text darken-4">🗓️</span> ${dateInfo}</p>`;
-        const timeInfo = `${startHour} to ${endHour}`;
-        cardContent.innerHTML += `<p><span class="red-text darken-4">🕒</span> ${timeInfo}</p>`;
-      } else {
-        // If an event is on different days, we display the date and time for start and end date.
-        const dateAndTimeInfo = `${formatStartDate} - ${startHour} to ${formatEndDate} - ${endHour}`;
-        cardContent.innerHTML += `<span class="red-text darken-4">🗓️</span> ${dateAndTimeInfo}`;
-      }
+  const cardContent = document.createElement('div');
+  cardContent.classList.add('card-content');
+  cardContent.innerHTML = `<span class="card-title grey-text text-darken-4">${event.name.text}</span>`;
+  cardContent.innerHTML += `<div class="divider"></div>`;
+  cardContent.innerHTML += `<p>${event.description.text}</p>`;
+  // We could use ${event.venue.name} instead of 'makers' lab emlyon', but the city is also mentioned in the name, so we avoid redundancy.
+  cardContent.innerHTML += `<span class="red-text darken-4">📍</span> <strong class="red-text">${event.venue.address.city}</strong> - <strong>makers' lab emlyon</strong> <br>`;
 
-      const cta = document.createElement('div');
-      cta.style.marginTop = '15px';
-      cta.innerHTML = `<a class="waves-effect waves-light btn" id="triggerWidget${event.id}">Register</a>`;
+  // Display user friendly date and time
+  const startDate = new Date(event.start.local);
+  const endDate = new Date(event.end.local);
+  const options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  };
+  const formatStartDate = startDate.toLocaleDateString('en-UK', options);
+  const formatEndDate = endDate.toLocaleDateString('en-UK', options);
+  const startHour = startDate.toLocaleTimeString('en-UK', { hour: '2-digit', minute: '2-digit' });
+  const endHour = endDate.toLocaleTimeString('en-UK', { hour: '2-digit', minute: '2-digit' });
+  // If an event is on a single day, we display the date and the time separately.
+  if (formatStartDate === formatEndDate) {
+    cardContent.innerHTML += `<p><span class="red-text darken-4">🗓️</span> ${formatStartDate}</p>`;
+    cardContent.innerHTML += `<p><span class="red-text darken-4">🕒</span> ${startHour} to ${endHour}</p>`;
+  } else {
+    cardContent.innerHTML += `<span class="red-text darken-4">🗓️</span> ${formatStartDate} - ${startHour} to ${formatEndDate} - ${endHour}`;
+  }
 
-      cardContent.appendChild(cta);
-      card.appendChild(cardContent);
+  const cta = document.createElement('div');
+  cta.style.marginTop = '15px';
+  cta.innerHTML = `<a class="waves-effect waves-light btn" id="triggerWidget${event.id}">Register</a>`;
+  cardContent.appendChild(cta);
+  card.appendChild(cardContent);
 
-      const eventCol = document.createElement('div');
-      eventCol.classList.add('col', 's12', 'm4');
+  return card;
+}
 
-      if (index % 3 === 0) {
-        eventRow = document.createElement('div');
-        eventRow.classList.add('row');
-      }
+// Append events to the DOM
+function appendEvents(events) {
+  const eventsList = document.getElementById('eventsList');
+  let eventRow;
+  events.forEach((event, index) => {
+    const card = createEventCard(event);
 
-      eventCol.appendChild(card);
-      eventRow.appendChild(eventCol);
-      if (index % 3 === 2) {
-        eventsList.appendChild(eventRow);
-      }
+    const eventCol = document.createElement('div');
+    eventCol.classList.add('col', 's12', 'm4');
 
-      window.EBWidgets.createWidget({
-        widgetType: 'checkout',
-        eventId: event.id,
-        modal: true,
-        modalTriggerElementId: `triggerWidget${event.id}`
-      });
-    });
-  })
-  .catch((error) => console.error('Error fetching events:', error));
+    if (index % 3 === 0) {
+      eventRow = document.createElement('div');
+      eventRow.classList.add('row');
+    }
+
+    eventCol.appendChild(card);
+    eventRow.appendChild(eventCol);
+    if (index % 3 === 2) {
+      eventsList.appendChild(eventRow);
+    }
+
+    initializeEventbriteWidget(event);
+  });
+}
+
+// Initialize Eventbrite widget
+function initializeEventbriteWidget(event) {
+  window.EBWidgets.createWidget({
+    widgetType: 'checkout',
+    eventId: event.id,
+    modal: true,
+    modalTriggerElementId: `triggerWidget${event.id}`
+  });
+}
+
+// Run the main function
+main();
