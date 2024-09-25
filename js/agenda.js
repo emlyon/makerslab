@@ -106,12 +106,15 @@ function initializeEventbriteWidget(event) {
 
 function equalizeCardsHeight() {
   setTimeout(() => {
-    const cardContents = document.querySelectorAll('#eventsList .card-content');
-    const cardImages = document.querySelectorAll('#eventsList .card-image>img');
-    const cardContentsMaxHeight = Math.max(...Array.from(cardContents).map((p) => p.clientHeight));
-    const cardImagesHeights = Math.max(...Array.from(cardImages).map((img) => img.clientHeight));
-    Array.from(cardContents).forEach((p) => (p.style.height = `${cardContentsMaxHeight}px`));
-    Array.from(cardImages).forEach((img) => (img.style.minHeight = `${cardImagesHeights}px`));
+    const rows = document.querySelectorAll('#eventsList .row');
+    rows.forEach((row) => {
+      const cardContents = row.querySelectorAll('.card-content');
+      const cardImages = row.querySelectorAll('.card-image>img');
+      const cardContentsMaxHeight = Math.max(...Array.from(cardContents).map((p) => p.clientHeight));
+      const cardImagesHeights = Math.max(...Array.from(cardImages).map((img) => img.clientHeight));
+      Array.from(cardContents).forEach((p) => (p.style.height = `${cardContentsMaxHeight}px`));
+      Array.from(cardImages).forEach((img) => (img.style.minHeight = `${cardImagesHeights}px`));
+    });
   }, 100);
 }
 
