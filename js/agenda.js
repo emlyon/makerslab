@@ -61,7 +61,9 @@ function createEventCard(event) {
 
   const cta = document.createElement('div');
   cta.classList.add('cta');
-  cta.innerHTML = `<a class="waves-effect waves-light btn" id="triggerWidget${event.id}">Register</a>`;
+  const pageLanguage = document.documentElement.lang;
+  const ctaText = pageLanguage === 'fr' ? 'Inscription' : 'Register';
+  cta.innerHTML = `<a class="waves-effect waves-light btn" id="triggerWidget${event.id}">${ctaText}</a>`;
 
   card.appendChild(cardContent);
   card.appendChild(cta);
