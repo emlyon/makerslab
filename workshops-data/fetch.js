@@ -15,8 +15,7 @@ const OPTIONS = {
     const events = await fetchEvents();
     console.log("Nombre d'évènements : " + events.length);
     await enrichEventsWithVenueData(events);
-    console.log('events with venues', events);
-
+    events.forEach(logEventInfo);
     // Write formatted events to events.json
     fs.writeFileSync('workshops-data/events.json', JSON.stringify(events, null, 2));
     process.on('exit', () => {
@@ -70,4 +69,15 @@ async function enrichEventsWithVenueData(events) {
     event.venue = venue;
   });
   return events;
+}
+
+function logEventInfo(event) {
+  console.log('---------------------');
+  console.log(`ID: ${event.id}`);
+  console.log(`Name: ${event.name.text}`);
+  console.log(`Description: ${event.description.text}`);
+  console.log(`Venue City: ${event.venue.address.city}`);
+  console.log(`Start Date: ${event.start.local}`);
+  console.log(`End Date: ${event.end.local}`);
+  console.log(`Logo URL: ${event.logo?.url}`);
 }
