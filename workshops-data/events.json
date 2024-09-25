@@ -1,6 +1,1573 @@
 [
-  "964868245897",
-  "1023268271947",
-  "1024791076697",
-  "1024793784797"
+  {
+    "name": {
+      "text": "Data Literacy with Tableau @makerslab for beginners | ECULLY | ENGLISH",
+      "html": "Data Literacy with Tableau @makerslab for beginners | ECULLY | ENGLISH"
+    },
+    "description": {
+      "text": "A 2.5-hour workshop to learn a skill by doing! Are you ready to work with data and create interactive visualization?",
+      "html": "A 2.5-hour workshop to learn a skill by doing! Are you ready to work with data and create interactive visualization?"
+    },
+    "url": "https://www.eventbrite.fr/e/billets-data-literacy-with-tableau-makerslab-for-beginners-ecully-english-964868245897",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-10-01T12:30:00",
+      "utc": "2024-10-01T10:30:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-10-01T13:30:00",
+      "utc": "2024-10-01T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-07-29T09:55:32Z",
+    "changed": "2024-07-29T10:05:04Z",
+    "published": "2024-07-29T09:57:27Z",
+    "capacity": 30,
+    "capacity_is_custom": false,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": false,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "fr_FR",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "A 2.5-hour workshop to learn a skill by doing! Are you ready to work with data and create interactive visualization?",
+    "facebook_event_id": null,
+    "logo_id": null,
+    "organizer_id": "57822422353",
+    "venue_id": "225115629",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "964868245897",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/964868245897/",
+    "is_externally_ticketed": false,
+    "logo": null,
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/225115629/",
+      "id": "225115629",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "emlyon business school",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "3d design & printing for beginners @makers'lab PARIS",
+      "html": "3d design &amp; printing for beginners @makers&#39;lab PARIS"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.",
+      "html": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer."
+    },
+    "url": "https://www.eventbrite.fr/e/3d-design-printing-for-beginners-makerslab-paris-tickets-1028711693367",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-05T13:00:00",
+      "utc": "2024-11-05T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-05T14:10:00",
+      "utc": "2024-11-05T13:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-25T07:46:42Z",
+    "changed": "2024-09-25T07:48:58Z",
+    "published": "2024-09-25T07:48:58Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.",
+    "facebook_event_id": null,
+    "logo_id": "854163879",
+    "organizer_id": "57822422353",
+    "venue_id": "234278269",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1028711693367",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1028711693367/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 117
+        },
+        "width": 4894,
+        "height": 2447
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?auto=format%2Ccompress&q=75&sharp=10&s=44215e9f8d2335939e6d8a1c22c82231",
+        "width": 4895,
+        "height": 3268
+      },
+      "id": "854163879",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C117%2C4894%2C2447&s=ed354277e5849f27158ac7c32a8807a0",
+      "aspect_ratio": "2",
+      "edge_color": "#807867",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "15 Boulevard Diderot",
+        "address_2": "",
+        "city": "Paris",
+        "region": "IDF",
+        "postal_code": "75012",
+        "country": "FR",
+        "latitude": "48.8460492",
+        "longitude": "2.3713275",
+        "localized_address_display": "15 Boulevard Diderot, 75012 Paris",
+        "localized_area_display": "Paris",
+        "localized_multi_line_address_display": [
+          "15 Boulevard Diderot",
+          "75012 Paris"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/234278269/",
+      "id": "234278269",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers' lab emlyon PARIS",
+      "latitude": "48.8460492",
+      "longitude": "2.3713275"
+    }
+  },
+  {
+    "name": {
+      "text": "2d design & laser cutting for beginners @makers'lab LYON",
+      "html": "2d design &amp; laser cutting for beginners @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood.",
+      "html": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood."
+    },
+    "url": "https://www.eventbrite.fr/e/2d-design-laser-cutting-for-beginners-makerslab-lyon-tickets-1028702786727",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-08T11:20:00",
+      "utc": "2024-11-08T10:20:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-08T12:30:00",
+      "utc": "2024-11-08T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-25T07:06:46Z",
+    "changed": "2024-09-25T07:31:53Z",
+    "published": "2024-09-25T07:13:10Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood.",
+    "facebook_event_id": null,
+    "logo_id": "858820529",
+    "organizer_id": "57822422353",
+    "venue_id": "234275139",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1028702786727",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1028702786727/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 2500,
+        "height": 1250
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858820529%2F1299734345143%2F1%2Foriginal.20240925-071342?auto=format%2Ccompress&q=75&sharp=10&s=e23ee0a5cc0409751014a336ef160a53",
+        "width": 2500,
+        "height": 1669
+      },
+      "id": "858820529",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858820529%2F1299734345143%2F1%2Foriginal.20240925-071342?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2500%2C1250&s=23975e272fd4dde150f426d452e7b17d",
+      "aspect_ratio": "2",
+      "edge_color": "#a9907f",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/234275139/",
+      "id": "234275139",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "2d design & laser cutting for beginners @makers'lab PARIS",
+      "html": "2d design &amp; laser cutting for beginners @makers&#39;lab PARIS"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood.",
+      "html": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood."
+    },
+    "url": "https://www.eventbrite.fr/e/2d-design-laser-cutting-for-beginners-makerslab-paris-tickets-1028713990237",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-08T11:20:00",
+      "utc": "2024-11-08T10:20:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-08T12:30:00",
+      "utc": "2024-11-08T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-25T07:53:18Z",
+    "changed": "2024-09-25T08:00:15Z",
+    "published": "2024-09-25T07:54:19Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood.",
+    "facebook_event_id": null,
+    "logo_id": "858820529",
+    "organizer_id": "57822422353",
+    "venue_id": "234278459",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1028713990237",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1028713990237/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 2500,
+        "height": 1250
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858820529%2F1299734345143%2F1%2Foriginal.20240925-071342?auto=format%2Ccompress&q=75&sharp=10&s=e23ee0a5cc0409751014a336ef160a53",
+        "width": 2500,
+        "height": 1669
+      },
+      "id": "858820529",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858820529%2F1299734345143%2F1%2Foriginal.20240925-071342?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2500%2C1250&s=23975e272fd4dde150f426d452e7b17d",
+      "aspect_ratio": "2",
+      "edge_color": "#a9907f",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "15 Boulevard Diderot",
+        "address_2": "",
+        "city": "Paris",
+        "region": "IDF",
+        "postal_code": "75012",
+        "country": "FR",
+        "latitude": "48.8460492",
+        "longitude": "2.3713275",
+        "localized_address_display": "15 Boulevard Diderot, 75012 Paris",
+        "localized_area_display": "Paris",
+        "localized_multi_line_address_display": [
+          "15 Boulevard Diderot",
+          "75012 Paris"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/234278459/",
+      "id": "234278459",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers' lab emlyon PARIS",
+      "latitude": "48.8460492",
+      "longitude": "2.3713275"
+    }
+  },
+  {
+    "name": {
+      "text": "2d design & laser cutting for intermediate users @makers'lab LYON",
+      "html": "2d design &amp; laser cutting for intermediate users @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood.",
+      "html": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood."
+    },
+    "url": "https://www.eventbrite.fr/e/2d-design-laser-cutting-for-intermediate-users-makerslab-lyon-tickets-1028704662337",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-15T11:20:00",
+      "utc": "2024-11-15T10:20:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-15T12:30:00",
+      "utc": "2024-11-15T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-25T07:17:08Z",
+    "changed": "2024-09-25T07:32:29Z",
+    "published": "2024-09-25T07:17:56Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood.",
+    "facebook_event_id": null,
+    "logo_id": "858820529",
+    "organizer_id": "57822422353",
+    "venue_id": "234276039",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1028704662337",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1028704662337/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 2500,
+        "height": 1250
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858820529%2F1299734345143%2F1%2Foriginal.20240925-071342?auto=format%2Ccompress&q=75&sharp=10&s=e23ee0a5cc0409751014a336ef160a53",
+        "width": 2500,
+        "height": 1669
+      },
+      "id": "858820529",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858820529%2F1299734345143%2F1%2Foriginal.20240925-071342?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2500%2C1250&s=23975e272fd4dde150f426d452e7b17d",
+      "aspect_ratio": "2",
+      "edge_color": "#a9907f",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/234276039/",
+      "id": "234276039",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "3d design & printing for beginners @makers'lab LYON",
+      "html": "3d design &amp; printing for beginners @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.",
+      "html": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer."
+    },
+    "url": "https://www.eventbrite.fr/e/3d-design-printing-for-beginners-makerslab-lyon-tickets-1023268271947",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-19T13:00:00",
+      "utc": "2024-11-19T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-19T14:10:00",
+      "utc": "2024-11-19T13:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-19T08:08:56Z",
+    "changed": "2024-09-20T14:15:24Z",
+    "published": "2024-09-19T08:26:53Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.",
+    "facebook_event_id": null,
+    "logo_id": "854163879",
+    "organizer_id": "57822422353",
+    "venue_id": "233324359",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1023268271947",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1023268271947/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 117
+        },
+        "width": 4894,
+        "height": 2447
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?auto=format%2Ccompress&q=75&sharp=10&s=44215e9f8d2335939e6d8a1c22c82231",
+        "width": 4895,
+        "height": 3268
+      },
+      "id": "854163879",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C117%2C4894%2C2447&s=ed354277e5849f27158ac7c32a8807a0",
+      "aspect_ratio": "2",
+      "edge_color": "#807867",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/233324359/",
+      "id": "233324359",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "3d design & printing for intermediate users @makers'lab PARIS",
+      "html": "3d design &amp; printing for intermediate users @makers&#39;lab PARIS"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.",
+      "html": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer."
+    },
+    "url": "https://www.eventbrite.fr/e/3d-design-printing-for-intermediate-users-makerslab-paris-tickets-1028711974207",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-19T13:00:00",
+      "utc": "2024-11-19T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-19T14:10:00",
+      "utc": "2024-11-19T13:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-25T07:50:06Z",
+    "changed": "2024-09-25T07:50:51Z",
+    "published": "2024-09-25T07:50:51Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.",
+    "facebook_event_id": null,
+    "logo_id": "854163879",
+    "organizer_id": "57822422353",
+    "venue_id": "234278329",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1028711974207",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1028711974207/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 117
+        },
+        "width": 4894,
+        "height": 2447
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?auto=format%2Ccompress&q=75&sharp=10&s=44215e9f8d2335939e6d8a1c22c82231",
+        "width": 4895,
+        "height": 3268
+      },
+      "id": "854163879",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C117%2C4894%2C2447&s=ed354277e5849f27158ac7c32a8807a0",
+      "aspect_ratio": "2",
+      "edge_color": "#807867",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "15 Boulevard Diderot",
+        "address_2": "",
+        "city": "Paris",
+        "region": "IDF",
+        "postal_code": "75012",
+        "country": "FR",
+        "latitude": "48.8460492",
+        "longitude": "2.3713275",
+        "localized_address_display": "15 Boulevard Diderot, 75012 Paris",
+        "localized_area_display": "Paris",
+        "localized_multi_line_address_display": [
+          "15 Boulevard Diderot",
+          "75012 Paris"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/234278329/",
+      "id": "234278329",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers' lab emlyon PARIS",
+      "latitude": "48.8460492",
+      "longitude": "2.3713275"
+    }
+  },
+  {
+    "name": {
+      "text": "2d design & laser cutting for advanced users @makers'lab LYON",
+      "html": "2d design &amp; laser cutting for advanced users @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood.",
+      "html": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood."
+    },
+    "url": "https://www.eventbrite.fr/e/2d-design-laser-cutting-for-advanced-users-makerslab-lyon-tickets-1028706517887",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-22T11:20:00",
+      "utc": "2024-11-22T10:20:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-22T12:30:00",
+      "utc": "2024-11-22T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-25T07:19:03Z",
+    "changed": "2024-09-25T07:32:59Z",
+    "published": "2024-09-25T07:20:07Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood.",
+    "facebook_event_id": null,
+    "logo_id": "858820529",
+    "organizer_id": "57822422353",
+    "venue_id": "234276239",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1028706517887",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1028706517887/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 2500,
+        "height": 1250
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858820529%2F1299734345143%2F1%2Foriginal.20240925-071342?auto=format%2Ccompress&q=75&sharp=10&s=e23ee0a5cc0409751014a336ef160a53",
+        "width": 2500,
+        "height": 1669
+      },
+      "id": "858820529",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858820529%2F1299734345143%2F1%2Foriginal.20240925-071342?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2500%2C1250&s=23975e272fd4dde150f426d452e7b17d",
+      "aspect_ratio": "2",
+      "edge_color": "#a9907f",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/234276239/",
+      "id": "234276239",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "2d design & laser cutting for intermediate users @makers'lab PARIS",
+      "html": "2d design &amp; laser cutting for intermediate users @makers&#39;lab PARIS"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood.",
+      "html": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood."
+    },
+    "url": "https://www.eventbrite.fr/e/2d-design-laser-cutting-for-intermediate-users-makerslab-paris-tickets-1028714301167",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-22T11:20:00",
+      "utc": "2024-11-22T10:20:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-22T12:30:00",
+      "utc": "2024-11-22T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-25T07:55:25Z",
+    "changed": "2024-09-25T08:00:22Z",
+    "published": "2024-09-25T07:56:08Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood.",
+    "facebook_event_id": null,
+    "logo_id": "858820529",
+    "organizer_id": "57822422353",
+    "venue_id": "234278719",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1028714301167",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1028714301167/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 2500,
+        "height": 1250
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858820529%2F1299734345143%2F1%2Foriginal.20240925-071342?auto=format%2Ccompress&q=75&sharp=10&s=e23ee0a5cc0409751014a336ef160a53",
+        "width": 2500,
+        "height": 1669
+      },
+      "id": "858820529",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858820529%2F1299734345143%2F1%2Foriginal.20240925-071342?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2500%2C1250&s=23975e272fd4dde150f426d452e7b17d",
+      "aspect_ratio": "2",
+      "edge_color": "#a9907f",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "15 Boulevard Diderot",
+        "address_2": "",
+        "city": "Paris",
+        "region": "IDF",
+        "postal_code": "75012",
+        "country": "FR",
+        "latitude": "48.8460492",
+        "longitude": "2.3713275",
+        "localized_address_display": "15 Boulevard Diderot, 75012 Paris",
+        "localized_area_display": "Paris",
+        "localized_multi_line_address_display": [
+          "15 Boulevard Diderot",
+          "75012 Paris"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/234278719/",
+      "id": "234278719",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers' lab emlyon PARIS",
+      "latitude": "48.8460492",
+      "longitude": "2.3713275"
+    }
+  },
+  {
+    "name": {
+      "text": "3d design & printing for intermediate users @makers'lab LYON",
+      "html": "3d design &amp; printing for intermediate users @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.",
+      "html": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer."
+    },
+    "url": "https://www.eventbrite.fr/e/3d-design-printing-for-intermediate-users-makerslab-lyon-tickets-1024791076697",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-26T13:00:00",
+      "utc": "2024-11-26T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-26T14:10:00",
+      "utc": "2024-11-26T13:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-20T12:29:22Z",
+    "changed": "2024-09-20T12:50:01Z",
+    "published": "2024-09-20T12:29:52Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_US",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.",
+    "facebook_event_id": null,
+    "logo_id": "854163879",
+    "organizer_id": "57822422353",
+    "venue_id": "233569269",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1024791076697",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1024791076697/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 117
+        },
+        "width": 4894,
+        "height": 2447
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?auto=format%2Ccompress&q=75&sharp=10&s=44215e9f8d2335939e6d8a1c22c82231",
+        "width": 4895,
+        "height": 3268
+      },
+      "id": "854163879",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C117%2C4894%2C2447&s=ed354277e5849f27158ac7c32a8807a0",
+      "aspect_ratio": "2",
+      "edge_color": "#807867",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/233569269/",
+      "id": "233569269",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "UX Design with Figma for beginners @makers'lab LYON",
+      "html": "UX Design with Figma for beginners @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Design, prototype, and share your websites and mobile apps with Figma.",
+      "html": "One-hour workshop to learn a skill by doing! Design, prototype, and share your websites and mobile apps with Figma."
+    },
+    "url": "https://www.eventbrite.fr/e/ux-design-with-figma-for-beginners-makerslab-lyon-tickets-1028706899027",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-29T11:20:00",
+      "utc": "2024-11-29T10:20:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-29T12:30:00",
+      "utc": "2024-11-29T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-25T07:21:30Z",
+    "changed": "2024-09-25T07:31:03Z",
+    "published": "2024-09-25T07:30:29Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Design, prototype, and share your websites and mobile apps with Figma.",
+    "facebook_event_id": null,
+    "logo_id": "858826349",
+    "organizer_id": "57822422353",
+    "venue_id": "234276379",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1028706899027",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1028706899027/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 495
+        },
+        "width": 5472,
+        "height": 2736
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858826349%2F1299734345143%2F1%2Foriginal.20240925-072839?auto=format%2Ccompress&q=75&sharp=10&s=abe6e433f791efa456dfbb28a2551f70",
+        "width": 5472,
+        "height": 3648
+      },
+      "id": "858826349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858826349%2F1299734345143%2F1%2Foriginal.20240925-072839?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C495%2C5472%2C2736&s=920ed43c0a1ea837def0dad112f5ce91",
+      "aspect_ratio": "2",
+      "edge_color": "#342d2f",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/234276379/",
+      "id": "234276379",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "3d design & printing for advanced users @makers'lab LYON",
+      "html": "3d design &amp; printing for advanced users @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.",
+      "html": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer."
+    },
+    "url": "https://www.eventbrite.fr/e/3d-design-printing-for-advanced-users-makerslab-lyon-tickets-1024793784797",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-12-03T13:00:00",
+      "utc": "2024-12-03T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-12-03T14:10:00",
+      "utc": "2024-12-03T13:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-20T12:34:16Z",
+    "changed": "2024-09-20T12:48:55Z",
+    "published": "2024-09-20T12:35:52Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_US",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.",
+    "facebook_event_id": null,
+    "logo_id": "854163879",
+    "organizer_id": "57822422353",
+    "venue_id": "233570029",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1024793784797",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1024793784797/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 117
+        },
+        "width": 4894,
+        "height": 2447
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?auto=format%2Ccompress&q=75&sharp=10&s=44215e9f8d2335939e6d8a1c22c82231",
+        "width": 4895,
+        "height": 3268
+      },
+      "id": "854163879",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C117%2C4894%2C2447&s=ed354277e5849f27158ac7c32a8807a0",
+      "aspect_ratio": "2",
+      "edge_color": "#807867",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/233570029/",
+      "id": "233570029",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "3d design & printing for advanced users @makers'lab PARIS",
+      "html": "3d design &amp; printing for advanced users @makers&#39;lab PARIS"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.",
+      "html": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer."
+    },
+    "url": "https://www.eventbrite.fr/e/3d-design-printing-for-advanced-users-makerslab-paris-tickets-1028712214927",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-12-03T13:00:00",
+      "utc": "2024-12-03T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-12-03T14:10:00",
+      "utc": "2024-12-03T13:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-25T07:51:45Z",
+    "changed": "2024-09-25T07:52:27Z",
+    "published": "2024-09-25T07:52:27Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.",
+    "facebook_event_id": null,
+    "logo_id": "854163879",
+    "organizer_id": "57822422353",
+    "venue_id": "234278459",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1028712214927",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1028712214927/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 117
+        },
+        "width": 4894,
+        "height": 2447
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?auto=format%2Ccompress&q=75&sharp=10&s=44215e9f8d2335939e6d8a1c22c82231",
+        "width": 4895,
+        "height": 3268
+      },
+      "id": "854163879",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C117%2C4894%2C2447&s=ed354277e5849f27158ac7c32a8807a0",
+      "aspect_ratio": "2",
+      "edge_color": "#807867",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "15 Boulevard Diderot",
+        "address_2": "",
+        "city": "Paris",
+        "region": "IDF",
+        "postal_code": "75012",
+        "country": "FR",
+        "latitude": "48.8460492",
+        "longitude": "2.3713275",
+        "localized_address_display": "15 Boulevard Diderot, 75012 Paris",
+        "localized_area_display": "Paris",
+        "localized_multi_line_address_display": [
+          "15 Boulevard Diderot",
+          "75012 Paris"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/234278459/",
+      "id": "234278459",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers' lab emlyon PARIS",
+      "latitude": "48.8460492",
+      "longitude": "2.3713275"
+    }
+  },
+  {
+    "name": {
+      "text": "UX Design with Figma for intermediate users @makers'lab LYON",
+      "html": "UX Design with Figma for intermediate users @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Design, prototype, and share your websites and mobile apps with Figma.",
+      "html": "One-hour workshop to learn a skill by doing! Design, prototype, and share your websites and mobile apps with Figma."
+    },
+    "url": "https://www.eventbrite.fr/e/ux-design-with-figma-for-intermediate-users-makerslab-lyon-tickets-1028708644247",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-12-06T11:20:00",
+      "utc": "2024-12-06T10:20:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-12-06T12:30:00",
+      "utc": "2024-12-06T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-25T07:34:14Z",
+    "changed": "2024-09-25T08:02:27Z",
+    "published": "2024-09-25T07:34:59Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Design, prototype, and share your websites and mobile apps with Figma.",
+    "facebook_event_id": null,
+    "logo_id": "858826349",
+    "organizer_id": "57822422353",
+    "venue_id": "234277349",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1028708644247",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1028708644247/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 495
+        },
+        "width": 5472,
+        "height": 2736
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858826349%2F1299734345143%2F1%2Foriginal.20240925-072839?auto=format%2Ccompress&q=75&sharp=10&s=abe6e433f791efa456dfbb28a2551f70",
+        "width": 5472,
+        "height": 3648
+      },
+      "id": "858826349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858826349%2F1299734345143%2F1%2Foriginal.20240925-072839?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C495%2C5472%2C2736&s=920ed43c0a1ea837def0dad112f5ce91",
+      "aspect_ratio": "2",
+      "edge_color": "#342d2f",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/234277349/",
+      "id": "234277349",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "2d design & laser cutting for advanced users @makers'lab PARIS",
+      "html": "2d design &amp; laser cutting for advanced users @makers&#39;lab PARIS"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood.",
+      "html": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood."
+    },
+    "url": "https://www.eventbrite.fr/e/2d-design-laser-cutting-for-advanced-users-makerslab-paris-tickets-1028715524827",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-12-06T11:20:00",
+      "utc": "2024-12-06T10:20:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-12-06T12:30:00",
+      "utc": "2024-12-06T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-09-25T07:58:11Z",
+    "changed": "2024-09-25T07:59:20Z",
+    "published": "2024-09-25T07:59:20Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing! Discover 2D design with Illustrator and cut your first piece of wood.",
+    "facebook_event_id": null,
+    "logo_id": "858820529",
+    "organizer_id": "57822422353",
+    "venue_id": "234278949",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1028715524827",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1028715524827/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 2500,
+        "height": 1250
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858820529%2F1299734345143%2F1%2Foriginal.20240925-071342?auto=format%2Ccompress&q=75&sharp=10&s=e23ee0a5cc0409751014a336ef160a53",
+        "width": 2500,
+        "height": 1669
+      },
+      "id": "858820529",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858820529%2F1299734345143%2F1%2Foriginal.20240925-071342?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2500%2C1250&s=23975e272fd4dde150f426d452e7b17d",
+      "aspect_ratio": "2",
+      "edge_color": "#a9907f",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "15 Boulevard Diderot",
+        "address_2": "",
+        "city": "Paris",
+        "region": "IDF",
+        "postal_code": "75012",
+        "country": "FR",
+        "latitude": "48.8460492",
+        "longitude": "2.3713275",
+        "localized_address_display": "15 Boulevard Diderot, 75012 Paris",
+        "localized_area_display": "Paris",
+        "localized_multi_line_address_display": [
+          "15 Boulevard Diderot",
+          "75012 Paris"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/234278949/",
+      "id": "234278949",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers' lab emlyon PARIS",
+      "latitude": "48.8460492",
+      "longitude": "2.3713275"
+    }
+  }
 ]
