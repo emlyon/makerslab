@@ -12,7 +12,7 @@ async function main() {
 // Fetch events.json file
 async function fetchEvents() {
   try {
-    const response = await fetch('workshops-data/events.json');
+    const response = await fetch('/workshops-data/events.json');
     return await response.json();
   } catch (error) {
     console.error('Error fetching events:', error);
