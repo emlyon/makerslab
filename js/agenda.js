@@ -1,8 +1,11 @@
 // Main function to fetch and display events
+const pageLanguage = document.documentElement.lang;
+
 async function main() {
   try {
     const events = await fetchEvents();
     appendEvents(events);
+    initializeEventbriteWidgets(events);
     equalizeCardsHeight();
   } catch (error) {
     console.error('Error in main function:', error);
@@ -47,21 +50,23 @@ function createEventCard(event) {
     month: 'long',
     day: 'numeric'
   };
-  const formatStartDate = startDate.toLocaleDateString('en-UK', options);
-  const formatEndDate = endDate.toLocaleDateString('en-UK', options);
-  const startHour = startDate.toLocaleTimeString('en-UK', { hour: '2-digit', minute: '2-digit' });
-  const endHour = endDate.toLocaleTimeString('en-UK', { hour: '2-digit', minute: '2-digit' });
+  const dateCode = pageLanguage === 'fr' ? 'fr-FR' : 'en-EN';
+  let toText = pageLanguage === 'fr' ? 'à' : 'to';
+  const formatStartDate = startDate.toLocaleDateString(dateCode, options);
+  const formatEndDate = endDate.toLocaleDateString(dateCode, options);
+  const startHour = startDate.toLocaleTimeString(dateCode, { hour: '2-digit', minute: '2-digit' });
+  const endHour = endDate.toLocaleTimeString(dateCode, { hour: '2-digit', minute: '2-digit' });
   // If an event is on a single day, we display the date and the time separately.
   if (formatStartDate === formatEndDate) {
     cardContent.innerHTML += `<p><span class="red-text darken-4">🗓️</span> ${formatStartDate}</p>`;
-    cardContent.innerHTML += `<p><span class="red-text darken-4">🕒</span> ${startHour} to ${endHour}</p>`;
+    cardContent.innerHTML += `<p><span class="red-text darken-4">🕒</span> ${startHour} ${toText} ${endHour}</p>`;
   } else {
-    cardContent.innerHTML += `<span class="red-text darken-4">🗓️</span> ${formatStartDate} - ${startHour} to ${formatEndDate} - ${endHour}`;
+    toText = pageLanguage === 'fr' ? 'au' : 'to';
+    cardContent.innerHTML += `<span class="red-text darken-4">🗓️</span> ${formatStartDate} - ${startHour} ${toText} ${formatEndDate} - ${endHour}`;
   }
 
   const cta = document.createElement('div');
   cta.classList.add('cta');
-  const pageLanguage = document.documentElement.lang;
   const ctaText = pageLanguage === 'fr' ? 'Inscription' : 'Register';
   cta.innerHTML = `<a class="waves-effect waves-light btn" id="triggerWidget${event.id}">${ctaText}</a>`;
 
@@ -91,7 +96,12 @@ function appendEvents(events) {
     if (index % 3 === 2) {
       eventsList.appendChild(eventRow);
     }
+  });
+}
 
+// Initialize Eventbrite widgets
+function initializeEventbriteWidgets(events) {
+  events.forEach((event) => {
     initializeEventbriteWidget(event);
   });
 }
