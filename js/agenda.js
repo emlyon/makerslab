@@ -3,6 +3,7 @@ async function main() {
   try {
     const events = await fetchEvents();
     appendEvents(events);
+    equalizeCardsHeight();
   } catch (error) {
     console.error('Error in main function:', error);
   }
@@ -59,10 +60,11 @@ function createEventCard(event) {
   }
 
   const cta = document.createElement('div');
-  cta.style.marginTop = '15px';
+  cta.classList.add('cta');
   cta.innerHTML = `<a class="waves-effect waves-light btn" id="triggerWidget${event.id}">Register</a>`;
-  cardContent.appendChild(cta);
+
   card.appendChild(cardContent);
+  card.appendChild(cta);
 
   return card;
 }
@@ -100,6 +102,17 @@ function initializeEventbriteWidget(event) {
     modal: true,
     modalTriggerElementId: `triggerWidget${event.id}`
   });
+}
+
+function equalizeCardsHeight() {
+  setTimeout(() => {
+    const cardContents = document.querySelectorAll('#eventsList .card-content');
+    const cardImages = document.querySelectorAll('#eventsList .card-image>img');
+    const cardContentsMaxHeight = Math.max(...Array.from(cardContents).map((p) => p.clientHeight));
+    const cardImagesHeights = Math.max(...Array.from(cardImages).map((img) => img.clientHeight));
+    Array.from(cardContents).forEach((p) => (p.style.height = `${cardContentsMaxHeight}px`));
+    Array.from(cardImages).forEach((img) => (img.style.minHeight = `${cardImagesHeights}px`));
+  }, 100);
 }
 
 // Run the main function
