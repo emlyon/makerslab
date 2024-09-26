@@ -1,3 +1,8 @@
 debug.log
 .vscode
 /dww/data/pdf
+.prettierignore
+server.**
+workshops-data/eventbrite-config.json
+node_modules
+package-lock.json

@@ -91,8 +91,24 @@
         display: none;
     }
 
-    .agenda .card-title {
-        font-size: 16px;
-        font-weight: 500;
+    #eventsList {
+        .card {
+            .card-title {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            padding-bottom: 75px;
+
+            .card-content {
+                padding-bottom: 0;
+            }
+
+            .cta {
+                position: absolute;
+                bottom: 24px;
+                right: 24px;
+            }
+        }
     }
 }
