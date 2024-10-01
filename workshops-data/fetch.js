@@ -14,6 +14,7 @@ const OPTIONS = {
   try {
     const events = await fetchEvents();
     console.log("Nombre d'évènements : " + events.length);
+    // console.log(events.find((event) => event.id === '1028711693367'));
     await enrichEventsWithVenueData(events);
     events.forEach(logEventInfo);
     // Write formatted events to events.json
@@ -75,7 +76,7 @@ function logEventInfo(event) {
   console.log('---------------------');
   console.log(`ID: ${event.id}`);
   console.log(`Name: ${event.name.text}`);
-  console.log(`Description: ${event.description.text}`);
+  console.log(`Summary: ${event.summary}`);
   console.log(`Venue City: ${event.venue.address.city}`);
   console.log(`Start Date: ${event.start.local}`);
   console.log(`End Date: ${event.end.local}`);

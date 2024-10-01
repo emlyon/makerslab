@@ -1,6 +1,430 @@
 [
   {
     "name": {
+      "text": "Adobe Premiere for beginners by PNP @makers'lab LYON",
+      "html": "Adobe Premiere for beginners by PNP @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing. Learn how to design your own video using Adobe Premiere with PnP.",
+      "html": "One-hour workshop to learn a skill by doing. Learn how to design your own video using Adobe Premiere with PnP."
+    },
+    "url": "https://www.eventbrite.fr/e/adobe-premiere-for-beginners-by-pnp-makerslab-lyon-tickets-1034968989107",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-10-10T12:45:00",
+      "utc": "2024-10-10T10:45:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-10-10T14:15:00",
+      "utc": "2024-10-10T12:15:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-01T15:10:07Z",
+    "changed": "2024-10-01T15:12:55Z",
+    "published": "2024-10-01T15:12:55Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing. Learn how to design your own video using Adobe Premiere with PnP.",
+    "facebook_event_id": null,
+    "logo_id": "863707799",
+    "organizer_id": "57822422353",
+    "venue_id": "235257719",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1034968989107",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1034968989107/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863707799",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/235257719/",
+      "id": "235257719",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "Photoshop for beginners by PNP @makers'lab LYON",
+      "html": "Photoshop for beginners by PNP @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP.",
+      "html": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP."
+    },
+    "url": "https://www.eventbrite.fr/e/photoshop-for-beginners-by-pnp-makerslab-lyon-tickets-1034971566817",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-10-17T12:45:00",
+      "utc": "2024-10-17T10:45:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-10-17T14:15:00",
+      "utc": "2024-10-17T12:15:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-01T15:14:26Z",
+    "changed": "2024-10-01T15:15:26Z",
+    "published": "2024-10-01T15:15:26Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP.",
+    "facebook_event_id": null,
+    "logo_id": "863707799",
+    "organizer_id": "57822422353",
+    "venue_id": "235258859",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1034971566817",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1034971566817/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863707799",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/235258859/",
+      "id": "235258859",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "Data Literacy with Tableau for beginners @makers'lab LYON",
+      "html": "Data Literacy with Tableau for beginners @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing. Learn how to explore datasets & create visualizations using Tableau Public.",
+      "html": "One-hour workshop to learn a skill by doing. Learn how to explore datasets &amp; create visualizations using Tableau Public."
+    },
+    "url": "https://www.eventbrite.fr/e/data-literacy-with-tableau-for-beginners-makerslab-lyon-tickets-1034952078527",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-10-22T13:00:00",
+      "utc": "2024-10-22T11:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-10-22T14:10:00",
+      "utc": "2024-10-22T12:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-01T14:51:23Z",
+    "changed": "2024-10-01T14:59:36Z",
+    "published": "2024-10-01T14:54:28Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing. Learn how to explore datasets & create visualizations using Tableau Public.",
+    "facebook_event_id": null,
+    "logo_id": "863687329",
+    "organizer_id": "57822422353",
+    "venue_id": "235253029",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1034952078527",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1034952078527/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 133
+        },
+        "width": 4554,
+        "height": 2277
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863687329%2F1299734345143%2F1%2Foriginal.20241001-145539?auto=format%2Ccompress&q=75&sharp=10&s=410eca00b1da4af0df6ffa7d29400d50",
+        "width": 4555,
+        "height": 3037
+      },
+      "id": "863687329",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863687329%2F1299734345143%2F1%2Foriginal.20241001-145539?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C133%2C4554%2C2277&s=449f94dd53dd107c78c0a8203d05adb8",
+      "aspect_ratio": "2",
+      "edge_color": "#647c76",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/235253029/",
+      "id": "235253029",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "Illustrator for beginners by PNP @makers'lab LYON",
+      "html": "Illustrator for beginners by PNP @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing. Learn how to make a logo and the graphic charter of your project with the basics.",
+      "html": "One-hour workshop to learn a skill by doing. Learn how to make a logo and the graphic charter of your project with the basics."
+    },
+    "url": "https://www.eventbrite.fr/e/illustrator-for-beginners-by-pnp-makerslab-lyon-tickets-1034987554637",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-10-24T11:15:00",
+      "utc": "2024-10-24T09:15:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-10-24T12:45:00",
+      "utc": "2024-10-24T10:45:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-01T15:33:05Z",
+    "changed": "2024-10-01T15:33:58Z",
+    "published": "2024-10-01T15:33:58Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing. Learn how to make a logo and the graphic charter of your project with the basics.",
+    "facebook_event_id": null,
+    "logo_id": "863707799",
+    "organizer_id": "57822422353",
+    "venue_id": "235263289",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1034987554637",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1034987554637/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863707799",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/235263289/",
+      "id": "235263289",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
       "text": "3d design & printing for beginners @makers'lab PARIS",
       "html": "3d design &amp; printing for beginners @makers&#39;lab PARIS"
     },
@@ -21,7 +445,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-09-25T07:46:42Z",
-    "changed": "2024-09-25T07:48:58Z",
+    "changed": "2024-10-01T07:54:08Z",
     "published": "2024-09-25T07:48:58Z",
     "capacity": 25,
     "capacity_is_custom": true,
@@ -103,6 +527,218 @@
       "name": "makers' lab emlyon PARIS",
       "latitude": "48.8460492",
       "longitude": "2.3713275"
+    }
+  },
+  {
+    "name": {
+      "text": "Data Literacy with Tableau for intermediate users @makers'lab LYON",
+      "html": "Data Literacy with Tableau for intermediate users @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing. Learn how to explore datasets & create visualizations using Tableau Public.",
+      "html": "One-hour workshop to learn a skill by doing. Learn how to explore datasets &amp; create visualizations using Tableau Public."
+    },
+    "url": "https://www.eventbrite.fr/e/data-literacy-with-tableau-for-intermediate-users-makerslab-lyon-tickets-1034956912987",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-05T13:00:00",
+      "utc": "2024-11-05T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-05T14:10:00",
+      "utc": "2024-11-05T13:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-01T14:58:48Z",
+    "changed": "2024-10-01T15:03:19Z",
+    "published": "2024-10-01T15:00:35Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing. Learn how to explore datasets & create visualizations using Tableau Public.",
+    "facebook_event_id": null,
+    "logo_id": "863687329",
+    "organizer_id": "57822422353",
+    "venue_id": "235254969",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1034956912987",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1034956912987/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 133
+        },
+        "width": 4554,
+        "height": 2277
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863687329%2F1299734345143%2F1%2Foriginal.20241001-145539?auto=format%2Ccompress&q=75&sharp=10&s=410eca00b1da4af0df6ffa7d29400d50",
+        "width": 4555,
+        "height": 3037
+      },
+      "id": "863687329",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863687329%2F1299734345143%2F1%2Foriginal.20241001-145539?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C133%2C4554%2C2277&s=449f94dd53dd107c78c0a8203d05adb8",
+      "aspect_ratio": "2",
+      "edge_color": "#647c76",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/235254969/",
+      "id": "235254969",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "Photoshop for intermediate users by PNP @makers'lab LYON",
+      "html": "Photoshop for intermediate users by PNP @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP.",
+      "html": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP."
+    },
+    "url": "https://www.eventbrite.fr/e/photoshop-for-intermediate-users-by-pnp-makerslab-lyon-tickets-1034979761327",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-07T12:45:00",
+      "utc": "2024-11-07T11:45:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-07T14:15:00",
+      "utc": "2024-11-07T13:15:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-01T15:24:45Z",
+    "changed": "2024-10-01T15:26:24Z",
+    "published": "2024-10-01T15:26:24Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP.",
+    "facebook_event_id": null,
+    "logo_id": "863707799",
+    "organizer_id": "57822422353",
+    "venue_id": "235261249",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1034979761327",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1034979761327/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863707799",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/235261249/",
+      "id": "235261249",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
     }
   },
   {
@@ -319,6 +955,218 @@
   },
   {
     "name": {
+      "text": "Data Literacy with Tableau for advanced users @makers'lab LYON",
+      "html": "Data Literacy with Tableau for advanced users @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing. Learn how to explore datasets & create visualizations using Tableau Public.",
+      "html": "One-hour workshop to learn a skill by doing. Learn how to explore datasets &amp; create visualizations using Tableau Public."
+    },
+    "url": "https://www.eventbrite.fr/e/data-literacy-with-tableau-for-advanced-users-makerslab-lyon-tickets-1034959009257",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-12T13:00:00",
+      "utc": "2024-11-12T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-12T14:10:00",
+      "utc": "2024-11-12T13:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-01T15:01:41Z",
+    "changed": "2024-10-01T15:02:33Z",
+    "published": "2024-10-01T15:02:33Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing. Learn how to explore datasets & create visualizations using Tableau Public.",
+    "facebook_event_id": null,
+    "logo_id": "863687329",
+    "organizer_id": "57822422353",
+    "venue_id": "235255659",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1034959009257",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1034959009257/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 133
+        },
+        "width": 4554,
+        "height": 2277
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863687329%2F1299734345143%2F1%2Foriginal.20241001-145539?auto=format%2Ccompress&q=75&sharp=10&s=410eca00b1da4af0df6ffa7d29400d50",
+        "width": 4555,
+        "height": 3037
+      },
+      "id": "863687329",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863687329%2F1299734345143%2F1%2Foriginal.20241001-145539?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C133%2C4554%2C2277&s=449f94dd53dd107c78c0a8203d05adb8",
+      "aspect_ratio": "2",
+      "edge_color": "#647c76",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/235255659/",
+      "id": "235255659",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "Photoshop for intermediate users by PNP @makers'lab LYON",
+      "html": "Photoshop for intermediate users by PNP @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP.",
+      "html": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP."
+    },
+    "url": "https://www.eventbrite.fr/e/photoshop-for-intermediate-users-by-pnp-makerslab-lyon-tickets-1034984766297",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-14T11:15:00",
+      "utc": "2024-11-14T10:15:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-14T12:45:00",
+      "utc": "2024-11-14T11:45:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-01T15:29:35Z",
+    "changed": "2024-10-01T15:30:04Z",
+    "published": "2024-10-01T15:30:04Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP.",
+    "facebook_event_id": null,
+    "logo_id": "863729699",
+    "organizer_id": "57822422353",
+    "venue_id": "235262539",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1034984766297",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1034984766297/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863729699%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=751ebd439d54ff236f2494fa5831472b",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863729699",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863729699%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=c6688e720c1393ef1106657b1f992768",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/235262539/",
+      "id": "235262539",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
       "text": "2d design & laser cutting for intermediate users @makers'lab LYON",
       "html": "2d design &amp; laser cutting for intermediate users @makers&#39;lab LYON"
     },
@@ -339,7 +1187,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-09-25T07:17:08Z",
-    "changed": "2024-09-25T07:32:29Z",
+    "changed": "2024-10-01T07:52:43Z",
     "published": "2024-09-25T07:17:56Z",
     "capacity": 25,
     "capacity_is_custom": true,
@@ -551,7 +1399,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-09-25T07:50:06Z",
-    "changed": "2024-09-25T07:50:51Z",
+    "changed": "2024-10-01T07:54:21Z",
     "published": "2024-09-25T07:50:51Z",
     "capacity": 25,
     "capacity_is_custom": true,
@@ -637,6 +1485,112 @@
   },
   {
     "name": {
+      "text": "Adobe Premiere for beginners by PNP @makers'lab LYON",
+      "html": "Adobe Premiere for beginners by PNP @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing. Learn how to design your own video using Adobe Premiere with PnP.",
+      "html": "One-hour workshop to learn a skill by doing. Learn how to design your own video using Adobe Premiere with PnP."
+    },
+    "url": "https://www.eventbrite.fr/e/adobe-premiere-for-beginners-by-pnp-makerslab-lyon-tickets-1034975689147",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-21T12:45:00",
+      "utc": "2024-11-21T11:45:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-21T14:15:00",
+      "utc": "2024-11-21T13:15:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-01T15:19:28Z",
+    "changed": "2024-10-01T15:19:53Z",
+    "published": "2024-10-01T15:19:53Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing. Learn how to design your own video using Adobe Premiere with PnP.",
+    "facebook_event_id": null,
+    "logo_id": "863716589",
+    "organizer_id": "57822422353",
+    "venue_id": "235260039",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1034975689147",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1034975689147/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863716589%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=e83b33a1a95f0ca0ea038789e147d9e5",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863716589",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863716589%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=a4c6846edc8d555dff6a302d139c1acb",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/235260039/",
+      "id": "235260039",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
       "text": "2d design & laser cutting for advanced users @makers'lab LYON",
       "html": "2d design &amp; laser cutting for advanced users @makers&#39;lab LYON"
     },
@@ -657,7 +1611,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-09-25T07:19:03Z",
-    "changed": "2024-09-25T07:32:59Z",
+    "changed": "2024-10-01T07:50:05Z",
     "published": "2024-09-25T07:20:07Z",
     "capacity": 25,
     "capacity_is_custom": true,
@@ -763,7 +1717,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-09-25T07:55:25Z",
-    "changed": "2024-09-25T08:00:22Z",
+    "changed": "2024-10-01T07:54:28Z",
     "published": "2024-09-25T07:56:08Z",
     "capacity": 25,
     "capacity_is_custom": true,
@@ -869,7 +1823,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-09-20T12:29:22Z",
-    "changed": "2024-09-20T12:50:01Z",
+    "changed": "2024-10-01T07:53:11Z",
     "published": "2024-09-20T12:29:52Z",
     "capacity": 25,
     "capacity_is_custom": true,
@@ -946,6 +1900,112 @@
       },
       "resource_uri": "https://www.eventbriteapi.com/v3/venues/233569269/",
       "id": "233569269",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "Photoshop for beginners by PNP @makers'lab LYON",
+      "html": "Photoshop for beginners by PNP @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP.",
+      "html": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP."
+    },
+    "url": "https://www.eventbrite.fr/e/photoshop-for-beginners-by-pnp-makerslab-lyon-tickets-1034973883747",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-28T12:45:00",
+      "utc": "2024-11-28T11:45:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-28T14:15:00",
+      "utc": "2024-11-28T13:15:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-01T15:16:19Z",
+    "changed": "2024-10-01T15:16:43Z",
+    "published": "2024-10-01T15:16:43Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP.",
+    "facebook_event_id": null,
+    "logo_id": "863713069",
+    "organizer_id": "57822422353",
+    "venue_id": "235259339",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1034973883747",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1034973883747/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863713069%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=3c588d27a5aef4fb4fe0dee246da162a",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863713069",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863713069%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=a2a10c395ebd6e859600b8e08b57f99d",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/235259339/",
+      "id": "235259339",
       "age_restriction": null,
       "capacity": null,
       "name": "makers'lab emlyon LYON",
@@ -1081,7 +2141,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-09-20T12:34:16Z",
-    "changed": "2024-09-20T12:48:55Z",
+    "changed": "2024-10-01T07:51:13Z",
     "published": "2024-09-20T12:35:52Z",
     "capacity": 25,
     "capacity_is_custom": true,
@@ -1187,7 +2247,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-09-25T07:51:45Z",
-    "changed": "2024-09-25T07:52:27Z",
+    "changed": "2024-10-01T07:54:38Z",
     "published": "2024-09-25T07:52:27Z",
     "capacity": 25,
     "capacity_is_custom": true,
@@ -1273,6 +2333,112 @@
   },
   {
     "name": {
+      "text": "Photoshop for beginners by PNP @makers'lab LYON",
+      "html": "Photoshop for beginners by PNP @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP.",
+      "html": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP."
+    },
+    "url": "https://www.eventbrite.fr/e/photoshop-for-beginners-by-pnp-makerslab-lyon-tickets-1034974575817",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-12-05T11:15:00",
+      "utc": "2024-12-05T10:15:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-12-05T12:45:00",
+      "utc": "2024-12-05T11:45:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-01T15:17:39Z",
+    "changed": "2024-10-01T15:28:31Z",
+    "published": "2024-10-01T15:28:31Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "One-hour workshop to learn a skill by doing. Discover how to enhance your photos and master the different features of Photoshop with PnP.",
+    "facebook_event_id": null,
+    "logo_id": "863707799",
+    "organizer_id": "57822422353",
+    "venue_id": "235259629",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1034974575817",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1034974575817/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863707799",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/235259629/",
+      "id": "235259629",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
       "text": "UX Design with Figma for intermediate users @makers'lab LYON",
       "html": "UX Design with Figma for intermediate users @makers&#39;lab LYON"
     },
@@ -1293,7 +2459,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-09-25T07:34:14Z",
-    "changed": "2024-09-25T08:02:27Z",
+    "changed": "2024-10-01T07:53:19Z",
     "published": "2024-09-25T07:34:59Z",
     "capacity": 25,
     "capacity_is_custom": true,
@@ -1399,7 +2565,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-09-25T07:58:11Z",
-    "changed": "2024-09-25T07:59:20Z",
+    "changed": "2024-10-01T07:54:45Z",
     "published": "2024-09-25T07:59:20Z",
     "capacity": 25,
     "capacity_is_custom": true,

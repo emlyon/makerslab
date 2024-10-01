@@ -37,7 +37,7 @@ function createEventCard(event) {
   cardContent.classList.add('card-content');
   cardContent.innerHTML = `<span class="card-title grey-text text-darken-4">${event.name.text}</span>`;
   cardContent.innerHTML += `<div class="divider"></div>`;
-  cardContent.innerHTML += `<p>${event.description.text}</p>`;
+  cardContent.innerHTML += `<p>${event.summary}</p>`;
   // We could use ${event.venue.name} instead of 'makers' lab emlyon', but the city is also mentioned in the name, so we avoid redundancy.
   cardContent.innerHTML += `<span class="red-text darken-4">📍</span> <strong class="red-text">${event.venue.address.city}</strong> - <strong>makers' lab emlyon</strong> <br>`;
 
