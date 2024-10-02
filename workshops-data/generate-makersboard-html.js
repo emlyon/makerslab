@@ -91,6 +91,8 @@ async function buildEventHtml(event) {
   htmlDescription = htmlDescription.replace(/<div>.*?<\/div>/, '');
   // Place the splitCta content before the first div containing an image, within previous div to use same margins
   htmlDescription = htmlDescription.replace(/(<\/div><div[^>]*>\s*<img[^>]*>)/, `${splitCta}$1`);
+  // Replace image src with event logo url
+  htmlDescription = htmlDescription.replace(/(<img[^>]*src=")[^"]*"/, `$1${event.logo.url}"`);
 
   htmlDescription = htmlDescription.replace(
     'makerslab@em-lyon.com',
