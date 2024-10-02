@@ -63,6 +63,10 @@ function writeIndexJson(events) {
 
 async function buildEventsHtmlFiles(events) {
   for (const event of events) {
+    // Useful to debug with only one event
+    // Next unless event id is 1034968989107
+    // if (event.id !== '1034968989107') continue;
+
     console.log('Building HTML for event:', event.name.text);
     // console.log(event);
     try {
@@ -81,15 +85,13 @@ async function buildEventsHtmlFiles(events) {
 
 async function buildEventHtml(event) {
   let htmlDescription = await fetchEventDescription(event);
-  // Here is the beginning of html description
-  // "<div>One-hour workshop to learn a skill by doing! Create your own 3d model and print it on a 3d printer.<\/div><div style=\"margin-top: 20px\"><div style=\"margin: 20px 10p
-  // We need to insert CTA content instead of this first div, which is actually the summary and is repeated at the beginning of the description
-
   let splitCta = `<p class="hide-mobile"><strong>Registering through Eventbrite is mandatory</strong> <span class="hide-mobile">⬇️</span></p>`;
   splitCta += buildEventCta(event, 'hide-mobile');
-  // htmlDescription = htmlDescription.replace(/</div><div>/, `</div>${splitCta}<div`);
-  // Replace the content of the first div with the splitCta content
-  htmlDescription = htmlDescription.replace(/<div>.*?<\/div>/, splitCta);
+  // Remove the content of the first div
+  htmlDescription = htmlDescription.replace(/<div>.*?<\/div>/, '');
+  // Place the splitCta content before the first div containing an image, within previous div to use same margins
+  htmlDescription = htmlDescription.replace(/(<\/div><div[^>]*>\s*<img[^>]*>)/, `${splitCta}$1`);
+
   htmlDescription = htmlDescription.replace(
     'makerslab@em-lyon.com',
     '<a href="mailto:makerslab@em-lyon.com">makerslab@em-lyon.com</a>'
