@@ -4,5 +4,6 @@ debug.log
 .prettierignore
 server.**
 workshops-data/eventbrite-config.json
+workshops-data/makersboard-html
 node_modules
 package-lock.json

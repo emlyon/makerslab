@@ -319,14 +319,14 @@
   },
   {
     "name": {
-      "text": "Illustrator for beginners by PNP @makers'lab LYON",
-      "html": "Illustrator for beginners by PNP @makers&#39;lab LYON"
+      "text": "Creating logo with Photoshop for beginners by PNP @makers'lab LYON",
+      "html": "Creating logo with Photoshop for beginners by PNP @makers&#39;lab LYON"
     },
     "description": {
       "text": "One-hour workshop to learn a skill by doing. Learn how to make a logo and the graphic charter of your project with the basics.",
       "html": "One-hour workshop to learn a skill by doing. Learn how to make a logo and the graphic charter of your project with the basics."
     },
-    "url": "https://www.eventbrite.fr/e/illustrator-for-beginners-by-pnp-makerslab-lyon-tickets-1034987554637",
+    "url": "https://www.eventbrite.fr/e/creating-logo-with-photoshop-for-beginners-by-pnp-makerslab-lyon-tickets-1034987554637",
     "start": {
       "timezone": "Europe/Paris",
       "local": "2024-10-24T11:15:00",
@@ -339,7 +339,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-10-01T15:33:05Z",
-    "changed": "2024-10-01T15:33:58Z",
+    "changed": "2024-10-02T07:59:34Z",
     "published": "2024-10-01T15:33:58Z",
     "capacity": 25,
     "capacity_is_custom": true,
