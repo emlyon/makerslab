@@ -93,7 +93,7 @@ function appendEvents(events) {
 
     eventCol.appendChild(card);
     eventRow.appendChild(eventCol);
-    if (index % 3 === 2) {
+    if (index % 3 === 2 || index === events.length - 1) {
       eventsList.appendChild(eventRow);
     }
   });
