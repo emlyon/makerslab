@@ -22,7 +22,7 @@ main();
 
 // Write an index.json file with the list of events names, summary, start and end dates in format "08/11/2024 11:20"
 function writeIndexJson(events) {
-  const indexFileName = 'index.json';
+  const indexFileName = '0-index.json';
   const indexContent = events.map((event) => {
     // Format date to "08/11/2024 11:20", from 2024-12-06T12:30:00
     const startDate = new Date(event.start.local);
@@ -63,32 +63,34 @@ function writeIndexJson(events) {
 }
 
 async function buildEventsHtmlFiles(events) {
-  for (const event of events) {
-    // Useful to debug with only one event
-    // Next unless event id is 1034968989107
-    // if (event.id !== '1034968989107') continue;
+  await Promise.all(
+    events.map(async (event, index) => {
+      // Useful to debug with only one event
+      // Next unless event id is 1034968989107
+      // if (event.id !== '1034968989107') continue;
 
-    console.log('Building HTML for event:', event.name.text);
-    // console.log(event);
-    try {
-      const html = await buildEventHtml(event);
-      // remove all special characters so that fits an url
-      const formatEventName = event.name.text
-        .toLowerCase()
-        .replace(/\s/g, '-')
-        .replace(/[^a-z0-9-]/g, '')
-        .replace(/-+/g, '-');
-      const fileStem = `${event.id}-${formatEventName}`;
-      const fileName = `${fileStem}.html`;
-      const filePath = path.join(`${__dirname}/makersboard-html`, fileName);
-      fs.writeFileSync(filePath, html, 'utf8');
-      event.htmlFileName = fileName;
-      event.makersBoardUuid = fileStem;
-    } catch (error) {
-      console.error('Error building HTML for event:', event.name.text);
-      console.error(error);
-    }
-  }
+      console.log('Building HTML for event:', event.name.text);
+      // console.log(event);
+      try {
+        const html = await buildEventHtml(event);
+        // remove all special characters so that fits an url
+        const formatEventName = event.name.text
+          .toLowerCase()
+          .replace(/\s/g, '-')
+          .replace(/[^a-z0-9-]/g, '')
+          .replace(/-+/g, '-');
+        const fileStem = `${formatEventName}-${event.id}`;
+        const fileName = `${index + 1}-${fileStem}.html`;
+        const filePath = path.join(`${__dirname}/makersboard-html`, fileName);
+        fs.writeFileSync(filePath, html, 'utf8');
+        event.htmlFileName = fileName;
+        event.makersBoardUuid = fileStem;
+      } catch (error) {
+        console.error('Error building HTML for event:', event.name.text);
+        console.error(error);
+      }
+    })
+  );
 }
 
 async function buildEventHtml(event) {
