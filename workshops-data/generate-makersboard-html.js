@@ -45,13 +45,14 @@ function writeIndexJson(events) {
     return {
       id: event.id,
       name: event.name.text,
+      uuid: event.makersBoardUuid,
       summary: event.summary,
       start: formatStartDate,
       end: formatEndDate,
+      location: event.venue?.name,
       url: event.url,
-      htmlFileName: event.htmlFileName,
       eventDescriptionCode,
-      location: event.venue?.name
+      htmlFileName: event.htmlFileName
     };
   });
   fs.writeFileSync(
@@ -71,11 +72,18 @@ async function buildEventsHtmlFiles(events) {
     // console.log(event);
     try {
       const html = await buildEventHtml(event);
-      const formatEventName = event.name.text.toLowerCase().replace(/\s/g, '-');
-      const fileName = `${event.id}-${formatEventName}.html`;
+      // remove all special characters so that fits an url
+      const formatEventName = event.name.text
+        .toLowerCase()
+        .replace(/\s/g, '-')
+        .replace(/[^a-z0-9-]/g, '')
+        .replace(/-+/g, '-');
+      const fileStem = `${event.id}-${formatEventName}`;
+      const fileName = `${fileStem}.html`;
       const filePath = path.join(`${__dirname}/makersboard-html`, fileName);
       fs.writeFileSync(filePath, html, 'utf8');
       event.htmlFileName = fileName;
+      event.makersBoardUuid = fileStem;
     } catch (error) {
       console.error('Error building HTML for event:', event.name.text);
       console.error(error);
