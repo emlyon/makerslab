@@ -425,6 +425,105 @@
   },
   {
     "name": {
+      "text": "Design Sprint @makers'lab PARIS",
+      "html": "Design Sprint @makers&#39;lab PARIS"
+    },
+    "description": {
+      "text": "4 days to design, prototype and test your proof of concept with the makers' lab.",
+      "html": "4 days to design, prototype and test your proof of concept with the makers' lab."
+    },
+    "url": "https://www.eventbrite.fr/e/design-sprint-makerslab-paris-tickets-1040510554077",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-05T09:00:00",
+      "utc": "2024-11-05T08:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-08T18:00:00",
+      "utc": "2024-11-08T17:00:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-07T09:35:00Z",
+    "changed": "2024-10-07T14:53:16Z",
+    "published": "2024-10-07T09:42:20Z",
+    "capacity": 100,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "4 days to design, prototype and test your proof of concept with the makers' lab.",
+    "facebook_event_id": null,
+    "logo_id": "868219119",
+    "organizer_id": "57822422353",
+    "venue_id": "236125729",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1040510554077",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1040510554077/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": null,
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F868219119%2F1299734345143%2F1%2Foriginal.20241007-093659?auto=format%2Ccompress&q=75&sharp=10&s=c409d2b371fa9de790a04c0fb3601fb3",
+        "width": 2520,
+        "height": 1674
+      },
+      "id": "868219119",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F868219119%2F1299734345143%2F1%2Foriginal.20241007-093659?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc397b2b4ac5272ff094f3aee690f4e6",
+      "aspect_ratio": "1.51",
+      "edge_color": "#7f7f76",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "15 Boulevard Diderot",
+        "address_2": "",
+        "city": "Paris",
+        "region": "IDF",
+        "postal_code": "75012",
+        "country": "FR",
+        "latitude": "48.8460492",
+        "longitude": "2.3713275",
+        "localized_address_display": "15 Boulevard Diderot, 75012 Paris",
+        "localized_area_display": "Paris",
+        "localized_multi_line_address_display": [
+          "15 Boulevard Diderot",
+          "75012 Paris"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/236125729/",
+      "id": "236125729",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers' lab emlyon PARIS",
+      "latitude": "48.8460492",
+      "longitude": "2.3713275"
+    }
+  },
+  {
+    "name": {
       "text": "3d design & printing for beginners @makers'lab PARIS",
       "html": "3d design &amp; printing for beginners @makers&#39;lab PARIS"
     },
@@ -1823,7 +1922,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-09-20T12:29:22Z",
-    "changed": "2024-10-02T12:23:16Z",
+    "changed": "2024-10-04T09:14:25Z",
     "published": "2024-09-20T12:29:52Z",
     "capacity": 25,
     "capacity_is_custom": true,
@@ -1837,7 +1936,7 @@
     "tx_time_limit": 1200,
     "hide_start_date": false,
     "hide_end_date": false,
-    "locale": "en_US",
+    "locale": "en_GB",
     "is_locked": false,
     "privacy_setting": "unlocked",
     "is_series": false,
@@ -2141,7 +2240,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-09-20T12:34:16Z",
-    "changed": "2024-10-02T12:24:06Z",
+    "changed": "2024-10-04T09:15:24Z",
     "published": "2024-09-20T12:35:52Z",
     "capacity": 25,
     "capacity_is_custom": true,
@@ -2155,7 +2254,7 @@
     "tx_time_limit": 1200,
     "hide_start_date": false,
     "hide_end_date": false,
-    "locale": "en_US",
+    "locale": "en_GB",
     "is_locked": false,
     "privacy_setting": "unlocked",
     "is_series": false,
