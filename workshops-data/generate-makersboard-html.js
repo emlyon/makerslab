@@ -16,6 +16,7 @@ async function main() {
   // Generate HTML files for each event
   await buildEventsHtmlFiles(events);
   writeIndexJson(events);
+  process.exit();
 }
 
 main();

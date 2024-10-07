@@ -26,6 +26,7 @@ const OPTIONS = {
     process.exit();
   } catch (e) {
     console.warn(e);
+    process.exit();
   }
 })();
 
