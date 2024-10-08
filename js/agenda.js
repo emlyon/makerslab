@@ -5,7 +5,6 @@ async function main() {
   try {
     const events = await fetchEvents();
     appendEvents(events);
-    initializeEventbriteWidgets(events);
     equalizeCardsHeight();
   } catch (error) {
     console.error('Error in main function:', error);
@@ -68,7 +67,7 @@ function createEventCard(event) {
   const cta = document.createElement('div');
   cta.classList.add('cta');
   const ctaText = pageLanguage === 'fr' ? 'Inscription' : 'Register';
-  cta.innerHTML = `<a class="waves-effect waves-light btn" id="triggerWidget${event.id}">${ctaText}</a>`;
+  cta.innerHTML = `<a class="waves-effect waves-light btn" href="${event.url}" target="_blank">${ctaText}</a>`;
 
   card.appendChild(cardContent);
   card.appendChild(cta);
@@ -96,23 +95,6 @@ function appendEvents(events) {
     if (index % 3 === 2 || index === events.length - 1) {
       eventsList.appendChild(eventRow);
     }
-  });
-}
-
-// Initialize Eventbrite widgets
-function initializeEventbriteWidgets(events) {
-  events.forEach((event) => {
-    initializeEventbriteWidget(event);
-  });
-}
-
-// Initialize Eventbrite widget
-function initializeEventbriteWidget(event) {
-  window.EBWidgets.createWidget({
-    widgetType: 'checkout',
-    eventId: event.id,
-    modal: true,
-    modalTriggerElementId: `triggerWidget${event.id}`
   });
 }
 
