@@ -429,10 +429,10 @@
       "html": "Design Sprint @makers&#39;lab PARIS"
     },
     "description": {
-      "text": "4 days to design, prototype and test your proof of concept with the makers' lab.",
-      "html": "4 days to design, prototype and test your proof of concept with the makers' lab."
+      "text": "4 days to design, prototype and test your proof of concept at the makers' lab.",
+      "html": "4 days to design, prototype and test your proof of concept at the makers' lab."
     },
-    "url": "https://www.eventbrite.fr/e/design-sprint-makerslab-paris-tickets-1040510554077",
+    "url": "https://www.eventbrite.fr/e/billets-design-sprint-makerslab-paris-1040510554077",
     "start": {
       "timezone": "Europe/Paris",
       "local": "2024-11-05T09:00:00",
@@ -445,7 +445,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2024-10-07T09:35:00Z",
-    "changed": "2024-10-07T14:53:16Z",
+    "changed": "2024-10-08T08:02:24Z",
     "published": "2024-10-07T09:42:20Z",
     "capacity": 100,
     "capacity_is_custom": true,
@@ -459,7 +459,7 @@
     "tx_time_limit": 1200,
     "hide_start_date": false,
     "hide_end_date": false,
-    "locale": "en_GB",
+    "locale": "fr_FR",
     "is_locked": false,
     "privacy_setting": "unlocked",
     "is_series": false,
@@ -472,7 +472,7 @@
     "source": "coyote",
     "is_free": true,
     "version": null,
-    "summary": "4 days to design, prototype and test your proof of concept with the makers' lab.",
+    "summary": "4 days to design, prototype and test your proof of concept at the makers' lab.",
     "facebook_event_id": null,
     "logo_id": "868219119",
     "organizer_id": "57822422353",
@@ -1898,6 +1898,105 @@
       "name": "makers' lab emlyon PARIS",
       "latitude": "48.8460492",
       "longitude": "2.3713275"
+    }
+  },
+  {
+    "name": {
+      "text": "Design Sprint @makers'lab LYON",
+      "html": "Design Sprint @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "4 days to design, prototype and test your proof of concept at the makers' lab.",
+      "html": "4 days to design, prototype and test your proof of concept at the makers' lab."
+    },
+    "url": "https://www.eventbrite.fr/e/billets-design-sprint-makerslab-lyon-1041806249537",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-26T09:00:00",
+      "utc": "2024-11-26T08:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2024-11-29T18:00:00",
+      "utc": "2024-11-29T17:00:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2024-10-08T08:23:18Z",
+    "changed": "2024-10-08T08:24:08Z",
+    "published": "2024-10-08T08:24:08Z",
+    "capacity": 100,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "fr_FR",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "4 days to design, prototype and test your proof of concept at the makers' lab.",
+    "facebook_event_id": null,
+    "logo_id": "868219119",
+    "organizer_id": "57822422353",
+    "venue_id": "235263289",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1041806249537",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1041806249537/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": null,
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F868219119%2F1299734345143%2F1%2Foriginal.20241007-093659?auto=format%2Ccompress&q=75&sharp=10&s=c409d2b371fa9de790a04c0fb3601fb3",
+        "width": 2520,
+        "height": 1674
+      },
+      "id": "868219119",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F868219119%2F1299734345143%2F1%2Foriginal.20241007-093659?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc397b2b4ac5272ff094f3aee690f4e6",
+      "aspect_ratio": "1.51",
+      "edge_color": "#7f7f76",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/235263289/",
+      "id": "235263289",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
     }
   },
   {
