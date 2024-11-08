@@ -4,7 +4,8 @@ const pageLanguage = document.documentElement.lang;
 async function main() {
   try {
     const events = await fetchEvents();
-    appendEvents(events);
+    const presentOrFutureEvents = events.filter((event) => new Date(event.end.local) >= new Date());
+    appendEvents(presentOrFutureEvents);
     equalizeCardsHeight();
   } catch (error) {
     console.error('Error in main function:', error);
