@@ -5284,5 +5284,217 @@
       "latitude": "45.7414144",
       "longitude": "4.839422700000001"
     }
+  },
+  {
+    "name": {
+      "text": "Adobe Premiere for beginners by PNP @makers' lab LYON",
+      "html": "Adobe Premiere for beginners by PNP @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "Learn how to design your own video using Adobe Premiere with PnP. One-hour workshop to learn a skill by doing.",
+      "html": "Learn how to design your own video using Adobe Premiere with PnP. One-hour workshop to learn a skill by doing."
+    },
+    "url": "https://www.eventbrite.fr/e/adobe-premiere-for-beginners-by-pnp-makers-lab-lyon-tickets-1202962947559",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-05-08T11:15:00",
+      "utc": "2025-05-08T09:15:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-05-08T12:45:00",
+      "utc": "2025-05-08T10:45:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-01-15T09:52:04Z",
+    "changed": "2025-01-15T14:13:36Z",
+    "published": "2025-01-15T09:52:18Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to design your own video using Adobe Premiere with PnP. One-hour workshop to learn a skill by doing.",
+    "facebook_event_id": null,
+    "logo_id": "863707799",
+    "organizer_id": "57822422353",
+    "venue_id": "250508983",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1202962947559",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1202962947559/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863707799",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/250508983/",
+      "id": "250508983",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "Adobe Premiere for intermediate users by PNP @makers' lab LYON",
+      "html": "Adobe Premiere for intermediate users by PNP @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "Learn how to design your own video using Adobe Premiere with PnP. One-hour workshop to learn a skill by doing.",
+      "html": "Learn how to design your own video using Adobe Premiere with PnP. One-hour workshop to learn a skill by doing."
+    },
+    "url": "https://www.eventbrite.fr/e/adobe-premiere-for-intermediate-users-by-pnp-makers-lab-lyon-tickets-1202973408849",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-05-15T11:15:00",
+      "utc": "2025-05-15T09:15:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-05-15T12:45:00",
+      "utc": "2025-05-15T10:45:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-01-15T09:57:19Z",
+    "changed": "2025-01-15T14:13:47Z",
+    "published": "2025-01-15T09:57:31Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to design your own video using Adobe Premiere with PnP. One-hour workshop to learn a skill by doing.",
+    "facebook_event_id": null,
+    "logo_id": "863707799",
+    "organizer_id": "57822422353",
+    "venue_id": "250509963",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1202973408849",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1202973408849/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863707799",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/250509963/",
+      "id": "250509963",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
   }
 ]
