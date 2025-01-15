@@ -44,7 +44,32 @@ async function fetchEvents() {
   try {
     const response = await fetch(url, OPTIONS);
     const data = await response.json();
-    return data.events;
+    let events = data.events;
+    if (data.pagination?.has_more_items) {
+      events = await addPaginatedEvents(events, params, data.pagination.continuation);
+    }
+    return events;
+  } catch (e) {
+    console.warn(e);
+    throw e;
+  }
+}
+
+async function addPaginatedEvents(events, params, continuationToken) {
+  const fetch = (await import('node-fetch')).default;
+  const baseURL = `https://www.eventbriteapi.com/v3/organizations/${ORGANIZATION_ID}/events/`;
+  const url = new URL(baseURL);
+  const newParams = {
+    ...params,
+    continuation: continuationToken
+  };
+  url.search = new URLSearchParams(newParams).toString();
+  try {
+    const response = await fetch(url, OPTIONS);
+    const data = await response.json();
+    const newEvents = data.events;
+    if (!data.pagination?.has_more_items) return events.concat(newEvents);
+    return addPaginatedEvents(events.concat(newEvents), params, data.pagination.continuation);
   } catch (e) {
     console.warn(e);
     throw e;
