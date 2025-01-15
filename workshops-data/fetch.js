@@ -57,7 +57,31 @@ async function fetchVenues() {
   try {
     const response = await fetch(baseURL, OPTIONS);
     const data = await response.json();
-    return data.venues;
+    let venues = data.venues;
+    if (data.pagination?.has_more_items) {
+      venues = await addPaginatedVenues(venues, data.pagination.continuation);
+    }
+    return venues;
+  } catch (e) {
+    console.warn(e);
+    throw e;
+  }
+}
+
+async function addPaginatedVenues(venues, continuationToken) {
+  const baseURL = `https://www.eventbriteapi.com/v3/organizations/${ORGANIZATION_ID}/venues/`;
+  const fetch = (await import('node-fetch')).default;
+  const params = {
+    continuation: continuationToken
+  };
+  const url = new URL(baseURL);
+  url.search = new URLSearchParams(params).toString();
+  try {
+    const response = await fetch(url, OPTIONS);
+    const data = await response.json();
+    const newVenues = data.venues;
+    if (!data.pagination?.has_more_items) return venues.concat(newVenues);
+    return addPaginatedVenues(venues.concat(newVenues), data.pagination.continuation);
   } catch (e) {
     console.warn(e);
     throw e;
