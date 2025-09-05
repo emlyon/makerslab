@@ -3181,14 +3181,14 @@
   },
   {
     "name": {
-      "text": "Copie de 3d design & printing for intermediate users @makers' lab PARIS",
-      "html": "Copie de 3d design &amp; printing for intermediate users @makers&#39; lab PARIS"
+      "text": "3d design & printing for intermediate users @makers' lab PARIS",
+      "html": "3d design &amp; printing for intermediate users @makers&#39; lab PARIS"
     },
     "description": {
       "text": "Create your own 3d model and print it on a 3d printer. One-hour workshop to learn a skill by doing!",
       "html": "Create your own 3d model and print it on a 3d printer. One-hour workshop to learn a skill by doing!"
     },
-    "url": "https://www.eventbrite.fr/e/copie-de-3d-design-printing-for-intermediate-users-makers-lab-paris-tickets-1664424451339",
+    "url": "https://www.eventbrite.fr/e/3d-design-printing-for-intermediate-users-makers-lab-paris-tickets-1664424451339",
     "start": {
       "timezone": "Europe/Paris",
       "local": "2025-11-04T13:00:00",
@@ -3201,7 +3201,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2025-09-04T15:18:49Z",
-    "changed": "2025-09-04T15:19:42Z",
+    "changed": "2025-09-05T06:39:44Z",
     "published": "2025-09-04T15:19:42Z",
     "capacity": 25,
     "capacity_is_custom": true,
