@@ -48,12 +48,12 @@ function writeIndexJson(events) {
       name: event.name.text,
       uuid: event.makersBoardUuid,
       summary: event.summary,
+      eventDescriptionCode,
+      htmlFileName: event.htmlFileName,
+      url: event.url,
       start: formatStartDate,
       end: formatEndDate,
-      location: event.venue?.name,
-      url: event.url,
-      eventDescriptionCode,
-      htmlFileName: event.htmlFileName
+      location: event.venue?.name
     };
   });
   fs.writeFileSync(
