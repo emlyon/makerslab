@@ -1,112 +1,6 @@
 [
   {
     "name": {
-      "text": "Photoshop for beginners by PNP @makers' lab LYON",
-      "html": "Photoshop for beginners by PNP @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing.",
-      "html": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing."
-    },
-    "url": "https://www.eventbrite.fr/e/photoshop-for-beginners-by-pnp-makers-lab-lyon-tickets-1661953972069",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-11T11:15:00",
-      "utc": "2025-09-11T09:15:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-11T12:45:00",
-      "utc": "2025-09-11T10:45:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-04T05:33:31Z",
-    "changed": "2025-09-04T05:34:03Z",
-    "published": "2025-09-04T05:34:03Z",
-    "capacity": 25,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": true,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing.",
-    "facebook_event_id": null,
-    "logo_id": "1113879233",
-    "organizer_id": "57822422353",
-    "venue_id": "285569523",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1661953972069",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661953972069/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 624
-        },
-        "width": 4252,
-        "height": 2126
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1113879233%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=b1d1123b885cf7a325d37a2188e36ee6",
-        "width": 4252,
-        "height": 2829
-      },
-      "id": "1113879233",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1113879233%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=983e68c6636ecda7363aed5040564c11",
-      "aspect_ratio": "2",
-      "edge_color": "#9aa5ac",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285569523/",
-      "id": "285569523",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
       "text": "UX Design with Figma for beginners @makers' lab PARIS",
       "html": "UX Design with Figma for beginners @makers&#39; lab PARIS"
     },
@@ -1167,6 +1061,112 @@
   },
   {
     "name": {
+      "text": "Photoshop for beginners by PNP @makers' lab LYON",
+      "html": "Photoshop for beginners by PNP @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing.",
+      "html": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing."
+    },
+    "url": "https://www.eventbrite.fr/e/photoshop-for-beginners-by-pnp-makers-lab-lyon-tickets-1661957763409",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-09-30T16:00:00",
+      "utc": "2025-09-30T14:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-09-30T17:30:00",
+      "utc": "2025-09-30T15:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-09-04T05:35:05Z",
+    "changed": "2025-09-05T07:29:04Z",
+    "published": "2025-09-04T05:35:25Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing.",
+    "facebook_event_id": null,
+    "logo_id": "863707799",
+    "organizer_id": "57822422353",
+    "venue_id": "285569593",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1661957763409",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661957763409/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863707799",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285569593/",
+      "id": "285569593",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
       "text": "Data Literacy with Power BI for advanced users @makers' lab LYON",
       "html": "Data Literacy with Power BI for advanced users @makers&#39; lab LYON"
     },
@@ -1485,218 +1485,6 @@
   },
   {
     "name": {
-      "text": "3d design & printing for beginners @makers' lab LYON",
-      "html": "3d design &amp; printing for beginners @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "Create your own 3d model and print it on a 3d printer. One-hour workshop to learn a skill by doing!",
-      "html": "Create your own 3d model and print it on a 3d printer. One-hour workshop to learn a skill by doing!"
-    },
-    "url": "https://www.eventbrite.fr/e/3d-design-printing-for-beginners-makers-lab-lyon-tickets-1661934935129",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-10T11:20:00",
-      "utc": "2025-10-10T09:20:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-10T12:30:00",
-      "utc": "2025-10-10T10:30:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-04T05:11:07Z",
-    "changed": "2025-09-04T05:11:22Z",
-    "published": "2025-09-04T05:11:22Z",
-    "capacity": 25,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": true,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Create your own 3d model and print it on a 3d printer. One-hour workshop to learn a skill by doing!",
-    "facebook_event_id": null,
-    "logo_id": "1113869863",
-    "organizer_id": "57822422353",
-    "venue_id": "285568093",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1661934935129",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661934935129/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 117
-        },
-        "width": 4894,
-        "height": 2447
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1113869863%2F1299734345143%2F1%2Foriginal.20240919-081830?auto=format%2Ccompress&q=75&sharp=10&s=455284483a01ca1fe83da2720c52465e",
-        "width": 4895,
-        "height": 3268
-      },
-      "id": "1113869863",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1113869863%2F1299734345143%2F1%2Foriginal.20240919-081830?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C117%2C4894%2C2447&s=399427370d6d8f8d1de8822f0563f5f4",
-      "aspect_ratio": "2",
-      "edge_color": "#807867",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285568093/",
-      "id": "285568093",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Bootcamp Excel - day 2 intermediate users by PNP @makers' lab LYON",
-      "html": "Bootcamp Excel - day 2 intermediate users by PNP @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "You’ll be able to use Excel with confidence to save time, simplify your work, and make better data-driven decision.",
-      "html": "You’ll be able to use Excel with confidence to save time, simplify your work, and make better data-driven decision."
-    },
-    "url": "https://www.eventbrite.fr/e/bootcamp-excel-day-2-intermediate-users-by-pnp-makers-lab-lyon-tickets-1661973119339",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-13T16:00:00",
-      "utc": "2025-10-13T14:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-13T17:30:00",
-      "utc": "2025-10-13T15:30:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-04T05:48:13Z",
-    "changed": "2025-09-04T05:56:29Z",
-    "published": "2025-09-04T05:48:57Z",
-    "capacity": 25,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": true,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "You’ll be able to use Excel with confidence to save time, simplify your work, and make better data-driven decision.",
-    "facebook_event_id": null,
-    "logo_id": "863707799",
-    "organizer_id": "57822422353",
-    "venue_id": "285570583",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1661973119339",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661973119339/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 624
-        },
-        "width": 4252,
-        "height": 2126
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
-        "width": 4252,
-        "height": 2829
-      },
-      "id": "863707799",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
-      "aspect_ratio": "2",
-      "edge_color": "#9aa5ac",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285570583/",
-      "id": "285570583",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
       "text": "UX Design with Figma for intermediate users @makers'lab LYON",
       "html": "UX Design with Figma for intermediate users @makers&#39;lab LYON"
     },
@@ -1909,112 +1697,6 @@
   },
   {
     "name": {
-      "text": "Bootcamp Excel - day 3 advanced users by PNP @makers' lab LYON",
-      "html": "Bootcamp Excel - day 3 advanced users by PNP @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "You’ll be able to use Excel with confidence to save time, simplify your work, and make better data-driven decision.",
-      "html": "You’ll be able to use Excel with confidence to save time, simplify your work, and make better data-driven decision."
-    },
-    "url": "https://www.eventbrite.fr/e/bootcamp-excel-day-3-advanced-users-by-pnp-makers-lab-lyon-tickets-1661973580719",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-14T16:00:00",
-      "utc": "2025-10-14T14:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-14T17:30:00",
-      "utc": "2025-10-14T15:30:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-04T05:49:38Z",
-    "changed": "2025-09-04T05:56:35Z",
-    "published": "2025-09-04T05:50:20Z",
-    "capacity": 25,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": true,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "You’ll be able to use Excel with confidence to save time, simplify your work, and make better data-driven decision.",
-    "facebook_event_id": null,
-    "logo_id": "863707799",
-    "organizer_id": "57822422353",
-    "venue_id": "285570633",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1661973580719",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661973580719/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 624
-        },
-        "width": 4252,
-        "height": 2126
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
-        "width": 4252,
-        "height": 2829
-      },
-      "id": "863707799",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
-      "aspect_ratio": "2",
-      "edge_color": "#9aa5ac",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285570633/",
-      "id": "285570633",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
       "text": "Video Editing with Adobe Premiere (Long Formats) by PNP @makers' lab LYON",
       "html": "Video Editing with Adobe Premiere (Long Formats) by PNP @makers&#39; lab LYON"
     },
@@ -2112,112 +1794,6 @@
       },
       "resource_uri": "https://www.eventbriteapi.com/v3/venues/285571173/",
       "id": "285571173",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "3d design & printing for intermediate users @makers' lab LYON",
-      "html": "3d design &amp; printing for intermediate users @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "Create your own 3d model and print it on a 3d printer. One-hour workshop to learn a skill by doing!",
-      "html": "Create your own 3d model and print it on a 3d printer. One-hour workshop to learn a skill by doing!"
-    },
-    "url": "https://www.eventbrite.fr/e/3d-design-printing-for-intermediate-users-makers-lab-lyon-tickets-1661935215969",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-17T11:20:00",
-      "utc": "2025-10-17T09:20:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-17T12:30:00",
-      "utc": "2025-10-17T10:30:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-04T05:12:34Z",
-    "changed": "2025-09-04T05:13:22Z",
-    "published": "2025-09-04T05:13:22Z",
-    "capacity": 25,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": true,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Create your own 3d model and print it on a 3d printer. One-hour workshop to learn a skill by doing!",
-    "facebook_event_id": null,
-    "logo_id": "854163879",
-    "organizer_id": "57822422353",
-    "venue_id": "285568163",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1661935215969",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661935215969/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 117
-        },
-        "width": 4894,
-        "height": 2447
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?auto=format%2Ccompress&q=75&sharp=10&s=44215e9f8d2335939e6d8a1c22c82231",
-        "width": 4895,
-        "height": 3268
-      },
-      "id": "854163879",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C117%2C4894%2C2447&s=ed354277e5849f27158ac7c32a8807a0",
-      "aspect_ratio": "2",
-      "edge_color": "#807867",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285568163/",
-      "id": "285568163",
       "age_restriction": null,
       "capacity": null,
       "name": "makers'lab emlyon LYON",
@@ -2439,14 +2015,14 @@
   },
   {
     "name": {
-      "text": "3d design & printing for advanced users @makers'lab LYON",
-      "html": "3d design &amp; printing for advanced users @makers&#39;lab LYON"
+      "text": "3d design & printing for beginners @makers'lab LYON",
+      "html": "3d design &amp; printing for beginners @makers&#39;lab LYON"
     },
     "description": {
       "text": "Create your own 3d model and print it on a 3d printer. One-hour workshop to learn a skill by doing!",
       "html": "Create your own 3d model and print it on a 3d printer. One-hour workshop to learn a skill by doing!"
     },
-    "url": "https://www.eventbrite.fr/e/3d-design-printing-for-advanced-users-makerslab-lyon-tickets-1661935536929",
+    "url": "https://www.eventbrite.fr/e/3d-design-printing-for-beginners-makerslab-lyon-tickets-1661935536929",
     "start": {
       "timezone": "Europe/Paris",
       "local": "2025-10-24T11:20:00",
@@ -2459,7 +2035,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2025-09-04T05:14:39Z",
-    "changed": "2025-09-04T05:15:19Z",
+    "changed": "2025-09-05T15:10:07Z",
     "published": "2025-09-04T05:15:19Z",
     "capacity": 25,
     "capacity_is_custom": true,
@@ -2854,112 +2430,6 @@
       },
       "resource_uri": "https://www.eventbriteapi.com/v3/venues/285571363/",
       "id": "285571363",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Photoshop for beginners by PNP @makers' lab LYON",
-      "html": "Photoshop for beginners by PNP @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing.",
-      "html": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing."
-    },
-    "url": "https://www.eventbrite.fr/e/photoshop-for-beginners-by-pnp-makers-lab-lyon-tickets-1661957763409",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-30T16:00:00",
-      "utc": "2025-10-30T15:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-30T17:30:00",
-      "utc": "2025-10-30T16:30:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-04T05:35:05Z",
-    "changed": "2025-09-04T05:35:25Z",
-    "published": "2025-09-04T05:35:25Z",
-    "capacity": 25,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": true,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing.",
-    "facebook_event_id": null,
-    "logo_id": "1113879953",
-    "organizer_id": "57822422353",
-    "venue_id": "285569593",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1661957763409",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661957763409/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 624
-        },
-        "width": 4252,
-        "height": 2126
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1113879953%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=e54fac41ef9225e296f1340224677a7a",
-        "width": 4252,
-        "height": 2829
-      },
-      "id": "1113879953",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1113879953%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=439f4d94f6496fc30bd00026375442ae",
-      "aspect_ratio": "2",
-      "edge_color": "#9aa5ac",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285569593/",
-      "id": "285569593",
       "age_restriction": null,
       "capacity": null,
       "name": "makers'lab emlyon LYON",
@@ -3499,6 +2969,112 @@
   },
   {
     "name": {
+      "text": "Bootcamp Excel - day 2 intermediate users by PNP @makers' lab LYON",
+      "html": "Bootcamp Excel - day 2 intermediate users by PNP @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "You’ll be able to use Excel with confidence to save time, simplify your work, and make better data-driven decision.",
+      "html": "You’ll be able to use Excel with confidence to save time, simplify your work, and make better data-driven decision."
+    },
+    "url": "https://www.eventbrite.fr/e/bootcamp-excel-day-2-intermediate-users-by-pnp-makers-lab-lyon-tickets-1661973119339",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-11-13T16:00:00",
+      "utc": "2025-11-13T15:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-11-13T17:30:00",
+      "utc": "2025-11-13T16:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-09-04T05:48:13Z",
+    "changed": "2025-09-05T07:16:24Z",
+    "published": "2025-09-04T05:48:57Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "You’ll be able to use Excel with confidence to save time, simplify your work, and make better data-driven decision.",
+    "facebook_event_id": null,
+    "logo_id": "863707799",
+    "organizer_id": "57822422353",
+    "venue_id": "285570583",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1661973119339",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661973119339/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863707799",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285570583/",
+      "id": "285570583",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
       "text": "Web coding with HTML, CSS & Javascript for advanced @makers' lab LYON",
       "html": "Web coding with HTML, CSS &amp; Javascript for advanced @makers&#39; lab LYON"
     },
@@ -3596,6 +3172,112 @@
       },
       "resource_uri": "https://www.eventbriteapi.com/v3/venues/285643783/",
       "id": "285643783",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "Bootcamp Excel - day 3 advanced users by PNP @makers' lab LYON",
+      "html": "Bootcamp Excel - day 3 advanced users by PNP @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "You’ll be able to use Excel with confidence to save time, simplify your work, and make better data-driven decision.",
+      "html": "You’ll be able to use Excel with confidence to save time, simplify your work, and make better data-driven decision."
+    },
+    "url": "https://www.eventbrite.fr/e/bootcamp-excel-day-3-advanced-users-by-pnp-makers-lab-lyon-tickets-1661973580719",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-11-14T16:00:00",
+      "utc": "2025-11-14T15:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-11-14T17:30:00",
+      "utc": "2025-11-14T16:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-09-04T05:49:38Z",
+    "changed": "2025-09-05T07:16:47Z",
+    "published": "2025-09-04T05:50:20Z",
+    "capacity": 25,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "You’ll be able to use Excel with confidence to save time, simplify your work, and make better data-driven decision.",
+    "facebook_event_id": null,
+    "logo_id": "863707799",
+    "organizer_id": "57822422353",
+    "venue_id": "285570633",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1661973580719",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661973580719/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 624
+        },
+        "width": 4252,
+        "height": 2126
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
+        "width": 4252,
+        "height": 2829
+      },
+      "id": "863707799",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
+      "aspect_ratio": "2",
+      "edge_color": "#9aa5ac",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285570633/",
+      "id": "285570633",
       "age_restriction": null,
       "capacity": null,
       "name": "makers'lab emlyon LYON",
@@ -3731,9 +3413,9 @@
     },
     "organization_id": "1299734435773",
     "created": "2025-09-04T05:38:00Z",
-    "changed": "2025-09-04T05:38:16Z",
+    "changed": "2025-09-05T09:06:06Z",
     "published": "2025-09-04T05:38:16Z",
-    "capacity": 25,
+    "capacity": 15,
     "capacity_is_custom": true,
     "status": "live",
     "currency": "EUR",
