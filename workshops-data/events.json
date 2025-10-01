@@ -1,850 +1,6 @@
 [
   {
     "name": {
-      "text": "CV Design with InDesign, Canva & Word for beginners - PNP @makers' lab LYON",
-      "html": "CV Design with InDesign, Canva &amp; Word for beginners - PNP @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "Learn how to create a professional and impactful CV by mastering design principles and layout tools across different platforms.",
-      "html": "Learn how to create a professional and impactful CV by mastering design principles and layout tools across different platforms."
-    },
-    "url": "https://www.eventbrite.fr/e/cv-design-with-indesign-canva-word-for-beginners-pnp-makers-lab-lyon-tickets-1662033128829",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-25T11:15:00",
-      "utc": "2025-09-25T09:15:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-25T12:45:00",
-      "utc": "2025-09-25T10:45:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-04T06:06:19Z",
-    "changed": "2025-09-04T06:07:20Z",
-    "published": "2025-09-04T06:07:20Z",
-    "capacity": 25,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": true,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Learn how to create a professional and impactful CV by mastering design principles and layout tools across different platforms.",
-    "facebook_event_id": null,
-    "logo_id": "863707799",
-    "organizer_id": "57822422353",
-    "venue_id": "285571563",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1662033128829",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1662033128829/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 624
-        },
-        "width": 4252,
-        "height": 2126
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
-        "width": 4252,
-        "height": 2829
-      },
-      "id": "863707799",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
-      "aspect_ratio": "2",
-      "edge_color": "#9aa5ac",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285571563/",
-      "id": "285571563",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Formation machine à coudre",
-      "html": "Formation machine à coudre"
-    },
-    "description": {
-      "text": "Apprenez à utiliser une machine à coudre en pratiquant avec l'équipe du makers' lab.",
-      "html": "Apprenez à utiliser une machine à coudre en pratiquant avec l'équipe du makers' lab."
-    },
-    "url": "https://www.eventbrite.fr/e/billets-formation-machine-a-coudre-1733238255279",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-25T14:00:00",
-      "utc": "2025-09-25T12:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-25T15:00:00",
-      "utc": "2025-09-25T13:00:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-23T08:11:05Z",
-    "changed": "2025-09-23T08:15:46Z",
-    "published": "2025-09-23T08:14:37Z",
-    "capacity": 4,
-    "capacity_is_custom": false,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "fr_FR",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Apprenez à utiliser une machine à coudre en pratiquant avec l'équipe du makers' lab.",
-    "facebook_event_id": null,
-    "logo_id": "1132373043",
-    "organizer_id": "57822422353",
-    "venue_id": "285648303",
-    "category_id": "117",
-    "subcategory_id": "17003",
-    "format_id": "9",
-    "id": "1733238255279",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1733238255279/",
-    "is_externally_ticketed": false,
-    "series_id": "1733238034619",
-    "logo": {
-      "crop_mask": null,
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1132373043%2F1299734345143%2F1%2Foriginal.20250923-080437?auto=format%2Ccompress&q=75&sharp=10&s=c06629884015cadc3e8345c712930329",
-        "width": 4288,
-        "height": 2848
-      },
-      "id": "1132373043",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1132373043%2F1299734345143%2F1%2Foriginal.20250923-080437?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=b4cb0415b0eba7e0b55b0911a51460b4",
-      "aspect_ratio": "1.51",
-      "edge_color": "#5d94c2",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285648303/",
-      "id": "285648303",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Data Literacy with Power BI for intermediate users @makers' lab LYON",
-      "html": "Data Literacy with Power BI for intermediate users @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "Learn how to explore datasets & create visualizations using Power BI. One-hour workshop to learn a skill by doing.",
-      "html": "Learn how to explore datasets &amp; create visualizations using Power BI. One-hour workshop to learn a skill by doing."
-    },
-    "url": "https://www.eventbrite.fr/e/data-literacy-with-power-bi-for-intermediate-users-makers-lab-lyon-tickets-1661920301359",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-26T11:20:00",
-      "utc": "2025-09-26T09:20:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-26T12:30:00",
-      "utc": "2025-09-26T10:30:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-04T04:56:00Z",
-    "changed": "2025-09-04T04:56:50Z",
-    "published": "2025-09-04T04:56:50Z",
-    "capacity": 25,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": true,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Learn how to explore datasets & create visualizations using Power BI. One-hour workshop to learn a skill by doing.",
-    "facebook_event_id": null,
-    "logo_id": "863687329",
-    "organizer_id": "57822422353",
-    "venue_id": "285566623",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1661920301359",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661920301359/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 133
-        },
-        "width": 4554,
-        "height": 2277
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863687329%2F1299734345143%2F1%2Foriginal.20241001-145539?auto=format%2Ccompress&q=75&sharp=10&s=410eca00b1da4af0df6ffa7d29400d50",
-        "width": 4555,
-        "height": 3037
-      },
-      "id": "863687329",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863687329%2F1299734345143%2F1%2Foriginal.20241001-145539?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C133%2C4554%2C2277&s=449f94dd53dd107c78c0a8203d05adb8",
-      "aspect_ratio": "2",
-      "edge_color": "#647c76",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.8394227",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285566623/",
-      "id": "285566623",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "Finance Lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.8394227"
-    }
-  },
-  {
-    "name": {
-      "text": "Formation plotter de découpe et presse à chaud",
-      "html": "Formation plotter de découpe et presse à chaud"
-    },
-    "description": {
-      "text": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
-      "html": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome)."
-    },
-    "url": "https://www.eventbrite.fr/e/formation-plotter-de-decoupe-et-presse-a-chaud-tickets-1707705656589",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-30T12:30:00",
-      "utc": "2025-09-30T10:30:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-30T13:00:00",
-      "utc": "2025-09-30T11:00:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-16T13:14:02Z",
-    "changed": "2025-09-23T07:54:16Z",
-    "published": "2025-01-23T13:36:28Z",
-    "capacity": 4,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_US",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
-    "facebook_event_id": null,
-    "logo_id": "942931593",
-    "organizer_id": "57822422353",
-    "venue_id": "251930453",
-    "category_id": "199",
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1707705656589",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707705656589/",
-    "is_externally_ticketed": false,
-    "series_id": "1219395186829",
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 248
-        },
-        "width": 994,
-        "height": 497
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?auto=format%2Ccompress&q=75&sharp=10&s=2409750e12a3eaafd2a2e1a660793d5b",
-        "width": 995,
-        "height": 994
-      },
-      "id": "942931593",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=70690ffc1045f784bbd99f927bc6d94a",
-      "aspect_ratio": "2",
-      "edge_color": "#ffffff",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251930453/",
-      "id": "251930453",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "UX Design with Figma for advanced users @makers' lab PARIS",
-      "html": "UX Design with Figma for advanced users @makers&#39; lab PARIS"
-    },
-    "description": {
-      "text": "Design, prototype, and share your websites and mobile apps with Figma. One-hour workshop to learn a skill by doing!",
-      "html": "Design, prototype, and share your websites and mobile apps with Figma. One-hour workshop to learn a skill by doing!"
-    },
-    "url": "https://www.eventbrite.fr/e/ux-design-with-figma-for-advanced-users-makers-lab-paris-tickets-1661890893399",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-30T13:00:00",
-      "utc": "2025-09-30T11:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-30T14:10:00",
-      "utc": "2025-09-30T12:10:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-04T04:36:52Z",
-    "changed": "2025-09-04T04:48:50Z",
-    "published": "2025-09-04T04:37:47Z",
-    "capacity": 25,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": true,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Design, prototype, and share your websites and mobile apps with Figma. One-hour workshop to learn a skill by doing!",
-    "facebook_event_id": null,
-    "logo_id": "858826349",
-    "organizer_id": "57822422353",
-    "venue_id": "285564963",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1661890893399",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661890893399/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 495
-        },
-        "width": 5472,
-        "height": 2736
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858826349%2F1299734345143%2F1%2Foriginal.20240925-072839?auto=format%2Ccompress&q=75&sharp=10&s=abe6e433f791efa456dfbb28a2551f70",
-        "width": 5472,
-        "height": 3648
-      },
-      "id": "858826349",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858826349%2F1299734345143%2F1%2Foriginal.20240925-072839?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C495%2C5472%2C2736&s=920ed43c0a1ea837def0dad112f5ce91",
-      "aspect_ratio": "2",
-      "edge_color": "#342d2f",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "15 Boulevard Diderot",
-        "address_2": "",
-        "city": "Paris",
-        "region": "IDF",
-        "postal_code": "75012",
-        "country": "FR",
-        "latitude": "48.8460492",
-        "longitude": "2.3713275",
-        "localized_address_display": "15 Boulevard Diderot, 75012 Paris",
-        "localized_area_display": "Paris",
-        "localized_multi_line_address_display": [
-          "15 Boulevard Diderot",
-          "75012 Paris"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285564963/",
-      "id": "285564963",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers' lab emlyon PARIS",
-      "latitude": "48.8460492",
-      "longitude": "2.3713275"
-    }
-  },
-  {
-    "name": {
-      "text": "Sewing with the textile lab for beginners @makers' lab LYON",
-      "html": "Sewing with the textile lab for beginners @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "Learn how to prepare your sewing pattern and learn how to use a sewing machine by making your reusable wrapping paper.",
-      "html": "Learn how to prepare your sewing pattern and learn how to use a sewing machine by making your reusable wrapping paper."
-    },
-    "url": "https://www.eventbrite.fr/e/sewing-with-the-textile-lab-for-beginners-makers-lab-lyon-tickets-1661911795919",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-30T13:00:00",
-      "utc": "2025-09-30T11:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-30T14:10:00",
-      "utc": "2025-09-30T12:10:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-04T04:49:56Z",
-    "changed": "2025-09-23T09:01:35Z",
-    "published": "2025-09-04T04:51:20Z",
-    "capacity": 25,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": true,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Learn how to prepare your sewing pattern and learn how to use a sewing machine by making your reusable wrapping paper.",
-    "facebook_event_id": null,
-    "logo_id": "936311083",
-    "organizer_id": "57822422353",
-    "venue_id": "285566313",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1661911795919",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661911795919/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 223
-        },
-        "width": 6720,
-        "height": 3360
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F936311083%2F1299734345143%2F1%2Foriginal.20250115-134644?auto=format%2Ccompress&q=75&sharp=10&s=e437abdb26ac0df1af54e06fc8ac1e21",
-        "width": 6720,
-        "height": 4480
-      },
-      "id": "936311083",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F936311083%2F1299734345143%2F1%2Foriginal.20250115-134644?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C223%2C6720%2C3360&s=3a1c40f05b76a555da5ebbf69323d6c5",
-      "aspect_ratio": "2",
-      "edge_color": "#6b6760",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285566313/",
-      "id": "285566313",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Formation brodeuse numérique",
-      "html": "Formation brodeuse numérique"
-    },
-    "description": {
-      "text": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
-      "html": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements"
-    },
-    "url": "https://www.eventbrite.fr/e/formation-brodeuse-numerique-tickets-1707684413049",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-30T13:30:00",
-      "utc": "2025-09-30T11:30:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-30T14:30:00",
-      "utc": "2025-09-30T12:30:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-16T13:07:08Z",
-    "changed": "2025-09-16T13:07:08Z",
-    "published": "2025-01-22T18:59:23Z",
-    "capacity": 3,
-    "capacity_is_custom": false,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_US",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
-    "facebook_event_id": null,
-    "logo_id": "941953143",
-    "organizer_id": "57822422353",
-    "venue_id": "250720643",
-    "category_id": "199",
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1707684413049",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707684413049/",
-    "is_externally_ticketed": false,
-    "series_id": "1217997205429",
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 0
-        },
-        "width": 1000,
-        "height": 500
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
-      },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
-      "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/250720643/",
-      "id": "250720643",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Photoshop for beginners by PNP @makers' lab LYON",
-      "html": "Photoshop for beginners by PNP @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing.",
-      "html": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing."
-    },
-    "url": "https://www.eventbrite.fr/e/photoshop-for-beginners-by-pnp-makers-lab-lyon-tickets-1661957763409",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-30T16:00:00",
-      "utc": "2025-09-30T14:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-09-30T17:30:00",
-      "utc": "2025-09-30T15:30:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-04T05:35:05Z",
-    "changed": "2025-09-05T07:29:04Z",
-    "published": "2025-09-04T05:35:25Z",
-    "capacity": 25,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": true,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing.",
-    "facebook_event_id": null,
-    "logo_id": "863707799",
-    "organizer_id": "57822422353",
-    "venue_id": "285569593",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1661957763409",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1661957763409/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 624
-        },
-        "width": 4252,
-        "height": 2126
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=1462c0ff69af3190020a5579d3fcaeeb",
-        "width": 4252,
-        "height": 2829
-      },
-      "id": "863707799",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F863707799%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=628175a842bdb7f4ab3259290199ebe8",
-      "aspect_ratio": "2",
-      "edge_color": "#9aa5ac",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285569593/",
-      "id": "285569593",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
       "text": "Sewing machine training",
       "html": "Sewing machine training"
     },
@@ -1047,113 +203,6 @@
       "name": "Finance Lab emlyon LYON",
       "latitude": "45.7414144",
       "longitude": "4.8394227"
-    }
-  },
-  {
-    "name": {
-      "text": "Cutting plotter and hot press training",
-      "html": "Cutting plotter and hot press training"
-    },
-    "description": {
-      "text": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
-      "html": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome)."
-    },
-    "url": "https://www.eventbrite.fr/e/cutting-plotter-and-hot-press-training-tickets-1707686318749",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-07T12:30:00",
-      "utc": "2025-10-07T10:30:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-07T13:00:00",
-      "utc": "2025-10-07T11:00:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-16T13:12:03Z",
-    "changed": "2025-09-16T13:12:03Z",
-    "published": "2025-01-23T13:40:49Z",
-    "capacity": 3,
-    "capacity_is_custom": false,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_US",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
-    "facebook_event_id": null,
-    "logo_id": "942864483",
-    "organizer_id": "57822422353",
-    "venue_id": "251931613",
-    "category_id": "199",
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1707686318749",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707686318749/",
-    "is_externally_ticketed": false,
-    "series_id": "1219405317129",
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 248
-        },
-        "width": 994,
-        "height": 497
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?auto=format%2Ccompress&q=75&sharp=10&s=b88b90e5f74cdab98b2871c5ff241cdd",
-        "width": 995,
-        "height": 994
-      },
-      "id": "942864483",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=31fe584c284915985e9641b1ce3e72d0",
-      "aspect_ratio": "2",
-      "edge_color": null,
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251931613/",
-      "id": "251931613",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
     }
   },
   {
@@ -1371,6 +420,113 @@
   },
   {
     "name": {
+      "text": "Cutting plotter and hot press training",
+      "html": "Cutting plotter and hot press training"
+    },
+    "description": {
+      "text": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+      "html": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome)."
+    },
+    "url": "https://www.eventbrite.fr/e/cutting-plotter-and-hot-press-training-tickets-1707686318749",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-10-07T13:00:00",
+      "utc": "2025-10-07T11:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-10-07T13:30:00",
+      "utc": "2025-10-07T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-09-16T13:12:03Z",
+    "changed": "2025-09-30T09:17:19Z",
+    "published": "2025-01-23T13:40:49Z",
+    "capacity": 3,
+    "capacity_is_custom": false,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": false,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_US",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": true,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+    "facebook_event_id": null,
+    "logo_id": "942864483",
+    "organizer_id": "57822422353",
+    "venue_id": "251931613",
+    "category_id": "199",
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1707686318749",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707686318749/",
+    "is_externally_ticketed": false,
+    "series_id": "1219405317129",
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 248
+        },
+        "width": 994,
+        "height": 497
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?auto=format%2Ccompress&q=75&sharp=10&s=b88b90e5f74cdab98b2871c5ff241cdd",
+        "width": 995,
+        "height": 994
+      },
+      "id": "942864483",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=31fe584c284915985e9641b1ce3e72d0",
+      "aspect_ratio": "2",
+      "edge_color": null,
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251931613/",
+      "id": "251931613",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
       "text": "Photoshop for intermediate users by PNP @makers' lab LYON",
       "html": "Photoshop for intermediate users by PNP @makers&#39; lab LYON"
     },
@@ -1568,113 +724,6 @@
       },
       "resource_uri": "https://www.eventbriteapi.com/v3/venues/285648303/",
       "id": "285648303",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Formation plotter de découpe et presse à chaud",
-      "html": "Formation plotter de découpe et presse à chaud"
-    },
-    "description": {
-      "text": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
-      "html": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome)."
-    },
-    "url": "https://www.eventbrite.fr/e/formation-plotter-de-decoupe-et-presse-a-chaud-tickets-1707705666619",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-14T12:30:00",
-      "utc": "2025-10-14T10:30:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-14T13:00:00",
-      "utc": "2025-10-14T11:00:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-16T13:14:02Z",
-    "changed": "2025-09-23T07:54:16Z",
-    "published": "2025-01-23T13:36:28Z",
-    "capacity": 4,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_US",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
-    "facebook_event_id": null,
-    "logo_id": "942931593",
-    "organizer_id": "57822422353",
-    "venue_id": "251930453",
-    "category_id": "199",
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1707705666619",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707705666619/",
-    "is_externally_ticketed": false,
-    "series_id": "1219395186829",
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 248
-        },
-        "width": 994,
-        "height": 497
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?auto=format%2Ccompress&q=75&sharp=10&s=2409750e12a3eaafd2a2e1a660793d5b",
-        "width": 995,
-        "height": 994
-      },
-      "id": "942931593",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=70690ffc1045f784bbd99f927bc6d94a",
-      "aspect_ratio": "2",
-      "edge_color": "#ffffff",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251930453/",
-      "id": "251930453",
       "age_restriction": null,
       "capacity": null,
       "name": "makers'lab emlyon LYON",
@@ -1892,6 +941,113 @@
       "name": "makers' lab emlyon",
       "latitude": "48.8460492",
       "longitude": "2.3713275"
+    }
+  },
+  {
+    "name": {
+      "text": "Formation plotter de découpe et presse à chaud",
+      "html": "Formation plotter de découpe et presse à chaud"
+    },
+    "description": {
+      "text": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
+      "html": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome)."
+    },
+    "url": "https://www.eventbrite.fr/e/formation-plotter-de-decoupe-et-presse-a-chaud-tickets-1707705666619",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-10-14T13:00:00",
+      "utc": "2025-10-14T11:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-10-14T13:30:00",
+      "utc": "2025-10-14T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-09-16T13:14:02Z",
+    "changed": "2025-09-30T09:13:39Z",
+    "published": "2025-01-23T13:36:28Z",
+    "capacity": 4,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": false,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_US",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": true,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
+    "facebook_event_id": null,
+    "logo_id": "942931593",
+    "organizer_id": "57822422353",
+    "venue_id": "251930453",
+    "category_id": "199",
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1707705666619",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707705666619/",
+    "is_externally_ticketed": false,
+    "series_id": "1219395186829",
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 248
+        },
+        "width": 994,
+        "height": 497
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?auto=format%2Ccompress&q=75&sharp=10&s=2409750e12a3eaafd2a2e1a660793d5b",
+        "width": 995,
+        "height": 994
+      },
+      "id": "942931593",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=70690ffc1045f784bbd99f927bc6d94a",
+      "aspect_ratio": "2",
+      "edge_color": "#ffffff",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251930453/",
+      "id": "251930453",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
     }
   },
   {
@@ -2200,113 +1356,6 @@
       },
       "resource_uri": "https://www.eventbriteapi.com/v3/venues/288428043/",
       "id": "288428043",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Cutting plotter and hot press training",
-      "html": "Cutting plotter and hot press training"
-    },
-    "description": {
-      "text": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
-      "html": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome)."
-    },
-    "url": "https://www.eventbrite.fr/e/cutting-plotter-and-hot-press-training-tickets-1707686328779",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-21T12:30:00",
-      "utc": "2025-10-21T10:30:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-10-21T13:00:00",
-      "utc": "2025-10-21T11:00:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-16T13:12:03Z",
-    "changed": "2025-09-16T13:12:03Z",
-    "published": "2025-01-23T13:40:49Z",
-    "capacity": 3,
-    "capacity_is_custom": false,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_US",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
-    "facebook_event_id": null,
-    "logo_id": "942864483",
-    "organizer_id": "57822422353",
-    "venue_id": "251931613",
-    "category_id": "199",
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1707686328779",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707686328779/",
-    "is_externally_ticketed": false,
-    "series_id": "1219405317129",
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 248
-        },
-        "width": 994,
-        "height": 497
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?auto=format%2Ccompress&q=75&sharp=10&s=b88b90e5f74cdab98b2871c5ff241cdd",
-        "width": 995,
-        "height": 994
-      },
-      "id": "942864483",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=31fe584c284915985e9641b1ce3e72d0",
-      "aspect_ratio": "2",
-      "edge_color": null,
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251931613/",
-      "id": "251931613",
       "age_restriction": null,
       "capacity": null,
       "name": "makers'lab emlyon LYON",
@@ -2635,6 +1684,113 @@
   },
   {
     "name": {
+      "text": "Cutting plotter and hot press training",
+      "html": "Cutting plotter and hot press training"
+    },
+    "description": {
+      "text": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+      "html": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome)."
+    },
+    "url": "https://www.eventbrite.fr/e/cutting-plotter-and-hot-press-training-tickets-1707686328779",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-10-21T13:00:00",
+      "utc": "2025-10-21T11:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-10-21T13:30:00",
+      "utc": "2025-10-21T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-09-16T13:12:03Z",
+    "changed": "2025-09-30T09:17:19Z",
+    "published": "2025-01-23T13:40:49Z",
+    "capacity": 3,
+    "capacity_is_custom": false,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": false,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_US",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": true,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+    "facebook_event_id": null,
+    "logo_id": "942864483",
+    "organizer_id": "57822422353",
+    "venue_id": "251931613",
+    "category_id": "199",
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1707686328779",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707686328779/",
+    "is_externally_ticketed": false,
+    "series_id": "1219405317129",
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 248
+        },
+        "width": 994,
+        "height": 497
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?auto=format%2Ccompress&q=75&sharp=10&s=b88b90e5f74cdab98b2871c5ff241cdd",
+        "width": 995,
+        "height": 994
+      },
+      "id": "942864483",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=31fe584c284915985e9641b1ce3e72d0",
+      "aspect_ratio": "2",
+      "edge_color": null,
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251931613/",
+      "id": "251931613",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
       "text": "Formation machine à coudre",
       "html": "Formation machine à coudre"
     },
@@ -2841,44 +1997,44 @@
   },
   {
     "name": {
-      "text": "Formation plotter de découpe et presse à chaud",
-      "html": "Formation plotter de découpe et presse à chaud"
+      "text": "Design Sprint @makers' lab LYON",
+      "html": "Design Sprint @makers&#39; lab LYON"
     },
     "description": {
-      "text": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
-      "html": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome)."
+      "text": "4 days to design, prototype and test your proof of concept at the makers' lab.",
+      "html": "4 days to design, prototype and test your proof of concept at the makers' lab."
     },
-    "url": "https://www.eventbrite.fr/e/formation-plotter-de-decoupe-et-presse-a-chaud-tickets-1707705676649",
+    "url": "https://www.eventbrite.fr/e/billets-design-sprint-makers-lab-lyon-1759529272419",
     "start": {
       "timezone": "Europe/Paris",
-      "local": "2025-10-28T12:30:00",
-      "utc": "2025-10-28T11:30:00Z"
+      "local": "2025-10-28T09:00:00",
+      "utc": "2025-10-28T08:00:00Z"
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2025-10-28T13:00:00",
-      "utc": "2025-10-28T12:00:00Z"
+      "local": "2025-10-31T18:00:00",
+      "utc": "2025-10-31T17:00:00Z"
     },
     "organization_id": "1299734435773",
-    "created": "2025-09-16T13:14:02Z",
-    "changed": "2025-09-23T07:54:16Z",
-    "published": "2025-01-23T13:36:28Z",
-    "capacity": 4,
+    "created": "2025-10-01T08:55:24Z",
+    "changed": "2025-10-01T08:56:34Z",
+    "published": "2025-10-01T08:56:34Z",
+    "capacity": 100,
     "capacity_is_custom": true,
     "status": "live",
     "currency": "EUR",
     "listed": false,
-    "shareable": false,
+    "shareable": true,
     "invite_only": false,
     "online_event": false,
-    "show_remaining": false,
+    "show_remaining": true,
     "tx_time_limit": 1200,
     "hide_start_date": false,
     "hide_end_date": false,
-    "locale": "en_US",
+    "locale": "fr_FR",
     "is_locked": false,
     "privacy_setting": "unlocked",
-    "is_series": true,
+    "is_series": false,
     "is_series_parent": false,
     "inventory_type": "limited",
     "is_reserved_seating": false,
@@ -2888,36 +2044,28 @@
     "source": "coyote",
     "is_free": true,
     "version": null,
-    "summary": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
+    "summary": "4 days to design, prototype and test your proof of concept at the makers' lab.",
     "facebook_event_id": null,
-    "logo_id": "942931593",
+    "logo_id": "868219119",
     "organizer_id": "57822422353",
-    "venue_id": "251930453",
-    "category_id": "199",
+    "venue_id": "289705503",
+    "category_id": null,
     "subcategory_id": null,
     "format_id": "9",
-    "id": "1707705676649",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707705676649/",
+    "id": "1759529272419",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1759529272419/",
     "is_externally_ticketed": false,
-    "series_id": "1219395186829",
     "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 248
-        },
-        "width": 994,
-        "height": 497
-      },
+      "crop_mask": null,
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?auto=format%2Ccompress&q=75&sharp=10&s=2409750e12a3eaafd2a2e1a660793d5b",
-        "width": 995,
-        "height": 994
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F868219119%2F1299734345143%2F1%2Foriginal.20241007-093659?auto=format%2Ccompress&q=75&sharp=10&s=c409d2b371fa9de790a04c0fb3601fb3",
+        "width": 2520,
+        "height": 1674
       },
-      "id": "942931593",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=70690ffc1045f784bbd99f927bc6d94a",
-      "aspect_ratio": "2",
-      "edge_color": "#ffffff",
+      "id": "868219119",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F868219119%2F1299734345143%2F1%2Foriginal.20241007-093659?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc397b2b4ac5272ff094f3aee690f4e6",
+      "aspect_ratio": "1.51",
+      "edge_color": "#7f7f76",
       "edge_color_set": true
     },
     "venue": {
@@ -2937,8 +2085,8 @@
           "69007 Lyon"
         ]
       },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251930453/",
-      "id": "251930453",
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/289705503/",
+      "id": "289705503",
       "age_restriction": null,
       "capacity": null,
       "name": "makers'lab emlyon LYON",
@@ -3156,6 +2304,113 @@
       "name": "makers' lab emlyon",
       "latitude": "48.8460492",
       "longitude": "2.3713275"
+    }
+  },
+  {
+    "name": {
+      "text": "Formation plotter de découpe et presse à chaud",
+      "html": "Formation plotter de découpe et presse à chaud"
+    },
+    "description": {
+      "text": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
+      "html": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome)."
+    },
+    "url": "https://www.eventbrite.fr/e/formation-plotter-de-decoupe-et-presse-a-chaud-tickets-1707705676649",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-10-28T13:00:00",
+      "utc": "2025-10-28T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-10-28T13:30:00",
+      "utc": "2025-10-28T12:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-09-16T13:14:02Z",
+    "changed": "2025-09-30T09:15:06Z",
+    "published": "2025-01-23T13:36:28Z",
+    "capacity": 4,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": false,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_US",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": true,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
+    "facebook_event_id": null,
+    "logo_id": "942931593",
+    "organizer_id": "57822422353",
+    "venue_id": "251930453",
+    "category_id": "199",
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1707705676649",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707705676649/",
+    "is_externally_ticketed": false,
+    "series_id": "1219395186829",
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 248
+        },
+        "width": 994,
+        "height": 497
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?auto=format%2Ccompress&q=75&sharp=10&s=2409750e12a3eaafd2a2e1a660793d5b",
+        "width": 995,
+        "height": 994
+      },
+      "id": "942931593",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=70690ffc1045f784bbd99f927bc6d94a",
+      "aspect_ratio": "2",
+      "edge_color": "#ffffff",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251930453/",
+      "id": "251930453",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
     }
   },
   {
@@ -3579,113 +2834,6 @@
   },
   {
     "name": {
-      "text": "Cutting plotter and hot press training",
-      "html": "Cutting plotter and hot press training"
-    },
-    "description": {
-      "text": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
-      "html": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome)."
-    },
-    "url": "https://www.eventbrite.fr/e/cutting-plotter-and-hot-press-training-tickets-1707686338809",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-11-04T12:30:00",
-      "utc": "2025-11-04T11:30:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-11-04T13:00:00",
-      "utc": "2025-11-04T12:00:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-16T13:12:03Z",
-    "changed": "2025-09-16T13:12:03Z",
-    "published": "2025-01-23T13:40:49Z",
-    "capacity": 3,
-    "capacity_is_custom": false,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_US",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
-    "facebook_event_id": null,
-    "logo_id": "942864483",
-    "organizer_id": "57822422353",
-    "venue_id": "251931613",
-    "category_id": "199",
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1707686338809",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707686338809/",
-    "is_externally_ticketed": false,
-    "series_id": "1219405317129",
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 248
-        },
-        "width": 994,
-        "height": 497
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?auto=format%2Ccompress&q=75&sharp=10&s=b88b90e5f74cdab98b2871c5ff241cdd",
-        "width": 995,
-        "height": 994
-      },
-      "id": "942864483",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=31fe584c284915985e9641b1ce3e72d0",
-      "aspect_ratio": "2",
-      "edge_color": null,
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251931613/",
-      "id": "251931613",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
       "text": "Creative Coding with p5.js for intermediate users @makers' lab LYON",
       "html": "Creative Coding with p5.js for intermediate users @makers&#39; lab LYON"
     },
@@ -4005,6 +3153,113 @@
   },
   {
     "name": {
+      "text": "Cutting plotter and hot press training",
+      "html": "Cutting plotter and hot press training"
+    },
+    "description": {
+      "text": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+      "html": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome)."
+    },
+    "url": "https://www.eventbrite.fr/e/cutting-plotter-and-hot-press-training-tickets-1707686338809",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-11-04T13:00:00",
+      "utc": "2025-11-04T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-11-04T13:30:00",
+      "utc": "2025-11-04T12:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-09-16T13:12:03Z",
+    "changed": "2025-09-30T09:17:19Z",
+    "published": "2025-01-23T13:40:49Z",
+    "capacity": 3,
+    "capacity_is_custom": false,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": false,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_US",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": true,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+    "facebook_event_id": null,
+    "logo_id": "942864483",
+    "organizer_id": "57822422353",
+    "venue_id": "251931613",
+    "category_id": "199",
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1707686338809",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707686338809/",
+    "is_externally_ticketed": false,
+    "series_id": "1219405317129",
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 248
+        },
+        "width": 994,
+        "height": 497
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?auto=format%2Ccompress&q=75&sharp=10&s=b88b90e5f74cdab98b2871c5ff241cdd",
+        "width": 995,
+        "height": 994
+      },
+      "id": "942864483",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=31fe584c284915985e9641b1ce3e72d0",
+      "aspect_ratio": "2",
+      "edge_color": null,
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251931613/",
+      "id": "251931613",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
       "text": "Formation machine à coudre",
       "html": "Formation machine à coudre"
     },
@@ -4221,17 +3476,17 @@
     "url": "https://www.eventbrite.fr/e/formation-plotter-de-decoupe-et-presse-a-chaud-tickets-1707705686679",
     "start": {
       "timezone": "Europe/Paris",
-      "local": "2025-11-11T12:30:00",
-      "utc": "2025-11-11T11:30:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
       "local": "2025-11-11T13:00:00",
       "utc": "2025-11-11T12:00:00Z"
     },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-11-11T13:30:00",
+      "utc": "2025-11-11T12:30:00Z"
+    },
     "organization_id": "1299734435773",
     "created": "2025-09-16T13:14:02Z",
-    "changed": "2025-09-23T07:54:16Z",
+    "changed": "2025-09-30T09:15:46Z",
     "published": "2025-01-23T13:36:28Z",
     "capacity": 4,
     "capacity_is_custom": true,
@@ -4949,113 +4204,6 @@
   },
   {
     "name": {
-      "text": "Cutting plotter and hot press training",
-      "html": "Cutting plotter and hot press training"
-    },
-    "description": {
-      "text": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
-      "html": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome)."
-    },
-    "url": "https://www.eventbrite.fr/e/cutting-plotter-and-hot-press-training-tickets-1707686348839",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-11-18T12:30:00",
-      "utc": "2025-11-18T11:30:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-11-18T13:00:00",
-      "utc": "2025-11-18T12:00:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-16T13:12:03Z",
-    "changed": "2025-09-16T13:12:03Z",
-    "published": "2025-01-23T13:40:49Z",
-    "capacity": 3,
-    "capacity_is_custom": false,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_US",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
-    "facebook_event_id": null,
-    "logo_id": "942864483",
-    "organizer_id": "57822422353",
-    "venue_id": "251931613",
-    "category_id": "199",
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1707686348839",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707686348839/",
-    "is_externally_ticketed": false,
-    "series_id": "1219405317129",
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 248
-        },
-        "width": 994,
-        "height": 497
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?auto=format%2Ccompress&q=75&sharp=10&s=b88b90e5f74cdab98b2871c5ff241cdd",
-        "width": 995,
-        "height": 994
-      },
-      "id": "942864483",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=31fe584c284915985e9641b1ce3e72d0",
-      "aspect_ratio": "2",
-      "edge_color": null,
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251931613/",
-      "id": "251931613",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
       "text": "3d design & printing for advanced users @makers'lab PARIS",
       "html": "3d design &amp; printing for advanced users @makers&#39;lab PARIS"
     },
@@ -5260,6 +4408,113 @@
       },
       "resource_uri": "https://www.eventbriteapi.com/v3/venues/251929813/",
       "id": "251929813",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "Cutting plotter and hot press training",
+      "html": "Cutting plotter and hot press training"
+    },
+    "description": {
+      "text": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+      "html": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome)."
+    },
+    "url": "https://www.eventbrite.fr/e/cutting-plotter-and-hot-press-training-tickets-1707686348839",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-11-18T13:00:00",
+      "utc": "2025-11-18T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-11-18T13:30:00",
+      "utc": "2025-11-18T12:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-09-16T13:12:03Z",
+    "changed": "2025-09-30T09:17:19Z",
+    "published": "2025-01-23T13:40:49Z",
+    "capacity": 3,
+    "capacity_is_custom": false,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": false,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_US",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": true,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+    "facebook_event_id": null,
+    "logo_id": "942864483",
+    "organizer_id": "57822422353",
+    "venue_id": "251931613",
+    "category_id": "199",
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1707686348839",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707686348839/",
+    "is_externally_ticketed": false,
+    "series_id": "1219405317129",
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 248
+        },
+        "width": 994,
+        "height": 497
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?auto=format%2Ccompress&q=75&sharp=10&s=b88b90e5f74cdab98b2871c5ff241cdd",
+        "width": 995,
+        "height": 994
+      },
+      "id": "942864483",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=31fe584c284915985e9641b1ce3e72d0",
+      "aspect_ratio": "2",
+      "edge_color": null,
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251931613/",
+      "id": "251931613",
       "age_restriction": null,
       "capacity": null,
       "name": "makers'lab emlyon LYON",
@@ -5581,44 +4836,44 @@
   },
   {
     "name": {
-      "text": "Formation plotter de découpe et presse à chaud",
-      "html": "Formation plotter de découpe et presse à chaud"
+      "text": "Design Sprint @makers' lab PARIS",
+      "html": "Design Sprint @makers&#39; lab PARIS"
     },
     "description": {
-      "text": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
-      "html": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome)."
+      "text": "4 days to design, prototype and test your proof of concept at the makers' lab.",
+      "html": "4 days to design, prototype and test your proof of concept at the makers' lab."
     },
-    "url": "https://www.eventbrite.fr/e/formation-plotter-de-decoupe-et-presse-a-chaud-tickets-1707705696709",
+    "url": "https://www.eventbrite.fr/e/billets-design-sprint-makers-lab-paris-1759534467959",
     "start": {
       "timezone": "Europe/Paris",
-      "local": "2025-11-25T12:30:00",
-      "utc": "2025-11-25T11:30:00Z"
+      "local": "2025-11-25T09:00:00",
+      "utc": "2025-11-25T08:00:00Z"
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2025-11-25T13:00:00",
-      "utc": "2025-11-25T12:00:00Z"
+      "local": "2025-11-28T18:00:00",
+      "utc": "2025-11-28T17:00:00Z"
     },
     "organization_id": "1299734435773",
-    "created": "2025-09-16T13:14:02Z",
-    "changed": "2025-09-23T07:54:16Z",
-    "published": "2025-01-23T13:36:28Z",
-    "capacity": 4,
+    "created": "2025-10-01T08:57:33Z",
+    "changed": "2025-10-01T08:58:07Z",
+    "published": "2025-10-01T08:58:07Z",
+    "capacity": 100,
     "capacity_is_custom": true,
     "status": "live",
     "currency": "EUR",
     "listed": false,
-    "shareable": false,
+    "shareable": true,
     "invite_only": false,
     "online_event": false,
-    "show_remaining": false,
+    "show_remaining": true,
     "tx_time_limit": 1200,
     "hide_start_date": false,
     "hide_end_date": false,
-    "locale": "en_US",
+    "locale": "fr_FR",
     "is_locked": false,
     "privacy_setting": "unlocked",
-    "is_series": true,
+    "is_series": false,
     "is_series_parent": false,
     "inventory_type": "limited",
     "is_reserved_seating": false,
@@ -5628,62 +4883,54 @@
     "source": "coyote",
     "is_free": true,
     "version": null,
-    "summary": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
+    "summary": "4 days to design, prototype and test your proof of concept at the makers' lab.",
     "facebook_event_id": null,
-    "logo_id": "942931593",
+    "logo_id": "868219119",
     "organizer_id": "57822422353",
-    "venue_id": "251930453",
-    "category_id": "199",
+    "venue_id": "289705823",
+    "category_id": null,
     "subcategory_id": null,
     "format_id": "9",
-    "id": "1707705696709",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707705696709/",
+    "id": "1759534467959",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1759534467959/",
     "is_externally_ticketed": false,
-    "series_id": "1219395186829",
     "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 248
-        },
-        "width": 994,
-        "height": 497
-      },
+      "crop_mask": null,
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?auto=format%2Ccompress&q=75&sharp=10&s=2409750e12a3eaafd2a2e1a660793d5b",
-        "width": 995,
-        "height": 994
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F868219119%2F1299734345143%2F1%2Foriginal.20241007-093659?auto=format%2Ccompress&q=75&sharp=10&s=c409d2b371fa9de790a04c0fb3601fb3",
+        "width": 2520,
+        "height": 1674
       },
-      "id": "942931593",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=70690ffc1045f784bbd99f927bc6d94a",
-      "aspect_ratio": "2",
-      "edge_color": "#ffffff",
+      "id": "868219119",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F868219119%2F1299734345143%2F1%2Foriginal.20241007-093659?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc397b2b4ac5272ff094f3aee690f4e6",
+      "aspect_ratio": "1.51",
+      "edge_color": "#7f7f76",
       "edge_color_set": true
     },
     "venue": {
       "address": {
-        "address_1": "144 Avenue Jean Jaurès",
+        "address_1": "15 Boulevard Diderot",
         "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
+        "city": "Paris",
+        "region": "IDF",
+        "postal_code": "75012",
         "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
+        "latitude": "48.8460492",
+        "longitude": "2.3713275",
+        "localized_address_display": "15 Boulevard Diderot, 75012 Paris",
+        "localized_area_display": "Paris",
         "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
+          "15 Boulevard Diderot",
+          "75012 Paris"
         ]
       },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251930453/",
-      "id": "251930453",
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/289705823/",
+      "id": "289705823",
       "age_restriction": null,
       "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
+      "name": "makers' lab emlyon PARIS",
+      "latitude": "48.8460492",
+      "longitude": "2.3713275"
     }
   },
   {
@@ -5891,6 +5138,113 @@
       },
       "resource_uri": "https://www.eventbriteapi.com/v3/venues/285567573/",
       "id": "285567573",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "Formation plotter de découpe et presse à chaud",
+      "html": "Formation plotter de découpe et presse à chaud"
+    },
+    "description": {
+      "text": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
+      "html": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome)."
+    },
+    "url": "https://www.eventbrite.fr/e/formation-plotter-de-decoupe-et-presse-a-chaud-tickets-1707705696709",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-11-25T13:00:00",
+      "utc": "2025-11-25T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-11-25T13:30:00",
+      "utc": "2025-11-25T12:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-09-16T13:14:02Z",
+    "changed": "2025-09-30T09:16:07Z",
+    "published": "2025-01-23T13:36:28Z",
+    "capacity": 4,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": false,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_US",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": true,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
+    "facebook_event_id": null,
+    "logo_id": "942931593",
+    "organizer_id": "57822422353",
+    "venue_id": "251930453",
+    "category_id": "199",
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1707705696709",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707705696709/",
+    "is_externally_ticketed": false,
+    "series_id": "1219395186829",
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 248
+        },
+        "width": 994,
+        "height": 497
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?auto=format%2Ccompress&q=75&sharp=10&s=2409750e12a3eaafd2a2e1a660793d5b",
+        "width": 995,
+        "height": 994
+      },
+      "id": "942931593",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=70690ffc1045f784bbd99f927bc6d94a",
+      "aspect_ratio": "2",
+      "edge_color": "#ffffff",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251930453/",
+      "id": "251930453",
       "age_restriction": null,
       "capacity": null,
       "name": "makers'lab emlyon LYON",
@@ -6319,113 +5673,6 @@
   },
   {
     "name": {
-      "text": "Cutting plotter and hot press training",
-      "html": "Cutting plotter and hot press training"
-    },
-    "description": {
-      "text": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
-      "html": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome)."
-    },
-    "url": "https://www.eventbrite.fr/e/cutting-plotter-and-hot-press-training-tickets-1707686358869",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-12-02T12:30:00",
-      "utc": "2025-12-02T11:30:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-12-02T13:00:00",
-      "utc": "2025-12-02T12:00:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-16T13:12:03Z",
-    "changed": "2025-09-16T13:12:03Z",
-    "published": "2025-01-23T13:40:49Z",
-    "capacity": 3,
-    "capacity_is_custom": false,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_US",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
-    "facebook_event_id": null,
-    "logo_id": "942864483",
-    "organizer_id": "57822422353",
-    "venue_id": "251931613",
-    "category_id": "199",
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1707686358869",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707686358869/",
-    "is_externally_ticketed": false,
-    "series_id": "1219405317129",
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 248
-        },
-        "width": 994,
-        "height": 497
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?auto=format%2Ccompress&q=75&sharp=10&s=b88b90e5f74cdab98b2871c5ff241cdd",
-        "width": 995,
-        "height": 994
-      },
-      "id": "942864483",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=31fe584c284915985e9641b1ce3e72d0",
-      "aspect_ratio": "2",
-      "edge_color": null,
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251931613/",
-      "id": "251931613",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
       "text": "UX Design with Figma for intermediate users @makers'lab PARIS",
       "html": "UX Design with Figma for intermediate users @makers&#39;lab PARIS"
     },
@@ -6736,6 +5983,113 @@
       },
       "resource_uri": "https://www.eventbriteapi.com/v3/venues/251929813/",
       "id": "251929813",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "Cutting plotter and hot press training",
+      "html": "Cutting plotter and hot press training"
+    },
+    "description": {
+      "text": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+      "html": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome)."
+    },
+    "url": "https://www.eventbrite.fr/e/cutting-plotter-and-hot-press-training-tickets-1707686358869",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-12-02T13:00:00",
+      "utc": "2025-12-02T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-12-02T13:30:00",
+      "utc": "2025-12-02T12:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-09-16T13:12:03Z",
+    "changed": "2025-09-30T09:17:19Z",
+    "published": "2025-01-23T13:40:49Z",
+    "capacity": 3,
+    "capacity_is_custom": false,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": false,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_US",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": true,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+    "facebook_event_id": null,
+    "logo_id": "942864483",
+    "organizer_id": "57822422353",
+    "venue_id": "251931613",
+    "category_id": "199",
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1707686358869",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707686358869/",
+    "is_externally_ticketed": false,
+    "series_id": "1219405317129",
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 248
+        },
+        "width": 994,
+        "height": 497
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?auto=format%2Ccompress&q=75&sharp=10&s=b88b90e5f74cdab98b2871c5ff241cdd",
+        "width": 995,
+        "height": 994
+      },
+      "id": "942864483",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=31fe584c284915985e9641b1ce3e72d0",
+      "aspect_ratio": "2",
+      "edge_color": null,
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251931613/",
+      "id": "251931613",
       "age_restriction": null,
       "capacity": null,
       "name": "makers'lab emlyon LYON",
@@ -7057,113 +6411,6 @@
   },
   {
     "name": {
-      "text": "Formation plotter de découpe et presse à chaud",
-      "html": "Formation plotter de découpe et presse à chaud"
-    },
-    "description": {
-      "text": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
-      "html": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome)."
-    },
-    "url": "https://www.eventbrite.fr/e/formation-plotter-de-decoupe-et-presse-a-chaud-tickets-1707705706739",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2025-12-09T12:30:00",
-      "utc": "2025-12-09T11:30:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2025-12-09T13:00:00",
-      "utc": "2025-12-09T12:00:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-09-16T13:14:02Z",
-    "changed": "2025-09-23T07:54:16Z",
-    "published": "2025-01-23T13:36:28Z",
-    "capacity": 4,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_US",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
-    "facebook_event_id": null,
-    "logo_id": "942931593",
-    "organizer_id": "57822422353",
-    "venue_id": "251930453",
-    "category_id": "199",
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1707705706739",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707705706739/",
-    "is_externally_ticketed": false,
-    "series_id": "1219395186829",
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 248
-        },
-        "width": 994,
-        "height": 497
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?auto=format%2Ccompress&q=75&sharp=10&s=2409750e12a3eaafd2a2e1a660793d5b",
-        "width": 995,
-        "height": 994
-      },
-      "id": "942931593",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=70690ffc1045f784bbd99f927bc6d94a",
-      "aspect_ratio": "2",
-      "edge_color": "#ffffff",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251930453/",
-      "id": "251930453",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
       "text": "UX Design with Figma for advanced users @makers' lab PARIS",
       "html": "UX Design with Figma for advanced users @makers&#39; lab PARIS"
     },
@@ -7290,9 +6537,9 @@
     },
     "organization_id": "1299734435773",
     "created": "2025-09-04T05:09:53Z",
-    "changed": "2025-09-04T05:10:09Z",
+    "changed": "2025-09-24T14:10:06Z",
     "published": "2025-09-04T05:10:09Z",
-    "capacity": 25,
+    "capacity": 10,
     "capacity_is_custom": true,
     "status": "live",
     "currency": "EUR",
@@ -7376,30 +6623,30 @@
   },
   {
     "name": {
-      "text": "Cutting plotter and hot press training",
-      "html": "Cutting plotter and hot press training"
+      "text": "Formation plotter de découpe et presse à chaud",
+      "html": "Formation plotter de découpe et presse à chaud"
     },
     "description": {
-      "text": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
-      "html": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome)."
+      "text": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
+      "html": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome)."
     },
-    "url": "https://www.eventbrite.fr/e/cutting-plotter-and-hot-press-training-tickets-1707686368899",
+    "url": "https://www.eventbrite.fr/e/formation-plotter-de-decoupe-et-presse-a-chaud-tickets-1707705706739",
     "start": {
       "timezone": "Europe/Paris",
-      "local": "2025-12-16T12:30:00",
-      "utc": "2025-12-16T11:30:00Z"
+      "local": "2025-12-09T13:00:00",
+      "utc": "2025-12-09T12:00:00Z"
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2025-12-16T13:00:00",
-      "utc": "2025-12-16T12:00:00Z"
+      "local": "2025-12-09T13:30:00",
+      "utc": "2025-12-09T12:30:00Z"
     },
     "organization_id": "1299734435773",
-    "created": "2025-09-16T13:12:03Z",
-    "changed": "2025-09-16T13:12:03Z",
-    "published": "2025-01-23T13:40:49Z",
-    "capacity": 3,
-    "capacity_is_custom": false,
+    "created": "2025-09-16T13:14:02Z",
+    "changed": "2025-09-30T09:16:07Z",
+    "published": "2025-01-23T13:36:28Z",
+    "capacity": 4,
+    "capacity_is_custom": true,
     "status": "live",
     "currency": "EUR",
     "listed": false,
@@ -7423,18 +6670,18 @@
     "source": "coyote",
     "is_free": true,
     "version": null,
-    "summary": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+    "summary": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
     "facebook_event_id": null,
-    "logo_id": "942864483",
+    "logo_id": "942931593",
     "organizer_id": "57822422353",
-    "venue_id": "251931613",
+    "venue_id": "251930453",
     "category_id": "199",
     "subcategory_id": null,
     "format_id": "9",
-    "id": "1707686368899",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707686368899/",
+    "id": "1707705706739",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707705706739/",
     "is_externally_ticketed": false,
-    "series_id": "1219405317129",
+    "series_id": "1219395186829",
     "logo": {
       "crop_mask": {
         "top_left": {
@@ -7445,14 +6692,14 @@
         "height": 497
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?auto=format%2Ccompress&q=75&sharp=10&s=b88b90e5f74cdab98b2871c5ff241cdd",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?auto=format%2Ccompress&q=75&sharp=10&s=2409750e12a3eaafd2a2e1a660793d5b",
         "width": 995,
         "height": 994
       },
-      "id": "942864483",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=31fe584c284915985e9641b1ce3e72d0",
+      "id": "942931593",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942931593%2F1299734345143%2F1%2Foriginal.20250123-152117?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=70690ffc1045f784bbd99f927bc6d94a",
       "aspect_ratio": "2",
-      "edge_color": null,
+      "edge_color": "#ffffff",
       "edge_color_set": true
     },
     "venue": {
@@ -7472,8 +6719,8 @@
           "69007 Lyon"
         ]
       },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251931613/",
-      "id": "251931613",
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251930453/",
+      "id": "251930453",
       "age_restriction": null,
       "capacity": null,
       "name": "makers'lab emlyon LYON",
@@ -7581,6 +6828,113 @@
       },
       "resource_uri": "https://www.eventbriteapi.com/v3/venues/251929813/",
       "id": "251929813",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
+      "text": "Cutting plotter and hot press training",
+      "html": "Cutting plotter and hot press training"
+    },
+    "description": {
+      "text": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+      "html": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome)."
+    },
+    "url": "https://www.eventbrite.fr/e/cutting-plotter-and-hot-press-training-tickets-1707686368899",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2025-12-16T13:00:00",
+      "utc": "2025-12-16T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2025-12-16T13:30:00",
+      "utc": "2025-12-16T12:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2025-09-16T13:12:03Z",
+    "changed": "2025-09-30T09:17:19Z",
+    "published": "2025-01-23T13:40:49Z",
+    "capacity": 3,
+    "capacity_is_custom": false,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": false,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_US",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": true,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to use the cutting plotter and heat press. Possible applications: textile flocking, adhesive cutting (monochrome).",
+    "facebook_event_id": null,
+    "logo_id": "942864483",
+    "organizer_id": "57822422353",
+    "venue_id": "251931613",
+    "category_id": "199",
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1707686368899",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1707686368899/",
+    "is_externally_ticketed": false,
+    "series_id": "1219405317129",
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 248
+        },
+        "width": 994,
+        "height": 497
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?auto=format%2Ccompress&q=75&sharp=10&s=b88b90e5f74cdab98b2871c5ff241cdd",
+        "width": 995,
+        "height": 994
+      },
+      "id": "942864483",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F942864483%2F1299734345143%2F1%2Foriginal.20250123-140124?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C248%2C994%2C497&s=31fe584c284915985e9641b1ce3e72d0",
+      "aspect_ratio": "2",
+      "edge_color": null,
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251931613/",
+      "id": "251931613",
       "age_restriction": null,
       "capacity": null,
       "name": "makers'lab emlyon LYON",
