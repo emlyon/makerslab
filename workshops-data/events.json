@@ -1,851 +1,6 @@
 [
   {
     "name": {
-      "text": "Data Literacy with Power BI for beginners @makers' lab LYON",
-      "html": "Data Literacy with Power BI for beginners @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "Learn how to explore datasets & create visualizations using Power BI. One-hour workshop to learn a skill by doing.",
-      "html": "Learn how to explore datasets &amp; create visualizations using Power BI. One-hour workshop to learn a skill by doing."
-    },
-    "url": "https://www.eventbrite.fr/e/data-literacy-with-power-bi-for-beginners-makers-lab-lyon-tickets-1978569043270",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-13T13:00:00",
-      "utc": "2026-01-13T12:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-13T14:10:00",
-      "utc": "2026-01-13T13:10:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-12-19T09:24:05Z",
-    "changed": "2025-12-19T09:26:26Z",
-    "published": "2025-12-19T09:26:26Z",
-    "capacity": 21,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Learn how to explore datasets & create visualizations using Power BI. One-hour workshop to learn a skill by doing.",
-    "facebook_event_id": null,
-    "logo_id": "1173257505",
-    "organizer_id": "57822422353",
-    "venue_id": "295682634",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1978569043270",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1978569043270/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 133
-        },
-        "width": 4554,
-        "height": 2277
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1173257505%2F1299734345143%2F1%2Foriginal.20241001-145539?auto=format%2Ccompress&q=75&sharp=10&s=584f179ea79e8fccc0f526a0be5b5eda",
-        "width": 4555,
-        "height": 3037
-      },
-      "id": "1173257505",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1173257505%2F1299734345143%2F1%2Foriginal.20241001-145539?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C133%2C4554%2C2277&s=0ce561797d820ea830cc85f4e2645b01",
-      "aspect_ratio": "2",
-      "edge_color": "#647c76",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.8394227",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295682634/",
-      "id": "295682634",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "Finance Lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.8394227"
-    }
-  },
-  {
-    "name": {
-      "text": "Sewing machine training",
-      "html": "Sewing machine training"
-    },
-    "description": {
-      "text": "Learn how to use a sewing machine with the makers' lab team.",
-      "html": "Learn how to use a sewing machine with the makers' lab team."
-    },
-    "url": "https://www.eventbrite.fr/e/billets-sewing-machine-training-1980363438354",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-15T14:00:00",
-      "utc": "2026-01-15T13:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-15T15:00:00",
-      "utc": "2026-01-15T14:00:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2026-01-12T10:09:50Z",
-    "changed": "2026-01-12T10:09:50Z",
-    "published": "2025-09-23T08:19:22Z",
-    "capacity": 4,
-    "capacity_is_custom": false,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "fr_FR",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Learn how to use a sewing machine with the makers' lab team.",
-    "facebook_event_id": null,
-    "logo_id": "1172315479",
-    "organizer_id": "57822422353",
-    "venue_id": "288428043",
-    "category_id": "117",
-    "subcategory_id": "17003",
-    "format_id": "9",
-    "id": "1980363438354",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1980363438354/",
-    "is_externally_ticketed": false,
-    "series_id": "1733241675509",
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 331
-        },
-        "width": 2000,
-        "height": 1000
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315479%2F1299734345143%2F1%2Foriginal.20251204-151814?auto=format%2Ccompress&q=75&sharp=10&s=6b2ca073e899010f400dfbb422e3c7ca",
-        "width": 2000,
-        "height": 1331
-      },
-      "id": "1172315479",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315479%2F1299734345143%2F1%2Foriginal.20251204-151814?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=306d4a60e0f9cc2cdf49bb623f77f35d",
-      "aspect_ratio": "2",
-      "edge_color": "#9e9795",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/288428043/",
-      "id": "288428043",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Laser cutting your own designs 1/3 @makers' lab LYON",
-      "html": "Laser cutting your own designs 1/3 @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "Discover 2D design with Illustrator and cut your first piece of wood. One-hour workshop to learn a skill by doing!",
-      "html": "Discover 2D design with Illustrator and cut your first piece of wood. One-hour workshop to learn a skill by doing!"
-    },
-    "url": "https://www.eventbrite.fr/e/laser-cutting-your-own-designs-13-makers-lab-lyon-tickets-1978573468506",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-16T11:20:00",
-      "utc": "2026-01-16T10:20:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-16T12:30:00",
-      "utc": "2026-01-16T11:30:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-12-19T09:46:37Z",
-    "changed": "2025-12-19T09:47:57Z",
-    "published": "2025-12-19T09:47:57Z",
-    "capacity": 21,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Discover 2D design with Illustrator and cut your first piece of wood. One-hour workshop to learn a skill by doing!",
-    "facebook_event_id": null,
-    "logo_id": "1173258044",
-    "organizer_id": "57822422353",
-    "venue_id": "295682773",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1978573468506",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1978573468506/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 0
-        },
-        "width": 2500,
-        "height": 1250
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1173258044%2F1299734345143%2F1%2Foriginal.20240925-071342?auto=format%2Ccompress&q=75&sharp=10&s=718e764982ea6dff93d231bc99804823",
-        "width": 2500,
-        "height": 1669
-      },
-      "id": "1173258044",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1173258044%2F1299734345143%2F1%2Foriginal.20240925-071342?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2500%2C1250&s=9500fc2eea2a0d73a024408a2da8dfc8",
-      "aspect_ratio": "2",
-      "edge_color": "#a9907f",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295682773/",
-      "id": "295682773",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "UX Design with Figma for beginners @makers' lab LYON",
-      "html": "UX Design with Figma for beginners @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "Design, prototype, and share your websites and mobile apps with Figma. One-hour workshop to learn a skill by doing!",
-      "html": "Design, prototype, and share your websites and mobile apps with Figma. One-hour workshop to learn a skill by doing!"
-    },
-    "url": "https://www.eventbrite.fr/e/ux-design-with-figma-for-beginners-makers-lab-lyon-tickets-1978572218768",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-20T13:00:00",
-      "utc": "2026-01-20T12:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-20T14:10:00",
-      "utc": "2026-01-20T13:10:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2025-12-19T09:39:53Z",
-    "changed": "2025-12-19T09:41:11Z",
-    "published": "2025-12-19T09:41:11Z",
-    "capacity": 21,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Design, prototype, and share your websites and mobile apps with Figma. One-hour workshop to learn a skill by doing!",
-    "facebook_event_id": null,
-    "logo_id": "1173257857",
-    "organizer_id": "57822422353",
-    "venue_id": "295682725",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1978572218768",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1978572218768/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 495
-        },
-        "width": 5472,
-        "height": 2736
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1173257857%2F1299734345143%2F1%2Foriginal.20240925-072839?auto=format%2Ccompress&q=75&sharp=10&s=7e1d224b46045666ada115cb126187c1",
-        "width": 5472,
-        "height": 3648
-      },
-      "id": "1173257857",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1173257857%2F1299734345143%2F1%2Foriginal.20240925-072839?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C495%2C5472%2C2736&s=fd0ac39b3d00836a39b023156609d0ed",
-      "aspect_ratio": "2",
-      "edge_color": "#342d2f",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295682725/",
-      "id": "295682725",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Formation plotter de découpe et presse à chaud",
-      "html": "Formation plotter de découpe et presse à chaud"
-    },
-    "description": {
-      "text": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
-      "html": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome)."
-    },
-    "url": "https://www.eventbrite.fr/e/formation-plotter-de-decoupe-et-presse-a-chaud-tickets-1980364079271",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-20T13:00:00",
-      "utc": "2026-01-20T12:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-21T13:00:00",
-      "utc": "2026-01-21T12:00:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2026-01-12T10:21:04Z",
-    "changed": "2026-01-12T10:21:04Z",
-    "published": "2025-01-23T13:36:28Z",
-    "capacity": 4,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_US",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Apprenez à utiliser le plotter de découpe et la presse à chaud. Applications possibles : flocage textile, découpe d'adhésifs (monochrome).",
-    "facebook_event_id": null,
-    "logo_id": "1172314911",
-    "organizer_id": "57822422353",
-    "venue_id": "251930453",
-    "category_id": "199",
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1980364079271",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1980364079271/",
-    "is_externally_ticketed": false,
-    "series_id": "1219395186829",
-    "logo": {
-      "crop_mask": null,
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172314911%2F1299734345143%2F1%2Foriginal.20251204-151121?auto=format%2Ccompress&q=75&sharp=10&s=673641f759ba0f6faa4d6a0ec048f079",
-        "width": 2000,
-        "height": 1331
-      },
-      "id": "1172314911",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172314911%2F1299734345143%2F1%2Foriginal.20251204-151121?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=38f13a5fb7b4edc5449f890c751b43ce",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/251930453/",
-      "id": "251930453",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Formation brodeuse numérique",
-      "html": "Formation brodeuse numérique"
-    },
-    "description": {
-      "text": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
-      "html": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements"
-    },
-    "url": "https://www.eventbrite.fr/e/formation-brodeuse-numerique-tickets-1980364125409",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-20T13:30:00",
-      "utc": "2026-01-20T12:30:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-20T14:30:00",
-      "utc": "2026-01-20T13:30:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2026-01-12T10:22:25Z",
-    "changed": "2026-01-12T10:22:25Z",
-    "published": "2025-01-22T18:59:23Z",
-    "capacity": 3,
-    "capacity_is_custom": false,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_US",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
-    "facebook_event_id": null,
-    "logo_id": "941953143",
-    "organizer_id": "57822422353",
-    "venue_id": "250720643",
-    "category_id": "199",
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1980364125409",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1980364125409/",
-    "is_externally_ticketed": false,
-    "series_id": "1217997205429",
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 0
-        },
-        "width": 1000,
-        "height": 500
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
-      },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
-      "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/250720643/",
-      "id": "250720643",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Photoshop for beginners by PNP @makers' lab LYON",
-      "html": "Photoshop for beginners by PNP @makers&#39; lab LYON"
-    },
-    "description": {
-      "text": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing.",
-      "html": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing."
-    },
-    "url": "https://www.eventbrite.fr/e/photoshop-for-beginners-by-pnp-makers-lab-lyon-tickets-1979723990749",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-20T16:00:00",
-      "utc": "2026-01-20T15:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-20T17:30:00",
-      "utc": "2026-01-20T16:30:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2026-01-05T14:06:08Z",
-    "changed": "2026-01-05T14:09:29Z",
-    "published": "2026-01-05T14:09:29Z",
-    "capacity": 20,
-    "capacity_is_custom": true,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": true,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "en_GB",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": false,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Discover how to enhance your photos and master the different features of Photoshop with PnP. One-hour workshop to learn a skill by doing.",
-    "facebook_event_id": null,
-    "logo_id": "1174000327",
-    "organizer_id": "57822422353",
-    "venue_id": "295814873",
-    "category_id": null,
-    "subcategory_id": null,
-    "format_id": "9",
-    "id": "1979723990749",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1979723990749/",
-    "is_externally_ticketed": false,
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 624
-        },
-        "width": 4252,
-        "height": 2126
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174000327%2F1299734345143%2F1%2Foriginal.20241001-151156?auto=format%2Ccompress&q=75&sharp=10&s=9be1fda449cbe3fdc6be7177b9ef5622",
-        "width": 4252,
-        "height": 2829
-      },
-      "id": "1174000327",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174000327%2F1299734345143%2F1%2Foriginal.20241001-151156?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C624%2C4252%2C2126&s=596243ff4857054390f4eb01a3562fc2",
-      "aspect_ratio": "2",
-      "edge_color": "#9aa5ac",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295814873/",
-      "id": "295814873",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
-      "text": "Formation machine à coudre",
-      "html": "Formation machine à coudre"
-    },
-    "description": {
-      "text": "Apprenez à utiliser une machine à coudre en pratiquant avec l'équipe du makers' lab.",
-      "html": "Apprenez à utiliser une machine à coudre en pratiquant avec l'équipe du makers' lab."
-    },
-    "url": "https://www.eventbrite.fr/e/billets-formation-machine-a-coudre-1980363523609",
-    "start": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-22T14:00:00",
-      "utc": "2026-01-22T13:00:00Z"
-    },
-    "end": {
-      "timezone": "Europe/Paris",
-      "local": "2026-01-22T15:00:00",
-      "utc": "2026-01-22T14:00:00Z"
-    },
-    "organization_id": "1299734435773",
-    "created": "2026-01-12T10:12:04Z",
-    "changed": "2026-01-12T10:12:04Z",
-    "published": "2025-09-23T08:14:37Z",
-    "capacity": 4,
-    "capacity_is_custom": false,
-    "status": "live",
-    "currency": "EUR",
-    "listed": false,
-    "shareable": false,
-    "invite_only": false,
-    "online_event": false,
-    "show_remaining": false,
-    "tx_time_limit": 1200,
-    "hide_start_date": false,
-    "hide_end_date": false,
-    "locale": "fr_FR",
-    "is_locked": false,
-    "privacy_setting": "unlocked",
-    "is_series": true,
-    "is_series_parent": false,
-    "inventory_type": "limited",
-    "is_reserved_seating": false,
-    "show_pick_a_seat": false,
-    "show_seatmap_thumbnail": false,
-    "show_colors_in_seatmap_thumbnail": false,
-    "source": "coyote",
-    "is_free": true,
-    "version": null,
-    "summary": "Apprenez à utiliser une machine à coudre en pratiquant avec l'équipe du makers' lab.",
-    "facebook_event_id": null,
-    "logo_id": "1172315348",
-    "organizer_id": "57822422353",
-    "venue_id": "285648303",
-    "category_id": "117",
-    "subcategory_id": "17003",
-    "format_id": "9",
-    "id": "1980363523609",
-    "resource_uri": "https://www.eventbriteapi.com/v3/events/1980363523609/",
-    "is_externally_ticketed": false,
-    "series_id": "1733238034619",
-    "logo": {
-      "crop_mask": {
-        "top_left": {
-          "x": 0,
-          "y": 331
-        },
-        "width": 2000,
-        "height": 1000
-      },
-      "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315348%2F1299734345143%2F1%2Foriginal.20251204-151627?auto=format%2Ccompress&q=75&sharp=10&s=675aafe5c3676a5ffbdf24b070f34810",
-        "width": 2000,
-        "height": 1331
-      },
-      "id": "1172315348",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315348%2F1299734345143%2F1%2Foriginal.20251204-151627?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=206cb3c63dda851f59c73d07569560ba",
-      "aspect_ratio": "2",
-      "edge_color": "#9c9593",
-      "edge_color_set": true
-    },
-    "venue": {
-      "address": {
-        "address_1": "144 Avenue Jean Jaurès",
-        "address_2": "",
-        "city": "Lyon",
-        "region": "Auvergne-Rhône-Alpes",
-        "postal_code": "69007",
-        "country": "FR",
-        "latitude": "45.7414144",
-        "longitude": "4.839422700000001",
-        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
-        "localized_area_display": "Lyon",
-        "localized_multi_line_address_display": [
-          "144 Avenue Jean Jaurès",
-          "69007 Lyon"
-        ]
-      },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/285648303/",
-      "id": "285648303",
-      "age_restriction": null,
-      "capacity": null,
-      "name": "makers'lab emlyon LYON",
-      "latitude": "45.7414144",
-      "longitude": "4.839422700000001"
-    }
-  },
-  {
-    "name": {
       "text": "Laser cutting your own designs 2/3 @makers' lab LYON",
       "html": "Laser cutting your own designs 2/3 @makers&#39; lab LYON"
     },
@@ -1185,7 +340,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:16:25Z",
-    "changed": "2026-01-12T10:16:25Z",
+    "changed": "2026-01-12T10:44:39Z",
     "published": "2025-01-23T13:26:28Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -1214,7 +369,7 @@
     "version": null,
     "summary": "Learn how to use embroidery machines to customize clothes.",
     "facebook_event_id": null,
-    "logo_id": "1172315314",
+    "logo_id": "1174605835",
     "organizer_id": "57822422353",
     "venue_id": "251929813",
     "category_id": "199",
@@ -1225,16 +380,23 @@
     "is_externally_ticketed": false,
     "series_id": "1219385427639",
     "logo": {
-      "crop_mask": null,
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 331
+        },
+        "width": 2000,
+        "height": 1000
+      },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?auto=format%2Ccompress&q=75&sharp=10&s=8f15df9791e24c3bf1c9c87e3a5fe28d",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?auto=format%2Ccompress&q=75&sharp=10&s=253e173408826daf7c9b658d1ae61262",
         "width": 2000,
         "height": 1331
       },
-      "id": "1172315314",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc8229a0108e6c8bbeb3ce6470b0e0da",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
+      "id": "1174605835",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=89cb9cca24495e26a828fff9e17f59cd",
+      "aspect_ratio": "2",
+      "edge_color": "#8f8782",
       "edge_color_set": true
     },
     "venue": {
@@ -1705,12 +867,12 @@
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2026-02-04T13:00:00",
-      "utc": "2026-02-04T12:00:00Z"
+      "local": "2026-02-03T13:30:00",
+      "utc": "2026-02-03T12:30:00Z"
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:21:04Z",
-    "changed": "2026-01-12T10:21:04Z",
+    "changed": "2026-01-13T13:57:50Z",
     "published": "2025-01-23T13:36:28Z",
     "capacity": 4,
     "capacity_is_custom": true,
@@ -1810,7 +972,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:22:25Z",
-    "changed": "2026-01-12T10:22:25Z",
+    "changed": "2026-01-12T11:09:25Z",
     "published": "2025-01-22T18:59:23Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -1839,7 +1001,7 @@
     "version": null,
     "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
     "facebook_event_id": null,
-    "logo_id": "941953143",
+    "logo_id": "1174607349",
     "organizer_id": "57822422353",
     "venue_id": "250720643",
     "category_id": "199",
@@ -1853,20 +1015,20 @@
       "crop_mask": {
         "top_left": {
           "x": 0,
-          "y": 0
+          "y": 331
         },
-        "width": 1000,
-        "height": 500
+        "width": 2000,
+        "height": 1000
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?auto=format%2Ccompress&q=75&sharp=10&s=da74cce725999cd8fdcb21b1f901065f",
+        "width": 2000,
+        "height": 1331
       },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
+      "id": "1174607349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=2e158dc46bf1628e27a414ca14f3d2fb",
       "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
+      "edge_color": "#9c9593",
       "edge_color_set": true
     },
     "venue": {
@@ -2343,7 +1505,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:16:25Z",
-    "changed": "2026-01-12T10:16:25Z",
+    "changed": "2026-01-12T10:44:39Z",
     "published": "2025-01-23T13:26:28Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -2372,7 +1534,7 @@
     "version": null,
     "summary": "Learn how to use embroidery machines to customize clothes.",
     "facebook_event_id": null,
-    "logo_id": "1172315314",
+    "logo_id": "1174605835",
     "organizer_id": "57822422353",
     "venue_id": "251929813",
     "category_id": "199",
@@ -2383,16 +1545,23 @@
     "is_externally_ticketed": false,
     "series_id": "1219385427639",
     "logo": {
-      "crop_mask": null,
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 331
+        },
+        "width": 2000,
+        "height": 1000
+      },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?auto=format%2Ccompress&q=75&sharp=10&s=8f15df9791e24c3bf1c9c87e3a5fe28d",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?auto=format%2Ccompress&q=75&sharp=10&s=253e173408826daf7c9b658d1ae61262",
         "width": 2000,
         "height": 1331
       },
-      "id": "1172315314",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc8229a0108e6c8bbeb3ce6470b0e0da",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
+      "id": "1174605835",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=89cb9cca24495e26a828fff9e17f59cd",
+      "aspect_ratio": "2",
+      "edge_color": "#8f8782",
       "edge_color_set": true
     },
     "venue": {
@@ -2651,12 +1820,12 @@
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2026-02-18T13:00:00",
-      "utc": "2026-02-18T12:00:00Z"
+      "local": "2026-02-17T13:30:00",
+      "utc": "2026-02-17T12:30:00Z"
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:21:04Z",
-    "changed": "2026-01-12T10:21:04Z",
+    "changed": "2026-01-13T13:57:50Z",
     "published": "2025-01-23T13:36:28Z",
     "capacity": 4,
     "capacity_is_custom": true,
@@ -2736,6 +1905,112 @@
   },
   {
     "name": {
+      "text": "Introduction to AI Prompting @makers' lab LYON",
+      "html": "Introduction to AI Prompting @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "Learn how to design robust prompts and critically evaluate AI responses. One-hour workshop to learn a skill by doing.",
+      "html": "Learn how to design robust prompts and critically evaluate AI responses. One-hour workshop to learn a skill by doing."
+    },
+    "url": "https://www.eventbrite.fr/e/introduction-to-ai-prompting-makers-lab-lyon-tickets-1980385959716",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2026-02-17T13:00:00",
+      "utc": "2026-02-17T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2026-02-17T14:10:00",
+      "utc": "2026-02-17T13:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2026-01-12T15:25:23Z",
+    "changed": "2026-01-12T15:47:14Z",
+    "published": "2026-01-12T15:47:14Z",
+    "capacity": 21,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to design robust prompts and critically evaluate AI responses. One-hour workshop to learn a skill by doing.",
+    "facebook_event_id": null,
+    "logo_id": "1174628355",
+    "organizer_id": "57822422353",
+    "venue_id": "295926938",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1980385959716",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1980385959716/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 940,
+        "height": 470
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628355%2F1299734345143%2F1%2Foriginal.20260112-154610?auto=format%2Ccompress&q=75&sharp=10&s=7ed8d87b6b6c4152be3485a4d888334e",
+        "width": 940,
+        "height": 470
+      },
+      "id": "1174628355",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628355%2F1299734345143%2F1%2Foriginal.20260112-154610?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=1e462c8778b1b0e718bed6258f220c15",
+      "aspect_ratio": "2",
+      "edge_color": "#332c2e",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.8394227",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295926938/",
+      "id": "295926938",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "Finance Lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.8394227"
+    }
+  },
+  {
+    "name": {
       "text": "Formation brodeuse numérique",
       "html": "Formation brodeuse numérique"
     },
@@ -2756,7 +2031,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:22:25Z",
-    "changed": "2026-01-12T10:22:25Z",
+    "changed": "2026-01-12T11:09:25Z",
     "published": "2025-01-22T18:59:23Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -2785,7 +2060,7 @@
     "version": null,
     "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
     "facebook_event_id": null,
-    "logo_id": "941953143",
+    "logo_id": "1174607349",
     "organizer_id": "57822422353",
     "venue_id": "250720643",
     "category_id": "199",
@@ -2799,20 +2074,20 @@
       "crop_mask": {
         "top_left": {
           "x": 0,
-          "y": 0
+          "y": 331
         },
-        "width": 1000,
-        "height": 500
+        "width": 2000,
+        "height": 1000
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?auto=format%2Ccompress&q=75&sharp=10&s=da74cce725999cd8fdcb21b1f901065f",
+        "width": 2000,
+        "height": 1331
       },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
+      "id": "1174607349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=2e158dc46bf1628e27a414ca14f3d2fb",
       "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
+      "edge_color": "#9c9593",
       "edge_color_set": true
     },
     "venue": {
@@ -3056,6 +2331,112 @@
   },
   {
     "name": {
+      "text": "AI assisted learning @makers' lab LYON",
+      "html": "AI assisted learning @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "Learn how to study effectively with AI through guided questioning and source verification. One-hour workshop to learn a skill by doing.",
+      "html": "Learn how to study effectively with AI through guided questioning and source verification. One-hour workshop to learn a skill by doing."
+    },
+    "url": "https://www.eventbrite.fr/e/ai-assisted-learning-makers-lab-lyon-tickets-1980389019869",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2026-02-20T11:20:00",
+      "utc": "2026-02-20T10:20:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2026-02-20T12:30:00",
+      "utc": "2026-02-20T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2026-01-12T15:51:56Z",
+    "changed": "2026-01-14T14:25:10Z",
+    "published": "2026-01-12T15:53:00Z",
+    "capacity": 21,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to study effectively with AI through guided questioning and source verification. One-hour workshop to learn a skill by doing.",
+    "facebook_event_id": null,
+    "logo_id": "1174628355",
+    "organizer_id": "57822422353",
+    "venue_id": "295927668",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1980389019869",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1980389019869/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 940,
+        "height": 470
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628355%2F1299734345143%2F1%2Foriginal.20260112-154610?auto=format%2Ccompress&q=75&sharp=10&s=7ed8d87b6b6c4152be3485a4d888334e",
+        "width": 940,
+        "height": 470
+      },
+      "id": "1174628355",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628355%2F1299734345143%2F1%2Foriginal.20260112-154610?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=1e462c8778b1b0e718bed6258f220c15",
+      "aspect_ratio": "2",
+      "edge_color": "#332c2e",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.8394227",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295927668/",
+      "id": "295927668",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "Finance Lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.8394227"
+    }
+  },
+  {
+    "name": {
       "text": "Cutting plotter and hot press training",
       "html": "Cutting plotter and hot press training"
     },
@@ -3163,6 +2544,112 @@
   },
   {
     "name": {
+      "text": "Introduction to AI Prompting @makers' lab LYON",
+      "html": "Introduction to AI Prompting @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "Learn how to design robust prompts and critically evaluate AI responses. One-hour workshop to learn a skill by doing.",
+      "html": "Learn how to design robust prompts and critically evaluate AI responses. One-hour workshop to learn a skill by doing."
+    },
+    "url": "https://www.eventbrite.fr/e/introduction-to-ai-prompting-makers-lab-lyon-tickets-1980388818266",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2026-02-24T13:00:00",
+      "utc": "2026-02-24T12:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2026-02-24T14:10:00",
+      "utc": "2026-02-24T13:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2026-01-12T15:47:44Z",
+    "changed": "2026-01-12T15:48:12Z",
+    "published": "2026-01-12T15:48:12Z",
+    "capacity": 21,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to design robust prompts and critically evaluate AI responses. One-hour workshop to learn a skill by doing.",
+    "facebook_event_id": null,
+    "logo_id": "1174628533",
+    "organizer_id": "57822422353",
+    "venue_id": "295927555",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1980388818266",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1980388818266/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 940,
+        "height": 470
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628533%2F1299734345143%2F1%2Foriginal.20260112-154610?auto=format%2Ccompress&q=75&sharp=10&s=5ff9396a3295a17f1983af2e489465c2",
+        "width": 940,
+        "height": 470
+      },
+      "id": "1174628533",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628533%2F1299734345143%2F1%2Foriginal.20260112-154610?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=6c625f857beb9d41dedb58df2c784783",
+      "aspect_ratio": "2",
+      "edge_color": "#332c2e",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.8394227",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295927555/",
+      "id": "295927555",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "Finance Lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.8394227"
+    }
+  },
+  {
+    "name": {
       "text": "Embroidery machine training",
       "html": "Embroidery machine training"
     },
@@ -3183,7 +2670,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:16:25Z",
-    "changed": "2026-01-12T10:16:25Z",
+    "changed": "2026-01-12T10:44:39Z",
     "published": "2025-01-23T13:26:28Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -3212,7 +2699,7 @@
     "version": null,
     "summary": "Learn how to use embroidery machines to customize clothes.",
     "facebook_event_id": null,
-    "logo_id": "1172315314",
+    "logo_id": "1174605835",
     "organizer_id": "57822422353",
     "venue_id": "251929813",
     "category_id": "199",
@@ -3223,16 +2710,23 @@
     "is_externally_ticketed": false,
     "series_id": "1219385427639",
     "logo": {
-      "crop_mask": null,
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 331
+        },
+        "width": 2000,
+        "height": 1000
+      },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?auto=format%2Ccompress&q=75&sharp=10&s=8f15df9791e24c3bf1c9c87e3a5fe28d",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?auto=format%2Ccompress&q=75&sharp=10&s=253e173408826daf7c9b658d1ae61262",
         "width": 2000,
         "height": 1331
       },
-      "id": "1172315314",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc8229a0108e6c8bbeb3ce6470b0e0da",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
+      "id": "1174605835",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=89cb9cca24495e26a828fff9e17f59cd",
+      "aspect_ratio": "2",
+      "edge_color": "#8f8782",
       "edge_color_set": true
     },
     "venue": {
@@ -3476,6 +2970,112 @@
   },
   {
     "name": {
+      "text": "AI assisted learning @makers' lab LYON",
+      "html": "AI assisted learning @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "Learn how to study effectively with AI through guided questioning and source verification. One-hour workshop to learn a skill by doing.",
+      "html": "Learn how to study effectively with AI through guided questioning and source verification. One-hour workshop to learn a skill by doing."
+    },
+    "url": "https://www.eventbrite.fr/e/ai-assisted-learning-makers-lab-lyon-tickets-1980389195394",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2026-02-27T11:20:00",
+      "utc": "2026-02-27T10:20:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2026-02-27T12:30:00",
+      "utc": "2026-02-27T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2026-01-12T15:53:19Z",
+    "changed": "2026-01-14T14:25:18Z",
+    "published": "2026-01-12T15:53:48Z",
+    "capacity": 21,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to study effectively with AI through guided questioning and source verification. One-hour workshop to learn a skill by doing.",
+    "facebook_event_id": null,
+    "logo_id": "1174628355",
+    "organizer_id": "57822422353",
+    "venue_id": "295927711",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1980389195394",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1980389195394/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 940,
+        "height": 470
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628355%2F1299734345143%2F1%2Foriginal.20260112-154610?auto=format%2Ccompress&q=75&sharp=10&s=7ed8d87b6b6c4152be3485a4d888334e",
+        "width": 940,
+        "height": 470
+      },
+      "id": "1174628355",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628355%2F1299734345143%2F1%2Foriginal.20260112-154610?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=1e462c8778b1b0e718bed6258f220c15",
+      "aspect_ratio": "2",
+      "edge_color": "#332c2e",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.8394227",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295927711/",
+      "id": "295927711",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "Finance Lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.8394227"
+    }
+  },
+  {
+    "name": {
       "text": "Data Literacy with Power BI for beginners @makers' lab LYON",
       "html": "Data Literacy with Power BI for beginners @makers&#39; lab LYON"
     },
@@ -3597,12 +3197,12 @@
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2026-03-04T13:00:00",
-      "utc": "2026-03-04T12:00:00Z"
+      "local": "2026-03-03T13:30:00",
+      "utc": "2026-03-03T12:30:00Z"
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:21:04Z",
-    "changed": "2026-01-12T10:21:04Z",
+    "changed": "2026-01-13T13:57:50Z",
     "published": "2025-01-23T13:36:28Z",
     "capacity": 4,
     "capacity_is_custom": true,
@@ -3702,7 +3302,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:22:25Z",
-    "changed": "2026-01-12T10:22:25Z",
+    "changed": "2026-01-12T11:09:25Z",
     "published": "2025-01-22T18:59:23Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -3731,7 +3331,7 @@
     "version": null,
     "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
     "facebook_event_id": null,
-    "logo_id": "941953143",
+    "logo_id": "1174607349",
     "organizer_id": "57822422353",
     "venue_id": "250720643",
     "category_id": "199",
@@ -3745,20 +3345,20 @@
       "crop_mask": {
         "top_left": {
           "x": 0,
-          "y": 0
+          "y": 331
         },
-        "width": 1000,
-        "height": 500
+        "width": 2000,
+        "height": 1000
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?auto=format%2Ccompress&q=75&sharp=10&s=da74cce725999cd8fdcb21b1f901065f",
+        "width": 2000,
+        "height": 1331
       },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
+      "id": "1174607349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=2e158dc46bf1628e27a414ca14f3d2fb",
       "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
+      "edge_color": "#9c9593",
       "edge_color_set": true
     },
     "venue": {
@@ -4235,7 +3835,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:16:25Z",
-    "changed": "2026-01-12T10:16:25Z",
+    "changed": "2026-01-12T10:44:39Z",
     "published": "2025-01-23T13:26:28Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -4264,7 +3864,7 @@
     "version": null,
     "summary": "Learn how to use embroidery machines to customize clothes.",
     "facebook_event_id": null,
-    "logo_id": "1172315314",
+    "logo_id": "1174605835",
     "organizer_id": "57822422353",
     "venue_id": "251929813",
     "category_id": "199",
@@ -4275,16 +3875,23 @@
     "is_externally_ticketed": false,
     "series_id": "1219385427639",
     "logo": {
-      "crop_mask": null,
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 331
+        },
+        "width": 2000,
+        "height": 1000
+      },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?auto=format%2Ccompress&q=75&sharp=10&s=8f15df9791e24c3bf1c9c87e3a5fe28d",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?auto=format%2Ccompress&q=75&sharp=10&s=253e173408826daf7c9b658d1ae61262",
         "width": 2000,
         "height": 1331
       },
-      "id": "1172315314",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc8229a0108e6c8bbeb3ce6470b0e0da",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
+      "id": "1174605835",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=89cb9cca24495e26a828fff9e17f59cd",
+      "aspect_ratio": "2",
+      "edge_color": "#8f8782",
       "edge_color_set": true
     },
     "venue": {
@@ -4528,6 +4135,211 @@
   },
   {
     "name": {
+      "text": "Introduction to AI Prompting @makers' lab LYON",
+      "html": "Introduction to AI Prompting @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "Learn how to design robust prompts and critically evaluate AI responses. One-hour workshop to learn a skill by doing.",
+      "html": "Learn how to design robust prompts and critically evaluate AI responses. One-hour workshop to learn a skill by doing."
+    },
+    "url": "https://www.eventbrite.fr/e/introduction-to-ai-prompting-makers-lab-lyon-tickets-1980388893491",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2026-03-13T11:20:00",
+      "utc": "2026-03-13T10:20:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2026-03-13T12:30:00",
+      "utc": "2026-03-13T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2026-01-12T15:48:59Z",
+    "changed": "2026-01-12T15:50:05Z",
+    "published": "2026-01-12T15:50:05Z",
+    "capacity": 21,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to design robust prompts and critically evaluate AI responses. One-hour workshop to learn a skill by doing.",
+    "facebook_event_id": null,
+    "logo_id": "1174628682",
+    "organizer_id": "57822422353",
+    "venue_id": "295927589",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1980388893491",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1980388893491/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 940,
+        "height": 470
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628682%2F1299734345143%2F1%2Foriginal.20260112-154610?auto=format%2Ccompress&q=75&sharp=10&s=16aa56c2c5151d5b6f180ba393716f1a",
+        "width": 940,
+        "height": 470
+      },
+      "id": "1174628682",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628682%2F1299734345143%2F1%2Foriginal.20260112-154610?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=1504affab9ddd8735487c631c58aff83",
+      "aspect_ratio": "2",
+      "edge_color": "#332c2e",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.8394227",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295927589/",
+      "id": "295927589",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "Finance Lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.8394227"
+    }
+  },
+  {
+    "name": {
+      "text": "Design Sprint @makers' lab LYON",
+      "html": "Design Sprint @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "4 days to design, prototype and test your proof of concept at the makers' lab.",
+      "html": "4 days to design, prototype and test your proof of concept at the makers' lab."
+    },
+    "url": "https://www.eventbrite.fr/e/billets-design-sprint-makers-lab-lyon-1981306213219",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2026-03-17T09:00:00",
+      "utc": "2026-03-17T08:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2026-03-20T18:00:00",
+      "utc": "2026-03-20T17:00:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2026-01-22T10:28:54Z",
+    "changed": "2026-01-22T16:18:15Z",
+    "published": "2026-01-22T10:29:47Z",
+    "capacity": 41,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "fr_FR",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "4 days to design, prototype and test your proof of concept at the makers' lab.",
+    "facebook_event_id": null,
+    "logo_id": "868219119",
+    "organizer_id": "57822422353",
+    "venue_id": "296085430",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1981306213219",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1981306213219/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": null,
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F868219119%2F1299734345143%2F1%2Foriginal.20241007-093659?auto=format%2Ccompress&q=75&sharp=10&s=c409d2b371fa9de790a04c0fb3601fb3",
+        "width": 2520,
+        "height": 1674
+      },
+      "id": "868219119",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F868219119%2F1299734345143%2F1%2Foriginal.20241007-093659?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc397b2b4ac5272ff094f3aee690f4e6",
+      "aspect_ratio": "1.51",
+      "edge_color": "#7f7f76",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/296085430/",
+      "id": "296085430",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
       "text": "UX Design with Figma for beginners @makers' lab LYON",
       "html": "UX Design with Figma for beginners @makers&#39; lab LYON"
     },
@@ -4649,12 +4461,12 @@
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2026-03-18T13:00:00",
-      "utc": "2026-03-18T12:00:00Z"
+      "local": "2026-03-17T13:30:00",
+      "utc": "2026-03-17T12:30:00Z"
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:21:04Z",
-    "changed": "2026-01-12T10:21:04Z",
+    "changed": "2026-01-13T13:57:50Z",
     "published": "2025-01-23T13:36:28Z",
     "capacity": 4,
     "capacity_is_custom": true,
@@ -4754,7 +4566,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:22:25Z",
-    "changed": "2026-01-12T10:22:25Z",
+    "changed": "2026-01-12T11:09:25Z",
     "published": "2025-01-22T18:59:23Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -4783,7 +4595,7 @@
     "version": null,
     "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
     "facebook_event_id": null,
-    "logo_id": "941953143",
+    "logo_id": "1174607349",
     "organizer_id": "57822422353",
     "venue_id": "250720643",
     "category_id": "199",
@@ -4797,20 +4609,20 @@
       "crop_mask": {
         "top_left": {
           "x": 0,
-          "y": 0
+          "y": 331
         },
-        "width": 1000,
-        "height": 500
+        "width": 2000,
+        "height": 1000
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?auto=format%2Ccompress&q=75&sharp=10&s=da74cce725999cd8fdcb21b1f901065f",
+        "width": 2000,
+        "height": 1331
       },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
+      "id": "1174607349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=2e158dc46bf1628e27a414ca14f3d2fb",
       "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
+      "edge_color": "#9c9593",
       "edge_color_set": true
     },
     "venue": {
@@ -5393,7 +5205,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:16:25Z",
-    "changed": "2026-01-12T10:16:25Z",
+    "changed": "2026-01-12T10:44:39Z",
     "published": "2025-01-23T13:26:28Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -5422,7 +5234,7 @@
     "version": null,
     "summary": "Learn how to use embroidery machines to customize clothes.",
     "facebook_event_id": null,
-    "logo_id": "1172315314",
+    "logo_id": "1174605835",
     "organizer_id": "57822422353",
     "venue_id": "251929813",
     "category_id": "199",
@@ -5433,16 +5245,23 @@
     "is_externally_ticketed": false,
     "series_id": "1219385427639",
     "logo": {
-      "crop_mask": null,
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 331
+        },
+        "width": 2000,
+        "height": 1000
+      },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?auto=format%2Ccompress&q=75&sharp=10&s=8f15df9791e24c3bf1c9c87e3a5fe28d",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?auto=format%2Ccompress&q=75&sharp=10&s=253e173408826daf7c9b658d1ae61262",
         "width": 2000,
         "height": 1331
       },
-      "id": "1172315314",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc8229a0108e6c8bbeb3ce6470b0e0da",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
+      "id": "1174605835",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=89cb9cca24495e26a828fff9e17f59cd",
+      "aspect_ratio": "2",
+      "edge_color": "#8f8782",
       "edge_color_set": true
     },
     "venue": {
@@ -5686,6 +5505,112 @@
   },
   {
     "name": {
+      "text": "AI assisted learning @makers' lab LYON",
+      "html": "AI assisted learning @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "Learn how to study effectively with AI through guided questioning and source verification. One-hour workshop to learn a skill by doing.",
+      "html": "Learn how to study effectively with AI through guided questioning and source verification. One-hour workshop to learn a skill by doing."
+    },
+    "url": "https://www.eventbrite.fr/e/ai-assisted-learning-makers-lab-lyon-tickets-1980389231502",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2026-03-27T11:20:00",
+      "utc": "2026-03-27T10:20:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2026-03-27T12:30:00",
+      "utc": "2026-03-27T11:30:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2026-01-12T15:54:28Z",
+    "changed": "2026-01-14T14:25:24Z",
+    "published": "2026-01-12T15:54:43Z",
+    "capacity": 21,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to study effectively with AI through guided questioning and source verification. One-hour workshop to learn a skill by doing.",
+    "facebook_event_id": null,
+    "logo_id": "1174628355",
+    "organizer_id": "57822422353",
+    "venue_id": "295927734",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1980389231502",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1980389231502/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 0
+        },
+        "width": 940,
+        "height": 470
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628355%2F1299734345143%2F1%2Foriginal.20260112-154610?auto=format%2Ccompress&q=75&sharp=10&s=7ed8d87b6b6c4152be3485a4d888334e",
+        "width": 940,
+        "height": 470
+      },
+      "id": "1174628355",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628355%2F1299734345143%2F1%2Foriginal.20260112-154610?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=1e462c8778b1b0e718bed6258f220c15",
+      "aspect_ratio": "2",
+      "edge_color": "#332c2e",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.8394227",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295927734/",
+      "id": "295927734",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "Finance Lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.8394227"
+    }
+  },
+  {
+    "name": {
       "text": "UX Design with Figma for beginners @makers' lab LYON",
       "html": "UX Design with Figma for beginners @makers&#39; lab LYON"
     },
@@ -5807,12 +5732,12 @@
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2026-04-01T13:00:00",
-      "utc": "2026-04-01T11:00:00Z"
+      "local": "2026-03-31T13:30:00",
+      "utc": "2026-03-31T11:30:00Z"
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:21:04Z",
-    "changed": "2026-01-12T10:21:04Z",
+    "changed": "2026-01-13T13:57:50Z",
     "published": "2025-01-23T13:36:28Z",
     "capacity": 4,
     "capacity_is_custom": true,
@@ -5912,7 +5837,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:22:25Z",
-    "changed": "2026-01-12T10:22:25Z",
+    "changed": "2026-01-12T11:09:25Z",
     "published": "2025-01-22T18:59:23Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -5941,7 +5866,7 @@
     "version": null,
     "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
     "facebook_event_id": null,
-    "logo_id": "941953143",
+    "logo_id": "1174607349",
     "organizer_id": "57822422353",
     "venue_id": "250720643",
     "category_id": "199",
@@ -5955,20 +5880,20 @@
       "crop_mask": {
         "top_left": {
           "x": 0,
-          "y": 0
+          "y": 331
         },
-        "width": 1000,
-        "height": 500
+        "width": 2000,
+        "height": 1000
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?auto=format%2Ccompress&q=75&sharp=10&s=da74cce725999cd8fdcb21b1f901065f",
+        "width": 2000,
+        "height": 1331
       },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
+      "id": "1174607349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=2e158dc46bf1628e27a414ca14f3d2fb",
       "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
+      "edge_color": "#9c9593",
       "edge_color_set": true
     },
     "venue": {
@@ -6551,7 +6476,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:17:43Z",
-    "changed": "2026-01-12T10:17:43Z",
+    "changed": "2026-01-12T10:44:39Z",
     "published": "2025-01-23T13:26:28Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -6580,7 +6505,7 @@
     "version": null,
     "summary": "Learn how to use embroidery machines to customize clothes.",
     "facebook_event_id": null,
-    "logo_id": "1172315314",
+    "logo_id": "1174605835",
     "organizer_id": "57822422353",
     "venue_id": "251929813",
     "category_id": "199",
@@ -6591,16 +6516,23 @@
     "is_externally_ticketed": false,
     "series_id": "1219385427639",
     "logo": {
-      "crop_mask": null,
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 331
+        },
+        "width": 2000,
+        "height": 1000
+      },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?auto=format%2Ccompress&q=75&sharp=10&s=8f15df9791e24c3bf1c9c87e3a5fe28d",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?auto=format%2Ccompress&q=75&sharp=10&s=253e173408826daf7c9b658d1ae61262",
         "width": 2000,
         "height": 1331
       },
-      "id": "1172315314",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc8229a0108e6c8bbeb3ce6470b0e0da",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
+      "id": "1174605835",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=89cb9cca24495e26a828fff9e17f59cd",
+      "aspect_ratio": "2",
+      "edge_color": "#8f8782",
       "edge_color_set": true
     },
     "venue": {
@@ -7071,12 +7003,12 @@
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2026-04-15T13:00:00",
-      "utc": "2026-04-15T11:00:00Z"
+      "local": "2026-04-14T13:30:00",
+      "utc": "2026-04-14T11:30:00Z"
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:21:04Z",
-    "changed": "2026-01-12T10:21:04Z",
+    "changed": "2026-01-13T13:57:50Z",
     "published": "2025-01-23T13:36:28Z",
     "capacity": 4,
     "capacity_is_custom": true,
@@ -7176,7 +7108,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:22:25Z",
-    "changed": "2026-01-12T10:22:25Z",
+    "changed": "2026-01-12T11:09:25Z",
     "published": "2025-01-22T18:59:23Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -7205,7 +7137,7 @@
     "version": null,
     "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
     "facebook_event_id": null,
-    "logo_id": "941953143",
+    "logo_id": "1174607349",
     "organizer_id": "57822422353",
     "venue_id": "250720643",
     "category_id": "199",
@@ -7219,20 +7151,20 @@
       "crop_mask": {
         "top_left": {
           "x": 0,
-          "y": 0
+          "y": 331
         },
-        "width": 1000,
-        "height": 500
+        "width": 2000,
+        "height": 1000
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?auto=format%2Ccompress&q=75&sharp=10&s=da74cce725999cd8fdcb21b1f901065f",
+        "width": 2000,
+        "height": 1331
       },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
+      "id": "1174607349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=2e158dc46bf1628e27a414ca14f3d2fb",
       "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
+      "edge_color": "#9c9593",
       "edge_color_set": true
     },
     "venue": {
@@ -7582,6 +7514,105 @@
   },
   {
     "name": {
+      "text": "Design Sprint @makers' lab PARIS",
+      "html": "Design Sprint @makers&#39; lab PARIS"
+    },
+    "description": {
+      "text": "4 jours pour concevoir, prototyper et tester votre preuve de concept au makers' lab.",
+      "html": "4 jours pour concevoir, prototyper et tester votre preuve de concept au makers' lab."
+    },
+    "url": "https://www.eventbrite.fr/e/billets-design-sprint-makers-lab-paris-1981306293459",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2026-04-21T09:00:00",
+      "utc": "2026-04-21T07:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2026-04-24T18:00:00",
+      "utc": "2026-04-24T16:00:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2026-01-22T10:30:57Z",
+    "changed": "2026-01-22T10:31:29Z",
+    "published": "2026-01-22T10:31:29Z",
+    "capacity": 100,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": false,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "fr_FR",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "4 jours pour concevoir, prototyper et tester votre preuve de concept au makers' lab.",
+    "facebook_event_id": null,
+    "logo_id": "868219119",
+    "organizer_id": "57822422353",
+    "venue_id": "296085466",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1981306293459",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1981306293459/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": null,
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F868219119%2F1299734345143%2F1%2Foriginal.20241007-093659?auto=format%2Ccompress&q=75&sharp=10&s=c409d2b371fa9de790a04c0fb3601fb3",
+        "width": 2520,
+        "height": 1674
+      },
+      "id": "868219119",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F868219119%2F1299734345143%2F1%2Foriginal.20241007-093659?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc397b2b4ac5272ff094f3aee690f4e6",
+      "aspect_ratio": "1.51",
+      "edge_color": "#7f7f76",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "15 Boulevard Diderot",
+        "address_2": "",
+        "city": "Paris",
+        "region": "IDF",
+        "postal_code": "75012",
+        "country": "FR",
+        "latitude": "48.8460492",
+        "longitude": "2.3713275",
+        "localized_address_display": "15 Boulevard Diderot, 75012 Paris",
+        "localized_area_display": "Paris",
+        "localized_multi_line_address_display": [
+          "15 Boulevard Diderot",
+          "75012 Paris"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/296085466/",
+      "id": "296085466",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers' lab emlyon PARIS",
+      "latitude": "48.8460492",
+      "longitude": "2.3713275"
+    }
+  },
+  {
+    "name": {
       "text": "Creative Coding with p5.js -2/2 - @makers' lab LYON",
       "html": "Creative Coding with p5.js -2/2 - @makers&#39; lab LYON"
     },
@@ -7815,7 +7846,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:17:43Z",
-    "changed": "2026-01-12T10:17:43Z",
+    "changed": "2026-01-12T10:44:39Z",
     "published": "2025-01-23T13:26:28Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -7844,7 +7875,7 @@
     "version": null,
     "summary": "Learn how to use embroidery machines to customize clothes.",
     "facebook_event_id": null,
-    "logo_id": "1172315314",
+    "logo_id": "1174605835",
     "organizer_id": "57822422353",
     "venue_id": "251929813",
     "category_id": "199",
@@ -7855,16 +7886,23 @@
     "is_externally_ticketed": false,
     "series_id": "1219385427639",
     "logo": {
-      "crop_mask": null,
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 331
+        },
+        "width": 2000,
+        "height": 1000
+      },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?auto=format%2Ccompress&q=75&sharp=10&s=8f15df9791e24c3bf1c9c87e3a5fe28d",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?auto=format%2Ccompress&q=75&sharp=10&s=253e173408826daf7c9b658d1ae61262",
         "width": 2000,
         "height": 1331
       },
-      "id": "1172315314",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc8229a0108e6c8bbeb3ce6470b0e0da",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
+      "id": "1174605835",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=89cb9cca24495e26a828fff9e17f59cd",
+      "aspect_ratio": "2",
+      "edge_color": "#8f8782",
       "edge_color_set": true
     },
     "venue": {
@@ -8123,12 +8161,12 @@
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2026-04-29T13:00:00",
-      "utc": "2026-04-29T11:00:00Z"
+      "local": "2026-04-28T13:30:00",
+      "utc": "2026-04-28T11:30:00Z"
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:21:04Z",
-    "changed": "2026-01-12T10:21:04Z",
+    "changed": "2026-01-13T13:57:50Z",
     "published": "2025-01-23T13:36:28Z",
     "capacity": 4,
     "capacity_is_custom": true,
@@ -8208,6 +8246,112 @@
   },
   {
     "name": {
+      "text": "Intro to parametric modeling with Fusion 360 @makers'lab LYON",
+      "html": "Intro to parametric modeling with Fusion 360 @makers&#39;lab LYON"
+    },
+    "description": {
+      "text": "Learn how to create and edit your own 3D models easily using parametric design.  One-hour workshop to learn a skill by doing!",
+      "html": "Learn how to create and edit your own 3D models easily using parametric design.  One-hour workshop to learn a skill by doing!"
+    },
+    "url": "https://www.eventbrite.fr/e/intro-to-parametric-modeling-with-fusion-360-makerslab-lyon-tickets-1980450409487",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2026-04-28T13:00:00",
+      "utc": "2026-04-28T11:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2026-04-28T14:10:00",
+      "utc": "2026-04-28T12:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2026-01-13T09:43:02Z",
+    "changed": "2026-01-13T09:44:10Z",
+    "published": "2026-01-13T09:44:10Z",
+    "capacity": 20,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "Learn how to create and edit your own 3D models easily using parametric design.  One-hour workshop to learn a skill by doing!",
+    "facebook_event_id": null,
+    "logo_id": "854163879",
+    "organizer_id": "57822422353",
+    "venue_id": "295942545",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1980450409487",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1980450409487/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 117
+        },
+        "width": 4894,
+        "height": 2447
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?auto=format%2Ccompress&q=75&sharp=10&s=44215e9f8d2335939e6d8a1c22c82231",
+        "width": 4895,
+        "height": 3268
+      },
+      "id": "854163879",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F854163879%2F1299734345143%2F1%2Foriginal.20240919-081830?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C117%2C4894%2C2447&s=ed354277e5849f27158ac7c32a8807a0",
+      "aspect_ratio": "2",
+      "edge_color": "#807867",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295942545/",
+      "id": "295942545",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
       "text": "Formation brodeuse numérique",
       "html": "Formation brodeuse numérique"
     },
@@ -8228,7 +8372,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:22:25Z",
-    "changed": "2026-01-12T10:22:25Z",
+    "changed": "2026-01-12T11:09:25Z",
     "published": "2025-01-22T18:59:23Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -8257,7 +8401,7 @@
     "version": null,
     "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
     "facebook_event_id": null,
-    "logo_id": "941953143",
+    "logo_id": "1174607349",
     "organizer_id": "57822422353",
     "venue_id": "250720643",
     "category_id": "199",
@@ -8271,20 +8415,20 @@
       "crop_mask": {
         "top_left": {
           "x": 0,
-          "y": 0
+          "y": 331
         },
-        "width": 1000,
-        "height": 500
+        "width": 2000,
+        "height": 1000
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?auto=format%2Ccompress&q=75&sharp=10&s=da74cce725999cd8fdcb21b1f901065f",
+        "width": 2000,
+        "height": 1331
       },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
+      "id": "1174607349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=2e158dc46bf1628e27a414ca14f3d2fb",
       "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
+      "edge_color": "#9c9593",
       "edge_color_set": true
     },
     "venue": {
@@ -8761,7 +8905,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:17:43Z",
-    "changed": "2026-01-12T10:17:43Z",
+    "changed": "2026-01-12T10:44:39Z",
     "published": "2025-01-23T13:26:28Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -8790,7 +8934,7 @@
     "version": null,
     "summary": "Learn how to use embroidery machines to customize clothes.",
     "facebook_event_id": null,
-    "logo_id": "1172315314",
+    "logo_id": "1174605835",
     "organizer_id": "57822422353",
     "venue_id": "251929813",
     "category_id": "199",
@@ -8801,16 +8945,23 @@
     "is_externally_ticketed": false,
     "series_id": "1219385427639",
     "logo": {
-      "crop_mask": null,
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 331
+        },
+        "width": 2000,
+        "height": 1000
+      },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?auto=format%2Ccompress&q=75&sharp=10&s=8f15df9791e24c3bf1c9c87e3a5fe28d",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?auto=format%2Ccompress&q=75&sharp=10&s=253e173408826daf7c9b658d1ae61262",
         "width": 2000,
         "height": 1331
       },
-      "id": "1172315314",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc8229a0108e6c8bbeb3ce6470b0e0da",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
+      "id": "1174605835",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=89cb9cca24495e26a828fff9e17f59cd",
+      "aspect_ratio": "2",
+      "edge_color": "#8f8782",
       "edge_color_set": true
     },
     "venue": {
@@ -9175,12 +9326,12 @@
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2026-05-13T13:00:00",
-      "utc": "2026-05-13T11:00:00Z"
+      "local": "2026-05-12T13:30:00",
+      "utc": "2026-05-12T11:30:00Z"
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:21:04Z",
-    "changed": "2026-01-12T10:21:04Z",
+    "changed": "2026-01-13T13:57:50Z",
     "published": "2025-01-23T13:36:28Z",
     "capacity": 4,
     "capacity_is_custom": true,
@@ -9280,7 +9431,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:22:25Z",
-    "changed": "2026-01-12T10:22:25Z",
+    "changed": "2026-01-12T11:09:25Z",
     "published": "2025-01-22T18:59:23Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -9309,7 +9460,7 @@
     "version": null,
     "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
     "facebook_event_id": null,
-    "logo_id": "941953143",
+    "logo_id": "1174607349",
     "organizer_id": "57822422353",
     "venue_id": "250720643",
     "category_id": "199",
@@ -9323,20 +9474,20 @@
       "crop_mask": {
         "top_left": {
           "x": 0,
-          "y": 0
+          "y": 331
         },
-        "width": 1000,
-        "height": 500
+        "width": 2000,
+        "height": 1000
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?auto=format%2Ccompress&q=75&sharp=10&s=da74cce725999cd8fdcb21b1f901065f",
+        "width": 2000,
+        "height": 1331
       },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
+      "id": "1174607349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=2e158dc46bf1628e27a414ca14f3d2fb",
       "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
+      "edge_color": "#9c9593",
       "edge_color_set": true
     },
     "venue": {
@@ -9601,7 +9752,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:17:43Z",
-    "changed": "2026-01-12T10:17:43Z",
+    "changed": "2026-01-12T10:44:39Z",
     "published": "2025-01-23T13:26:28Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -9630,7 +9781,7 @@
     "version": null,
     "summary": "Learn how to use embroidery machines to customize clothes.",
     "facebook_event_id": null,
-    "logo_id": "1172315314",
+    "logo_id": "1174605835",
     "organizer_id": "57822422353",
     "venue_id": "251929813",
     "category_id": "199",
@@ -9641,16 +9792,23 @@
     "is_externally_ticketed": false,
     "series_id": "1219385427639",
     "logo": {
-      "crop_mask": null,
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 331
+        },
+        "width": 2000,
+        "height": 1000
+      },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?auto=format%2Ccompress&q=75&sharp=10&s=8f15df9791e24c3bf1c9c87e3a5fe28d",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?auto=format%2Ccompress&q=75&sharp=10&s=253e173408826daf7c9b658d1ae61262",
         "width": 2000,
         "height": 1331
       },
-      "id": "1172315314",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc8229a0108e6c8bbeb3ce6470b0e0da",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
+      "id": "1174605835",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=89cb9cca24495e26a828fff9e17f59cd",
+      "aspect_ratio": "2",
+      "edge_color": "#8f8782",
       "edge_color_set": true
     },
     "venue": {
@@ -9803,12 +9961,12 @@
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2026-05-27T13:00:00",
-      "utc": "2026-05-27T11:00:00Z"
+      "local": "2026-05-26T13:30:00",
+      "utc": "2026-05-26T11:30:00Z"
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:21:04Z",
-    "changed": "2026-01-12T10:21:04Z",
+    "changed": "2026-01-13T13:57:50Z",
     "published": "2025-01-23T13:36:28Z",
     "capacity": 4,
     "capacity_is_custom": true,
@@ -9888,6 +10046,112 @@
   },
   {
     "name": {
+      "text": "No-code tools and APIs for Marketing automation @makers' lab LYON",
+      "html": "No-code tools and APIs for Marketing automation @makers&#39; lab LYON"
+    },
+    "description": {
+      "text": "A hands-on introduction to marketing automation using browser-based API tools like Zapier to build real workflows in minutes with zero code.",
+      "html": "A hands-on introduction to marketing automation using browser-based API tools like Zapier to build real workflows in minutes with zero code."
+    },
+    "url": "https://www.eventbrite.fr/e/no-code-tools-and-apis-for-marketing-automation-makers-lab-lyon-tickets-1980462626027",
+    "start": {
+      "timezone": "Europe/Paris",
+      "local": "2026-05-26T13:00:00",
+      "utc": "2026-05-26T11:00:00Z"
+    },
+    "end": {
+      "timezone": "Europe/Paris",
+      "local": "2026-05-26T14:10:00",
+      "utc": "2026-05-26T12:10:00Z"
+    },
+    "organization_id": "1299734435773",
+    "created": "2026-01-13T13:31:35Z",
+    "changed": "2026-01-13T13:33:33Z",
+    "published": "2026-01-13T13:33:13Z",
+    "capacity": 20,
+    "capacity_is_custom": true,
+    "status": "live",
+    "currency": "EUR",
+    "listed": false,
+    "shareable": true,
+    "invite_only": false,
+    "online_event": false,
+    "show_remaining": true,
+    "tx_time_limit": 1200,
+    "hide_start_date": false,
+    "hide_end_date": false,
+    "locale": "en_GB",
+    "is_locked": false,
+    "privacy_setting": "unlocked",
+    "is_series": false,
+    "is_series_parent": false,
+    "inventory_type": "limited",
+    "is_reserved_seating": false,
+    "show_pick_a_seat": false,
+    "show_seatmap_thumbnail": false,
+    "show_colors_in_seatmap_thumbnail": false,
+    "source": "coyote",
+    "is_free": true,
+    "version": null,
+    "summary": "A hands-on introduction to marketing automation using browser-based API tools like Zapier to build real workflows in minutes with zero code.",
+    "facebook_event_id": null,
+    "logo_id": "858826349",
+    "organizer_id": "57822422353",
+    "venue_id": "295945309",
+    "category_id": null,
+    "subcategory_id": null,
+    "format_id": "9",
+    "id": "1980462626027",
+    "resource_uri": "https://www.eventbriteapi.com/v3/events/1980462626027/",
+    "is_externally_ticketed": false,
+    "logo": {
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 495
+        },
+        "width": 5472,
+        "height": 2736
+      },
+      "original": {
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858826349%2F1299734345143%2F1%2Foriginal.20240925-072839?auto=format%2Ccompress&q=75&sharp=10&s=abe6e433f791efa456dfbb28a2551f70",
+        "width": 5472,
+        "height": 3648
+      },
+      "id": "858826349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F858826349%2F1299734345143%2F1%2Foriginal.20240925-072839?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C495%2C5472%2C2736&s=920ed43c0a1ea837def0dad112f5ce91",
+      "aspect_ratio": "2",
+      "edge_color": "#342d2f",
+      "edge_color_set": true
+    },
+    "venue": {
+      "address": {
+        "address_1": "144 Avenue Jean Jaurès",
+        "address_2": "",
+        "city": "Lyon",
+        "region": "Auvergne-Rhône-Alpes",
+        "postal_code": "69007",
+        "country": "FR",
+        "latitude": "45.7414144",
+        "longitude": "4.839422700000001",
+        "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
+        "localized_area_display": "Lyon",
+        "localized_multi_line_address_display": [
+          "144 Avenue Jean Jaurès",
+          "69007 Lyon"
+        ]
+      },
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295945309/",
+      "id": "295945309",
+      "age_restriction": null,
+      "capacity": null,
+      "name": "makers'lab emlyon LYON",
+      "latitude": "45.7414144",
+      "longitude": "4.839422700000001"
+    }
+  },
+  {
+    "name": {
       "text": "Formation brodeuse numérique",
       "html": "Formation brodeuse numérique"
     },
@@ -9908,7 +10172,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:22:25Z",
-    "changed": "2026-01-12T10:22:25Z",
+    "changed": "2026-01-12T11:09:25Z",
     "published": "2025-01-22T18:59:23Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -9937,7 +10201,7 @@
     "version": null,
     "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
     "facebook_event_id": null,
-    "logo_id": "941953143",
+    "logo_id": "1174607349",
     "organizer_id": "57822422353",
     "venue_id": "250720643",
     "category_id": "199",
@@ -9951,20 +10215,20 @@
       "crop_mask": {
         "top_left": {
           "x": 0,
-          "y": 0
+          "y": 331
         },
-        "width": 1000,
-        "height": 500
+        "width": 2000,
+        "height": 1000
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?auto=format%2Ccompress&q=75&sharp=10&s=da74cce725999cd8fdcb21b1f901065f",
+        "width": 2000,
+        "height": 1331
       },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
+      "id": "1174607349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=2e158dc46bf1628e27a414ca14f3d2fb",
       "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
+      "edge_color": "#9c9593",
       "edge_color_set": true
     },
     "venue": {
@@ -10229,7 +10493,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:17:43Z",
-    "changed": "2026-01-12T10:17:43Z",
+    "changed": "2026-01-12T10:44:39Z",
     "published": "2025-01-23T13:26:28Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -10258,7 +10522,7 @@
     "version": null,
     "summary": "Learn how to use embroidery machines to customize clothes.",
     "facebook_event_id": null,
-    "logo_id": "1172315314",
+    "logo_id": "1174605835",
     "organizer_id": "57822422353",
     "venue_id": "251929813",
     "category_id": "199",
@@ -10269,16 +10533,23 @@
     "is_externally_ticketed": false,
     "series_id": "1219385427639",
     "logo": {
-      "crop_mask": null,
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 331
+        },
+        "width": 2000,
+        "height": 1000
+      },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?auto=format%2Ccompress&q=75&sharp=10&s=8f15df9791e24c3bf1c9c87e3a5fe28d",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?auto=format%2Ccompress&q=75&sharp=10&s=253e173408826daf7c9b658d1ae61262",
         "width": 2000,
         "height": 1331
       },
-      "id": "1172315314",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc8229a0108e6c8bbeb3ce6470b0e0da",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
+      "id": "1174605835",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=89cb9cca24495e26a828fff9e17f59cd",
+      "aspect_ratio": "2",
+      "edge_color": "#8f8782",
       "edge_color_set": true
     },
     "venue": {
@@ -10431,12 +10702,12 @@
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2026-06-10T13:00:00",
-      "utc": "2026-06-10T11:00:00Z"
+      "local": "2026-06-09T13:30:00",
+      "utc": "2026-06-09T11:30:00Z"
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:21:04Z",
-    "changed": "2026-01-12T10:21:04Z",
+    "changed": "2026-01-13T13:57:50Z",
     "published": "2025-01-23T13:36:28Z",
     "capacity": 4,
     "capacity_is_custom": true,
@@ -10536,7 +10807,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:22:25Z",
-    "changed": "2026-01-12T10:22:25Z",
+    "changed": "2026-01-12T11:09:25Z",
     "published": "2025-01-22T18:59:23Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -10565,7 +10836,7 @@
     "version": null,
     "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
     "facebook_event_id": null,
-    "logo_id": "941953143",
+    "logo_id": "1174607349",
     "organizer_id": "57822422353",
     "venue_id": "250720643",
     "category_id": "199",
@@ -10579,20 +10850,20 @@
       "crop_mask": {
         "top_left": {
           "x": 0,
-          "y": 0
+          "y": 331
         },
-        "width": 1000,
-        "height": 500
+        "width": 2000,
+        "height": 1000
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?auto=format%2Ccompress&q=75&sharp=10&s=da74cce725999cd8fdcb21b1f901065f",
+        "width": 2000,
+        "height": 1331
       },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
+      "id": "1174607349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=2e158dc46bf1628e27a414ca14f3d2fb",
       "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
+      "edge_color": "#9c9593",
       "edge_color_set": true
     },
     "venue": {
@@ -10857,7 +11128,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:17:43Z",
-    "changed": "2026-01-12T10:17:43Z",
+    "changed": "2026-01-12T10:44:39Z",
     "published": "2025-01-23T13:26:28Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -10886,7 +11157,7 @@
     "version": null,
     "summary": "Learn how to use embroidery machines to customize clothes.",
     "facebook_event_id": null,
-    "logo_id": "1172315314",
+    "logo_id": "1174605835",
     "organizer_id": "57822422353",
     "venue_id": "251929813",
     "category_id": "199",
@@ -10897,16 +11168,23 @@
     "is_externally_ticketed": false,
     "series_id": "1219385427639",
     "logo": {
-      "crop_mask": null,
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 331
+        },
+        "width": 2000,
+        "height": 1000
+      },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?auto=format%2Ccompress&q=75&sharp=10&s=8f15df9791e24c3bf1c9c87e3a5fe28d",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?auto=format%2Ccompress&q=75&sharp=10&s=253e173408826daf7c9b658d1ae61262",
         "width": 2000,
         "height": 1331
       },
-      "id": "1172315314",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc8229a0108e6c8bbeb3ce6470b0e0da",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
+      "id": "1174605835",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=89cb9cca24495e26a828fff9e17f59cd",
+      "aspect_ratio": "2",
+      "edge_color": "#8f8782",
       "edge_color_set": true
     },
     "venue": {
@@ -11059,12 +11337,12 @@
     },
     "end": {
       "timezone": "Europe/Paris",
-      "local": "2026-06-24T13:00:00",
-      "utc": "2026-06-24T11:00:00Z"
+      "local": "2026-06-23T13:30:00",
+      "utc": "2026-06-23T11:30:00Z"
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:21:04Z",
-    "changed": "2026-01-12T10:21:04Z",
+    "changed": "2026-01-13T13:57:50Z",
     "published": "2025-01-23T13:36:28Z",
     "capacity": 4,
     "capacity_is_custom": true,
@@ -11164,7 +11442,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:22:25Z",
-    "changed": "2026-01-12T10:22:25Z",
+    "changed": "2026-01-12T11:09:25Z",
     "published": "2025-01-22T18:59:23Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -11193,7 +11471,7 @@
     "version": null,
     "summary": "Apprenez à utiliser les brodeuses numériques pour personnaliser des vêtements",
     "facebook_event_id": null,
-    "logo_id": "941953143",
+    "logo_id": "1174607349",
     "organizer_id": "57822422353",
     "venue_id": "250720643",
     "category_id": "199",
@@ -11207,20 +11485,20 @@
       "crop_mask": {
         "top_left": {
           "x": 0,
-          "y": 0
+          "y": 331
         },
-        "width": 1000,
-        "height": 500
+        "width": 2000,
+        "height": 1000
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?auto=format%2Ccompress&q=75&sharp=10&s=284d84002d41dab125903d99acbc7bb1",
-        "width": 1000,
-        "height": 627
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?auto=format%2Ccompress&q=75&sharp=10&s=da74cce725999cd8fdcb21b1f901065f",
+        "width": 2000,
+        "height": 1331
       },
-      "id": "941953143",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F941953143%2F1299734345143%2F1%2Foriginal.20250122-152527?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C500&s=8fb1780290e993dd124a9e90ee1430a1",
+      "id": "1174607349",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174607349%2F1299734345143%2F1%2Foriginal.20260112-110916?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=2e158dc46bf1628e27a414ca14f3d2fb",
       "aspect_ratio": "2",
-      "edge_color": "#d8d7d8",
+      "edge_color": "#9c9593",
       "edge_color_set": true
     },
     "venue": {
@@ -11485,7 +11763,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T10:17:43Z",
-    "changed": "2026-01-12T10:17:43Z",
+    "changed": "2026-01-12T10:44:39Z",
     "published": "2025-01-23T13:26:28Z",
     "capacity": 3,
     "capacity_is_custom": false,
@@ -11514,7 +11792,7 @@
     "version": null,
     "summary": "Learn how to use embroidery machines to customize clothes.",
     "facebook_event_id": null,
-    "logo_id": "1172315314",
+    "logo_id": "1174605835",
     "organizer_id": "57822422353",
     "venue_id": "251929813",
     "category_id": "199",
@@ -11525,16 +11803,23 @@
     "is_externally_ticketed": false,
     "series_id": "1219385427639",
     "logo": {
-      "crop_mask": null,
+      "crop_mask": {
+        "top_left": {
+          "x": 0,
+          "y": 331
+        },
+        "width": 2000,
+        "height": 1000
+      },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?auto=format%2Ccompress&q=75&sharp=10&s=8f15df9791e24c3bf1c9c87e3a5fe28d",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?auto=format%2Ccompress&q=75&sharp=10&s=253e173408826daf7c9b658d1ae61262",
         "width": 2000,
         "height": 1331
       },
-      "id": "1172315314",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172315314%2F1299734345143%2F1%2Foriginal.20251204-151559?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&s=bc8229a0108e6c8bbeb3ce6470b0e0da",
-      "aspect_ratio": "1.505",
-      "edge_color": "#8e8580",
+      "id": "1174605835",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174605835%2F1299734345143%2F1%2Foriginal.20260112-104417?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C331%2C2000%2C1000&s=89cb9cca24495e26a828fff9e17f59cd",
+      "aspect_ratio": "2",
+      "edge_color": "#8f8782",
       "edge_color_set": true
     },
     "venue": {
