@@ -13,9 +13,24 @@ const OPTIONS = {
 async function main() {
   // Read events.json
   const events = JSON.parse(fs.readFileSync('workshops-data/events.json', 'utf8'));
+  
+  // Exclude events with specific titles
+  const excludedTitles = [
+    'Formation machine à coudre',
+    'Formation brodeuse numérique',
+    'Formation plotter de découpe et presse à chaud',
+    'Cutting plotter and hot press training',
+    'Embroidery machine training',
+    'Sewing machine training'
+  ];
+  
+  const filteredEvents = events.filter(event => 
+    !excludedTitles.includes(event.name.text)
+  );
+  
   // Generate HTML files for each event
-  await buildEventsHtmlFiles(events);
-  writeIndexJson(events);
+  await buildEventsHtmlFiles(filteredEvents);
+  writeIndexJson(filteredEvents);
   process.exit();
 }
 
@@ -80,7 +95,7 @@ async function buildEventsHtmlFiles(events) {
           .replace(/\s/g, '-')
           .replace(/[^a-z0-9-]/g, '')
           .replace(/-+/g, '-');
-        const fileStem = `${formatEventName}-${event.id}`;
+        const fileStem = `${formatEventName}-makerslab-event-${event.id}`;
         const fileName = `${index + 1}-${fileStem}.html`;
         const filePath = path.join(`${__dirname}/makersboard-html`, fileName);
         fs.writeFileSync(filePath, html, 'utf8');
