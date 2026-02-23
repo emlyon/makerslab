@@ -128,7 +128,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T15:47:44Z",
-    "changed": "2026-01-12T15:48:12Z",
+    "changed": "2026-02-23T12:54:29Z",
     "published": "2026-01-12T15:48:12Z",
     "capacity": 21,
     "capacity_is_custom": true,
@@ -157,9 +157,9 @@
     "version": null,
     "summary": "Learn how to design robust prompts and critically evaluate AI responses. One-hour workshop to learn a skill by doing.",
     "facebook_event_id": null,
-    "logo_id": "1174628533",
+    "logo_id": "1174628355",
     "organizer_id": "57822422353",
-    "venue_id": "295927555",
+    "venue_id": "296554081",
     "category_id": null,
     "subcategory_id": null,
     "format_id": "9",
@@ -176,12 +176,12 @@
         "height": 470
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628533%2F1299734345143%2F1%2Foriginal.20260112-154610?auto=format%2Ccompress&q=75&sharp=10&s=5ff9396a3295a17f1983af2e489465c2",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628355%2F1299734345143%2F1%2Foriginal.20260112-154610?auto=format%2Ccompress&q=75&sharp=10&s=7ed8d87b6b6c4152be3485a4d888334e",
         "width": 940,
         "height": 470
       },
-      "id": "1174628533",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628533%2F1299734345143%2F1%2Foriginal.20260112-154610?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=6c625f857beb9d41dedb58df2c784783",
+      "id": "1174628355",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628355%2F1299734345143%2F1%2Foriginal.20260112-154610?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=1e462c8778b1b0e718bed6258f220c15",
       "aspect_ratio": "2",
       "edge_color": "#332c2e",
       "edge_color_set": true
@@ -195,7 +195,7 @@
         "postal_code": "69007",
         "country": "FR",
         "latitude": "45.7414144",
-        "longitude": "4.8394227",
+        "longitude": "4.839422700000001",
         "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
         "localized_area_display": "Lyon",
         "localized_multi_line_address_display": [
@@ -203,13 +203,13 @@
           "69007 Lyon"
         ]
       },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295927555/",
-      "id": "295927555",
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/296554081/",
+      "id": "296554081",
       "age_restriction": null,
       "capacity": null,
-      "name": "Finance Lab emlyon LYON",
+      "name": "makers'lab emlyon LYON",
       "latitude": "45.7414144",
-      "longitude": "4.8394227"
+      "longitude": "4.839422700000001"
     }
   },
   {
@@ -554,7 +554,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T15:53:19Z",
-    "changed": "2026-01-14T14:25:18Z",
+    "changed": "2026-02-23T12:55:23Z",
     "published": "2026-01-12T15:53:48Z",
     "capacity": 21,
     "capacity_is_custom": true,
@@ -585,7 +585,7 @@
     "facebook_event_id": null,
     "logo_id": "1174628355",
     "organizer_id": "57822422353",
-    "venue_id": "295927711",
+    "venue_id": "296554081",
     "category_id": null,
     "subcategory_id": null,
     "format_id": "9",
@@ -621,7 +621,7 @@
         "postal_code": "69007",
         "country": "FR",
         "latitude": "45.7414144",
-        "longitude": "4.8394227",
+        "longitude": "4.839422700000001",
         "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
         "localized_area_display": "Lyon",
         "localized_multi_line_address_display": [
@@ -629,13 +629,13 @@
           "69007 Lyon"
         ]
       },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295927711/",
-      "id": "295927711",
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/296554081/",
+      "id": "296554081",
       "age_restriction": null,
       "capacity": null,
-      "name": "Finance Lab emlyon LYON",
+      "name": "makers'lab emlyon LYON",
       "latitude": "45.7414144",
-      "longitude": "4.8394227"
+      "longitude": "4.839422700000001"
     }
   },
   {
@@ -1719,7 +1719,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T15:48:59Z",
-    "changed": "2026-01-12T15:50:05Z",
+    "changed": "2026-02-23T12:55:30Z",
     "published": "2026-01-12T15:50:05Z",
     "capacity": 21,
     "capacity_is_custom": true,
@@ -1748,9 +1748,9 @@
     "version": null,
     "summary": "Learn how to design robust prompts and critically evaluate AI responses. One-hour workshop to learn a skill by doing.",
     "facebook_event_id": null,
-    "logo_id": "1174628682",
+    "logo_id": "1174628355",
     "organizer_id": "57822422353",
-    "venue_id": "295927589",
+    "venue_id": "296085430",
     "category_id": null,
     "subcategory_id": null,
     "format_id": "9",
@@ -1767,12 +1767,12 @@
         "height": 470
       },
       "original": {
-        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628682%2F1299734345143%2F1%2Foriginal.20260112-154610?auto=format%2Ccompress&q=75&sharp=10&s=16aa56c2c5151d5b6f180ba393716f1a",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628355%2F1299734345143%2F1%2Foriginal.20260112-154610?auto=format%2Ccompress&q=75&sharp=10&s=7ed8d87b6b6c4152be3485a4d888334e",
         "width": 940,
         "height": 470
       },
-      "id": "1174628682",
-      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628682%2F1299734345143%2F1%2Foriginal.20260112-154610?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=1504affab9ddd8735487c631c58aff83",
+      "id": "1174628355",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174628355%2F1299734345143%2F1%2Foriginal.20260112-154610?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=1e462c8778b1b0e718bed6258f220c15",
       "aspect_ratio": "2",
       "edge_color": "#332c2e",
       "edge_color_set": true
@@ -1786,7 +1786,7 @@
         "postal_code": "69007",
         "country": "FR",
         "latitude": "45.7414144",
-        "longitude": "4.8394227",
+        "longitude": "4.839422700000001",
         "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
         "localized_area_display": "Lyon",
         "localized_multi_line_address_display": [
@@ -1794,13 +1794,13 @@
           "69007 Lyon"
         ]
       },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295927589/",
-      "id": "295927589",
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/296085430/",
+      "id": "296085430",
       "age_restriction": null,
       "capacity": null,
-      "name": "Finance Lab emlyon LYON",
+      "name": "makers'lab emlyon LYON",
       "latitude": "45.7414144",
-      "longitude": "4.8394227"
+      "longitude": "4.839422700000001"
     }
   },
   {
@@ -3089,7 +3089,7 @@
     },
     "organization_id": "1299734435773",
     "created": "2026-01-12T15:54:28Z",
-    "changed": "2026-01-14T14:25:24Z",
+    "changed": "2026-02-23T12:55:36Z",
     "published": "2026-01-12T15:54:43Z",
     "capacity": 21,
     "capacity_is_custom": true,
@@ -3120,7 +3120,7 @@
     "facebook_event_id": null,
     "logo_id": "1174628355",
     "organizer_id": "57822422353",
-    "venue_id": "295927734",
+    "venue_id": "296554081",
     "category_id": null,
     "subcategory_id": null,
     "format_id": "9",
@@ -3156,7 +3156,7 @@
         "postal_code": "69007",
         "country": "FR",
         "latitude": "45.7414144",
-        "longitude": "4.8394227",
+        "longitude": "4.839422700000001",
         "localized_address_display": "144 Avenue Jean Jaurès, 69007 Lyon",
         "localized_area_display": "Lyon",
         "localized_multi_line_address_display": [
@@ -3164,13 +3164,13 @@
           "69007 Lyon"
         ]
       },
-      "resource_uri": "https://www.eventbriteapi.com/v3/venues/295927734/",
-      "id": "295927734",
+      "resource_uri": "https://www.eventbriteapi.com/v3/venues/296554081/",
+      "id": "296554081",
       "age_restriction": null,
       "capacity": null,
-      "name": "Finance Lab emlyon LYON",
+      "name": "makers'lab emlyon LYON",
       "latitude": "45.7414144",
-      "longitude": "4.8394227"
+      "longitude": "4.839422700000001"
     }
   },
   {
