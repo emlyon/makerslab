@@ -1,5 +1,12 @@
 {
+  "name": "makerslab-events",
+  "scripts": {
+    "events-slides": "node workshops-data/generate-slides.js",
+    "events-makersboard": "node workshops-data/generate-makersboard-html.js"
+  },
   "dependencies": {
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.34.5"
   }
 }
