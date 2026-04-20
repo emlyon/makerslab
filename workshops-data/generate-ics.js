@@ -66,9 +66,10 @@ function createVevent(occurrence, location = "makers' lab") {
   const title = unescapeHtmlEntities(occurrence.name.html);
   const description = unescapeHtmlEntities(occurrence.description.html);
   const adminUrl = `https://www.eventbrite.fr/myevent?eid=${occurrence.id}`;
+  const checkinUrl = `https://www.eventbrite.fr/checkin?eid=${occurrence.id}`;
   const descriptionWithLinks = description 
-    ? `${description}\n\n${occurrence.url}\n\nAdmin: ${adminUrl}` 
-    : `${occurrence.url}\n\nAdmin: ${adminUrl}`;
+    ? `${description}\n\n${occurrence.url}\n\nAdmin: ${adminUrl}\n\nCheck-in: ${checkinUrl}` 
+    : `${occurrence.url}\n\nAdmin: ${adminUrl}\n\nCheck-in: ${checkinUrl}`;
   
   const startTime = toIcsDateTime(occurrence.start.utc);
   const endTime = toIcsDateTime(occurrence.end.utc);
