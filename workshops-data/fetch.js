@@ -21,16 +21,17 @@ function loadConfig() {
       TOKEN: envToken,
       ORGANIZATION_ID: envOrganizationId
     };
+  } else {
+    console.warn('Environment secrets EVENTBRITE_TOKEN and EVENTBRITE_ORGANIZATION_ID not set. Falling back to local config file.');
+    const localConfigPath = path.join(__dirname, 'eventbrite-config.json');
+    if (!fs.existsSync(localConfigPath)) {
+      throw new Error(
+        'Missing Eventbrite config. Set EVENTBRITE_TOKEN and EVENTBRITE_ORGANIZATION_ID, or add workshops-data/eventbrite-config.json.'
+      );
+    }
+  
+    return JSON.parse(fs.readFileSync(localConfigPath, 'utf8'));
   }
-
-  const localConfigPath = path.join(__dirname, 'eventbrite-config.json');
-  if (!fs.existsSync(localConfigPath)) {
-    throw new Error(
-      'Missing Eventbrite config. Set EVENTBRITE_TOKEN and EVENTBRITE_ORGANIZATION_ID, or add workshops-data/eventbrite-config.json.'
-    );
-  }
-
-  return JSON.parse(fs.readFileSync(localConfigPath, 'utf8'));
 }
 
 function resolveOutputRoot() {
