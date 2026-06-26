@@ -1,0 +1,71 @@
+name: Pages Data Refresh
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-data-refresh
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.diff.outputs.changed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch latest events
+        run: npm run fetch:events -- --output-root=${{ runner.temp }}/pages-build
+        env:
+          EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
+          EVENTBRITE_ORGANIZATION_ID: ${{ secrets.EVENTBRITE_ORGANIZATION_ID }}
+
+      - name: Detect event changes
+        id: diff
+        run: npm run events:diff -- --new-file=${{ runner.temp }}/pages-build/workshops-data/events.json
+
+      - name: Build Pages artifact
+        if: steps.diff.outputs.changed == 'true'
+        run: npm run build:pages
+        env:
+          BUILD_DIR: ${{ runner.temp }}/pages-artifact
+          SOURCE_EVENTS_PATH: ${{ runner.temp }}/pages-build/workshops-data/events.json
+
+      - name: Upload Pages artifact
+        if: steps.diff.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/pages-artifact
+
+      - name: No changes summary
+        if: steps.diff.outputs.changed != 'true'
+        run: echo "No event changes detected. Skipping artifact upload and deploy."
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
