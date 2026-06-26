@@ -1,13 +1,44 @@
 const fs = require('fs');
-const config = JSON.parse(fs.readFileSync('workshops-data/eventbrite-config.json', 'utf8'));
+const path = require('path');
+
+const config = loadConfig();
 const TOKEN = config.TOKEN;
 const ORGANIZATION_ID = config.ORGANIZATION_ID;
+const OUTPUT_ROOT = resolveOutputRoot();
+const OUTPUT_EVENTS_PATH = path.join(OUTPUT_ROOT, 'workshops-data', 'events.json');
 const OPTIONS = {
   method: 'GET',
   headers: {
     Authorization: `Bearer ${TOKEN}`
   }
 };
+
+function loadConfig() {
+  const envToken = process.env.EVENTBRITE_TOKEN;
+  const envOrganizationId = process.env.EVENTBRITE_ORGANIZATION_ID;
+  if (envToken && envOrganizationId) {
+    return {
+      TOKEN: envToken,
+      ORGANIZATION_ID: envOrganizationId
+    };
+  }
+
+  const localConfigPath = path.join(__dirname, 'eventbrite-config.json');
+  if (!fs.existsSync(localConfigPath)) {
+    throw new Error(
+      'Missing Eventbrite config. Set EVENTBRITE_TOKEN and EVENTBRITE_ORGANIZATION_ID, or add workshops-data/eventbrite-config.json.'
+    );
+  }
+
+  return JSON.parse(fs.readFileSync(localConfigPath, 'utf8'));
+}
+
+function resolveOutputRoot() {
+  const arg = process.argv.find((value) => value.startsWith('--output-root='));
+  const fromArg = arg ? arg.slice('--output-root='.length) : undefined;
+  const outputRoot = fromArg || process.env.OUTPUT_ROOT || path.join(__dirname, '..');
+  return path.resolve(outputRoot);
+}
 
 (async () => {
   // Fetch events and process them
@@ -18,7 +49,9 @@ const OPTIONS = {
     await enrichEventsWithVenueData(events);
     events.forEach(logEventInfo);
     // Write formatted events to events.json
-    fs.writeFileSync('workshops-data/events.json', JSON.stringify(events, null, 2));
+    fs.mkdirSync(path.dirname(OUTPUT_EVENTS_PATH), { recursive: true });
+    fs.writeFileSync(OUTPUT_EVENTS_PATH, JSON.stringify(events, null, 2));
+    console.log(`Events written to: ${OUTPUT_EVENTS_PATH}`);
     process.on('exit', () => {
       console.log('Closing connection and exiting...');
       // Perform any cleanup if necessary
@@ -127,7 +160,7 @@ function logEventInfo(event) {
   console.log(`ID: ${event.id}`);
   console.log(`Name: ${event.name.text}`);
   console.log(`Summary: ${event.summary}`);
-  console.log(`Venue City: ${event.venue.address.city}`);
+  console.log(`Venue City: ${event.venue?.address?.city || 'N/A'}`);
   console.log(`Start Date: ${event.start.local}`);
   console.log(`End Date: ${event.end.local}`);
   console.log(`Logo URL: ${event.logo?.url}`);

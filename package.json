@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "fetch:events": "node workshops-data/fetch.js",
+    "events:diff": "node workshops-data/has-events-changed.js",
+    "build:pages": "node workshops-data/build-pages-artifact.js"
+  },
   "dependencies": {
     "node-fetch": "^3.3.2"
   }
