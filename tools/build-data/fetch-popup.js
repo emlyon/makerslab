@@ -55,6 +55,55 @@ function getPlainTextFromProperty(property) {
   return '';
 }
 
+function getRichTextAsHtml(richTextArray) {
+  if (!richTextArray || richTextArray.length === 0) {
+    return '';
+  }
+
+  return richTextArray
+    .map((chunk) => {
+      let html = escapeHtml(chunk.plain_text);
+
+      // Apply text annotations (bold, italic, etc.)
+      const annotations = chunk.annotations || {};
+
+      if (annotations.code) {
+        html = `<code>${html}</code>`;
+      }
+      if (annotations.bold) {
+        html = `<strong>${html}</strong>`;
+      }
+      if (annotations.italic) {
+        html = `<em>${html}</em>`;
+      }
+      if (annotations.strikethrough) {
+        html = `<s>${html}</s>`;
+      }
+      if (annotations.underline) {
+        html = `<u>${html}</u>`;
+      }
+
+      // Apply link if present
+      if (chunk.href) {
+        html = `<a href="${escapeHtml(chunk.href)}">${html}</a>`;
+      }
+
+      return html;
+    })
+    .join('');
+}
+
+function escapeHtml(text) {
+  const map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  };
+  return text.replace(/[&<>"']/g, (char) => map[char]);
+}
+
 function getDateFromProperty(property, key) {
   if (!property || property.type !== 'date' || !property.date || !property.date[key]) {
     return null;
@@ -83,9 +132,9 @@ function mapPopupRecord(page) {
   return {
     id: page.id,
     titleFr: getPlainTextFromProperty(properties['title fr']),
-    contentFr: getPlainTextFromProperty(properties['content fr']),
+    contentFr: getRichTextAsHtml(properties['content fr']?.rich_text),
     titleEn: getPlainTextFromProperty(properties['title en']),
-    contentEn: getPlainTextFromProperty(properties['content en']),
+    contentEn: getRichTextAsHtml(properties['content en']?.rich_text),
     startsOn: startsOnDate ? toIsoDate(startsOnDate) : null,
     endsOn: endsOnDate ? toIsoDate(endsOnDate) : null,
     startsOnEpoch: startsOnDate ? normalizeToUtcDayStart(startsOnDate).getTime() : Number.POSITIVE_INFINITY,

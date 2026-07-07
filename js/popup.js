@@ -71,7 +71,7 @@
       <div id="noticeModal" class="modal">
         <div class="modal-content">
           <h4 class="red-text">${escapeHtml(title)}</h4>
-          <p>${withLineBreaks(content)}</p>
+          <div class="popup-content">${content}</div>
         </div>
         <div class="modal-footer">
           <a href="#\!" class="modal-action modal-close btn-flat">${closeLabel()}</a>
