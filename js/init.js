@@ -38,6 +38,15 @@
 
       e.preventDefault();
       $(window).scrollTo($(target), 500, { offset: -150 });
+
+      const hash = this.getAttribute('href') || this.dataset.to;
+      if (hash && hash.startsWith('#')) {
+        if (history && typeof history.pushState === 'function') {
+          history.pushState(null, '', hash);
+        } else {
+          window.location.hash = hash;
+        }
+      }
     });
   }); // end of document ready
 })(jQuery); // end of jQuery name space

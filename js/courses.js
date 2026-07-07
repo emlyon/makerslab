@@ -23,6 +23,15 @@
     return fallback;
   }
 
+  function toAnchorId(course) {
+    const slug = String(course?.slug || '').trim();
+    if (slug) {
+      return slug.replace(/[^a-zA-Z0-9_-]/g, '-');
+    }
+
+    return `course-${String(course?.id || '')}`.replace(/[^a-zA-Z0-9_-]/g, '-');
+  }
+
   function renderCourses(coursesPayload) {
     const root = document.getElementById('coursesRoot');
     const menuRoot = document.getElementById('coursesMenu');
@@ -57,7 +66,7 @@
     const normalizedCourses = courses.map((course) => ({
       ...course,
       color: normalizeHexColor(course.color),
-      anchorId: `course-${String(course.id || '')}`.replace(/[^a-zA-Z0-9_-]/g, '-')
+      anchorId: toAnchorId(course)
     }));
 
     const context = {

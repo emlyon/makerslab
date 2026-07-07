@@ -74,6 +74,10 @@ function isValidHexColor(value) {
   return /^#[0-9a-fA-F]{3}$/.test(candidate) || /^#[0-9a-fA-F]{6}$/.test(candidate);
 }
 
+function normalizeSlug(value) {
+  return String(value || '').trim();
+}
+
 function mapCourseRecord(page, warnings) {
   const properties = page.properties || {};
   const nameProperty =
@@ -85,6 +89,7 @@ function mapCourseRecord(page, warnings) {
   const programsProperty = findPropertyByAliases(properties, ['programs', 'program', 'tracks']);
   const languageProperty = findPropertyByAliases(properties, ['language', 'lang']);
   const colorProperty = findPropertyByAliases(properties, ['color', 'colour']);
+  const slugProperty = findPropertyByAliases(properties, ['slug']);
 
   const name = getPlainTextFromProperty(nameProperty);
   const description = getRichTextAsHtml(descriptionProperty?.rich_text || []);
@@ -92,6 +97,7 @@ function mapCourseRecord(page, warnings) {
   const language = normalizeLanguage(getPlainTextFromProperty(languageProperty));
   const colorValue = getPlainTextFromProperty(colorProperty);
   const color = normalizeHexColor(colorValue);
+  const slug = normalizeSlug(getPlainTextFromProperty(slugProperty));
 
   if (!name) {
     warnings.push(`Skipped ${page.id}: missing name.`);
@@ -114,6 +120,7 @@ function mapCourseRecord(page, warnings) {
 
   return {
     id: page.id,
+    slug,
     name,
     programs,
     description,
