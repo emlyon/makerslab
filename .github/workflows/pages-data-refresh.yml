@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       changed: ${{ steps.diff.outputs.changed }}
+      popup_changed: ${{ steps.diff.outputs.popup_changed }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -48,7 +49,7 @@ jobs:
         run: npm run events:diff -- --new-file=${{ runner.temp }}/pages-build/data/events.json --new-popup-file=${{ runner.temp }}/pages-build/data/popup.json
 
       - name: Build Pages artifact
-        if: steps.diff.outputs.changed == 'true'
+        if: steps.diff.outputs.changed == 'true' || steps.diff.outputs.popup_changed == 'true'
         run: npm run build:pages
         env:
           BUILD_DIR: ${{ runner.temp }}/pages-artifact
@@ -59,18 +60,18 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
-        if: steps.diff.outputs.changed == 'true'
+        if: steps.diff.outputs.changed == 'true' || steps.diff.outputs.popup_changed == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ runner.temp }}/pages-artifact
 
       - name: No changes summary
-        if: steps.diff.outputs.changed != 'true'
+        if: steps.diff.outputs.changed != 'true' && steps.diff.outputs.popup_changed != 'true'
         run: echo "No event/popup changes detected. Skipping artifact upload and deploy."
 
   deploy:
     needs: build
-    if: needs.build.outputs.changed == 'true'
+    if: needs.build.outputs.changed == 'true' || needs.build.outputs.popup_changed == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
