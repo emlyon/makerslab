@@ -78,10 +78,16 @@
       const color = normalizeHexColor(button.getAttribute('data-color'));
       button.style.backgroundColor = color;
     });
+
+    menuRoot.querySelectorAll('.courses-menu-btn').forEach((button) => {
+      const color = normalizeHexColor(button.getAttribute('data-color'));
+      button.style.backgroundColor = color;
+    });
   }
 
   try {
-    const response = await fetch('/data/courses.json');
+    const coursesDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/courses.json') : '/data/courses.json';
+    const response = await fetch(coursesDataUrl);
     if (!response.ok) {
       return;
     }

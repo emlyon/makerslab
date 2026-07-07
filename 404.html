@@ -26,11 +26,18 @@
             <div style="width: 70%">
                 <h1 class="header center white-text"><strong>404</strong></h1>
                 <p class="center">
-                    <a href="/" class="waves-effect waves-light btn btn-large link" style="background-color: #e2001a">Back to homepage</a>
+                    <a href="javascript:void(0)" id="homeLink404" class="waves-effect waves-light btn btn-large link" style="background-color: #e2001a">Back to homepage</a>
                 </p>
             </div>
         </div>
     </div>
+
+    <script>
+        const link404 = document.getElementById('homeLink404');
+        if (link404 && typeof appPath === 'function') {
+            link404.setAttribute('href', appPath('/'));
+        }
+    </script>
 
     <script src="./includes/footer.js" charset="utf-8"></script>
 

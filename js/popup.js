@@ -1,5 +1,6 @@
 (async () => {
-  const pathName = window.location.pathname;
+  const pathName =
+    typeof window.stripAppBasePrefix === 'function' ? window.stripAppBasePrefix(window.location.pathname) : window.location.pathname;
   const isHomepage =
     pathName === '/' || pathName === '/index.html' || pathName === '/fr' || pathName === '/fr/' || pathName === '/fr/index.html';
   if (!isHomepage) {
@@ -81,7 +82,8 @@
   }
 
   try {
-    const response = await fetch('/data/popup.json');
+    const popupDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/popup.json') : '/data/popup.json';
+    const response = await fetch(popupDataUrl);
     if (!response.ok) {
       return;
     }
