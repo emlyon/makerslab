@@ -16,15 +16,23 @@ const excludedEntries = new Set([
   '.github',
   '.vscode',
   'node_modules',
+  'tools',
+  'workshops-data',
+  'data',
+  'test',
   'playwright-report',
   'test-results',
   '.DS_Store',
   '.env',
+  '.nvmrc',
+  '.gitignore',
+  '.prettierignore',
+  'package.json',
+  'package-lock.json',
+  'README.md',
   'server.crt',
   'server.key'
 ]);
-
-const excludedExactPaths = new Set(['workshops-data/eventbrite-config.json', 'workshops-data/makersboard-html']);
 
 function shouldSkip(relativePath) {
   const normalized = relativePath.replaceAll('\\', '/');
@@ -39,14 +47,6 @@ function shouldSkip(relativePath) {
   }
 
   if (excludedEntries.has(normalized.split('/')[0])) {
-    return true;
-  }
-
-  if (excludedExactPaths.has(normalized)) {
-    return true;
-  }
-
-  if (normalized.startsWith('workshops-data/makersboard-html/')) {
     return true;
   }
 
