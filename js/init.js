@@ -30,12 +30,14 @@
     $('.modal').modal();
     $('#noticeModal').modal('open');
 
-    [].forEach.call(document.querySelectorAll('#index-banner a:not(.link)'), (a) => {
-      a.addEventListener('click', (e) => {
-        e.preventDefault();
-        // console.log(a.dataset.to);
-        $(window).scrollTo($(a.dataset.to), 500, { offset: -150 });
-      });
+    $('#index-banner').on('click', 'a[data-to]:not(.link)', function (e) {
+      const target = document.querySelector(this.dataset.to || '');
+      if (!target) {
+        return;
+      }
+
+      e.preventDefault();
+      $(window).scrollTo($(target), 500, { offset: -150 });
     });
   }); // end of document ready
 })(jQuery); // end of jQuery name space
