@@ -3,12 +3,13 @@
 const fs = require('fs');
 const path = require('path');
 const { Client } = require('@notionhq/client');
+const { fetchAllPages, getPlainTextFromProperty, getRichTextAsHtml, loadDotEnvIfPresent } = require('./notion-utils');
 
 const repoRoot = path.resolve(__dirname, '../..');
 const OUTPUT_ROOT = resolveOutputRoot();
 const OUTPUT_POPUP_PATH = path.join(OUTPUT_ROOT, 'data', 'popup.json');
 
-loadDotEnvIfPresent();
+loadDotEnvIfPresent(repoRoot);
 
 const NOTION_API_KEY = process.env.NOTION_API_KEY;
 const NOTION_POPUP_DB_ID = process.env.NOTION_POPUP_DB_ID;
@@ -24,84 +25,6 @@ function resolveOutputRoot() {
   const fromArg = arg ? arg.slice('--output-root='.length) : undefined;
   const outputRoot = fromArg || process.env.OUTPUT_ROOT || repoRoot;
   return path.resolve(outputRoot);
-}
-
-function loadDotEnvIfPresent() {
-  const envPath = path.join(repoRoot, '.env');
-  if (!fs.existsSync(envPath)) {
-    return;
-  }
-
-  try {
-    require('dotenv').config({ path: envPath });
-  } catch (_error) {
-    // Do nothing when dotenv is unavailable in CI.
-  }
-}
-
-function getPlainTextFromProperty(property) {
-  if (!property) {
-    return '';
-  }
-
-  if (property.type === 'title') {
-    return property.title.map((chunk) => chunk.plain_text).join('').trim();
-  }
-
-  if (property.type === 'rich_text') {
-    return property.rich_text.map((chunk) => chunk.plain_text).join('').trim();
-  }
-
-  return '';
-}
-
-function getRichTextAsHtml(richTextArray) {
-  if (!richTextArray || richTextArray.length === 0) {
-    return '';
-  }
-
-  return richTextArray
-    .map((chunk) => {
-      let html = escapeHtml(chunk.plain_text);
-
-      // Apply text annotations (bold, italic, etc.)
-      const annotations = chunk.annotations || {};
-
-      if (annotations.code) {
-        html = `<code>${html}</code>`;
-      }
-      if (annotations.bold) {
-        html = `<strong>${html}</strong>`;
-      }
-      if (annotations.italic) {
-        html = `<em>${html}</em>`;
-      }
-      if (annotations.strikethrough) {
-        html = `<s>${html}</s>`;
-      }
-      if (annotations.underline) {
-        html = `<u>${html}</u>`;
-      }
-
-      // Apply link if present
-      if (chunk.href) {
-        html = `<a href="${escapeHtml(chunk.href)}">${html}</a>`;
-      }
-
-      return html;
-    })
-    .join('');
-}
-
-function escapeHtml(text) {
-  const map = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#039;'
-  };
-  return text.replace(/[&<>"']/g, (char) => map[char]);
 }
 
 function getDateFromProperty(property, key) {
@@ -167,26 +90,6 @@ function formatWarning(activePopups, selected) {
   return `Multiple active popups detected (${activePopups.length}). Selected ${selected.id} (${selected.startsOn} -> ${selected.endsOn}) by priority rule. Active candidates: ${list}`;
 }
 
-async function fetchAllPages(databaseId) {
-  const pages = [];
-  let hasMore = true;
-  let startCursor;
-
-  while (hasMore) {
-    const response = await notion.dataSources.query({
-      data_source_id: databaseId,
-      start_cursor: startCursor,
-      page_size: 100
-    });
-
-    pages.push(...response.results);
-    hasMore = response.has_more;
-    startCursor = response.next_cursor || undefined;
-  }
-
-  return pages;
-}
-
 function buildOutput(popups) {
   const todayUtc = normalizeToUtcDayStart(new Date());
   const todayUtcEpoch = todayUtc.getTime();
@@ -224,7 +127,7 @@ function buildOutput(popups) {
 }
 
 async function main() {
-  const pages = await fetchAllPages(NOTION_POPUP_DB_ID);
+  const pages = await fetchAllPages(notion, NOTION_POPUP_DB_ID);
   const popups = pages.map(mapPopupRecord);
   const output = buildOutput(popups);
 

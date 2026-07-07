@@ -2,6 +2,7 @@
   "scripts": {
     "fetch:events": "node tools/build-data/fetch-events.js",
     "fetch:popup": "node tools/build-data/fetch-popup.js",
+    "fetch:courses": "node tools/build-data/fetch-courses.js",
     "events:diff": "node tools/build-data/detect-data-changes.js",
     "build:pages": "node tools/build-data/build-pages-artifact.js"
   },

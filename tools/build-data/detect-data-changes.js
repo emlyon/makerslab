@@ -62,13 +62,16 @@ function emitGithubOutput(summary) {
     `changed=${summary.changed}`,
     `events_changed=${summary.eventsChanged}`,
     `popup_changed=${summary.popupChanged}`,
+    `courses_changed=${summary.coursesChanged}`,
     `added=${summary.added}`,
     `removed=${summary.removed}`,
     `modified=${summary.modified}`,
     `new_hash=${summary.newHash}`,
     `current_hash=${summary.currentHash}`,
     `popup_new_hash=${summary.popupNewHash}`,
-    `popup_current_hash=${summary.popupCurrentHash}`
+    `popup_current_hash=${summary.popupCurrentHash}`,
+    `courses_new_hash=${summary.coursesNewHash}`,
+    `courses_current_hash=${summary.coursesCurrentHash}`
   ];
 
   fs.appendFileSync(outputPath, `${lines.join('\n')}\n`);
@@ -161,12 +164,48 @@ function defaultPopupPayload() {
   };
 }
 
+function normalizeCourses(payload) {
+  const normalized = sortObjectKeys(payload || {});
+  if (!normalized.courses || typeof normalized.courses !== 'object') {
+    return {
+      courses: {
+        en: [],
+        fr: []
+      }
+    };
+  }
+
+  const toSortedList = (list) =>
+    (Array.isArray(list) ? list : [])
+      .map((course) => sortObjectKeys(course))
+      .sort((left, right) => String(left.id || '').localeCompare(String(right.id || '')));
+
+  return {
+    ...normalized,
+    courses: {
+      en: toSortedList(normalized.courses.en),
+      fr: toSortedList(normalized.courses.fr)
+    }
+  };
+}
+
+function defaultCoursesPayload() {
+  return {
+    courses: {
+      en: [],
+      fr: []
+    }
+  };
+}
+
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const newFile = args['new-file'];
   const currentFile = args['current-file'];
   const newPopupFile = args['new-popup-file'];
   const currentPopupFile = args['current-popup-file'];
+  const newCoursesFile = args['new-courses-file'];
+  const currentCoursesFile = args['current-courses-file'];
 
   if (!newFile) {
     throw new Error('Missing required argument --new-file=path/to/events.json');
@@ -175,6 +214,8 @@ async function main() {
   const currentBaseUrl = args['current-base-url'] || getDefaultCurrentBaseUrl();
   const currentEventsUrl = args['current-url'] || (currentBaseUrl ? `${currentBaseUrl}/data/events.json` : undefined);
   const currentPopupUrl = args['current-popup-url'] || (currentBaseUrl ? `${currentBaseUrl}/data/popup.json` : undefined);
+  const currentCoursesUrl =
+    args['current-courses-url'] || (currentBaseUrl ? `${currentBaseUrl}/data/courses.json` : undefined);
 
   const newEventsPath = path.resolve(newFile);
   const newEvents = loadJsonFromFile(newEventsPath);
@@ -185,8 +226,15 @@ async function main() {
       ? loadJsonFromFile(resolvedNewPopupPath)
       : defaultPopupPayload();
 
+  const resolvedNewCoursesPath = newCoursesFile ? path.resolve(newCoursesFile) : null;
+  const newCourses =
+    resolvedNewCoursesPath && fs.existsSync(resolvedNewCoursesPath)
+      ? loadJsonFromFile(resolvedNewCoursesPath)
+      : defaultCoursesPayload();
+
   let currentEvents = null;
   let currentPopup = null;
+  let currentCourses = null;
 
   try {
     if (currentFile) {
@@ -208,22 +256,37 @@ async function main() {
     console.warn(`Unable to load current popup snapshot (${error.message}). Will force popup deploy.`);
   }
 
+  try {
+    if (currentCoursesFile) {
+      currentCourses = loadJsonFromFile(path.resolve(currentCoursesFile));
+    } else if (currentCoursesUrl) {
+      currentCourses = await loadJsonFromUrl(currentCoursesUrl);
+    }
+  } catch (error) {
+    console.warn(`Unable to load current courses snapshot (${error.message}). Will force courses deploy.`);
+  }
+
   if (!currentEvents) {
     const normalizedNewEvents = normalizeEvents(newEvents);
     const normalizedPopupNew = normalizePopup(newPopup);
     const normalizedPopupCurrent = normalizePopup(currentPopup || defaultPopupPayload());
+    const normalizedCoursesNew = normalizeCourses(newCourses);
+    const normalizedCoursesCurrent = normalizeCourses(currentCourses || defaultCoursesPayload());
 
     const summary = {
       changed: true,
       eventsChanged: true,
       popupChanged: hashValue(normalizedPopupNew) !== hashValue(normalizedPopupCurrent),
+      coursesChanged: hashValue(normalizedCoursesNew) !== hashValue(normalizedCoursesCurrent),
       added: normalizedNewEvents.length,
       removed: 0,
       modified: 0,
       newHash: hashValue(normalizedNewEvents),
       currentHash: 'none',
       popupNewHash: hashValue(normalizedPopupNew),
-      popupCurrentHash: currentPopup ? hashValue(normalizedPopupCurrent) : 'none'
+      popupCurrentHash: currentPopup ? hashValue(normalizedPopupCurrent) : 'none',
+      coursesNewHash: hashValue(normalizedCoursesNew),
+      coursesCurrentHash: currentCourses ? hashValue(normalizedCoursesCurrent) : 'none'
     };
 
     emitGithubOutput(summary);
@@ -237,18 +300,26 @@ async function main() {
   const popupNewHash = hashValue(normalizedPopupNew);
   const popupCurrentHash = currentPopup ? hashValue(normalizedPopupCurrent) : 'none';
   const popupChanged = !currentPopup || popupNewHash !== popupCurrentHash;
+  const normalizedCoursesNew = normalizeCourses(newCourses);
+  const normalizedCoursesCurrent = normalizeCourses(currentCourses || defaultCoursesPayload());
+  const coursesNewHash = hashValue(normalizedCoursesNew);
+  const coursesCurrentHash = currentCourses ? hashValue(normalizedCoursesCurrent) : 'none';
+  const coursesChanged = !currentCourses || coursesNewHash !== coursesCurrentHash;
 
   const summary = {
-    changed: eventsDiff.eventsChanged || popupChanged,
+    changed: eventsDiff.eventsChanged || popupChanged || coursesChanged,
     eventsChanged: eventsDiff.eventsChanged,
     popupChanged,
+    coursesChanged,
     added: eventsDiff.added,
     removed: eventsDiff.removed,
     modified: eventsDiff.modified,
     newHash: eventsDiff.newHash,
     currentHash: eventsDiff.currentHash,
     popupNewHash,
-    popupCurrentHash
+    popupCurrentHash,
+    coursesNewHash,
+    coursesCurrentHash
   };
 
   emitGithubOutput(summary);

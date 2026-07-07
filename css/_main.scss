@@ -111,4 +111,46 @@
             }
         }
     }
+
+    #coursesRoot {
+        .courses-card {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+
+            .card-content {
+                flex: 1;
+            }
+
+            .courses-description {
+                margin: 1rem 0;
+            }
+
+            .courses-programs {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-top: 1rem;
+            }
+
+            .courses-program-chip {
+                border: 1px solid #d6d6d6;
+                border-radius: 999px;
+                font-size: 0.85rem;
+                line-height: 1.2rem;
+                padding: 4px 10px;
+            }
+
+            .card-action {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                min-height: 74px;
+            }
+
+            .card-action .btn {
+                color: #fff;
+            }
+        }
+    }
 }

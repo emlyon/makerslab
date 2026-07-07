@@ -7,6 +7,7 @@ const repoRoot = path.resolve(__dirname, '../..');
 const buildDir = path.resolve(process.env.BUILD_DIR || path.join(repoRoot, 'build'));
 const sourceEventsPath = path.resolve(process.env.SOURCE_EVENTS_PATH || path.join(repoRoot, 'data', 'events.json'));
 const sourcePopupPath = path.resolve(process.env.SOURCE_POPUP_PATH || path.join(repoRoot, 'data', 'popup.json'));
+const sourceCoursesPath = path.resolve(process.env.SOURCE_COURSES_PATH || path.join(repoRoot, 'data', 'courses.json'));
 const buildDirRelativeToRepo = path.relative(repoRoot, buildDir).replaceAll('\\', '/');
 const buildDirIsInsideRepo =
   buildDirRelativeToRepo && !buildDirRelativeToRepo.startsWith('..') && !path.isAbsolute(buildDirRelativeToRepo);
@@ -120,11 +121,45 @@ function injectPopupFile() {
   };
 }
 
+function injectCoursesFile() {
+  const targetCoursesPath = path.join(buildDir, 'data', 'courses.json');
+  fs.mkdirSync(path.dirname(targetCoursesPath), { recursive: true });
+
+  if (fs.existsSync(sourceCoursesPath)) {
+    fs.copyFileSync(sourceCoursesPath, targetCoursesPath);
+    return {
+      source: sourceCoursesPath,
+      usedFallback: false
+    };
+  }
+
+  const defaultCourses = {
+    generatedAt: new Date().toISOString(),
+    courses: {
+      en: [],
+      fr: []
+    },
+    warnings: ['Courses source file was missing during build; default empty courses payload emitted.'],
+    meta: {
+      totalRecords: 0,
+      enRecords: 0,
+      frRecords: 0
+    }
+  };
+
+  fs.writeFileSync(targetCoursesPath, JSON.stringify(defaultCourses, null, 2));
+  return {
+    source: 'generated-default',
+    usedFallback: true
+  };
+}
+
 function main() {
   cleanBuildDirectory();
   copyTree(repoRoot, buildDir);
   injectEventsFile();
   const popupResult = injectPopupFile();
+  const coursesResult = injectCoursesFile();
 
   console.log(`Pages artifact prepared in: ${buildDir}`);
   console.log(`Injected events data from: ${sourceEventsPath}`);
@@ -132,6 +167,12 @@ function main() {
     console.log('Popup source file missing. Emitted default inactive popup payload.');
   } else {
     console.log(`Injected popup data from: ${popupResult.source}`);
+  }
+
+  if (coursesResult.usedFallback) {
+    console.log('Courses source file missing. Emitted default empty courses payload.');
+  } else {
+    console.log(`Injected courses data from: ${coursesResult.source}`);
   }
 }
 
