@@ -10,8 +10,8 @@ include(`
                     <li><a href="${appPath('/events.html')}">events</a></li>
                     <li><a href="${appPath('/courses.html')}">courses</a></li>
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                    <li class="lang-en"><a href="${appPath('/')}">en</a></li>
-                    <li class="lang-fr"><a href="${appPath('/fr/')}">fr</a></li>
+                    <li class="lang-en"><a href="${typeof languagePath === 'function' ? languagePath('en') : appPath('/')}">en</a></li>
+                    <li class="lang-fr"><a href="${typeof languagePath === 'function' ? languagePath('fr') : appPath('/fr/')}">fr</a></li>
                 </ul>
             </div>
         </nav>
@@ -22,7 +22,7 @@ include(`
         <li><a href="${appPath('/events.html')}">events</a></li>
         <li><a href="${appPath('/courses.html')}">courses</a></li>
         <li class="divider"></li>
-        <li class="lang-en"><a href="${appPath('/')}">en</a></li>
-        <li class="lang-fr"><a href="${appPath('/fr/')}">fr</a></li>
+        <li class="lang-en"><a href="${typeof languagePath === 'function' ? languagePath('en') : appPath('/')}">en</a></li>
+        <li class="lang-fr"><a href="${typeof languagePath === 'function' ? languagePath('fr') : appPath('/fr/')}">fr</a></li>
     </ul>
 `);

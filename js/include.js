@@ -1,4 +1,21 @@
 (function () {
+    const LANGUAGE_PAGE_MAP = {
+        en: {
+            '/fr/': '/',
+            '/fr/index.html': '/',
+            '/fr/tutoriels.html': '/tutorials.html',
+            '/fr/evenements.html': '/events.html',
+            '/fr/formations.html': '/courses.html'
+        },
+        fr: {
+            '/': '/fr/',
+            '/index.html': '/fr/',
+            '/tutorials.html': '/fr/tutoriels.html',
+            '/events.html': '/fr/evenements.html',
+            '/courses.html': '/fr/formations.html'
+        }
+    };
+
     function normalizeBasePath(value) {
         const raw = String(value || '').trim();
         if (!raw || raw === '/') {
@@ -75,9 +92,46 @@
         return raw;
     }
 
+    function currentLanguagePath() {
+        const rawPath = stripAppBasePrefix(window.location.pathname || '/');
+
+        if (rawPath === '/index.html') {
+            return '/';
+        }
+
+        if (rawPath === '/fr') {
+            return '/fr/';
+        }
+
+        return rawPath;
+    }
+
+    function currentLanguage() {
+        const path = currentLanguagePath();
+        return path.startsWith('/fr/') || path === '/fr/' || path === '/fr' ? 'fr' : 'en';
+    }
+
+    function languagePath(targetLanguage) {
+        const normalizedLanguage = targetLanguage === 'fr' ? 'fr' : 'en';
+        const pathname = currentLanguagePath();
+        const sourceLanguage = currentLanguage();
+        if (normalizedLanguage === sourceLanguage) {
+            return appPath(pathname);
+        }
+
+        const mappedPath = LANGUAGE_PAGE_MAP[normalizedLanguage][pathname];
+
+        if (mappedPath) {
+            return appPath(mappedPath);
+        }
+
+        return appPath(normalizedLanguage === 'fr' ? '/fr/' : '/');
+    }
+
     window.APP_BASE_PATH = APP_BASE_PATH;
     window.appPath = appPath;
     window.stripAppBasePrefix = stripAppBasePrefix;
+    window.languagePath = languagePath;
 
     window.include = function include(html) {
         document.open();
