@@ -37,16 +37,23 @@ jobs:
           EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
           EVENTBRITE_ORGANIZATION_ID: ${{ secrets.EVENTBRITE_ORGANIZATION_ID }}
 
+      - name: Fetch latest popup
+        run: npm run fetch:popup -- --output-root=${{ runner.temp }}/pages-build
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_POPUP_DB_ID: ${{ secrets.NOTION_POPUP_DB_ID }}
+
       - name: Detect event changes
         id: diff
-        run: npm run events:diff -- --new-file=${{ runner.temp }}/pages-build/workshops-data/events.json
+        run: npm run events:diff -- --new-file=${{ runner.temp }}/pages-build/data/events.json --new-popup-file=${{ runner.temp }}/pages-build/data/popup.json
 
       - name: Build Pages artifact
         if: steps.diff.outputs.changed == 'true'
         run: npm run build:pages
         env:
           BUILD_DIR: ${{ runner.temp }}/pages-artifact
-          SOURCE_EVENTS_PATH: ${{ runner.temp }}/pages-build/workshops-data/events.json
+          SOURCE_EVENTS_PATH: ${{ runner.temp }}/pages-build/data/events.json
+          SOURCE_POPUP_PATH: ${{ runner.temp }}/pages-build/data/popup.json
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -59,7 +66,7 @@ jobs:
 
       - name: No changes summary
         if: steps.diff.outputs.changed != 'true'
-        run: echo "No event changes detected. Skipping artifact upload and deploy."
+        run: echo "No event/popup changes detected. Skipping artifact upload and deploy."
 
   deploy:
     needs: build

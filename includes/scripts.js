@@ -4,6 +4,7 @@ include(`
     <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.2.2/dist/js/materialize.min.js" integrity="sha256-uBHaie2yazcw2sfAxTw3hHdVXUy5HW/pm7gDewvtI0w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="/js/init.js"></script>
+    <script src="/js/popup.js"></script>
 
     <!-- material-scrolltop button -->
     <button class="material-scrolltop red" type="button"></button>

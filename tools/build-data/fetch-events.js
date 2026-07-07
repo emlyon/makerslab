@@ -1,11 +1,16 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const path = require('path');
 
+const repoRoot = path.resolve(__dirname, '../..');
+loadDotEnvIfPresent();
+
 const config = loadConfig();
-const TOKEN = config.TOKEN;
-const ORGANIZATION_ID = config.ORGANIZATION_ID;
+const TOKEN = config.EVENTBRITE_TOKEN;
+const ORGANIZATION_ID = config.EVENTBRITE_ORGANIZATION_ID;
 const OUTPUT_ROOT = resolveOutputRoot();
-const OUTPUT_EVENTS_PATH = path.join(OUTPUT_ROOT, 'workshops-data', 'events.json');
+const OUTPUT_EVENTS_PATH = path.join(OUTPUT_ROOT, 'data', 'events.json');
 const OPTIONS = {
   method: 'GET',
   headers: {
@@ -16,51 +21,50 @@ const OPTIONS = {
 function loadConfig() {
   const envToken = process.env.EVENTBRITE_TOKEN;
   const envOrganizationId = process.env.EVENTBRITE_ORGANIZATION_ID;
-  if (envToken && envOrganizationId) {
-    return {
-      TOKEN: envToken,
-      ORGANIZATION_ID: envOrganizationId
-    };
-  } else {
-    console.warn('Environment secrets EVENTBRITE_TOKEN and EVENTBRITE_ORGANIZATION_ID not set. Falling back to local config file.');
-    const localConfigPath = path.join(__dirname, 'eventbrite-config.json');
-    if (!fs.existsSync(localConfigPath)) {
-      throw new Error(
-        'Missing Eventbrite config. Set EVENTBRITE_TOKEN and EVENTBRITE_ORGANIZATION_ID, or add workshops-data/eventbrite-config.json.'
-      );
-    }
-  
-    return JSON.parse(fs.readFileSync(localConfigPath, 'utf8'));
+
+  if (!envToken || !envOrganizationId) {
+    throw new Error('Environment secrets EVENTBRITE_TOKEN and EVENTBRITE_ORGANIZATION_ID missing.');
+  }
+
+  return {
+    EVENTBRITE_TOKEN: envToken,
+    EVENTBRITE_ORGANIZATION_ID: envOrganizationId
+  };
+}
+
+function loadDotEnvIfPresent() {
+  const envPath = path.join(repoRoot, '.env');
+  if (!fs.existsSync(envPath)) {
+    return;
+  }
+
+  try {
+    require('dotenv').config({ path: envPath });
+  } catch (_error) {
+    // Do nothing when dotenv is unavailable in CI.
   }
 }
 
 function resolveOutputRoot() {
   const arg = process.argv.find((value) => value.startsWith('--output-root='));
   const fromArg = arg ? arg.slice('--output-root='.length) : undefined;
-  const outputRoot = fromArg || process.env.OUTPUT_ROOT || path.join(__dirname, '..');
+  const outputRoot = fromArg || process.env.OUTPUT_ROOT || repoRoot;
   return path.resolve(outputRoot);
 }
 
 (async () => {
-  // Fetch events and process them
   try {
     const events = await fetchEvents();
     console.log("Nombre d'évènements : " + events.length);
-    // console.log(events.find((event) => event.id === '1028711693367'));
     await enrichEventsWithVenueData(events);
     events.forEach(logEventInfo);
-    // Write formatted events to events.json
     fs.mkdirSync(path.dirname(OUTPUT_EVENTS_PATH), { recursive: true });
     fs.writeFileSync(OUTPUT_EVENTS_PATH, JSON.stringify(events, null, 2));
     console.log(`Events written to: ${OUTPUT_EVENTS_PATH}`);
-    process.on('exit', () => {
-      console.log('Closing connection and exiting...');
-      // Perform any cleanup if necessary
-    });
     process.exit();
   } catch (e) {
     console.warn(e);
-    process.exit();
+    process.exit(1);
   }
 })();
 
