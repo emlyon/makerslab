@@ -7,6 +7,7 @@
   }
 
   const isFrench = pathName.startsWith('/fr/');
+  const DISMISSED_POPUP_HASH_KEY = 'makerslab.dismissedPopupHash.v1';
 
   function escapeHtml(value) {
     return value
@@ -23,6 +24,46 @@
 
   function closeLabel() {
     return isFrench ? 'Fermer' : 'Close';
+  }
+
+  function hashString(value) {
+    // djb2 variant, deterministic and fast for short strings.
+    let hash = 5381;
+    for (let index = 0; index < value.length; index += 1) {
+      hash = (hash * 33) ^ value.charCodeAt(index);
+    }
+
+    return (hash >>> 0).toString(16).padStart(8, '0');
+  }
+
+  function popupIdentityHash(popup) {
+    const identity = [
+      popup.id || '',
+      popup.startsOn || '',
+      popup.endsOn || '',
+      popup.titleFr || '',
+      popup.contentFr || '',
+      popup.titleEn || '',
+      popup.contentEn || ''
+    ].join('|');
+
+    return hashString(identity);
+  }
+
+  function readDismissedPopupHash() {
+    try {
+      return window.localStorage.getItem(DISMISSED_POPUP_HASH_KEY) || '';
+    } catch (_error) {
+      return '';
+    }
+  }
+
+  function writeDismissedPopupHash(hash) {
+    try {
+      window.localStorage.setItem(DISMISSED_POPUP_HASH_KEY, hash);
+    } catch (_error) {
+      // Ignore storage failures (private mode / disabled storage).
+    }
   }
 
   function modalMarkup(title, content) {
@@ -50,6 +91,11 @@
       return;
     }
 
+    const popupHash = popupIdentityHash(data.popup);
+    if (readDismissedPopupHash() === popupHash) {
+      return;
+    }
+
     const title = isFrench ? data.popup.titleFr : data.popup.titleEn;
     const content = isFrench ? data.popup.contentFr : data.popup.contentEn;
     if (!title || !content) {
@@ -68,7 +114,11 @@
       return;
     }
 
-    const instance = M.Modal.init(modalElement, {});
+    const instance = M.Modal.init(modalElement, {
+      onCloseEnd: () => {
+        writeDismissedPopupHash(popupHash);
+      }
+    });
     instance.open();
   } catch (_error) {
     // Keep homepage functional even if popup data is unavailable.
