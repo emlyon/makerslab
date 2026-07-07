@@ -1,10 +1,15 @@
 {
   "scripts": {
-    "fetch:events": "node workshops-data/fetch.js",
-    "events:diff": "node workshops-data/has-events-changed.js",
-    "build:pages": "node workshops-data/build-pages-artifact.js"
+    "fetch:events": "node tools/build-data/fetch-events.js",
+    "fetch:popup": "node tools/build-data/fetch-popup.js",
+    "events:diff": "node tools/build-data/detect-data-changes.js",
+    "build:pages": "node tools/build-data/build-pages-artifact.js"
   },
   "dependencies": {
+    "@notionhq/client": "^5.22.0",
     "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "dotenv": "^17.4.2"
   }
 }

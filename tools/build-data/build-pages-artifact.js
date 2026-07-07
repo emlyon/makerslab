@@ -3,11 +3,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const repoRoot = path.resolve(__dirname, '..');
+const repoRoot = path.resolve(__dirname, '../..');
 const buildDir = path.resolve(process.env.BUILD_DIR || path.join(repoRoot, 'build'));
-const sourceEventsPath = path.resolve(
-  process.env.SOURCE_EVENTS_PATH || path.join(repoRoot, 'workshops-data', 'events.json')
-);
+const sourceEventsPath = path.resolve(process.env.SOURCE_EVENTS_PATH || path.join(repoRoot, 'data', 'events.json'));
+const sourcePopupPath = path.resolve(process.env.SOURCE_POPUP_PATH || path.join(repoRoot, 'data', 'popup.json'));
 const buildDirRelativeToRepo = path.relative(repoRoot, buildDir).replaceAll('\\', '/');
 const buildDirIsInsideRepo =
   buildDirRelativeToRepo && !buildDirRelativeToRepo.startsWith('..') && !path.isAbsolute(buildDirRelativeToRepo);
@@ -20,14 +19,12 @@ const excludedEntries = new Set([
   'playwright-report',
   'test-results',
   '.DS_Store',
+  '.env',
   'server.crt',
   'server.key'
 ]);
 
-const excludedExactPaths = new Set([
-  'workshops-data/eventbrite-config.json',
-  'workshops-data/makersboard-html'
-]);
+const excludedExactPaths = new Set(['workshops-data/eventbrite-config.json', 'workshops-data/makersboard-html']);
 
 function shouldSkip(relativePath) {
   const normalized = relativePath.replaceAll('\\', '/');
@@ -87,18 +84,55 @@ function injectEventsFile() {
     throw new Error(`Events file not found at: ${sourceEventsPath}`);
   }
 
-  const targetEventsPath = path.join(buildDir, 'workshops-data', 'events.json');
+  const targetEventsPath = path.join(buildDir, 'data', 'events.json');
   fs.mkdirSync(path.dirname(targetEventsPath), { recursive: true });
   fs.copyFileSync(sourceEventsPath, targetEventsPath);
+}
+
+function injectPopupFile() {
+  const targetPopupPath = path.join(buildDir, 'data', 'popup.json');
+  fs.mkdirSync(path.dirname(targetPopupPath), { recursive: true });
+
+  if (fs.existsSync(sourcePopupPath)) {
+    fs.copyFileSync(sourcePopupPath, targetPopupPath);
+    return {
+      source: sourcePopupPath,
+      usedFallback: false
+    };
+  }
+
+  const defaultPopup = {
+    generatedAt: new Date().toISOString(),
+    active: false,
+    popup: null,
+    warnings: ['Popup source file was missing during build; default inactive popup emitted.'],
+    meta: {
+      totalRecords: 0,
+      eligibleRecords: 0,
+      activeRecords: 0
+    }
+  };
+
+  fs.writeFileSync(targetPopupPath, JSON.stringify(defaultPopup, null, 2));
+  return {
+    source: 'generated-default',
+    usedFallback: true
+  };
 }
 
 function main() {
   cleanBuildDirectory();
   copyTree(repoRoot, buildDir);
   injectEventsFile();
+  const popupResult = injectPopupFile();
 
   console.log(`Pages artifact prepared in: ${buildDir}`);
   console.log(`Injected events data from: ${sourceEventsPath}`);
+  if (popupResult.usedFallback) {
+    console.log('Popup source file missing. Emitted default inactive popup payload.');
+  } else {
+    console.log(`Injected popup data from: ${popupResult.source}`);
+  }
 }
 
 main();
