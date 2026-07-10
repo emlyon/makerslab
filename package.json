@@ -4,6 +4,8 @@
     "fetch:popup": "node tools/build-data/fetch-popup.js",
     "fetch:courses": "node tools/build-data/fetch-courses.js",
     "events:diff": "node tools/build-data/detect-data-changes.js",
+    "build:css": "sass css/style.scss css/style.min.css --style=compressed --source-map",
+    "prebuild:pages": "npm run build:css",
     "build:pages": "node tools/build-data/build-pages-artifact.js"
   },
   "dependencies": {
@@ -11,6 +13,7 @@
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "sass": "^1.101.0"
   }
 }
