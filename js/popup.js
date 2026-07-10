@@ -1,11 +1,5 @@
 (async () => {
   const pathName = window.location.pathname;
-  const isHomepage =
-    pathName === '/' || pathName === '/index.html' || pathName === '/fr' || pathName === '/fr/' || pathName === '/fr/index.html';
-  if (!isHomepage) {
-    return;
-  }
-
   const isFrench = pathName.startsWith('/fr/');
   const DISMISSED_POPUP_HASH_KEY = 'makerslab.dismissedPopupHash.v1';
 
@@ -80,6 +74,33 @@
     `;
   }
 
+  function noticeMarkup(content) {
+    return `
+      <div id="notice" class="red white-text center">
+        <span>${content}</span>
+      </div>
+    `;
+  }
+
+  function removeNotice() {
+    const existingNotice = document.getElementById('notice');
+    if (existingNotice) {
+      existingNotice.remove();
+    }
+  }
+
+  function showNotice(content) {
+    removeNotice();
+
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+      navbar.insertAdjacentHTML('afterend', noticeMarkup(content));
+      return;
+    }
+
+    document.body.insertAdjacentHTML('afterbegin', noticeMarkup(content));
+  }
+
   try {
     const response = await fetch('/data/popup.json');
     if (!response.ok) {
@@ -91,16 +112,21 @@
       return;
     }
 
-    const popupHash = popupIdentityHash(data.popup);
-    if (readDismissedPopupHash() === popupHash) {
-      return;
-    }
-
     const title = isFrench ? data.popup.titleFr : data.popup.titleEn;
     const content = isFrench ? data.popup.contentFr : data.popup.contentEn;
     if (!title || !content) {
       return;
     }
+
+    const popupHash = popupIdentityHash(data.popup);
+    const isDismissed = readDismissedPopupHash() === popupHash;
+    if (isDismissed) {
+      showNotice(content);
+      return;
+    }
+
+    // Hide any pre-existing static notice until the popup is dismissed.
+    removeNotice();
 
     const existingModal = document.getElementById('noticeModal');
     if (existingModal) {
@@ -117,6 +143,7 @@
     const instance = M.Modal.init(modalElement, {
       onCloseEnd: () => {
         writeDismissedPopupHash(popupHash);
+        showNotice(content);
       }
     });
     instance.open();
