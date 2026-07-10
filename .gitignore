@@ -10,3 +10,5 @@ node_modules
 build
 data
 .env
+css/style.min.css
+css/style.min.css.map
