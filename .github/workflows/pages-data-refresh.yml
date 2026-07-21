@@ -63,9 +63,11 @@ jobs:
           NOTION_TUTORIALS_EN_DB_ID: ${{ secrets.NOTION_TUTORIALS_EN_DB_ID }}
           NOTION_MACHINES_EN_DB_ID: ${{ secrets.NOTION_MACHINES_EN_DB_ID }}
           NOTION_CATEGORIES_EN_DB_ID: ${{ secrets.NOTION_CATEGORIES_EN_DB_ID }}
+          NOTION_SOFTWARE_EN_DB_ID: ${{ secrets.NOTION_SOFTWARE_EN_DB_ID }}
           NOTION_TUTORIALS_FR_DB_ID: ${{ secrets.NOTION_TUTORIALS_FR_DB_ID }}
           NOTION_MACHINES_FR_DB_ID: ${{ secrets.NOTION_MACHINES_FR_DB_ID }}
           NOTION_CATEGORIES_FR_DB_ID: ${{ secrets.NOTION_CATEGORIES_FR_DB_ID }}
+          NOTION_SOFTWARE_FR_DB_ID: ${{ secrets.NOTION_SOFTWARE_FR_DB_ID }}
 
       - name: Detect event changes
         id: diff

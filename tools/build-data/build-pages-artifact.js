@@ -173,12 +173,16 @@ function injectTutorialsFile() {
       en: {
         tutorials: [],
         machines: [],
-        categories: []
+        categories: [],
+        software: [],
+        courses: []
       },
       fr: {
         tutorials: [],
         machines: [],
-        categories: []
+        categories: [],
+        software: [],
+        courses: []
       }
     },
     warnings: ['Tutorials source file was missing during build; default empty tutorials payload emitted.'],
@@ -192,7 +196,9 @@ function injectTutorialsFile() {
         published: {
           tutorials: 0,
           machines: 0,
-          categories: 0
+          categories: 0,
+          software: 0,
+          courses: 0
         }
       },
       fr: {
@@ -204,7 +210,9 @@ function injectTutorialsFile() {
         published: {
           tutorials: 0,
           machines: 0,
-          categories: 0
+          categories: 0,
+          software: 0,
+          courses: 0
         }
       }
     }

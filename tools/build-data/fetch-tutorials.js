@@ -5,8 +5,8 @@ const path = require('path');
 const { Client } = require('@notionhq/client');
 const {
   fetchAllPages,
+  getMultiSelectFromProperty,
   getPlainTextFromProperty,
-  getRichTextAsHtml,
   loadDotEnvIfPresent,
   normalizeHexColor
 } = require('./notion-utils');
@@ -22,14 +22,17 @@ const LANGUAGE_DB_CONFIG = {
   en: {
     tutorialsDbId: process.env.NOTION_TUTORIALS_EN_DB_ID,
     machinesDbId: process.env.NOTION_MACHINES_EN_DB_ID,
-    categoriesDbId: process.env.NOTION_CATEGORIES_EN_DB_ID
+    categoriesDbId: process.env.NOTION_CATEGORIES_EN_DB_ID,
+    softwareDbId: process.env.NOTION_SOFTWARE_EN_DB_ID
   },
   fr: {
     tutorialsDbId: process.env.NOTION_TUTORIALS_FR_DB_ID,
     machinesDbId: process.env.NOTION_MACHINES_FR_DB_ID,
-    categoriesDbId: process.env.NOTION_CATEGORIES_FR_DB_ID
+    categoriesDbId: process.env.NOTION_CATEGORIES_FR_DB_ID,
+    softwareDbId: process.env.NOTION_SOFTWARE_FR_DB_ID
   }
 };
+const NOTION_COURSES_DB_ID = process.env.NOTION_COURSES_DB_ID;
 
 if (!NOTION_API_KEY) {
   throw new Error('Missing NOTION_API_KEY in environment.');
@@ -90,6 +93,34 @@ function getRelationIdsFromProperty(property) {
   return property.relation.map((item) => item.id).filter(Boolean);
 }
 
+function getRelationAndMultiSelectValue(property) {
+  if (!property) {
+    return {
+      relationIds: [],
+      names: []
+    };
+  }
+
+  if (property.type === 'relation') {
+    return {
+      relationIds: sortAndDedupe(getRelationIdsFromProperty(property)),
+      names: []
+    };
+  }
+
+  if (property.type === 'multi_select') {
+    return {
+      relationIds: [],
+      names: sortAndDedupe(getMultiSelectFromProperty(property))
+    };
+  }
+
+  return {
+    relationIds: [],
+    names: []
+  };
+}
+
 function getCheckboxValueFromProperty(property, fallback = false) {
   if (!property || property.type !== 'checkbox') {
     return fallback;
@@ -119,13 +150,16 @@ function mapTutorial(page, language, warnings) {
   const properties = page.properties || {};
   const nameProperty = findPropertyByAliases(properties, ['name', 'nom', 'title', 'titre']) || findFirstPropertyByType(properties, 'title');
   const slugProperty = findPropertyByAliases(properties, ['slug']);
-  const descriptionProperty =
-    findPropertyByAliases(properties, ['description', 'commentaire', 'comment', 'summary', 'content']) ||
+  const summaryProperty =
+    findPropertyByAliases(properties, ['summary', 'résumé', 'resume', 'description', 'content']) ||
     findFirstPropertyByType(properties, 'rich_text');
   const machinesProperty = findPropertyByAliases(properties, ['machines', '⚙️ machines']);
   const categoriesProperty = findPropertyByAliases(properties, ['catégories', 'categories']);
+  const softwaresProperty = findPropertyByAliases(properties, ['logiciels', 'software', 'softwares']);
+  const coursesProperty = findPropertyByAliases(properties, ['cours', 'courses']);
   const languageProperty = findPropertyByAliases(properties, ['language', 'lang', 'langue']);
   const activeProperty = findPropertyByAliases(properties, ['active', 'is active']);
+  const coursesValue = getRelationAndMultiSelectValue(coursesProperty);
 
   const name = getPlainTextFromProperty(nameProperty);
   if (!name) {
@@ -142,12 +176,15 @@ function mapTutorial(page, language, warnings) {
     id: page.id,
     slug: normalizeSlug(getPlainTextFromProperty(slugProperty)),
     name,
-    description: getRichTextAsHtml(descriptionProperty?.rich_text || []),
+    summary: getPlainTextFromProperty(summaryProperty),
     notionUrl: page.url,
     language: normalizeLanguageValue(getPlainTextFromProperty(languageProperty), language),
     active: getCheckboxValueFromProperty(activeProperty, true),
     machineIds: sortAndDedupe(getRelationIdsFromProperty(machinesProperty)),
-    categoryIds: sortAndDedupe(getRelationIdsFromProperty(categoriesProperty))
+    categoryIds: sortAndDedupe(getRelationIdsFromProperty(categoriesProperty)),
+    softwareIds: sortAndDedupe(getRelationIdsFromProperty(softwaresProperty)),
+    courseIds: coursesValue.relationIds,
+    courseNames: coursesValue.names
   };
 }
 
@@ -201,6 +238,50 @@ function mapCategory(page, language, warnings) {
   };
 }
 
+function mapSoftware(page, language, warnings) {
+  const properties = page.properties || {};
+  const nameProperty = findPropertyByAliases(properties, ['name', 'nom', 'title', 'titre']) || findFirstPropertyByType(properties, 'title');
+  const slugProperty = findPropertyByAliases(properties, ['slug']);
+  const tutorialsProperty = findPropertyByAliases(properties, ['tutorials', 'tutoriels']);
+  const languageProperty = findPropertyByAliases(properties, ['language', 'lang', 'langue']);
+
+  const name = getPlainTextFromProperty(nameProperty);
+  if (!name) {
+    warnings.push(`Skipped software ${page.id}: missing name.`);
+    return null;
+  }
+
+  return {
+    id: page.id,
+    slug: normalizeSlug(getPlainTextFromProperty(slugProperty)),
+    name,
+    language: normalizeLanguageValue(getPlainTextFromProperty(languageProperty), language),
+    tutorialIds: sortAndDedupe(getRelationIdsFromProperty(tutorialsProperty))
+  };
+}
+
+function mapCourse(page, language, warnings) {
+  const properties = page.properties || {};
+  const nameProperty =
+    findPropertyByAliases(properties, ['name', 'nom', 'title', 'titre', 'name en', 'name fr']) ||
+    findFirstPropertyByType(properties, 'title');
+  const tutorialsProperty = findPropertyByAliases(properties, ['tutorials', 'tutoriels']);
+  const languageProperty = findPropertyByAliases(properties, ['language', 'lang', 'langue']);
+
+  const name = getPlainTextFromProperty(nameProperty);
+  if (!name) {
+    warnings.push(`Skipped course ${page.id}: missing name.`);
+    return null;
+  }
+
+  return {
+    id: page.id,
+    name,
+    language: normalizeLanguageValue(getPlainTextFromProperty(languageProperty), language),
+    tutorialIds: sortAndDedupe(getRelationIdsFromProperty(tutorialsProperty))
+  };
+}
+
 function mapById(records) {
   return new Map(records.map((record) => [record.id, record]));
 }
@@ -217,9 +298,13 @@ function reconcileRelationships(languageData, language, warnings) {
   const tutorialsById = mapById(languageData.tutorials);
   const machinesById = mapById(languageData.machines);
   const categoriesById = mapById(languageData.categories);
+  const softwareById = mapById(languageData.software);
+  const coursesById = mapById(languageData.courses);
 
   const tutorialMachineLinks = new Map();
   const tutorialCategoryLinks = new Map();
+  const tutorialSoftwareLinks = new Map();
+  const tutorialCourseLinks = new Map();
   const machineCategoryLinks = new Map();
 
   for (const tutorial of languageData.tutorials) {
@@ -237,6 +322,22 @@ function reconcileRelationships(languageData, language, warnings) {
         continue;
       }
       pushLink(tutorialCategoryLinks, tutorial.id, categoryId);
+    }
+
+    for (const softwareId of tutorial.softwareIds) {
+      if (!softwareById.has(softwareId)) {
+        warnings.push(`[${language}] Tutorial ${tutorial.id} references missing software ${softwareId}.`);
+        continue;
+      }
+      pushLink(tutorialSoftwareLinks, tutorial.id, softwareId);
+    }
+
+    for (const courseId of tutorial.courseIds) {
+      if (!coursesById.has(courseId)) {
+        warnings.push(`[${language}] Tutorial ${tutorial.id} references missing course ${courseId}.`);
+        continue;
+      }
+      pushLink(tutorialCourseLinks, tutorial.id, courseId);
     }
   }
 
@@ -276,9 +377,35 @@ function reconcileRelationships(languageData, language, warnings) {
     }
   }
 
+  for (const software of languageData.software) {
+    for (const tutorialId of software.tutorialIds) {
+      if (!tutorialsById.has(tutorialId)) {
+        warnings.push(`[${language}] Software ${software.id} references missing tutorial ${tutorialId}.`);
+        continue;
+      }
+      pushLink(tutorialSoftwareLinks, tutorialId, software.id);
+    }
+  }
+
+  for (const course of languageData.courses) {
+    for (const tutorialId of course.tutorialIds) {
+      if (!tutorialsById.has(tutorialId)) {
+        warnings.push(`[${language}] Course ${course.id} references missing tutorial ${tutorialId}.`);
+        continue;
+      }
+      pushLink(tutorialCourseLinks, tutorialId, course.id);
+    }
+  }
+
   for (const tutorial of languageData.tutorials) {
     tutorial.machineIds = sortAndDedupe([...(tutorialMachineLinks.get(tutorial.id) || [])]);
     tutorial.categoryIds = sortAndDedupe([...(tutorialCategoryLinks.get(tutorial.id) || [])]);
+    tutorial.softwareIds = sortAndDedupe([...(tutorialSoftwareLinks.get(tutorial.id) || [])]);
+    tutorial.courseIds = sortAndDedupe([...(tutorialCourseLinks.get(tutorial.id) || [])]);
+    tutorial.courseNames = sortAndDedupe([
+      ...(Array.isArray(tutorial.courseNames) ? tutorial.courseNames : []),
+      ...tutorial.courseIds.map((courseId) => coursesById.get(courseId)?.name).filter(Boolean)
+    ]);
   }
 
   for (const machine of languageData.machines) {
@@ -309,17 +436,38 @@ function reconcileRelationships(languageData, language, warnings) {
     category.tutorialIds = sortAndDedupe(tutorialIds);
     category.machineIds = sortAndDedupe(machineIds);
   }
+
+  for (const software of languageData.software) {
+    const tutorialIds = [];
+    for (const tutorial of languageData.tutorials) {
+      if (tutorial.softwareIds.includes(software.id)) {
+        tutorialIds.push(tutorial.id);
+      }
+    }
+    software.tutorialIds = sortAndDedupe(tutorialIds);
+  }
+
+  for (const course of languageData.courses) {
+    const tutorialIds = [];
+    for (const tutorial of languageData.tutorials) {
+      if (tutorial.courseIds.includes(course.id)) {
+        tutorialIds.push(tutorial.id);
+      }
+    }
+    course.tutorialIds = sortAndDedupe(tutorialIds);
+  }
 }
 
 function sortRecords(records) {
   return [...records].sort((left, right) => left.name.localeCompare(right.name));
 }
 
-async function fetchLanguageData(language, ids, warnings) {
-  const [tutorialPages, machinePages, categoryPages] = await Promise.all([
+async function fetchLanguageData(language, ids, coursesPages, warnings) {
+  const [tutorialPages, machinePages, categoryPages, softwarePages] = await Promise.all([
     fetchAllPages(notion, ids.tutorialsDbId),
     fetchAllPages(notion, ids.machinesDbId),
-    fetchAllPages(notion, ids.categoriesDbId)
+    fetchAllPages(notion, ids.categoriesDbId),
+    fetchAllPages(notion, ids.softwareDbId)
   ]);
 
   const tutorials = tutorialPages
@@ -334,11 +482,21 @@ async function fetchLanguageData(language, ids, warnings) {
     .map((page) => mapCategory(page, language, warnings))
     .filter(Boolean)
     .filter((category) => category.language === language);
+  const software = softwarePages
+    .map((page) => mapSoftware(page, language, warnings))
+    .filter(Boolean)
+    .filter((softwareItem) => softwareItem.language === language);
+  const courses = coursesPages
+    .map((page) => mapCourse(page, language, warnings))
+    .filter(Boolean)
+    .filter((course) => course.language === language);
 
   const languageData = {
     tutorials: sortRecords(tutorials),
     machines: sortRecords(machines),
-    categories: sortRecords(categories)
+    categories: sortRecords(categories),
+    software: sortRecords(software),
+    courses: sortRecords(courses)
   };
 
   reconcileRelationships(languageData, language, warnings);
@@ -348,7 +506,9 @@ async function fetchLanguageData(language, ids, warnings) {
     sourceMeta: {
       tutorialsRecords: tutorialPages.length,
       machinesRecords: machinePages.length,
-      categoriesRecords: categoryPages.length
+      categoriesRecords: categoryPages.length,
+      softwareRecords: softwarePages.length,
+      coursesRecords: coursesPages.length
     }
   };
 }
@@ -364,7 +524,9 @@ function buildOutput(perLanguageData, warnings, perLanguageMeta) {
         published: {
           tutorials: perLanguageData.en.tutorials.length,
           machines: perLanguageData.en.machines.length,
-          categories: perLanguageData.en.categories.length
+          categories: perLanguageData.en.categories.length,
+          software: perLanguageData.en.software.length,
+          courses: perLanguageData.en.courses.length
         }
       },
       fr: {
@@ -372,7 +534,9 @@ function buildOutput(perLanguageData, warnings, perLanguageMeta) {
         published: {
           tutorials: perLanguageData.fr.tutorials.length,
           machines: perLanguageData.fr.machines.length,
-          categories: perLanguageData.fr.categories.length
+          categories: perLanguageData.fr.categories.length,
+          software: perLanguageData.fr.software.length,
+          courses: perLanguageData.fr.courses.length
         }
       }
     }
@@ -382,13 +546,14 @@ function buildOutput(perLanguageData, warnings, perLanguageMeta) {
 async function main() {
   const warnings = [];
   const perLanguageData = {
-    en: { tutorials: [], machines: [], categories: [] },
-    fr: { tutorials: [], machines: [], categories: [] }
+    en: { tutorials: [], machines: [], categories: [], software: [], courses: [] },
+    fr: { tutorials: [], machines: [], categories: [], software: [], courses: [] }
   };
   const perLanguageMeta = {};
+  const coursesPages = NOTION_COURSES_DB_ID ? await fetchAllPages(notion, NOTION_COURSES_DB_ID) : [];
 
   for (const [language, ids] of Object.entries(LANGUAGE_DB_CONFIG)) {
-    const { languageData, sourceMeta } = await fetchLanguageData(language, ids, warnings);
+    const { languageData, sourceMeta } = await fetchLanguageData(language, ids, coursesPages, warnings);
     perLanguageData[language] = languageData;
     perLanguageMeta[language] = sourceMeta;
   }
@@ -401,9 +566,13 @@ async function main() {
   console.log(`[tutorials] EN tutorials: ${output.meta.en.published.tutorials}`);
   console.log(`[tutorials] EN machines: ${output.meta.en.published.machines}`);
   console.log(`[tutorials] EN categories: ${output.meta.en.published.categories}`);
+  console.log(`[tutorials] EN software: ${output.meta.en.published.software}`);
+  console.log(`[tutorials] EN courses: ${output.meta.en.published.courses}`);
   console.log(`[tutorials] FR tutorials: ${output.meta.fr.published.tutorials}`);
   console.log(`[tutorials] FR machines: ${output.meta.fr.published.machines}`);
   console.log(`[tutorials] FR categories: ${output.meta.fr.published.categories}`);
+  console.log(`[tutorials] FR software: ${output.meta.fr.published.software}`);
+  console.log(`[tutorials] FR courses: ${output.meta.fr.published.courses}`);
   for (const warning of output.warnings) {
     console.warn(`[tutorials] WARNING: ${warning}`);
   }

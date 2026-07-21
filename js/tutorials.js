@@ -63,8 +63,12 @@
     const languageData = payload?.tutorials?.[locale] || {};
     const tutorials = Array.isArray(languageData.tutorials) ? languageData.tutorials : [];
     const machines = Array.isArray(languageData.machines) ? languageData.machines : [];
+    const software = Array.isArray(languageData.software) ? languageData.software : [];
+    const courses = Array.isArray(languageData.courses) ? languageData.courses : [];
     const categories = Array.isArray(languageData.categories) ? languageData.categories : [];
     const machineNameById = new Map(machines.map((machine) => [machine.id, machine.name]));
+    const softwareNameById = new Map(software.map((softwareItem) => [softwareItem.id, softwareItem.name]));
+    const courseNameById = new Map(courses.map((course) => [course.id, course.name]));
 
     const categoriesTemplateSource = document.getElementById('tutorial-categories-template')?.innerHTML || '';
     const tutorialsTemplateSource = document.getElementById('tutorials-template')?.innerHTML || '';
@@ -82,6 +86,7 @@
       anchorId: toAnchorId('category', category)
     }));
     const categoriesById = new Map(normalizedCategories.map((category) => [category.id, category]));
+    const categoryIdByAnchor = new Map(normalizedCategories.map((category) => [category.anchorId, category.id]));
     const tutorialsByCategoryId = new Map();
 
     for (const category of normalizedCategories) {
@@ -91,13 +96,27 @@
     const normalizedTutorials = tutorials.map((tutorial) => ({
       ...tutorial,
       anchorId: toAnchorId('tutorial', tutorial),
+      summary: String(tutorial.summary || '').trim(),
       machines: (Array.isArray(tutorial.machineIds) ? tutorial.machineIds : [])
         .map((machineId) => machineNameById.get(machineId))
-        .filter(Boolean)
+        .filter(Boolean),
+      software: (Array.isArray(tutorial.softwareIds) ? tutorial.softwareIds : [])
+        .map((softwareId) => softwareNameById.get(softwareId))
+        .filter(Boolean),
+      courses: [...new Set([
+        ...(Array.isArray(tutorial.courseNames) ? tutorial.courseNames : []),
+        ...(Array.isArray(tutorial.courseIds) ? tutorial.courseIds.map((courseId) => courseNameById.get(courseId)) : [])
+      ])].filter(Boolean)
     }));
+    const tutorialByAnchor = new Map(normalizedTutorials.map((tutorial) => [tutorial.anchorId, tutorial]));
+    const tutorialToPrimaryCategoryId = new Map();
 
     for (const tutorial of normalizedTutorials) {
       const categoryIds = Array.isArray(tutorial.categoryIds) ? tutorial.categoryIds : [];
+      const firstExistingCategoryId = categoryIds.find((categoryId) => tutorialsByCategoryId.has(categoryId)) || null;
+      if (firstExistingCategoryId) {
+        tutorialToPrimaryCategoryId.set(tutorial.id, firstExistingCategoryId);
+      }
       for (const categoryId of categoryIds) {
         if (!tutorialsByCategoryId.has(categoryId)) {
           continue;
@@ -108,6 +127,22 @@
     }
 
     let selectedCategoryId = null;
+    const rawHash = String(window.location.hash || '').trim();
+    const hashAnchor = rawHash.startsWith('#') ? rawHash.slice(1) : rawHash;
+    let pendingScrollTargetId = '';
+    if (hashAnchor) {
+      if (categoryIdByAnchor.has(hashAnchor)) {
+        selectedCategoryId = categoryIdByAnchor.get(hashAnchor);
+        pendingScrollTargetId = hashAnchor;
+      } else if (tutorialByAnchor.has(hashAnchor)) {
+        const tutorial = tutorialByAnchor.get(hashAnchor);
+        const categoryId = tutorialToPrimaryCategoryId.get(tutorial.id);
+        if (categoryId) {
+          selectedCategoryId = categoryId;
+          pendingScrollTargetId = hashAnchor;
+        }
+      }
+    }
 
     function renderCategories() {
       categoriesRoot.innerHTML = categoriesTemplate({
@@ -160,6 +195,14 @@
         const color = normalizeHexColor(button.getAttribute('data-color'));
         button.style.backgroundColor = color;
       });
+
+      if (pendingScrollTargetId) {
+        const target = document.getElementById(pendingScrollTargetId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'auto', block: 'start' });
+        }
+        pendingScrollTargetId = '';
+      }
     }
 
     renderCategories();

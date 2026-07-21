@@ -70,11 +70,25 @@
                                 <article id="{{anchorId}}" class="card courses-card tutorial-card" data-color="{{../selectedCategory.color}}">
                                     <div class="card-content">
                                         <span class="card-title grey-text text-darken-4">{{name}}</span>
-                                        <p class="courses-description">{{{description}}}</p>
+                                        <p class="courses-description">{{summary}}</p>
                                         {{#if machines.length}}
                                             <div class="courses-programs">
                                                 {{#each machines}}
-                                                    <span class="courses-program-chip">{{this}}</span>
+                                                    <span class="chip">{{this}}</span>
+                                                {{/each}}
+                                            </div>
+                                        {{/if}}
+                                        {{#if courses.length}}
+                                            <div class="courses-programs">
+                                                {{#each courses}}
+                                                    <span class="chip">{{this}}</span>
+                                                {{/each}}
+                                            </div>
+                                        {{/if}}
+                                        {{#if software.length}}
+                                            <div class="courses-programs">
+                                                {{#each software}}
+                                                    <span class="chip">{{this}}</span>
                                                 {{/each}}
                                             </div>
                                         {{/if}}
