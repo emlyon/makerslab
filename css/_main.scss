@@ -116,8 +116,9 @@
         }
     }
 
-    #coursesRoot {
-        .courses-card {
+    #coursesRoot,
+    #tutorialsRoot {
+        .flex-card {
             display: flex;
             flex-direction: column;
             min-height: 100%;
@@ -126,11 +127,11 @@
                 flex: 1;
             }
 
-            .courses-description {
+            .card-summary {
                 margin: 1rem 0;
             }
 
-            .courses-programs {
+            .card-tags {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 8px;

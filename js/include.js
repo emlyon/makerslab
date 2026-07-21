@@ -128,10 +128,82 @@
         return appPath(normalizedLanguage === 'fr' ? '/fr/' : '/');
     }
 
+    function normalizeHexColor(value, fallback = '#e2001a') {
+        const raw = String(value || '').trim();
+        if (!raw) {
+            return fallback;
+        }
+
+        const prefixed = raw.startsWith('#') ? raw : `#${raw}`;
+        const shortHex = /^#([0-9a-fA-F]{3})$/.exec(prefixed);
+        if (shortHex) {
+            const [r, g, b] = shortHex[1].split('');
+            return `#${r}${r}${g}${g}${b}${b}`.toLowerCase();
+        }
+
+        if (/^#[0-9a-fA-F]{6}$/.test(prefixed)) {
+            return prefixed.toLowerCase();
+        }
+
+        return fallback;
+    }
+
+    function applyDataColorStyles(root, rules) {
+        if (!root || !Array.isArray(rules)) {
+            return;
+        }
+
+        for (const rule of rules) {
+            if (!rule || !rule.selector || !rule.styleProperty) {
+                continue;
+            }
+
+            root.querySelectorAll(rule.selector).forEach((element) => {
+                const color = normalizeHexColor(element.getAttribute('data-color'));
+                const styleValue =
+                    typeof rule.styleValue === 'function' ? rule.styleValue(color, element) : color;
+                element.style[rule.styleProperty] = styleValue;
+            });
+        }
+    }
+
+    function equalizeCardHeightsByRow(root, options = {}) {
+        if (!root) {
+            return;
+        }
+
+        const rowSelector = options.rowSelector || '.row';
+        const cardSelector = options.cardSelector || '.flex-card';
+        const rows = root.querySelectorAll(rowSelector);
+
+        rows.forEach((row) => {
+            const cards = row.querySelectorAll(cardSelector);
+            if (!cards.length) {
+                return;
+            }
+
+            cards.forEach((card) => {
+                card.style.minHeight = '';
+            });
+
+            const maxHeight = Math.max(...Array.from(cards).map((card) => card.offsetHeight));
+            if (!Number.isFinite(maxHeight) || maxHeight <= 0) {
+                return;
+            }
+
+            cards.forEach((card) => {
+                card.style.minHeight = `${maxHeight}px`;
+            });
+        });
+    }
+
     window.APP_BASE_PATH = APP_BASE_PATH;
     window.appPath = appPath;
     window.stripAppBasePrefix = stripAppBasePrefix;
     window.languagePath = languagePath;
+    window.normalizeHexColor = normalizeHexColor;
+    window.applyDataColorStyles = applyDataColorStyles;
+    window.equalizeCardHeightsByRow = equalizeCardHeightsByRow;
 
     window.include = function include(html) {
         document.open();

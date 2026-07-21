@@ -1,26 +1,11 @@
 (async () => {
+  const normalizeHexColor = window.normalizeHexColor;
+  const applyDataColorStyles = window.applyDataColorStyles;
+  const equalizeCardHeightsByRow = window.equalizeCardHeightsByRow;
+  let hasResizeListener = false;
+
   function isFrenchPage() {
     return (document.documentElement.lang || '').toLowerCase().startsWith('fr');
-  }
-
-  function normalizeHexColor(value, fallback = '#e2001a') {
-    const raw = String(value || '').trim();
-    if (!raw) {
-      return fallback;
-    }
-
-    const prefixed = raw.startsWith('#') ? raw : `#${raw}`;
-    const shortHex = /^#([0-9a-fA-F]{3})$/.exec(prefixed);
-    if (shortHex) {
-      const [r, g, b] = shortHex[1].split('');
-      return `#${r}${r}${g}${g}${b}${b}`.toLowerCase();
-    }
-
-    if (/^#[0-9a-fA-F]{6}$/.test(prefixed)) {
-      return prefixed.toLowerCase();
-    }
-
-    return fallback;
   }
 
   function toAnchorId(course) {
@@ -32,10 +17,25 @@
     return `course-${String(course?.id || '')}`.replace(/[^a-zA-Z0-9_-]/g, '-');
   }
 
+  function chunkIntoRows(items, rowSize = 3) {
+    const rows = [];
+    for (let index = 0; index < items.length; index += rowSize) {
+      rows.push(items.slice(index, index + rowSize));
+    }
+    return rows;
+  }
+
   function renderCourses(coursesPayload) {
     const root = document.getElementById('coursesRoot');
     const menuRoot = document.getElementById('coursesMenu');
-    if (!root || !menuRoot || typeof Handlebars === 'undefined') {
+    if (
+      !root ||
+      !menuRoot ||
+      typeof Handlebars === 'undefined' ||
+      typeof normalizeHexColor !== 'function' ||
+      typeof applyDataColorStyles !== 'function' ||
+      typeof equalizeCardHeightsByRow !== 'function'
+    ) {
       return;
     }
 
@@ -71,6 +71,7 @@
 
     const context = {
       courses: normalizedCourses,
+      courseRows: chunkIntoRows(normalizedCourses, 3),
       ui,
       hasCourses: normalizedCourses.length > 0
     };
@@ -78,20 +79,24 @@
     menuRoot.innerHTML = menuTemplate(context);
     root.innerHTML = template(context);
 
-    root.querySelectorAll('.courses-card').forEach((card) => {
-      const color = normalizeHexColor(card.getAttribute('data-color'));
-      card.style.borderTop = `4px solid ${color}`;
-    });
+    applyDataColorStyles(root, [
+      {
+        selector: '.flex-card',
+        styleProperty: 'borderTop',
+        styleValue: (color) => `4px solid ${color}`
+      },
+      { selector: '.courses-cta', styleProperty: 'backgroundColor' }
+    ]);
 
-    root.querySelectorAll('.courses-cta').forEach((button) => {
-      const color = normalizeHexColor(button.getAttribute('data-color'));
-      button.style.backgroundColor = color;
-    });
+    applyDataColorStyles(menuRoot, [{ selector: '.courses-menu-btn', styleProperty: 'backgroundColor' }]);
+    equalizeCardHeightsByRow(root, { cardSelector: '.flex-card' });
 
-    menuRoot.querySelectorAll('.courses-menu-btn').forEach((button) => {
-      const color = normalizeHexColor(button.getAttribute('data-color'));
-      button.style.backgroundColor = color;
-    });
+    if (!hasResizeListener) {
+      hasResizeListener = true;
+      window.addEventListener('resize', () => {
+        equalizeCardHeightsByRow(root, { cardSelector: '.flex-card' });
+      });
+    }
   }
 
   try {

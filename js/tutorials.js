@@ -1,26 +1,11 @@
 (async () => {
+  const normalizeHexColor = window.normalizeHexColor;
+  const applyDataColorStyles = window.applyDataColorStyles;
+  const equalizeCardHeightsByRow = window.equalizeCardHeightsByRow;
+  let hasResizeListener = false;
+
   function isFrenchPage() {
     return (document.documentElement.lang || '').toLowerCase().startsWith('fr');
-  }
-
-  function normalizeHexColor(value, fallback = '#e2001a') {
-    const raw = String(value || '').trim();
-    if (!raw) {
-      return fallback;
-    }
-
-    const prefixed = raw.startsWith('#') ? raw : `#${raw}`;
-    const shortHex = /^#([0-9a-fA-F]{3})$/.exec(prefixed);
-    if (shortHex) {
-      const [r, g, b] = shortHex[1].split('');
-      return `#${r}${r}${g}${g}${b}${b}`.toLowerCase();
-    }
-
-    if (/^#[0-9a-fA-F]{6}$/.test(prefixed)) {
-      return prefixed.toLowerCase();
-    }
-
-    return fallback;
   }
 
   function toAnchorId(prefix, record) {
@@ -31,6 +16,16 @@
 
     return `${prefix}-${String(record?.id || '')}`.replace(/[^a-zA-Z0-9_-]/g, '-');
   }
+
+  
+  function chunkIntoRows(items, rowSize = 3) {
+    const rows = [];
+    for (let index = 0; index < items.length; index += rowSize) {
+      rows.push(items.slice(index, index + rowSize));
+    }
+    return rows;
+  }
+
 
   function buildUi(locale) {
     if (locale === 'fr') {
@@ -55,7 +50,14 @@
   function renderTutorials(payload) {
     const categoriesRoot = document.getElementById('tutorialCategoriesMenu');
     const tutorialsRoot = document.getElementById('tutorialsRoot');
-    if (!categoriesRoot || !tutorialsRoot || typeof Handlebars === 'undefined') {
+    if (
+      !categoriesRoot ||
+      !tutorialsRoot ||
+      typeof Handlebars === 'undefined' ||
+      typeof normalizeHexColor !== 'function' ||
+      typeof applyDataColorStyles !== 'function' ||
+      typeof equalizeCardHeightsByRow !== 'function'
+    ) {
       return;
     }
 
@@ -182,19 +184,20 @@
         hasCategories: normalizedCategories.length > 0,
         selectedCategory,
         tutorials: categoryTutorials,
+        tutorialRows: chunkIntoRows(categoryTutorials, 3),
         hasTutorials: categoryTutorials.length > 0,
         ui
       });
 
-      tutorialsRoot.querySelectorAll('.tutorial-card').forEach((card) => {
-        const color = normalizeHexColor(card.getAttribute('data-color'));
-        card.style.borderTop = `4px solid ${color}`;
-      });
-
-      tutorialsRoot.querySelectorAll('.tutorial-cta').forEach((button) => {
-        const color = normalizeHexColor(button.getAttribute('data-color'));
-        button.style.backgroundColor = color;
-      });
+      applyDataColorStyles(tutorialsRoot, [
+        {
+          selector: '.flex-card',
+          styleProperty: 'borderTop',
+          styleValue: (color) => `4px solid ${color}`
+        },
+        { selector: '.tutorial-cta', styleProperty: 'backgroundColor' }
+      ]);
+      equalizeCardHeightsByRow(tutorialsRoot, { cardSelector: '.flex-card' });
 
       if (pendingScrollTargetId) {
         const target = document.getElementById(pendingScrollTargetId);
@@ -207,6 +210,13 @@
 
     renderCategories();
     renderTutorialCards();
+
+    if (!hasResizeListener) {
+      hasResizeListener = true;
+      window.addEventListener('resize', () => {
+        equalizeCardHeightsByRow(tutorialsRoot, { cardSelector: '.flex-card' });
+      });
+    }
   }
 
   const tutorialsDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/tutorials.json') : '/data/tutorials.json';

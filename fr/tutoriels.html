@@ -35,8 +35,8 @@
     </div>
 
     <div class="main">
-        <div class="container" id="tutorial-catalog">
-            <h4 style="margin-top:60px" class="red-text"><b>catalogue des tutoriels</b></h4>
+        <div class="container" id="tutorials-list">
+            <h4 style="margin-top:60px" class="red-text"><b>Tutoriels</b></h4>
             <div id="tutorialsRoot"></div>
         </div>
     </div>
@@ -64,42 +64,40 @@
             {{#if selectedCategory}}
                 <h5 id="{{selectedCategory.anchorId}}" class="grey-text text-darken-3"><b>{{selectedCategory.name}}</b></h5>
                 {{#if hasTutorials}}
-                    <div class="row courses-grid">
-                        {{#each tutorials}}
-                            <div class="col s12 m6 l4">
-                                <article id="{{anchorId}}" class="card courses-card tutorial-card" data-color="{{../selectedCategory.color}}">
-                                    <div class="card-content">
-                                        <span class="card-title grey-text text-darken-4">{{name}}</span>
-                                        <p class="courses-description">{{summary}}</p>
-                                        {{#if machines.length}}
-                                            <div class="courses-programs">
-                                                {{#each machines}}
-                                                    <span class="chip">{{this}}</span>
-                                                {{/each}}
+                    {{#each tutorialRows}}
+                        <div class="row">
+                            {{#each this}}
+                                <div class="col s12 m6 l4">
+                                    <article id="{{anchorId}}" class="card flex-card tutorial-card" data-color="{{../../selectedCategory.color}}">
+                                        <div class="card-content">
+                                            <span class="card-title grey-text text-darken-4">{{name}}</span>
+                                            <p class="card-summary">{{summary}}</p>
+                                            <div class="card-tags">
+                                                {{#if machines.length}}
+                                                    {{#each machines}}
+                                                        <span class="chip">{{this}}</span>
+                                                    {{/each}}
+                                                {{/if}}
+                                                {{#if courses.length}}
+                                                    {{#each courses}}
+                                                        <span class="chip">{{this}}</span>
+                                                    {{/each}}
+                                                {{/if}}
+                                                {{#if software.length}}
+                                                    {{#each software}}
+                                                        <span class="chip">{{this}}</span>
+                                                    {{/each}}
+                                                {{/if}}
                                             </div>
-                                        {{/if}}
-                                        {{#if courses.length}}
-                                            <div class="courses-programs">
-                                                {{#each courses}}
-                                                    <span class="chip">{{this}}</span>
-                                                {{/each}}
-                                            </div>
-                                        {{/if}}
-                                        {{#if software.length}}
-                                            <div class="courses-programs">
-                                                {{#each software}}
-                                                    <span class="chip">{{this}}</span>
-                                                {{/each}}
-                                            </div>
-                                        {{/if}}
-                                    </div>
-                                    <div class="card-action">
-                                        <a class="btn waves-effect waves-light courses-cta tutorial-cta" href="{{notionUrl}}" target="_blank" rel="noopener noreferrer" data-color="{{../selectedCategory.color}}">{{../ui.ctaLabel}}</a>
-                                    </div>
-                                </article>
-                            </div>
-                        {{/each}}
-                    </div>
+                                        </div>
+                                        <div class="card-action">
+                                            <a class="btn waves-effect waves-light courses-cta tutorial-cta" href="{{notionUrl}}" target="_blank" rel="noopener noreferrer" data-color="{{../../selectedCategory.color}}">{{../../ui.ctaLabel}}</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            {{/each}}
+                        </div>
+                    {{/each}}
                 {{else}}
                     <p class="grey-text text-darken-1 flow-text">{{ui.noTutorialsLabel}}</p>
                 {{/if}}
