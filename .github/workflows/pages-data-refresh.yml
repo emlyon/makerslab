@@ -24,6 +24,7 @@ jobs:
       changed: ${{ steps.diff.outputs.changed }}
       popup_changed: ${{ steps.diff.outputs.popup_changed }}
       courses_changed: ${{ steps.diff.outputs.courses_changed }}
+      tutorials_changed: ${{ steps.diff.outputs.tutorials_changed }}
       source_changed: ${{ steps.source_changes.outputs.source_changed }}
     steps:
       - name: Checkout
@@ -55,9 +56,20 @@ jobs:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_COURSES_DB_ID: ${{ secrets.NOTION_COURSES_DB_ID }}
 
+      - name: Fetch latest tutorials
+        run: npm run fetch:tutorials -- --output-root=${{ runner.temp }}/pages-build
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_TUTORIALS_EN_DB_ID: ${{ secrets.NOTION_TUTORIALS_EN_DB_ID }}
+          NOTION_MACHINES_EN_DB_ID: ${{ secrets.NOTION_MACHINES_EN_DB_ID }}
+          NOTION_CATEGORIES_EN_DB_ID: ${{ secrets.NOTION_CATEGORIES_EN_DB_ID }}
+          NOTION_TUTORIALS_FR_DB_ID: ${{ secrets.NOTION_TUTORIALS_FR_DB_ID }}
+          NOTION_MACHINES_FR_DB_ID: ${{ secrets.NOTION_MACHINES_FR_DB_ID }}
+          NOTION_CATEGORIES_FR_DB_ID: ${{ secrets.NOTION_CATEGORIES_FR_DB_ID }}
+
       - name: Detect event changes
         id: diff
-        run: npm run events:diff -- --new-file=${{ runner.temp }}/pages-build/data/events.json --new-popup-file=${{ runner.temp }}/pages-build/data/popup.json --new-courses-file=${{ runner.temp }}/pages-build/data/courses.json
+        run: npm run events:diff -- --new-file=${{ runner.temp }}/pages-build/data/events.json --new-popup-file=${{ runner.temp }}/pages-build/data/popup.json --new-courses-file=${{ runner.temp }}/pages-build/data/courses.json --new-tutorials-file=${{ runner.temp }}/pages-build/data/tutorials.json
 
       - name: Detect source-triggered run
         id: source_changes
@@ -69,30 +81,31 @@ jobs:
           fi
 
       - name: Build Pages artifact
-        if: steps.diff.outputs.changed == 'true' || steps.diff.outputs.popup_changed == 'true' || steps.diff.outputs.courses_changed == 'true' || steps.source_changes.outputs.source_changed == 'true'
+        if: steps.diff.outputs.changed == 'true' || steps.diff.outputs.popup_changed == 'true' || steps.diff.outputs.courses_changed == 'true' || steps.diff.outputs.tutorials_changed == 'true' || steps.source_changes.outputs.source_changed == 'true'
         run: npm run build:pages
         env:
           BUILD_DIR: ${{ runner.temp }}/pages-artifact
           SOURCE_EVENTS_PATH: ${{ runner.temp }}/pages-build/data/events.json
           SOURCE_POPUP_PATH: ${{ runner.temp }}/pages-build/data/popup.json
           SOURCE_COURSES_PATH: ${{ runner.temp }}/pages-build/data/courses.json
+          SOURCE_TUTORIALS_PATH: ${{ runner.temp }}/pages-build/data/tutorials.json
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
-        if: steps.diff.outputs.changed == 'true' || steps.diff.outputs.popup_changed == 'true' || steps.diff.outputs.courses_changed == 'true' || steps.source_changes.outputs.source_changed == 'true'
+        if: steps.diff.outputs.changed == 'true' || steps.diff.outputs.popup_changed == 'true' || steps.diff.outputs.courses_changed == 'true' || steps.diff.outputs.tutorials_changed == 'true' || steps.source_changes.outputs.source_changed == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ runner.temp }}/pages-artifact
 
       - name: No changes summary
-        if: steps.diff.outputs.changed != 'true' && steps.diff.outputs.popup_changed != 'true' && steps.diff.outputs.courses_changed != 'true' && steps.source_changes.outputs.source_changed != 'true'
-        run: echo "No event/popup/courses/source changes detected. Skipping artifact upload and deploy."
+        if: steps.diff.outputs.changed != 'true' && steps.diff.outputs.popup_changed != 'true' && steps.diff.outputs.courses_changed != 'true' && steps.diff.outputs.tutorials_changed != 'true' && steps.source_changes.outputs.source_changed != 'true'
+        run: echo "No event/popup/courses/tutorials/source changes detected. Skipping artifact upload and deploy."
 
   deploy:
     needs: build
-    if: needs.build.outputs.changed == 'true' || needs.build.outputs.popup_changed == 'true' || needs.build.outputs.courses_changed == 'true' || needs.build.outputs.source_changed == 'true'
+    if: needs.build.outputs.changed == 'true' || needs.build.outputs.popup_changed == 'true' || needs.build.outputs.courses_changed == 'true' || needs.build.outputs.tutorials_changed == 'true' || needs.build.outputs.source_changed == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

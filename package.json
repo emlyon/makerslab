@@ -3,6 +3,7 @@
     "fetch:events": "node tools/build-data/fetch-events.js",
     "fetch:popup": "node tools/build-data/fetch-popup.js",
     "fetch:courses": "node tools/build-data/fetch-courses.js",
+    "fetch:tutorials": "node tools/build-data/fetch-tutorials.js",
     "events:diff": "node tools/build-data/detect-data-changes.js",
     "build:css": "sass css/style.scss css/style.min.css --style=compressed --source-map",
     "prebuild:pages": "npm run build:css",

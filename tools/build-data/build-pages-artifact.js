@@ -8,6 +8,7 @@ const buildDir = path.resolve(process.env.BUILD_DIR || path.join(repoRoot, 'buil
 const sourceEventsPath = path.resolve(process.env.SOURCE_EVENTS_PATH || path.join(repoRoot, 'data', 'events.json'));
 const sourcePopupPath = path.resolve(process.env.SOURCE_POPUP_PATH || path.join(repoRoot, 'data', 'popup.json'));
 const sourceCoursesPath = path.resolve(process.env.SOURCE_COURSES_PATH || path.join(repoRoot, 'data', 'courses.json'));
+const sourceTutorialsPath = path.resolve(process.env.SOURCE_TUTORIALS_PATH || path.join(repoRoot, 'data', 'tutorials.json'));
 const buildDirRelativeToRepo = path.relative(repoRoot, buildDir).replaceAll('\\', '/');
 const buildDirIsInsideRepo =
   buildDirRelativeToRepo && !buildDirRelativeToRepo.startsWith('..') && !path.isAbsolute(buildDirRelativeToRepo);
@@ -154,12 +155,75 @@ function injectCoursesFile() {
   };
 }
 
+function injectTutorialsFile() {
+  const targetTutorialsPath = path.join(buildDir, 'data', 'tutorials.json');
+  fs.mkdirSync(path.dirname(targetTutorialsPath), { recursive: true });
+
+  if (fs.existsSync(sourceTutorialsPath)) {
+    fs.copyFileSync(sourceTutorialsPath, targetTutorialsPath);
+    return {
+      source: sourceTutorialsPath,
+      usedFallback: false
+    };
+  }
+
+  const defaultTutorials = {
+    generatedAt: new Date().toISOString(),
+    tutorials: {
+      en: {
+        tutorials: [],
+        machines: [],
+        categories: []
+      },
+      fr: {
+        tutorials: [],
+        machines: [],
+        categories: []
+      }
+    },
+    warnings: ['Tutorials source file was missing during build; default empty tutorials payload emitted.'],
+    meta: {
+      en: {
+        source: {
+          tutorialsRecords: 0,
+          machinesRecords: 0,
+          categoriesRecords: 0
+        },
+        published: {
+          tutorials: 0,
+          machines: 0,
+          categories: 0
+        }
+      },
+      fr: {
+        source: {
+          tutorialsRecords: 0,
+          machinesRecords: 0,
+          categoriesRecords: 0
+        },
+        published: {
+          tutorials: 0,
+          machines: 0,
+          categories: 0
+        }
+      }
+    }
+  };
+
+  fs.writeFileSync(targetTutorialsPath, JSON.stringify(defaultTutorials, null, 2));
+  return {
+    source: 'generated-default',
+    usedFallback: true
+  };
+}
+
 function main() {
   cleanBuildDirectory();
   copyTree(repoRoot, buildDir);
   injectEventsFile();
   const popupResult = injectPopupFile();
   const coursesResult = injectCoursesFile();
+  const tutorialsResult = injectTutorialsFile();
 
   console.log(`Pages artifact prepared in: ${buildDir}`);
   console.log(`Injected events data from: ${sourceEventsPath}`);
@@ -173,6 +237,12 @@ function main() {
     console.log('Courses source file missing. Emitted default empty courses payload.');
   } else {
     console.log(`Injected courses data from: ${coursesResult.source}`);
+  }
+
+  if (tutorialsResult.usedFallback) {
+    console.log('Tutorials source file missing. Emitted default empty tutorials payload.');
+  } else {
+    console.log(`Injected tutorials data from: ${tutorialsResult.source}`);
   }
 }
 
