@@ -151,8 +151,7 @@ function mapTutorial(page, language, warnings) {
   const nameProperty = findPropertyByAliases(properties, ['name', 'nom', 'title', 'titre']) || findFirstPropertyByType(properties, 'title');
   const slugProperty = findPropertyByAliases(properties, ['slug']);
   const summaryProperty =
-    findPropertyByAliases(properties, ['summary', 'résumé', 'resume', 'description', 'content']) ||
-    findFirstPropertyByType(properties, 'rich_text');
+    findPropertyByAliases(properties, ['summary', 'résumé', 'resume', 'description', 'content'])
   const machinesProperty = findPropertyByAliases(properties, ['machines', '⚙️ machines']);
   const categoriesProperty = findPropertyByAliases(properties, ['catégories', 'categories']);
   const softwaresProperty = findPropertyByAliases(properties, ['logiciels', 'software', 'softwares']);
