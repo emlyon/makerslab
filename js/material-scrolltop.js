@@ -17,6 +17,8 @@
         _.btnClass = '.material-scrolltop';
         _.revealClass = 'reveal';
         _.btnElement = $(_.btnClass);
+        _.footerElement = $('footer').first();
+        _.baseOffset = 25;
 
         _.initial = {
             revealElement: 'body',
@@ -33,13 +35,33 @@
         breakpoint = _.options.revealPosition !== 'bottom' ? _.revealElement.offset().top : _.revealElement.offset().top + _.revealElement.height();
         scrollTo = element.offsetTop + _.options.padding;
 
+        _.updateButtonPosition = function() {
+            var bottom = _.baseOffset;
+
+            if (_.footerElement.length) {
+                var footerTop = _.footerElement[0].getBoundingClientRect().top;
+                var overlap = $(window).height() - footerTop;
+
+                if (overlap > 0) {
+                    bottom = overlap + _.baseOffset;
+                }
+            }
+
+            _.btnElement.css('bottom', bottom + 'px');
+        };
+
         $(document).scroll(function() {
             if (breakpoint < $(document).scrollTop()) {
                 _.btnElement.addClass(_.revealClass);
             } else {
                 _.btnElement.removeClass(_.revealClass);
             }
+
+            _.updateButtonPosition();
         });
+
+        $(window).on('resize orientationchange', _.updateButtonPosition);
+        _.updateButtonPosition();
 
         _.btnElement.click(function() {
             var trigger = true;
