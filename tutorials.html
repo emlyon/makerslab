@@ -30,6 +30,9 @@
                 <div style="margin-top: 4em" class="row center">
                     <div id="tutorialCategoriesMenu" class="tutorial-categories-menu"></div>
                 </div>
+                <div class="row center" style="margin-top: 1em;">
+                    <div id="tutorialSearchRoot"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -64,48 +67,44 @@
 
     <script id="tutorials-template" type="text/x-handlebars-template">
         {{#if hasCategories}}
-            {{#if selectedCategory}}
-                <h5 id="{{selectedCategory.anchorId}}" class="grey-text text-darken-3"><b>{{selectedCategory.name}}</b></h5>
-                {{#if hasTutorials}}
-                    {{#each tutorialRows}}
-                        <div class="row">
-                            {{#each this}}
-                                <div class="col s12 m6 l4">
-                                    <article id="{{anchorId}}" class="card flex-card tutorial-card" data-color="{{../../selectedCategory.color}}">
-                                        <div class="card-content">
-                                            <span class="card-title grey-text text-darken-4">{{name}}</span>
-                                        `   <p class="card-summary">{{summary}}</p>
-                                            <div class="card-tags">
-                                                {{#if machines.length}}
-                                                    {{#each machines}}
-                                                        <span class="chip">{{this}}</span>
-                                                    {{/each}}
-                                                {{/if}}
-                                                {{#if courses.length}}
-                                                    {{#each courses}}
-                                                        <span class="chip">{{this}}</span>
-                                                    {{/each}}
-                                                {{/if}}
-                                                {{#if software.length}}
-                                                    {{#each software}}
-                                                        <span class="chip">{{this}}</span>
-                                                    {{/each}}
-                                                {{/if}}
-                                            </div>
+            <h5 id="{{headingAnchorId}}" class="grey-text text-darken-3"><b>{{headingLabel}}</b></h5>
+            {{#if hasTutorials}}
+                {{#each tutorialRows}}
+                    <div class="row">
+                        {{#each this}}
+                            <div class="col s12 m6 l4">
+                                <article id="{{anchorId}}" class="card flex-card tutorial-card" data-color="{{cardColor}}">
+                                    <div class="card-content">
+                                        <span class="card-title grey-text text-darken-4">{{name}}</span>
+                                        <p class="card-summary">{{summary}}</p>
+                                        <div class="card-tags">
+                                            {{#if machines.length}}
+                                                {{#each machines}}
+                                                    <span class="chip">{{this}}</span>
+                                                {{/each}}
+                                            {{/if}}
+                                            {{#if courses.length}}
+                                                {{#each courses}}
+                                                    <span class="chip">{{this}}</span>
+                                                {{/each}}
+                                            {{/if}}
+                                            {{#if software.length}}
+                                                {{#each software}}
+                                                    <span class="chip">{{this}}</span>
+                                                {{/each}}
+                                            {{/if}}
                                         </div>
-                                        <div class="card-action">
-                                            <a class="btn waves-effect waves-light courses-cta tutorial-cta" href="{{notionUrl}}" target="_blank" rel="noopener noreferrer" data-color="{{../../selectedCategory.color}}">{{../../ui.ctaLabel}}</a>
-                                        </div>
-                                    </article>
-                                </div>
-                            {{/each}}
-                        </div>
-                    {{/each}}
-                {{else}}
-                    <p class="grey-text text-darken-1 flow-text">{{ui.noTutorialsLabel}}</p>
-                {{/if}}
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="btn waves-effect waves-light courses-cta tutorial-cta" href="{{notionUrl}}" target="_blank" rel="noopener noreferrer" data-color="{{cardColor}}">{{../../ui.ctaLabel}}</a>
+                                    </div>
+                                </article>
+                            </div>
+                        {{/each}}
+                    </div>
+                {{/each}}
             {{else}}
-                <p class="grey-text text-darken-1 flow-text">{{ui.chooseCategoryLabel}}</p>
+                <p class="grey-text text-darken-1 flow-text">{{noTutorialsMessage}}</p>
             {{/if}}
         {{else}}
             <p class="grey-text text-darken-1 flow-text">{{ui.noCategoriesLabel}}</p>
@@ -116,6 +115,7 @@
 
     <script src="includes/scripts.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.8/dist/handlebars.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" charset="utf-8"></script>
     <script>
         if (typeof Handlebars !== 'undefined') {
             Handlebars.registerHelper('ifEquals', function (left, right, options) {
