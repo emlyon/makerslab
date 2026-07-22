@@ -47,6 +47,10 @@ function getPlainTextFromProperty(property) {
     return property.select?.name?.trim() || '';
   }
 
+  if (property.type === 'status') {
+    return property.status?.name?.trim() || '';
+  }
+
   if (property.type === 'url') {
     return String(property.url || '').trim();
   }

@@ -121,14 +121,6 @@ function getRelationAndMultiSelectValue(property) {
   };
 }
 
-function getCheckboxValueFromProperty(property, fallback = false) {
-  if (!property || property.type !== 'checkbox') {
-    return fallback;
-  }
-
-  return Boolean(property.checkbox);
-}
-
 function normalizeLanguageValue(value, fallbackLanguage) {
   const normalized = String(value || '').trim().toLowerCase();
   if (normalized === 'fr' || normalized === 'french' || normalized === 'français' || normalized === 'francais') {
@@ -146,6 +138,19 @@ function sortAndDedupe(values) {
   return [...new Set(values.filter(Boolean))].sort((left, right) => String(left).localeCompare(String(right)));
 }
 
+function normalizeStatusValue(value) {
+  return String(value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim()
+    .toLowerCase();
+}
+
+function isPublishedStatus(value) {
+  const normalizedStatus = normalizeStatusValue(value);
+  return normalizedStatus === 'published' || normalizedStatus === 'publie';
+}
+
 function mapTutorial(page, language, warnings) {
   const properties = page.properties || {};
   const nameProperty = findPropertyByAliases(properties, ['name', 'nom', 'title', 'titre']) || findFirstPropertyByType(properties, 'title');
@@ -157,7 +162,7 @@ function mapTutorial(page, language, warnings) {
   const softwaresProperty = findPropertyByAliases(properties, ['logiciels', 'software', 'softwares']);
   const coursesProperty = findPropertyByAliases(properties, ['cours', 'courses']);
   const languageProperty = findPropertyByAliases(properties, ['language', 'lang', 'langue']);
-  const activeProperty = findPropertyByAliases(properties, ['active', 'is active']);
+  const statusProperty = findPropertyByAliases(properties, ['status', 'statut']);
   const coursesValue = getRelationAndMultiSelectValue(coursesProperty);
 
   const name = getPlainTextFromProperty(nameProperty);
@@ -178,7 +183,7 @@ function mapTutorial(page, language, warnings) {
     summary: getPlainTextFromProperty(summaryProperty),
     notionUrl: page.url,
     language: normalizeLanguageValue(getPlainTextFromProperty(languageProperty), language),
-    active: getCheckboxValueFromProperty(activeProperty, true),
+    published: isPublishedStatus(getPlainTextFromProperty(statusProperty)),
     machineIds: sortAndDedupe(getRelationIdsFromProperty(machinesProperty)),
     categoryIds: sortAndDedupe(getRelationIdsFromProperty(categoriesProperty)),
     softwareIds: sortAndDedupe(getRelationIdsFromProperty(softwaresProperty)),
@@ -472,7 +477,7 @@ async function fetchLanguageData(language, ids, coursesPages, warnings) {
   const tutorials = tutorialPages
     .map((page) => mapTutorial(page, language, warnings))
     .filter(Boolean)
-    .filter((tutorial) => tutorial.language === language && tutorial.active);
+    .filter((tutorial) => tutorial.language === language && tutorial.published);
   const machines = machinePages
     .map((page) => mapMachine(page, language, warnings))
     .filter(Boolean)
