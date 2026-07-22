@@ -83,7 +83,11 @@ jobs:
           fi
 
       - name: Build Pages artifact
-        if: steps.diff.outputs.changed == 'true' || steps.diff.outputs.popup_changed == 'true' || steps.diff.outputs.courses_changed == 'true' || steps.diff.outputs.tutorials_changed == 'true' || steps.source_changes.outputs.source_changed == 'true'
+        if: steps.diff.outputs.changed == 'true' ||
+          steps.diff.outputs.popup_changed == 'true' ||
+          steps.diff.outputs.courses_changed == 'true' ||
+          steps.diff.outputs.tutorials_changed == 'true' ||
+          steps.source_changes.outputs.source_changed == 'true'
         run: npm run build:pages
         env:
           BUILD_DIR: ${{ runner.temp }}/pages-artifact
@@ -96,18 +100,30 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
-        if: steps.diff.outputs.changed == 'true' || steps.diff.outputs.popup_changed == 'true' || steps.diff.outputs.courses_changed == 'true' || steps.diff.outputs.tutorials_changed == 'true' || steps.source_changes.outputs.source_changed == 'true'
+        if: steps.diff.outputs.changed == 'true' ||
+          steps.diff.outputs.popup_changed == 'true' ||
+          steps.diff.outputs.courses_changed == 'true' ||
+          steps.diff.outputs.tutorials_changed == 'true' ||
+          steps.source_changes.outputs.source_changed == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ runner.temp }}/pages-artifact
 
       - name: No changes summary
-        if: steps.diff.outputs.changed != 'true' && steps.diff.outputs.popup_changed != 'true' && steps.diff.outputs.courses_changed != 'true' && steps.diff.outputs.tutorials_changed != 'true' && steps.source_changes.outputs.source_changed != 'true'
-        run: echo "No event/popup/courses/tutorials/source changes detected. Skipping artifact upload and deploy."
+        if: steps.diff.outputs.changed != 'true' &&
+          steps.diff.outputs.popup_changed != 'true' &&
+          steps.diff.outputs.courses_changed != 'true' &&
+          steps.diff.outputs.tutorials_changed != 'true' &&
+          steps.source_changes.outputs.source_changed != 'true'
+        run: echo "No changes detected. Skipping artifact upload and deploy."
 
   deploy:
     needs: build
-    if: needs.build.outputs.changed == 'true' || needs.build.outputs.popup_changed == 'true' || needs.build.outputs.courses_changed == 'true' || needs.build.outputs.tutorials_changed == 'true' || needs.build.outputs.source_changed == 'true'
+    if: needs.build.outputs.changed == 'true' ||
+      needs.build.outputs.popup_changed == 'true' ||
+      needs.build.outputs.courses_changed == 'true' ||
+      needs.build.outputs.tutorials_changed == 'true' ||
+      needs.build.outputs.source_changed == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
