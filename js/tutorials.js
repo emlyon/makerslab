@@ -47,6 +47,32 @@
     };
   }
 
+  function updateLocationHash(hash) {
+    if (!hash || !hash.startsWith('#')) {
+      return;
+    }
+
+    if (history && typeof history.pushState === 'function') {
+      history.pushState(null, '', hash);
+      return;
+    }
+
+    window.location.hash = hash;
+  }
+
+  function scrollToTarget(target, { animated = false } = {}) {
+    if (!target) {
+      return;
+    }
+
+    if (animated && window.jQuery && typeof window.jQuery.scrollTo === 'function') {
+      window.jQuery(window).scrollTo(window.jQuery(target), 500, { offset: -150 });
+      return;
+    }
+
+    target.scrollIntoView({ behavior: 'auto', block: 'start' });
+  }
+
   function renderTutorials(payload) {
     const categoriesRoots = Array.from(document.querySelectorAll('.tutorial-categories-menu'));
     const tutorialsRoot = document.getElementById('tutorialsRoot');
@@ -173,16 +199,18 @@
         });
 
         categoriesRoot.querySelectorAll('.tutorial-category-btn').forEach((button) => {
-          button.addEventListener('click', () => {
+          button.addEventListener('click', (event) => {
+            event.preventDefault();
             selectedCategoryId = button.getAttribute('data-category-id');
+            pendingScrollTargetId = (button.getAttribute('href') || '').replace(/^#/, '');
             renderCategories();
-            renderTutorialCards();
+            renderTutorialCards({ animatedScroll: true });
           });
         });
       }
     }
 
-    function renderTutorialCards() {
+    function renderTutorialCards({ animatedScroll = false } = {}) {
       const selectedCategory = selectedCategoryId ? categoriesById.get(selectedCategoryId) : null;
       const categoryTutorials = selectedCategoryId ? tutorialsByCategoryId.get(selectedCategoryId) || [] : [];
 
@@ -208,7 +236,8 @@
       if (pendingScrollTargetId) {
         const target = document.getElementById(pendingScrollTargetId);
         if (target) {
-          target.scrollIntoView({ behavior: 'auto', block: 'start' });
+          scrollToTarget(target, { animated: animatedScroll });
+          updateLocationHash(`#${pendingScrollTargetId}`);
         }
         pendingScrollTargetId = '';
       }
