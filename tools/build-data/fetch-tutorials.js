@@ -171,7 +171,7 @@ function mapTutorial(page, language, warnings) {
     return null;
   }
 
-  if (!page.url) {
+  if (!page.public_url) {
     warnings.push(`Skipped tutorial ${page.id}: missing Notion page url.`);
     return null;
   }
@@ -181,7 +181,7 @@ function mapTutorial(page, language, warnings) {
     slug: normalizeSlug(getPlainTextFromProperty(slugProperty)),
     name,
     summary: getPlainTextFromProperty(summaryProperty),
-    notionUrl: page.url,
+    notionUrl: page.public_url,
     language: normalizeLanguageValue(getPlainTextFromProperty(languageProperty), language),
     published: isPublishedStatus(getPlainTextFromProperty(statusProperty)),
     machineIds: sortAndDedupe(getRelationIdsFromProperty(machinesProperty)),

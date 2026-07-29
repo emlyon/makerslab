@@ -109,7 +109,7 @@ function mapCourseRecord(page, warnings) {
     return null;
   }
 
-  if (!page.url) {
+  if (!page.public_url) {
     warnings.push(`Skipped ${page.id}: missing Notion page url.`);
     return null;
   }
@@ -126,7 +126,7 @@ function mapCourseRecord(page, warnings) {
     description,
     color,
     language,
-    notionUrl: page.url
+    notionUrl: page.public_url
   };
 }
 
