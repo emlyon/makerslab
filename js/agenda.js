@@ -80,6 +80,10 @@ function createEventCard(event) {
 function appendEvents(events) {
   const eventsList = document.getElementById('eventsList');
   let eventRow;
+  if (events.length === 0) {
+    eventsList.innerHTML = '<p>No events yet, stay tuned !</p>';
+    return;
+  }
   events.forEach((event, index) => {
     const card = createEventCard(event);
 
