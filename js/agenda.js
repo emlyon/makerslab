@@ -15,7 +15,7 @@ async function main() {
 // Fetch events.json file
 async function fetchEvents() {
   try {
-    const response = await fetch('./data/events.json');
+    const response = await fetch('/data/events.json');
     return await response.json();
   } catch (error) {
     console.error('Error fetching events:', error);
@@ -80,23 +80,34 @@ function createEventCard(event) {
 function appendEvents(events) {
   const eventsList = document.getElementById('eventsList');
   let eventRow;
-  events.forEach((event, index) => {
-    const card = createEventCard(event);
-
-    const eventCol = document.createElement('div');
-    eventCol.classList.add('col', 's12', 'm4');
-
-    if (index % 3 === 0) {
-      eventRow = document.createElement('div');
-      eventRow.classList.add('row');
+  if (events.length === 0) {
+    let noEventsMessage;
+    if (pageLanguage === 'fr') {
+      noEventsMessage = '<p>Aucun événement pour le moment.<br>Les événements sont mis à jours en début de semestre.</p>';
+    } else {
+      noEventsMessage = '<p>No events yet, stay tuned : events are updated every semester.</p>';
     }
+    eventsList.innerHTML = noEventsMessage;
+    return;
+  } else {
+    events.forEach((event, index) => {
+      const card = createEventCard(event);
 
-    eventCol.appendChild(card);
-    eventRow.appendChild(eventCol);
-    if (index % 3 === 2 || index === events.length - 1) {
-      eventsList.appendChild(eventRow);
-    }
-  });
+      const eventCol = document.createElement('div');
+      eventCol.classList.add('col', 's12', 'm4');
+
+      if (index % 3 === 0) {
+        eventRow = document.createElement('div');
+        eventRow.classList.add('row');
+      }
+
+      eventCol.appendChild(card);
+      eventRow.appendChild(eventCol);
+      if (index % 3 === 2 || index === events.length - 1) {
+        eventsList.appendChild(eventRow);
+      }
+    });
+  };
 }
 
 function equalizeCardsHeight() {
