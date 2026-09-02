@@ -5,6 +5,7 @@
             '/fr/index.html': '/',
             '/fr/tutoriels.html': '/tutorials.html',
             '/fr/evenements.html': '/events.html',
+            '/fr/equipements.html': '/equipments.html',
             '/fr/formations.html': '/courses.html'
         },
         fr: {
@@ -12,6 +13,7 @@
             '/index.html': '/fr/',
             '/tutorials.html': '/fr/tutoriels.html',
             '/events.html': '/fr/evenements.html',
+            '/equipments.html': '/fr/equipements.html',
             '/courses.html': '/fr/formations.html'
         }
     };

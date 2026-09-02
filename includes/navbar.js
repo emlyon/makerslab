@@ -8,6 +8,7 @@ include(`
                     <ul class="right hide-on-med-and-down">
                         <li><a href="${appPath('/')}">makers' lab</a></li>
                         <li><a href="${appPath('/tutorials.html')}">tutorials</a></li>
+                        <li><a href="${appPath('/equipments.html')}">equipment</a></li>
                         <li><a href="${appPath('/events.html')}">events</a></li>
                         <li><a href="${appPath('/courses.html')}">courses</a></li>
                         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
@@ -20,6 +21,7 @@ include(`
         <ul id="nav-mobile" class="sidenav">
             <li><a href="${appPath('/')}">makers' lab</a></li>
             <li><a href="${appPath('/tutorials.html')}">tutorials</a></li>
+            <li><a href="${appPath('/equipments.html')}">equipment</a></li>
             <li><a href="${appPath('/events.html')}">events</a></li>
             <li><a href="${appPath('/courses.html')}">courses</a></li>
             <li class="divider"></li>

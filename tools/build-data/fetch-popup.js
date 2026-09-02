@@ -3,11 +3,10 @@
 const fs = require('fs');
 const path = require('path');
 const { Client } = require('@notionhq/client');
-const { fetchAllPages, getPlainTextFromProperty, getRichTextAsHtml, loadDotEnvIfPresent } = require('./notion-utils');
+const { loadDotEnvIfPresent } = require('./utils');
+const { PopupMapper } = require('./entity-mappers');
 
 const repoRoot = path.resolve(__dirname, '../..');
-const OUTPUT_ROOT = resolveOutputRoot();
-const OUTPUT_POPUP_PATH = path.join(OUTPUT_ROOT, 'data', 'popup.json');
 
 loadDotEnvIfPresent(repoRoot);
 
@@ -20,51 +19,6 @@ if (!NOTION_API_KEY || !NOTION_POPUP_DB_ID) {
 
 const notion = new Client({ auth: NOTION_API_KEY });
 
-function resolveOutputRoot() {
-  const arg = process.argv.find((value) => value.startsWith('--output-root='));
-  const fromArg = arg ? arg.slice('--output-root='.length) : undefined;
-  const outputRoot = fromArg || process.env.OUTPUT_ROOT || repoRoot;
-  return path.resolve(outputRoot);
-}
-
-function getDateFromProperty(property, key) {
-  if (!property || property.type !== 'date' || !property.date || !property.date[key]) {
-    return null;
-  }
-
-  const date = new Date(property.date[key]);
-  if (Number.isNaN(date.getTime())) {
-    return null;
-  }
-  return date;
-}
-
-function normalizeToUtcDayStart(date) {
-  return new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
-}
-
-function toIsoDate(date) {
-  return date.toISOString().slice(0, 10);
-}
-
-function mapPopupRecord(page) {
-  const properties = page.properties || {};
-  const startsOnDate = getDateFromProperty(properties['starts-on'], 'start');
-  const endsOnDate = getDateFromProperty(properties['ends-on'], 'start') || startsOnDate;
-
-  return {
-    id: page.id,
-    titleFr: getPlainTextFromProperty(properties['title fr']),
-    contentFr: getRichTextAsHtml(properties['content fr']?.rich_text),
-    titleEn: getPlainTextFromProperty(properties['title en']),
-    contentEn: getRichTextAsHtml(properties['content en']?.rich_text),
-    startsOn: startsOnDate ? toIsoDate(startsOnDate) : null,
-    endsOn: endsOnDate ? toIsoDate(endsOnDate) : null,
-    startsOnEpoch: startsOnDate ? normalizeToUtcDayStart(startsOnDate).getTime() : Number.POSITIVE_INFINITY,
-    endsOnEpoch: endsOnDate ? normalizeToUtcDayStart(endsOnDate).getTime() : Number.NEGATIVE_INFINITY
-  };
-}
-
 function isActivePopup(popup, todayUtcEpoch) {
   return popup.startsOnEpoch <= todayUtcEpoch && todayUtcEpoch <= popup.endsOnEpoch;
 }
@@ -74,14 +28,11 @@ function choosePopup(activePopups) {
     if (left.endsOnEpoch !== right.endsOnEpoch) {
       return left.endsOnEpoch - right.endsOnEpoch;
     }
-
     if (left.startsOnEpoch !== right.startsOnEpoch) {
       return left.startsOnEpoch - right.startsOnEpoch;
     }
-
     return left.id.localeCompare(right.id);
   });
-
   return sorted[0] || null;
 }
 
@@ -90,9 +41,19 @@ function formatWarning(activePopups, selected) {
   return `Multiple active popups detected (${activePopups.length}). Selected ${selected.id} (${selected.startsOn} -> ${selected.endsOn}) by priority rule. Active candidates: ${list}`;
 }
 
-function buildOutput(popups) {
-  const todayUtc = normalizeToUtcDayStart(new Date());
-  const todayUtcEpoch = todayUtc.getTime();
+/**
+ * Core fetch function for popups - can be used by fetch-all.js or CLI
+ * @param {string} outputRoot - Root output directory
+ * @param {object} existingData - Existing popup data to check for divergences
+ * @returns {Promise<object>} - Popup data with warnings and metadata
+ */
+async function fetchPopup(outputRoot, existingData) {
+  const popupMapper = new PopupMapper(notion);
+  const pages = await popupMapper.fetchAllPages(NOTION_POPUP_DB_ID);
+  const popups = pages.map((page) => popupMapper.mapPage(page)).filter(Boolean);
+
+  const todayUtc = new Date();
+  const todayUtcEpoch = new Date(Date.UTC(todayUtc.getUTCFullYear(), todayUtc.getUTCMonth(), todayUtc.getUTCDate())).getTime();
 
   const candidates = popups.filter((popup) => popup.startsOn && popup.endsOn);
   const activePopups = candidates.filter((popup) => isActivePopup(popup, todayUtcEpoch));
@@ -103,7 +64,22 @@ function buildOutput(popups) {
     warnings.push(formatWarning(activePopups, selected));
   }
 
-  return {
+  // Check for divergences if existing data provided
+  if (existingData?.meta) {
+    const oldTotal = existingData.meta.totalRecords;
+    const newTotal = popups.length;
+    if (oldTotal !== newTotal) {
+      warnings.push(`[popup] Total record count changed from ${oldTotal} to ${newTotal}`);
+    }
+
+    const oldActive = existingData.meta.activeRecords;
+    const newActive = activePopups.length;
+    if (oldActive !== newActive) {
+      warnings.push(`[popup] Active record count changed from ${oldActive} to ${newActive}`);
+    }
+  }
+
+  const output = {
     generatedAt: new Date().toISOString(),
     active: Boolean(selected),
     popup: selected
@@ -124,12 +100,15 @@ function buildOutput(popups) {
       activeRecords: activePopups.length
     }
   };
+
+  return output;
 }
 
 async function main() {
-  const pages = await fetchAllPages(notion, NOTION_POPUP_DB_ID);
-  const popups = pages.map(mapPopupRecord);
-  const output = buildOutput(popups);
+  const outputRoot = resolveOutputRoot();
+  const OUTPUT_POPUP_PATH = path.join(outputRoot, 'data', 'popup.json');
+
+  const output = await fetchPopup(outputRoot, null);
 
   fs.mkdirSync(path.dirname(OUTPUT_POPUP_PATH), { recursive: true });
   fs.writeFileSync(OUTPUT_POPUP_PATH, JSON.stringify(output, null, 2));
@@ -149,7 +128,19 @@ async function main() {
   console.log(`[popup] Data written to: ${OUTPUT_POPUP_PATH}`);
 }
 
-main().catch((error) => {
-  console.error(error.message);
-  process.exit(1);
-});
+function resolveOutputRoot() {
+  const arg = process.argv.find((value) => value.startsWith('--output-root='));
+  const fromArg = arg ? arg.slice('--output-root='.length) : undefined;
+  const outputRoot = fromArg || process.env.OUTPUT_ROOT || repoRoot;
+  return path.resolve(outputRoot);
+}
+
+module.exports = fetchPopup;
+
+// CLI entry point
+if (require.main === module) {
+  main().catch((error) => {
+    console.error(error.message);
+    process.exit(1);
+  });
+}

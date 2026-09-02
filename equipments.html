@@ -23,31 +23,31 @@
 
         <div class="content">
             <div style="width: 90%">
-                <h1 class="header mob center white-text"><b>tutorials</b></h1>
+                <h1 class="header mob center white-text"><b>equipment</b></h1>
 
-                <h4 class="header mob light center white-text">Discover&nbsp;tools to&nbsp;bring your&nbsp;ideas to&nbsp;life!</h4>
+                <h4 class="header mob light center white-text">Explore&nbsp;the&nbsp;tools and&nbsp;machines available in&nbsp;the lab</h4>
 
                 <div style="margin-top: 4em" class="row center">
-                    <div id="tutorialCategoriesMenu" class="tutorial-categories-menu"></div>
+                    <div id="equipmentCategoriesMenu" class="equipment-categories-menu"></div>
                 </div>
                 <div class="row center" style="margin-top: 1em;">
-                    <div id="tutorialSearchRoot"></div>
+                    <div id="equipmentSearchRoot"></div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="main">
-        <div class="container" id="tutorials-list">
-            <h4 style="margin-top:60px" class="red-text"><b>Tutorials</b></h4>
-            <div id="tutorialsRoot"></div>
+        <div class="container" id="equipments-list">
+            <h4 style="margin-top:60px" class="red-text"><b>Equipment</b></h4>
+            <div id="equipmentsRoot"></div>
             <div class="row center" style="margin-top: 2em;">
-                <div class="tutorial-categories-menu"></div>
+                <div class="equipment-categories-menu"></div>
             </div>
         </div>
     </div>
 
-    <script id="tutorial-categories-template" type="text/x-handlebars-template">
+    <script id="equipment-categories-template" type="text/x-handlebars-template">
         {{#if hasCategories}}
             <p>
                 {{#each categories}}
@@ -55,7 +55,7 @@
                         href="#{{anchorId}}"
                         data-category-id="{{id}}"
                         data-color="{{color}}"
-                        class="btn-large badge waves-effect waves-light tutorial-category-btn {{#ifEquals id ../selectedCategoryId}}active{{/ifEquals}}"
+                        class="btn-large badge waves-effect waves-light equipment-category-btn {{#ifEquals id ../selectedCategoryId}}active{{/ifEquals}}"
                         style="padding: 5; margin:10px; border-width:2px; border-style:solid; background-color: white;"
                     >{{name}}</a>
                 {{/each}}
@@ -65,38 +65,35 @@
         {{/if}}
     </script>
 
-    <script id="tutorials-template" type="text/x-handlebars-template">
+    <script id="equipments-template" type="text/x-handlebars-template">
         {{#if hasCategories}}
             <h5 id="{{headingAnchorId}}" class="grey-text text-darken-3"><b>{{headingLabel}}</b></h5>
-            {{#if hasTutorials}}
-                {{#each tutorialRows}}
+            {{#if hasEquipments}}
+                {{#each equipmentRows}}
                     <div class="row">
                         {{#each this}}
                             <div class="col s12 m6 l4">
-                                <article id="{{anchorId}}" class="card flex-card tutorial-card" data-color="{{cardColor}}">
+                                <article id="{{anchorId}}" class="card flex-card equipment-card" data-color="{{cardColor}}">
+                                    {{#if iconUrl}}
+                                        <div class="card-image">
+                                            <img src="{{iconUrl}}" alt="{{name}}" style="height: 200px; object-fit: cover;">
+                                        </div>
+                                    {{/if}}
                                     <div class="card-content">
                                         <span class="card-title grey-text text-darken-4">{{name}}</span>
+                                        {{#if type}}
+                                            <p class="equipment-type" style="color: #666; font-size: 0.9em; margin: 8px 0;">{{type}}</p>
+                                        {{/if}}
                                         <div class="card-tags">
-                                            {{#if equipment.length}}
-                                                {{#each equipment}}
-                                                    <span class="chip">{{this}}</span>
-                                                {{/each}}
-                                            {{/if}}
-                                            {{#if courses.length}}
-                                                {{#each courses}}
-                                                    <span class="chip">{{this}}</span>
-                                                {{/each}}
-                                            {{/if}}
-                                            {{#if software.length}}
-                                                {{#each software}}
-                                                    <span class="chip">{{this}}</span>
+                                            {{#if places.length}}
+                                                {{#each places}}
+                                                    <span>📍 {{this}}</span>
                                                 {{/each}}
                                             {{/if}}
                                         </div>
-                                        <p class="card-summary">{{summary}}</p>
                                     </div>
                                     <div class="card-action">
-                                        <a class="btn waves-effect waves-light courses-cta tutorial-cta" href="{{notionUrl}}" target="_blank" rel="noopener noreferrer" data-color="{{cardColor}}">{{../../ui.ctaLabel}}</a>
+                                        <a class="btn waves-effect waves-light equipment-cta" href="{{notionUrl}}" target="_blank" rel="noopener noreferrer" data-color="{{cardColor}}">{{../../ui.ctaLabel}}</a>
                                     </div>
                                 </article>
                             </div>
@@ -104,7 +101,7 @@
                     </div>
                 {{/each}}
             {{else}}
-                <p class="grey-text text-darken-1 flow-text">{{noTutorialsMessage}}</p>
+                <p class="grey-text text-darken-1 flow-text">{{noEquipmentsMessage}}</p>
             {{/if}}
         {{else}}
             <p class="grey-text text-darken-1 flow-text">{{ui.noCategoriesLabel}}</p>
@@ -123,7 +120,7 @@
             });
         }
     </script>
-    <script src="./js/tutorials.js" charset="utf-8"></script>
+    <script src="./js/equipments.js" charset="utf-8"></script>
 </body>
 
 </html>

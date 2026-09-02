@@ -212,7 +212,7 @@ function normalizeTutorials(payload) {
 
     return {
       tutorials: toSortedList(value.tutorials),
-      machines: toSortedList(value.machines),
+      equipments: toSortedList(value.equipments),
       categories: toSortedList(value.categories),
       software: toSortedList(value.software),
       courses: toSortedList(value.courses)
@@ -233,14 +233,14 @@ function defaultTutorialsPayload() {
     tutorials: {
       en: {
         tutorials: [],
-        machines: [],
+        equipments: [],
         categories: [],
         software: [],
         courses: []
       },
       fr: {
         tutorials: [],
-        machines: [],
+        equipments: [],
         categories: [],
         software: [],
         courses: []

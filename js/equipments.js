@@ -18,7 +18,6 @@
     return `${prefix}-${String(record?.id || '')}`.replace(/[^a-zA-Z0-9_-]/g, '-');
   }
 
-  
   function chunkIntoRows(items, rowSize = 3) {
     const rows = [];
     for (let index = 0; index < items.length; index += rowSize) {
@@ -27,32 +26,31 @@
     return rows;
   }
 
-
   function buildUi(locale) {
     if (locale === 'fr') {
       return {
-        chooseCategoryLabel: 'Choisissez une catégorie pour afficher les tutoriels.',
+        chooseCategoryLabel: 'Choisissez une catégorie pour afficher les équipements.',
         noCategoriesLabel: 'Aucune catégorie disponible pour le moment.',
-        noTutorialsLabel: 'Aucun tutoriel disponible pour cette catégorie.',
-        noSearchResultsLabel: 'Aucun tutoriel ne correspond a votre recherche.',
+        noEquipmentsLabel: 'Aucun équipement disponible pour cette catégorie.',
+        noSearchResultsLabel: 'Aucun équipement ne correspond a votre recherche.',
         menuNoCategoriesLabel: 'Aucune catégorie disponible pour le moment.',
-        allTutorialsLabel: 'Tous les tutoriels',
-        searchPlaceholder: 'Rechercher un tutoriel',
+        allEquipmentsLabel: 'Tous les équipements',
+        searchPlaceholder: 'Rechercher un équipement',
         searchButtonLabel: 'Rechercher',
-        ctaLabel: 'Voir le tutoriel'
+        ctaLabel: 'Voir l\'équipement'
       };
     }
 
     return {
-      chooseCategoryLabel: 'Select a category to display tutorials.',
+      chooseCategoryLabel: 'Select a category to display equipment.',
       noCategoriesLabel: 'No categories available at the moment.',
-      noTutorialsLabel: 'No tutorials available for this category.',
-      noSearchResultsLabel: 'No tutorials match your search.',
+      noEquipmentsLabel: 'No equipment available for this category.',
+      noSearchResultsLabel: 'No equipment matches your search.',
       menuNoCategoriesLabel: 'No categories available at the moment.',
-      allTutorialsLabel: 'All tutorials',
-      searchPlaceholder: 'Search tutorials',
+      allEquipmentsLabel: 'All equipment',
+      searchPlaceholder: 'Search equipment',
       searchButtonLabel: 'Search',
-      ctaLabel: 'View tutorial'
+      ctaLabel: 'View equipment'
     };
   }
 
@@ -82,13 +80,13 @@
     target.scrollIntoView({ behavior: 'auto', block: 'start' });
   }
 
-  function renderTutorials(payload) {
-    const categoriesRoots = Array.from(document.querySelectorAll('.tutorial-categories-menu'));
-    const searchRoot = document.getElementById('tutorialSearchRoot');
-    const tutorialsRoot = document.getElementById('tutorialsRoot');
+  function renderEquipments(payload) {
+    const categoriesRoots = Array.from(document.querySelectorAll('.equipment-categories-menu'));
+    const searchRoot = document.getElementById('equipmentSearchRoot');
+    const equipmentsRoot = document.getElementById('equipmentsRoot');
     if (
       categoriesRoots.length === 0 ||
-      !tutorialsRoot ||
+      !equipmentsRoot ||
       typeof Handlebars === 'undefined' ||
       typeof normalizeHexColor !== 'function' ||
       typeof applyDataColorStyles !== 'function' ||
@@ -98,24 +96,18 @@
     }
 
     const locale = isFrenchPage() ? 'fr' : 'en';
-    const languageData = payload?.tutorials?.[locale] || {};
-    const tutorials = Array.isArray(languageData.tutorials) ? languageData.tutorials : [];
+    const languageData = payload?.equipments?.[locale] || {};
     const equipments = Array.isArray(languageData.equipments) ? languageData.equipments : [];
-    const software = Array.isArray(languageData.software) ? languageData.software : [];
-    const courses = Array.isArray(languageData.courses) ? languageData.courses : [];
     const categories = Array.isArray(languageData.categories) ? languageData.categories : [];
-    const equipmentNameById = new Map(equipments.map((equipment) => [equipment.id, equipment.name]));
-    const softwareNameById = new Map(software.map((softwareItem) => [softwareItem.id, softwareItem.name]));
-    const courseNameById = new Map(courses.map((course) => [course.id, course.name]));
 
-    const categoriesTemplateSource = document.getElementById('tutorial-categories-template')?.innerHTML || '';
-    const tutorialsTemplateSource = document.getElementById('tutorials-template')?.innerHTML || '';
-    if (!categoriesTemplateSource || !tutorialsTemplateSource) {
+    const categoriesTemplateSource = document.getElementById('equipment-categories-template')?.innerHTML || '';
+    const equipmentsTemplateSource = document.getElementById('equipments-template')?.innerHTML || '';
+    if (!categoriesTemplateSource || !equipmentsTemplateSource) {
       return;
     }
 
     const categoriesTemplate = Handlebars.compile(categoriesTemplateSource);
-    const tutorialsTemplate = Handlebars.compile(tutorialsTemplateSource);
+    const equipmentsTemplate = Handlebars.compile(equipmentsTemplateSource);
     const ui = buildUi(locale);
 
     const normalizedCategories = categories.map((category) => ({
@@ -124,67 +116,67 @@
       anchorId: toAnchorId('category', category)
     }));
     const categoriesById = new Map(normalizedCategories.map((category) => [category.id, category]));
-    const categoryIdByAnchor = new Map(normalizedCategories.map((category) => [category.anchorId, category.id]));
-    const tutorialsByCategoryId = new Map();
+    const equipmentsByCategoryId = new Map();
     const categoryColorById = new Map(normalizedCategories.map((category) => [category.id, category.color]));
 
     for (const category of normalizedCategories) {
-      tutorialsByCategoryId.set(category.id, []);
+      equipmentsByCategoryId.set(category.id, []);
     }
 
-    const normalizedTutorials = tutorials.map((tutorial) => ({
-      ...tutorial,
-      anchorId: toAnchorId('tutorial', tutorial),
-      summary: String(tutorial.summary || '').trim(),
-      equipments: (Array.isArray(tutorial.equipmentIds) ? tutorial.equipmentIds : [])
-        .map((equipmentId) => equipmentNameById.get(equipmentId))
-        .filter(Boolean),
-      software: (Array.isArray(tutorial.softwareIds) ? tutorial.softwareIds : [])
-        .map((softwareId) => softwareNameById.get(softwareId))
-        .filter(Boolean),
-      courses: [...new Set([
-        ...(Array.isArray(tutorial.courseNames) ? tutorial.courseNames : []),
-        ...(Array.isArray(tutorial.courseIds) ? tutorial.courseIds.map((courseId) => courseNameById.get(courseId)) : [])
-      ])].filter(Boolean),
+    const normalizedEquipments = equipments.map((equipment) => ({
+      ...equipment,
+      anchorId: toAnchorId('equipment', equipment),
+      type: String(equipment.type || '').trim(),
+      places: Array.isArray(equipment.placeNames) ? equipment.placeNames : [],
+      iconUrl: String(equipment.iconUrl || '').trim(),
       categories: [...new Set(
-        (Array.isArray(tutorial.categoryIds) ? tutorial.categoryIds : [])
+        (Array.isArray(equipment.categoryIds) ? equipment.categoryIds : [])
           .map((categoryId) => categoriesById.get(categoryId)?.name)
       )].filter(Boolean)
     }));
-    const tutorialByAnchor = new Map(normalizedTutorials.map((tutorial) => [tutorial.anchorId, tutorial]));
-    const tutorialToPrimaryCategoryId = new Map();
+    const equipmentByAnchor = new Map(normalizedEquipments.map((equipment) => [equipment.anchorId, equipment]));
+    const equipmentToPrimaryCategoryId = new Map();
 
-    for (const tutorial of normalizedTutorials) {
-      const categoryIds = Array.isArray(tutorial.categoryIds) ? tutorial.categoryIds : [];
-      const firstExistingCategoryId = categoryIds.find((categoryId) => tutorialsByCategoryId.has(categoryId)) || null;
+    for (const equipment of normalizedEquipments) {
+      const categoryIds = Array.isArray(equipment.categoryIds) ? equipment.categoryIds : [];
+      const firstExistingCategoryId = categoryIds.find((categoryId) => equipmentsByCategoryId.has(categoryId)) || null;
       if (firstExistingCategoryId) {
-        tutorialToPrimaryCategoryId.set(tutorial.id, firstExistingCategoryId);
+        equipmentToPrimaryCategoryId.set(equipment.id, firstExistingCategoryId);
       }
       for (const categoryId of categoryIds) {
-        if (!tutorialsByCategoryId.has(categoryId)) {
+        if (!equipmentsByCategoryId.has(categoryId)) {
           continue;
         }
 
-        tutorialsByCategoryId.get(categoryId).push(tutorial);
+        equipmentsByCategoryId.get(categoryId).push(equipment);
       }
     }
 
-    const tutorialsWithCardColor = normalizedTutorials.map((tutorial) => {
-      const categoryIds = Array.isArray(tutorial.categoryIds) ? tutorial.categoryIds : [];
+    // Filter categories to only include those with equipment
+    const categoriesWithEquipment = normalizedCategories.filter((category) => {
+      const categoryEquipments = equipmentsByCategoryId.get(category.id) || [];
+      return categoryEquipments.length > 0;
+    });
+
+    // Create category mapping for categories with equipment only
+    const categoryIdByAnchor = new Map(categoriesWithEquipment.map((category) => [category.anchorId, category.id]));
+
+    const equipmentsWithCardColor = normalizedEquipments.map((equipment) => {
+      const categoryIds = Array.isArray(equipment.categoryIds) ? equipment.categoryIds : [];
       const firstCategoryId = categoryIds.find((categoryId) => categoryColorById.has(categoryId));
       return {
-        ...tutorial,
+        ...equipment,
         cardColor: firstCategoryId ? categoryColorById.get(firstCategoryId) : '#d32f2f'
       };
     });
-    const tutorialWithCardColorById = new Map(tutorialsWithCardColor.map((tutorial) => [tutorial.id, tutorial]));
+    const equipmentWithCardColorById = new Map(equipmentsWithCardColor.map((equipment) => [equipment.id, equipment]));
 
     const canUseFuse = typeof Fuse !== 'undefined';
-    const fuse = canUseFuse ? new Fuse(tutorialsWithCardColor, {
+    const fuse = canUseFuse ? new Fuse(equipmentsWithCardColor, {
       includeScore: false,
       threshold: 0.35,
       ignoreLocation: true,
-      keys: ['name', 'summary', 'equipments', 'software', 'courses', 'categories']
+      keys: ['name', 'type', 'places', 'categories']
     }) : null;
 
     let selectedCategoryId = null;
@@ -202,9 +194,9 @@
       if (categoryIdByAnchor.has(hashAnchor)) {
         selectedCategoryId = categoryIdByAnchor.get(hashAnchor);
         pendingScrollTargetId = hashAnchor;
-      } else if (tutorialByAnchor.has(hashAnchor)) {
-        const tutorial = tutorialByAnchor.get(hashAnchor);
-        const categoryId = tutorialToPrimaryCategoryId.get(tutorial.id);
+      } else if (equipmentByAnchor.has(hashAnchor)) {
+        const equipment = equipmentByAnchor.get(hashAnchor);
+        const categoryId = equipmentToPrimaryCategoryId.get(equipment.id);
         if (categoryId) {
           selectedCategoryId = categoryId;
           pendingScrollTargetId = hashAnchor;
@@ -286,9 +278,9 @@
       const showSearchButton = trimmedQuery.length > 0;
 
       searchRoot.innerHTML = `
-        <form id="tutorial-search-form" class="tutorial-search-form" style="max-width: 720px; margin: 0 auto; display: flex; gap: 10px; align-items: center; justify-content: center; flex-wrap: wrap;">
+        <form id="equipment-search-form" class="equipment-search-form" style="max-width: 720px; margin: 0 auto; display: flex; gap: 10px; align-items: center; justify-content: center; flex-wrap: wrap;">
           <input
-            id="tutorial-search-input"
+            id="equipment-search-input"
             type="search"
             value="${escapeHtml(searchQuery)}"
             placeholder="${escapeHtml(ui.searchPlaceholder)}"
@@ -296,7 +288,7 @@
             aria-label="${escapeHtml(ui.searchPlaceholder)}"
           />
           <button
-            id="tutorial-search-button"
+            id="equipment-search-button"
             type="button"
             class="btn waves-effect waves-light"
             style="display: ${showSearchButton ? 'inline-flex' : 'none'}; align-items: center;"
@@ -304,9 +296,9 @@
         </form>
       `;
 
-      const form = searchRoot.querySelector('#tutorial-search-form');
-      const input = searchRoot.querySelector('#tutorial-search-input');
-      const button = searchRoot.querySelector('#tutorial-search-button');
+      const form = searchRoot.querySelector('#equipment-search-form');
+      const input = searchRoot.querySelector('#equipment-search-input');
+      const button = searchRoot.querySelector('#equipment-search-button');
       if (!form || !input || !button) {
         return;
       }
@@ -320,7 +312,7 @@
         button.style.display = searchQuery.trim().length > 0 ? 'inline-flex' : 'none';
         updateSearchParamInUrl();
         renderCategories();
-        renderTutorialCards({ animatedScroll: false });
+        renderEquipmentCards({ animatedScroll: false });
       });
 
       input.addEventListener('focus', () => {
@@ -338,7 +330,7 @@
         }
         updateSearchParamInUrl();
         renderCategories();
-        renderTutorialCards({ animatedScroll: false });
+        renderEquipmentCards({ animatedScroll: false });
       });
 
       // Keep Enter from submitting the form; search is updated live on keyup.
@@ -357,32 +349,32 @@
       }
     }
 
-    function getVisibleTutorials() {
-      const selectedCategoryTutorials = selectedCategoryId
-        ? (tutorialsByCategoryId.get(selectedCategoryId) || []).map((tutorial) => tutorialWithCardColorById.get(tutorial.id)).filter(Boolean)
-        : tutorialsWithCardColor;
+    function getVisibleEquipments() {
+      const selectedCategoryEquipments = selectedCategoryId
+        ? (equipmentsByCategoryId.get(selectedCategoryId) || []).map((equipment) => equipmentWithCardColorById.get(equipment.id)).filter(Boolean)
+        : equipmentsWithCardColor;
 
       const trimmedQuery = searchQuery.trim();
       if (!trimmedQuery || !fuse) {
-        return selectedCategoryTutorials;
+        return selectedCategoryEquipments;
       }
 
-      const selectedIds = new Set(selectedCategoryTutorials.map((tutorial) => tutorial.id));
+      const selectedIds = new Set(selectedCategoryEquipments.map((equipment) => equipment.id));
       return fuse.search(trimmedQuery)
         .map((result) => result.item)
-        .filter((tutorial) => selectedIds.has(tutorial.id));
+        .filter((equipment) => selectedIds.has(equipment.id));
     }
 
     function renderCategories() {
       for (const categoriesRoot of categoriesRoots) {
         categoriesRoot.innerHTML = categoriesTemplate({
-          categories: normalizedCategories,
-          hasCategories: normalizedCategories.length > 0,
+          categories: categoriesWithEquipment,
+          hasCategories: categoriesWithEquipment.length > 0,
           selectedCategoryId,
           ui
         });
 
-        categoriesRoot.querySelectorAll('.tutorial-category-btn').forEach((button) => {
+        categoriesRoot.querySelectorAll('.equipment-category-btn').forEach((button) => {
           const color = normalizeHexColor(button.getAttribute('data-color'));
           if (button.classList.contains('active')) {
             button.style.backgroundColor = color;
@@ -395,47 +387,47 @@
           button.style.color = color;
         });
 
-        categoriesRoot.querySelectorAll('.tutorial-category-btn').forEach((button) => {
+        categoriesRoot.querySelectorAll('.equipment-category-btn').forEach((button) => {
           button.addEventListener('click', (event) => {
             event.preventDefault();
             const nextCategoryId = button.getAttribute('data-category-id');
             selectedCategoryId = selectedCategoryId === nextCategoryId ? null : nextCategoryId;
             pendingScrollTargetId = (button.getAttribute('href') || '').replace(/^#/, '');
             renderCategories();
-            renderTutorialCards({ animatedScroll: true });
+            renderEquipmentCards({ animatedScroll: true });
           });
         });
       }
     }
 
-    function renderTutorialCards({ animatedScroll = false } = {}) {
+    function renderEquipmentCards({ animatedScroll = false } = {}) {
       const selectedCategory = selectedCategoryId ? categoriesById.get(selectedCategoryId) : null;
-      const visibleTutorials = getVisibleTutorials();
-      const headingLabel = selectedCategory ? selectedCategory.name : ui.allTutorialsLabel;
-      const headingAnchorId = selectedCategory ? selectedCategory.anchorId : 'all-tutorials';
-      const noTutorialsMessage = searchQuery.trim() ? ui.noSearchResultsLabel : ui.noTutorialsLabel;
+      const visibleEquipments = getVisibleEquipments();
+      const headingLabel = selectedCategory ? selectedCategory.name : ui.allEquipmentsLabel;
+      const headingAnchorId = selectedCategory ? selectedCategory.anchorId : 'all-equipments';
+      const noEquipmentsMessage = searchQuery.trim() ? ui.noSearchResultsLabel : ui.noEquipmentsLabel;
 
-      tutorialsRoot.innerHTML = tutorialsTemplate({
+      equipmentsRoot.innerHTML = equipmentsTemplate({
         hasCategories: normalizedCategories.length > 0,
         selectedCategory,
         headingLabel,
         headingAnchorId,
-        tutorials: visibleTutorials,
-        tutorialRows: chunkIntoRows(visibleTutorials, 3),
-        hasTutorials: visibleTutorials.length > 0,
-        noTutorialsMessage,
+        equipments: visibleEquipments,
+        equipmentRows: chunkIntoRows(visibleEquipments, 3),
+        hasEquipments: visibleEquipments.length > 0,
+        noEquipmentsMessage,
         ui
       });
 
-      applyDataColorStyles(tutorialsRoot, [
+      applyDataColorStyles(equipmentsRoot, [
         {
           selector: '.flex-card',
           styleProperty: 'borderTop',
           styleValue: (color) => `4px solid ${color}`
         },
-        { selector: '.tutorial-cta', styleProperty: 'backgroundColor' }
+        { selector: '.equipment-cta', styleProperty: 'backgroundColor' }
       ]);
-      equalizeCardHeightsByRow(tutorialsRoot, { cardSelector: '.flex-card' });
+      equalizeCardHeightsByRow(equipmentsRoot, { cardSelector: '.flex-card' });
 
       if (pendingScrollTargetId) {
         const target = document.getElementById(pendingScrollTargetId);
@@ -449,7 +441,7 @@
 
     renderCategories();
     renderSearchBar();
-    renderTutorialCards();
+    renderEquipmentCards();
 
     if (initialSearchParam) {
       focusSearchInput({ animatedScroll: true, selectText: false });
@@ -458,44 +450,44 @@
     if (!hasResizeListener) {
       hasResizeListener = true;
       window.addEventListener('resize', () => {
-        equalizeCardHeightsByRow(tutorialsRoot, { cardSelector: '.flex-card' });
+        equalizeCardHeightsByRow(equipmentsRoot, { cardSelector: '.flex-card' });
       });
     }
   }
 
-  const tutorialsDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/tutorials.json') : '/data/tutorials.json';
+  const equipmentsDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/equipments.json') : '/data/equipments.json';
   const categoriesDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/categories.json') : '/data/categories.json';
 
   try {
-    const [tutorialsResponse, categoriesResponse] = await Promise.all([
-      fetch(tutorialsDataUrl),
+    const [equipmentsResponse, categoriesResponse] = await Promise.all([
+      fetch(equipmentsDataUrl),
       fetch(categoriesDataUrl)
     ]);
 
-    if (!tutorialsResponse.ok) {
-      throw new Error(`Failed to fetch tutorials data (${tutorialsResponse.status}).`);
+    if (!equipmentsResponse.ok) {
+      throw new Error(`Failed to fetch equipments data (${equipmentsResponse.status}).`);
     }
 
-    const tutorialsPayload = await tutorialsResponse.json();
+    const equipmentsPayload = await equipmentsResponse.json();
     let categoriesPayload = {};
 
     if (categoriesResponse.ok) {
       categoriesPayload = await categoriesResponse.json();
     } else {
-      console.warn(`[tutorials] Failed to fetch categories data (${categoriesResponse.status}). Categories will be empty.`);
+      console.warn(`[equipments] Failed to fetch categories data (${categoriesResponse.status}). Categories will be empty.`);
     }
 
-    // Merge categories into tutorials payload for rendering
+    // Merge categories into equipments payload for rendering
     const locale = isFrenchPage() ? 'fr' : 'en';
-    if (tutorialsPayload.tutorials && tutorialsPayload.tutorials[locale]) {
-      tutorialsPayload.tutorials[locale].categories = Array.isArray(categoriesPayload.categories?.[locale])
+    if (equipmentsPayload.equipments && equipmentsPayload.equipments[locale]) {
+      equipmentsPayload.equipments[locale].categories = Array.isArray(categoriesPayload.categories?.[locale])
         ? categoriesPayload.categories[locale]
         : [];
     }
 
-    renderTutorials(tutorialsPayload);
+    renderEquipments(equipmentsPayload);
   } catch (error) {
-    console.error(`[tutorials] Failed to fetch data: ${error.message}`);
-    renderTutorials({});
+    console.error(`[equipments] Failed to fetch data: ${error.message}`);
+    renderEquipments({});
   }
 })();

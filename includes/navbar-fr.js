@@ -8,6 +8,7 @@ include(`
                     <ul class="right hide-on-med-and-down">
                         <li><a href="${appPath('/fr/')}">makers' lab</a></li>
                         <li><a href="${appPath('/fr/tutoriels.html')}">tutoriels</a></li>
+                        <li><a href="${appPath('/fr/equipements.html')}">équipements</a></li>
                         <li><a href="${appPath('/fr/evenements.html')}">événements</a></li>
                         <li><a href="${appPath('/fr/formations.html')}">formations</a></li>
                         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
@@ -20,6 +21,7 @@ include(`
         <ul id="nav-mobile" class="sidenav">
             <li><a href="${appPath('/fr/')}">makers' lab</a></li>
             <li><a href="${appPath('/fr/tutoriels.html')}">tutoriels</a></li>
+            <li><a href="${appPath('/fr/equipements.html')}">équipements</a></li>
             <li><a href="${appPath('/fr/evenements.html')}">événements</a></li>
             <li><a href="${appPath('/fr/formations.html')}">formations</a></li>
             <li class="divider"></li>

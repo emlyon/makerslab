@@ -7,8 +7,10 @@ const repoRoot = path.resolve(__dirname, '../..');
 const buildDir = path.resolve(process.env.BUILD_DIR || path.join(repoRoot, 'build'));
 const sourceEventsPath = path.resolve(process.env.SOURCE_EVENTS_PATH || path.join(repoRoot, 'data', 'events.json'));
 const sourcePopupPath = path.resolve(process.env.SOURCE_POPUP_PATH || path.join(repoRoot, 'data', 'popup.json'));
+const sourceCategoriesPath = path.resolve(process.env.SOURCE_CATEGORIES_PATH || path.join(repoRoot, 'data', 'categories.json'));
 const sourceCoursesPath = path.resolve(process.env.SOURCE_COURSES_PATH || path.join(repoRoot, 'data', 'courses.json'));
 const sourceTutorialsPath = path.resolve(process.env.SOURCE_TUTORIALS_PATH || path.join(repoRoot, 'data', 'tutorials.json'));
+const sourceEquipmentsPath = path.resolve(process.env.SOURCE_EQUIPMENTS_PATH || path.join(repoRoot, 'data', 'equipments.json'));
 const buildDirRelativeToRepo = path.relative(repoRoot, buildDir).replaceAll('\\', '/');
 const buildDirIsInsideRepo =
   buildDirRelativeToRepo && !buildDirRelativeToRepo.startsWith('..') && !path.isAbsolute(buildDirRelativeToRepo);
@@ -122,6 +124,42 @@ function injectPopupFile() {
   };
 }
 
+function injectCategoriesFile() {
+  const targetCategoriesPath = path.join(buildDir, 'data', 'categories.json');
+  fs.mkdirSync(path.dirname(targetCategoriesPath), { recursive: true });
+
+  if (fs.existsSync(sourceCategoriesPath)) {
+    fs.copyFileSync(sourceCategoriesPath, targetCategoriesPath);
+    return {
+      source: sourceCategoriesPath,
+      usedFallback: false
+    };
+  }
+
+  const defaultCategories = {
+    generatedAt: new Date().toISOString(),
+    categories: {
+      en: [],
+      fr: []
+    },
+    warnings: ['Categories source file was missing during build; default empty categories payload emitted.'],
+    meta: {
+      en: {
+        categories: 0
+      },
+      fr: {
+        categories: 0
+      }
+    }
+  };
+
+  fs.writeFileSync(targetCategoriesPath, JSON.stringify(defaultCategories, null, 2));
+  return {
+    source: 'generated-default',
+    usedFallback: true
+  };
+}
+
 function injectCoursesFile() {
   const targetCoursesPath = path.join(buildDir, 'data', 'courses.json');
   fs.mkdirSync(path.dirname(targetCoursesPath), { recursive: true });
@@ -172,14 +210,14 @@ function injectTutorialsFile() {
     tutorials: {
       en: {
         tutorials: [],
-        machines: [],
+        equipments: [],
         categories: [],
         software: [],
         courses: []
       },
       fr: {
         tutorials: [],
-        machines: [],
+        equipments: [],
         categories: [],
         software: [],
         courses: []
@@ -190,12 +228,12 @@ function injectTutorialsFile() {
       en: {
         source: {
           tutorialsRecords: 0,
-          machinesRecords: 0,
+          equipmentsRecords: 0,
           categoriesRecords: 0
         },
         published: {
           tutorials: 0,
-          machines: 0,
+          equipments: 0,
           categories: 0,
           software: 0,
           courses: 0
@@ -204,12 +242,12 @@ function injectTutorialsFile() {
       fr: {
         source: {
           tutorialsRecords: 0,
-          machinesRecords: 0,
+          equipmentsRecords: 0,
           categoriesRecords: 0
         },
         published: {
           tutorials: 0,
-          machines: 0,
+          equipments: 0,
           categories: 0,
           software: 0,
           courses: 0
@@ -225,13 +263,71 @@ function injectTutorialsFile() {
   };
 }
 
+function injectEquipmentsFile() {
+  const targetEquipmentsPath = path.join(buildDir, 'data', 'equipments.json');
+  fs.mkdirSync(path.dirname(targetEquipmentsPath), { recursive: true });
+
+  if (fs.existsSync(sourceEquipmentsPath)) {
+    fs.copyFileSync(sourceEquipmentsPath, targetEquipmentsPath);
+    return {
+      source: sourceEquipmentsPath,
+      usedFallback: false
+    };
+  }
+
+  const defaultEquipments = {
+    generatedAt: new Date().toISOString(),
+    equipments: {
+      en: {
+        equipments: [],
+        categories: []
+      },
+      fr: {
+        equipments: [],
+        categories: []
+      }
+    },
+    warnings: ['Equipments source file was missing during build; default empty equipments payload emitted.'],
+    meta: {
+      en: {
+        source: {
+          equipmentsRecords: 0,
+          categoriesRecords: 0
+        },
+        published: {
+          equipments: 0,
+          categories: 0
+        }
+      },
+      fr: {
+        source: {
+          equipmentsRecords: 0,
+          categoriesRecords: 0
+        },
+        published: {
+          equipments: 0,
+          categories: 0
+        }
+      }
+    }
+  };
+
+  fs.writeFileSync(targetEquipmentsPath, JSON.stringify(defaultEquipments, null, 2));
+  return {
+    source: 'generated-default',
+    usedFallback: true
+  };
+}
+
 function main() {
   cleanBuildDirectory();
   copyTree(repoRoot, buildDir);
   injectEventsFile();
   const popupResult = injectPopupFile();
+  const categoriesResult = injectCategoriesFile();
   const coursesResult = injectCoursesFile();
   const tutorialsResult = injectTutorialsFile();
+  const equipmentsResult = injectEquipmentsFile();
 
   console.log(`Pages artifact prepared in: ${buildDir}`);
   console.log(`Injected events data from: ${sourceEventsPath}`);
@@ -239,6 +335,12 @@ function main() {
     console.log('Popup source file missing. Emitted default inactive popup payload.');
   } else {
     console.log(`Injected popup data from: ${popupResult.source}`);
+  }
+
+  if (categoriesResult.usedFallback) {
+    console.log('Categories source file missing. Emitted default empty categories payload.');
+  } else {
+    console.log(`Injected categories data from: ${categoriesResult.source}`);
   }
 
   if (coursesResult.usedFallback) {
@@ -251,6 +353,12 @@ function main() {
     console.log('Tutorials source file missing. Emitted default empty tutorials payload.');
   } else {
     console.log(`Injected tutorials data from: ${tutorialsResult.source}`);
+  }
+
+  if (equipmentsResult.usedFallback) {
+    console.log('Equipments source file missing. Emitted default empty equipments payload.');
+  } else {
+    console.log(`Injected equipments data from: ${equipmentsResult.source}`);
   }
 }
 
