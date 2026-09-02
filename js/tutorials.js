@@ -100,11 +100,11 @@
     const locale = isFrenchPage() ? 'fr' : 'en';
     const languageData = payload?.tutorials?.[locale] || {};
     const tutorials = Array.isArray(languageData.tutorials) ? languageData.tutorials : [];
-    const equipments = Array.isArray(languageData.equipments) ? languageData.equipments : [];
+    const equipment = Array.isArray(languageData.equipment) ? languageData.equipment : [];
     const software = Array.isArray(languageData.software) ? languageData.software : [];
     const courses = Array.isArray(languageData.courses) ? languageData.courses : [];
     const categories = Array.isArray(languageData.categories) ? languageData.categories : [];
-    const equipmentNameById = new Map(equipments.map((equipment) => [equipment.id, equipment.name]));
+    const equipmentNameById = new Map(equipment.map((equipment) => [equipment.id, equipment.name]));
     const softwareNameById = new Map(software.map((softwareItem) => [softwareItem.id, softwareItem.name]));
     const courseNameById = new Map(courses.map((course) => [course.id, course.name]));
 
@@ -136,7 +136,7 @@
       ...tutorial,
       anchorId: toAnchorId('tutorial', tutorial),
       summary: String(tutorial.summary || '').trim(),
-      equipments: (Array.isArray(tutorial.equipmentIds) ? tutorial.equipmentIds : [])
+      equipment: (Array.isArray(tutorial.equipmentIds) ? tutorial.equipmentIds : [])
         .map((equipmentId) => equipmentNameById.get(equipmentId))
         .filter(Boolean),
       software: (Array.isArray(tutorial.softwareIds) ? tutorial.softwareIds : [])
@@ -184,7 +184,7 @@
       includeScore: false,
       threshold: 0.35,
       ignoreLocation: true,
-      keys: ['name', 'summary', 'equipments', 'software', 'courses', 'categories']
+      keys: ['name', 'summary', 'equipment', 'software', 'courses', 'categories']
     }) : null;
 
     let selectedCategoryId = null;

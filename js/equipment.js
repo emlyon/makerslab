@@ -31,10 +31,10 @@
       return {
         chooseCategoryLabel: 'Choisissez une catégorie pour afficher les équipements.',
         noCategoriesLabel: 'Aucune catégorie disponible pour le moment.',
-        noEquipmentsLabel: 'Aucun équipement disponible pour cette catégorie.',
+        noEquipmentLabel: 'Aucun équipement disponible pour cette catégorie.',
         noSearchResultsLabel: 'Aucun équipement ne correspond a votre recherche.',
         menuNoCategoriesLabel: 'Aucune catégorie disponible pour le moment.',
-        allEquipmentsLabel: 'Tous les équipements',
+        allEquipmentLabel: 'Tous les équipements',
         searchPlaceholder: 'Rechercher un équipement',
         searchButtonLabel: 'Rechercher',
         ctaLabel: 'Voir l\'équipement'
@@ -44,10 +44,10 @@
     return {
       chooseCategoryLabel: 'Select a category to display equipment.',
       noCategoriesLabel: 'No categories available at the moment.',
-      noEquipmentsLabel: 'No equipment available for this category.',
+      noEquipmentLabel: 'No equipment available for this category.',
       noSearchResultsLabel: 'No equipment matches your search.',
       menuNoCategoriesLabel: 'No categories available at the moment.',
-      allEquipmentsLabel: 'All equipment',
+      allEquipmentLabel: 'All equipment',
       searchPlaceholder: 'Search equipment',
       searchButtonLabel: 'Search',
       ctaLabel: 'View equipment'
@@ -80,13 +80,13 @@
     target.scrollIntoView({ behavior: 'auto', block: 'start' });
   }
 
-  function renderEquipments(payload) {
+  function renderEquipment(payload) {
     const categoriesRoots = Array.from(document.querySelectorAll('.equipment-categories-menu'));
     const searchRoot = document.getElementById('equipmentSearchRoot');
-    const equipmentsRoot = document.getElementById('equipmentsRoot');
+    const equipmentRoot = document.getElementById('equipmentRoot');
     if (
       categoriesRoots.length === 0 ||
-      !equipmentsRoot ||
+      !equipmentRoot ||
       typeof Handlebars === 'undefined' ||
       typeof normalizeHexColor !== 'function' ||
       typeof applyDataColorStyles !== 'function' ||
@@ -96,18 +96,18 @@
     }
 
     const locale = isFrenchPage() ? 'fr' : 'en';
-    const languageData = payload?.equipments?.[locale] || {};
-    const equipments = Array.isArray(languageData.equipments) ? languageData.equipments : [];
+    const languageData = payload?.equipment?.[locale] || {};
+    const equipment = Array.isArray(languageData.equipment) ? languageData.equipment : [];
     const categories = Array.isArray(languageData.categories) ? languageData.categories : [];
 
     const categoriesTemplateSource = document.getElementById('equipment-categories-template')?.innerHTML || '';
-    const equipmentsTemplateSource = document.getElementById('equipments-template')?.innerHTML || '';
-    if (!categoriesTemplateSource || !equipmentsTemplateSource) {
+    const equipmentTemplateSource = document.getElementById('equipment-template')?.innerHTML || '';
+    if (!categoriesTemplateSource || !equipmentTemplateSource) {
       return;
     }
 
     const categoriesTemplate = Handlebars.compile(categoriesTemplateSource);
-    const equipmentsTemplate = Handlebars.compile(equipmentsTemplateSource);
+    const equipmentTemplate = Handlebars.compile(equipmentTemplateSource);
     const ui = buildUi(locale);
 
     const normalizedCategories = categories.map((category) => ({
@@ -116,14 +116,14 @@
       anchorId: toAnchorId('category', category)
     }));
     const categoriesById = new Map(normalizedCategories.map((category) => [category.id, category]));
-    const equipmentsByCategoryId = new Map();
+    const equipmentByCategoryId = new Map();
     const categoryColorById = new Map(normalizedCategories.map((category) => [category.id, category.color]));
 
     for (const category of normalizedCategories) {
-      equipmentsByCategoryId.set(category.id, []);
+      equipmentByCategoryId.set(category.id, []);
     }
 
-    const normalizedEquipments = equipments.map((equipment) => ({
+    const normalizedEquipment = equipment.map((equipment) => ({
       ...equipment,
       anchorId: toAnchorId('equipment', equipment),
       type: String(equipment.type || '').trim(),
@@ -134,34 +134,34 @@
           .map((categoryId) => categoriesById.get(categoryId)?.name)
       )].filter(Boolean)
     }));
-    const equipmentByAnchor = new Map(normalizedEquipments.map((equipment) => [equipment.anchorId, equipment]));
+    const equipmentByAnchor = new Map(normalizedEquipment.map((equipment) => [equipment.anchorId, equipment]));
     const equipmentToPrimaryCategoryId = new Map();
 
-    for (const equipment of normalizedEquipments) {
+    for (const equipment of normalizedEquipment) {
       const categoryIds = Array.isArray(equipment.categoryIds) ? equipment.categoryIds : [];
-      const firstExistingCategoryId = categoryIds.find((categoryId) => equipmentsByCategoryId.has(categoryId)) || null;
+      const firstExistingCategoryId = categoryIds.find((categoryId) => equipmentByCategoryId.has(categoryId)) || null;
       if (firstExistingCategoryId) {
         equipmentToPrimaryCategoryId.set(equipment.id, firstExistingCategoryId);
       }
       for (const categoryId of categoryIds) {
-        if (!equipmentsByCategoryId.has(categoryId)) {
+        if (!equipmentByCategoryId.has(categoryId)) {
           continue;
         }
 
-        equipmentsByCategoryId.get(categoryId).push(equipment);
+        equipmentByCategoryId.get(categoryId).push(equipment);
       }
     }
 
     // Filter categories to only include those with equipment
     const categoriesWithEquipment = normalizedCategories.filter((category) => {
-      const categoryEquipments = equipmentsByCategoryId.get(category.id) || [];
-      return categoryEquipments.length > 0;
+      const categoryEquipment = equipmentByCategoryId.get(category.id) || [];
+      return categoryEquipment.length > 0;
     });
 
     // Create category mapping for categories with equipment only
     const categoryIdByAnchor = new Map(categoriesWithEquipment.map((category) => [category.anchorId, category.id]));
 
-    const equipmentsWithCardColor = normalizedEquipments.map((equipment) => {
+    const equipmentWithCardColor = normalizedEquipment.map((equipment) => {
       const categoryIds = Array.isArray(equipment.categoryIds) ? equipment.categoryIds : [];
       const firstCategoryId = categoryIds.find((categoryId) => categoryColorById.has(categoryId));
       return {
@@ -169,10 +169,10 @@
         cardColor: firstCategoryId ? categoryColorById.get(firstCategoryId) : '#d32f2f'
       };
     });
-    const equipmentWithCardColorById = new Map(equipmentsWithCardColor.map((equipment) => [equipment.id, equipment]));
+    const equipmentWithCardColorById = new Map(equipmentWithCardColor.map((equipment) => [equipment.id, equipment]));
 
     const canUseFuse = typeof Fuse !== 'undefined';
-    const fuse = canUseFuse ? new Fuse(equipmentsWithCardColor, {
+    const fuse = canUseFuse ? new Fuse(equipmentWithCardColor, {
       includeScore: false,
       threshold: 0.35,
       ignoreLocation: true,
@@ -349,17 +349,17 @@
       }
     }
 
-    function getVisibleEquipments() {
-      const selectedCategoryEquipments = selectedCategoryId
-        ? (equipmentsByCategoryId.get(selectedCategoryId) || []).map((equipment) => equipmentWithCardColorById.get(equipment.id)).filter(Boolean)
-        : equipmentsWithCardColor;
+    function getVisibleEquipment() {
+      const selectedCategoryEquipment = selectedCategoryId
+        ? (equipmentByCategoryId.get(selectedCategoryId) || []).map((equipment) => equipmentWithCardColorById.get(equipment.id)).filter(Boolean)
+        : equipmentWithCardColor;
 
       const trimmedQuery = searchQuery.trim();
       if (!trimmedQuery || !fuse) {
-        return selectedCategoryEquipments;
+        return selectedCategoryEquipment;
       }
 
-      const selectedIds = new Set(selectedCategoryEquipments.map((equipment) => equipment.id));
+      const selectedIds = new Set(selectedCategoryEquipment.map((equipment) => equipment.id));
       return fuse.search(trimmedQuery)
         .map((result) => result.item)
         .filter((equipment) => selectedIds.has(equipment.id));
@@ -402,24 +402,24 @@
 
     function renderEquipmentCards({ animatedScroll = false } = {}) {
       const selectedCategory = selectedCategoryId ? categoriesById.get(selectedCategoryId) : null;
-      const visibleEquipments = getVisibleEquipments();
-      const headingLabel = selectedCategory ? selectedCategory.name : ui.allEquipmentsLabel;
-      const headingAnchorId = selectedCategory ? selectedCategory.anchorId : 'all-equipments';
-      const noEquipmentsMessage = searchQuery.trim() ? ui.noSearchResultsLabel : ui.noEquipmentsLabel;
+      const visibleEquipment = getVisibleEquipment();
+      const headingLabel = selectedCategory ? selectedCategory.name : ui.allEquipmentLabel;
+      const headingAnchorId = selectedCategory ? selectedCategory.anchorId : 'all-equipment';
+      const noEquipmentMessage = searchQuery.trim() ? ui.noSearchResultsLabel : ui.noEquipmentLabel;
 
-      equipmentsRoot.innerHTML = equipmentsTemplate({
+      equipmentRoot.innerHTML = equipmentTemplate({
         hasCategories: normalizedCategories.length > 0,
         selectedCategory,
         headingLabel,
         headingAnchorId,
-        equipments: visibleEquipments,
-        equipmentRows: chunkIntoRows(visibleEquipments, 3),
-        hasEquipments: visibleEquipments.length > 0,
-        noEquipmentsMessage,
+        equipment: visibleEquipment,
+        equipmentRows: chunkIntoRows(visibleEquipment, 3),
+        hasEquipment: visibleEquipment.length > 0,
+        noEquipmentMessage,
         ui
       });
 
-      applyDataColorStyles(equipmentsRoot, [
+      applyDataColorStyles(equipmentRoot, [
         {
           selector: '.flex-card',
           styleProperty: 'borderTop',
@@ -427,7 +427,7 @@
         },
         { selector: '.equipment-cta', styleProperty: 'backgroundColor' }
       ]);
-      equalizeCardHeightsByRow(equipmentsRoot, { cardSelector: '.flex-card' });
+      equalizeCardHeightsByRow(equipmentRoot, { cardSelector: '.flex-card' });
 
       if (pendingScrollTargetId) {
         const target = document.getElementById(pendingScrollTargetId);
@@ -450,44 +450,44 @@
     if (!hasResizeListener) {
       hasResizeListener = true;
       window.addEventListener('resize', () => {
-        equalizeCardHeightsByRow(equipmentsRoot, { cardSelector: '.flex-card' });
+        equalizeCardHeightsByRow(equipmentRoot, { cardSelector: '.flex-card' });
       });
     }
   }
 
-  const equipmentsDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/equipments.json') : '/data/equipments.json';
+  const equipmentDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/equipment.json') : '/data/equipment.json';
   const categoriesDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/categories.json') : '/data/categories.json';
 
   try {
-    const [equipmentsResponse, categoriesResponse] = await Promise.all([
-      fetch(equipmentsDataUrl),
+    const [equipmentResponse, categoriesResponse] = await Promise.all([
+      fetch(equipmentDataUrl),
       fetch(categoriesDataUrl)
     ]);
 
-    if (!equipmentsResponse.ok) {
-      throw new Error(`Failed to fetch equipments data (${equipmentsResponse.status}).`);
+    if (!equipmentResponse.ok) {
+      throw new Error(`Failed to fetch equipment data (${equipmentResponse.status}).`);
     }
 
-    const equipmentsPayload = await equipmentsResponse.json();
+    const equipmentPayload = await equipmentResponse.json();
     let categoriesPayload = {};
 
     if (categoriesResponse.ok) {
       categoriesPayload = await categoriesResponse.json();
     } else {
-      console.warn(`[equipments] Failed to fetch categories data (${categoriesResponse.status}). Categories will be empty.`);
+      console.warn(`[equipment] Failed to fetch categories data (${categoriesResponse.status}). Categories will be empty.`);
     }
 
-    // Merge categories into equipments payload for rendering
+    // Merge categories into equipment payload for rendering
     const locale = isFrenchPage() ? 'fr' : 'en';
-    if (equipmentsPayload.equipments && equipmentsPayload.equipments[locale]) {
-      equipmentsPayload.equipments[locale].categories = Array.isArray(categoriesPayload.categories?.[locale])
+    if (equipmentPayload.equipment && equipmentPayload.equipment[locale]) {
+      equipmentPayload.equipment[locale].categories = Array.isArray(categoriesPayload.categories?.[locale])
         ? categoriesPayload.categories[locale]
         : [];
     }
 
-    renderEquipments(equipmentsPayload);
+    renderEquipment(equipmentPayload);
   } catch (error) {
-    console.error(`[equipments] Failed to fetch data: ${error.message}`);
-    renderEquipments({});
+    console.error(`[equipment] Failed to fetch data: ${error.message}`);
+    renderEquipment({});
   }
 })();

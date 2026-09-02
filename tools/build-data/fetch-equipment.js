@@ -14,10 +14,10 @@ loadDotEnvIfPresent(repoRoot);
 const NOTION_API_KEY = process.env.NOTION_API_KEY;
 const LANGUAGE_DB_CONFIG = {
   en: {
-    equipmentsDbId: process.env.NOTION_EQUIPMENT_EN_DB_ID
+    equipmentDbId: process.env.NOTION_EQUIPMENT_EN_DB_ID
   },
   fr: {
-    equipmentsDbId: process.env.NOTION_EQUIPEMENTS_FR_DB_ID
+    equipmentDbId: process.env.NOTION_EQUIPEMENTS_FR_DB_ID
   }
 };
 
@@ -47,13 +47,13 @@ async function loadCategoriesFromFile(outputRoot, language) {
   try {
     const categoriesPath = path.join(outputRoot, 'data', 'categories.json');
     if (!fs.existsSync(categoriesPath)) {
-      console.warn(`[equipments] Categories file not found at ${categoriesPath}. Run fetch:categories first.`);
+      console.warn(`[equipment] Categories file not found at ${categoriesPath}. Run fetch:categories first.`);
       return [];
     }
     const data = JSON.parse(fs.readFileSync(categoriesPath, 'utf8'));
     return Array.isArray(data.categories?.[language]) ? data.categories[language] : [];
   } catch (error) {
-    console.warn(`[equipments] Failed to load categories from file: ${error.message}`);
+    console.warn(`[equipment] Failed to load categories from file: ${error.message}`);
     return [];
   }
 }
@@ -61,63 +61,63 @@ async function loadCategoriesFromFile(outputRoot, language) {
 async function fetchLanguageData(outputRoot, language, ids) {
   const equipmentMapper = new EquipmentMapper(notion);
 
-  const equipmentPages = await equipmentMapper.fetchAllPages(ids.equipmentsDbId);
+  const equipmentPages = await equipmentMapper.fetchAllPages(ids.equipmentDbId);
 
-  const equipments = equipmentPages
+  const equipment = equipmentPages
     .map((page) => equipmentMapper.mapPage(page, language))
     .filter(Boolean);
 
   const categories = await loadCategoriesFromFile(outputRoot, language);
 
-  const equipments_sorted = equipmentMapper.sortRecords(equipments);
+  const equipment_sorted = equipmentMapper.sortRecords(equipment);
 
   return {
-    equipments: equipments_sorted,
+    equipment: equipment_sorted,
     categories: categories,
     warnings: equipmentMapper.getWarnings(),
     sourceMeta: {
-      equipmentsRecords: equipmentPages.length,
+      equipmentRecords: equipmentPages.length,
       categoriesRecords: categories.length
     }
   };
 }
 
 /**
- * Core fetch function for equipments - can be used by fetch-all.js or CLI
+ * Core fetch function for equipment - can be used by fetch-all.js or CLI
  * @param {string} outputRoot - Root output directory
- * @param {object} existingData - Existing equipments data to check for divergences
- * @returns {Promise<object>} - Equipments data with warnings and metadata (without relationship reconciliation)
+ * @param {object} existingData - Existing equipment data to check for divergences
+ * @returns {Promise<object>} - Equipment data with warnings and metadata (without relationship reconciliation)
  */
-async function fetchEquipments(outputRoot, existingData) {
+async function fetchEquipment(outputRoot, existingData) {
   const perLanguageData = { en: {}, fr: {} };
   const allWarnings = [];
 
   for (const [language, ids] of Object.entries(LANGUAGE_DB_CONFIG)) {
-    const { equipments, categories, warnings } = await fetchLanguageData(outputRoot, language, ids);
-    perLanguageData[language] = { equipments, categories };
+    const { equipment, categories, warnings } = await fetchLanguageData(outputRoot, language, ids);
+    perLanguageData[language] = { equipment, categories };
     allWarnings.push(...warnings);
 
     // Check for divergences if existing data provided
-    if (existingData?.equipments?.[language]) {
-      const oldCount = existingData.equipments[language].equipments?.length || 0;
-      const newCount = equipments.length;
+    if (existingData?.equipment?.[language]) {
+      const oldCount = existingData.equipment[language].equipment?.length || 0;
+      const newCount = equipment.length;
       if (oldCount !== newCount) {
-        allWarnings.push(`[equipments][${language}] Record count changed from ${oldCount} to ${newCount}`);
+        allWarnings.push(`[equipment][${language}] Record count changed from ${oldCount} to ${newCount}`);
       }
     }
   }
 
   const output = {
     generatedAt: new Date().toISOString(),
-    equipments: perLanguageData,
+    equipment: perLanguageData,
     warnings: allWarnings,
     meta: {
       en: {
-        equipments: perLanguageData.en.equipments.length,
+        equipment: perLanguageData.en.equipment.length,
         categories: perLanguageData.en.categories.length
       },
       fr: {
-        equipments: perLanguageData.fr.equipments.length,
+        equipment: perLanguageData.fr.equipment.length,
         categories: perLanguageData.fr.categories.length
       }
     }
@@ -128,33 +128,33 @@ async function fetchEquipments(outputRoot, existingData) {
 
 async function main() {
   const outputRoot = resolveOutputRoot();
-  const output = await fetchEquipments(outputRoot, null);
+  const output = await fetchEquipment(outputRoot, null);
 
   // Apply relationship reconciliation for CLI usage
   const reconciler = new RelationshipReconciler();
   for (const language of ['en', 'fr']) {
     reconciler.reconcileEquipmentRelationships(
       {
-        equipments: output.equipments[language].equipments,
-        categories: output.equipments[language].categories
+        equipment: output.equipment[language].equipment,
+        categories: output.equipment[language].categories
       },
       language
     );
   }
   output.warnings.push(...reconciler.getWarnings());
 
-  const OUTPUT_EQUIPMENTS_PATH = path.join(outputRoot, 'data', 'equipments.json');
+  const OUTPUT_EQUIPMENTS_PATH = path.join(outputRoot, 'data', 'equipment.json');
   fs.mkdirSync(path.dirname(OUTPUT_EQUIPMENTS_PATH), { recursive: true });
   fs.writeFileSync(OUTPUT_EQUIPMENTS_PATH, JSON.stringify(output, null, 2));
 
-  console.log(`[equipments] EN equipments: ${output.meta.en.equipments}`);
-  console.log(`[equipments] EN categories: ${output.meta.en.categories}`);
-  console.log(`[equipments] FR equipments: ${output.meta.fr.equipments}`);
-  console.log(`[equipments] FR categories: ${output.meta.fr.categories}`);
+  console.log(`[equipment] EN equipment: ${output.meta.en.equipment}`);
+  console.log(`[equipment] EN categories: ${output.meta.en.categories}`);
+  console.log(`[equipment] FR equipment: ${output.meta.fr.equipment}`);
+  console.log(`[equipment] FR categories: ${output.meta.fr.categories}`);
   for (const warning of output.warnings) {
-    console.warn(`[equipments] WARNING: ${warning}`);
+    console.warn(`[equipment] WARNING: ${warning}`);
   }
-  console.log(`[equipments] Data written to: ${OUTPUT_EQUIPMENTS_PATH}`);
+  console.log(`[equipment] Data written to: ${OUTPUT_EQUIPMENTS_PATH}`);
 }
 
 function resolveOutputRoot() {
@@ -164,7 +164,7 @@ function resolveOutputRoot() {
   return path.resolve(outputRoot);
 }
 
-module.exports = fetchEquipments;
+module.exports = fetchEquipment;
 
 // CLI entry point
 if (require.main === module) {

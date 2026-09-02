@@ -13,7 +13,7 @@ class RelationshipReconciler {
    */
   reconcileTutorialRelationships(languageData, language) {
     const tutorialsById = this._mapById(languageData.tutorials);
-    const equipmentsById = this._mapById(languageData.equipments);
+    const equipmentById = this._mapById(languageData.equipment);
     const categoriesById = this._mapById(languageData.categories);
     const softwareById = this._mapById(languageData.software);
     const coursesById = this._mapById(languageData.courses);
@@ -27,7 +27,7 @@ class RelationshipReconciler {
     // Forward pass: tutorials -> equipment/category/software/course
     for (const tutorial of languageData.tutorials) {
       for (const equipmentId of tutorial.equipmentIds) {
-        if (!equipmentsById.has(equipmentId)) {
+        if (!equipmentById.has(equipmentId)) {
           this._addWarning(`[${language}] Tutorial ${tutorial.id} references missing equipment ${equipmentId}.`);
           continue;
         }
@@ -79,7 +79,7 @@ class RelationshipReconciler {
     }
 
     // Forward pass: equipment -> tutorial/category
-    for (const equipment of languageData.equipments) {
+    for (const equipment of languageData.equipment) {
       for (const tutorialId of equipment.tutorialIds) {
         if (!tutorialsById.has(tutorialId)) {
           this._addWarning(`[${language}] Equipment ${equipment.id} references missing tutorial ${tutorialId}.`);
@@ -108,7 +108,7 @@ class RelationshipReconciler {
       }
 
       for (const equipmentId of category.equipmentIds) {
-        if (!equipmentsById.has(equipmentId)) {
+        if (!equipmentById.has(equipmentId)) {
           this._addWarning(`[${language}] Category ${category.id} references missing equipment ${equipmentId}.`);
           continue;
         }
@@ -151,7 +151,7 @@ class RelationshipReconciler {
     }
 
     // Finalize equipment
-    for (const equipment of languageData.equipments) {
+    for (const equipment of languageData.equipment) {
       const tutorialIds = [];
       for (const tutorial of languageData.tutorials) {
         if (tutorial.equipmentIds.includes(equipment.id)) {
@@ -171,7 +171,7 @@ class RelationshipReconciler {
           tutorialIds.push(tutorial.id);
         }
       }
-      for (const equipment of languageData.equipments) {
+      for (const equipment of languageData.equipment) {
         if (equipment.categoryIds.includes(category.id)) {
           equipmentIds.push(equipment.id);
         }
@@ -204,16 +204,16 @@ class RelationshipReconciler {
   }
 
   /**
-   * Reconcile relationships for equipments dataset
+   * Reconcile relationships for equipment dataset
    */
   reconcileEquipmentRelationships(languageData, language) {
-    const equipmentsById = this._mapById(languageData.equipments);
+    const equipmentById = this._mapById(languageData.equipment);
     const categoriesById = this._mapById(languageData.categories);
 
     const equipmentCategoryLinks = new Map();
 
     // Forward pass: equipment -> categories
-    for (const equipment of languageData.equipments) {
+    for (const equipment of languageData.equipment) {
       for (const categoryId of equipment.categoryIds) {
         if (!categoriesById.has(categoryId)) {
           this._addWarning(`[${language}] Equipment ${equipment.id} references missing category ${categoryId}.`);
@@ -226,7 +226,7 @@ class RelationshipReconciler {
     // Reverse pass: categories -> equipment
     for (const category of languageData.categories) {
       for (const equipmentId of category.equipmentIds) {
-        if (!equipmentsById.has(equipmentId)) {
+        if (!equipmentById.has(equipmentId)) {
           this._addWarning(`[${language}] Category ${category.id} references missing equipment ${equipmentId}.`);
           continue;
         }
@@ -235,14 +235,14 @@ class RelationshipReconciler {
     }
 
     // Finalize equipment
-    for (const equipment of languageData.equipments) {
+    for (const equipment of languageData.equipment) {
       equipment.categoryIds = this._sortAndDedupe([...(equipmentCategoryLinks.get(equipment.id) || [])]);
     }
 
     // Finalize categories
     for (const category of languageData.categories) {
       const equipmentIds = [];
-      for (const equipment of languageData.equipments) {
+      for (const equipment of languageData.equipment) {
         if (equipment.categoryIds.includes(category.id)) {
           equipmentIds.push(equipment.id);
         }

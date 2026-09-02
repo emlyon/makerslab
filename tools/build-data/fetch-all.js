@@ -18,7 +18,7 @@ function loadExistingData(outputRoot) {
     categories: null,
     popup: null,
     courses: null,
-    equipments: null,
+    equipment: null,
     tutorials: null
   };
 
@@ -27,7 +27,7 @@ function loadExistingData(outputRoot) {
     categories: path.join(outputRoot, 'data', 'categories.json'),
     popup: path.join(outputRoot, 'data', 'popup.json'),
     courses: path.join(outputRoot, 'data', 'courses.json'),
-    equipments: path.join(outputRoot, 'data', 'equipments.json'),
+    equipment: path.join(outputRoot, 'data', 'equipment.json'),
     tutorials: path.join(outputRoot, 'data', 'tutorials.json')
   };
 
@@ -111,9 +111,9 @@ function persistAllData(outputRoot, allData, allWarnings) {
       data: allData.courses
     },
     {
-      name: 'equipments',
-      path: path.join(outputDataDir, 'equipments.json'),
-      data: allData.equipments
+      name: 'equipment',
+      path: path.join(outputDataDir, 'equipment.json'),
+      data: allData.equipment
     },
     {
       name: 'tutorials',
@@ -145,7 +145,7 @@ async function main() {
   const fetchCategories = require('./fetch-categories');
   const fetchPopup = require('./fetch-popup');
   const fetchCourses = require('./fetch-courses');
-  const fetchEquipments = require('./fetch-equipments');
+  const fetchEquipment = require('./fetch-equipment');
   const fetchTutorials = require('./fetch-tutorials');
 
   // Load existing data
@@ -155,7 +155,7 @@ async function main() {
   console.log('[fetch-all] Starting comprehensive data fetch and reconciliation...');
 
   // Fetch all data
-  let events, categories, popup, courses, equipments, tutorials;
+  let events, categories, popup, courses, equipment, tutorials;
 
   try {
     console.log('[fetch-all] Fetching events...');
@@ -216,22 +216,22 @@ async function main() {
   }
 
   try {
-    console.log('[fetch-all] Fetching equipments...');
-    const equipmentsResult = await fetchEquipments(outputRoot, existingData.equipments);
-    equipments = equipmentsResult;
+    console.log('[fetch-all] Fetching equipment...');
+    const equipmentResult = await fetchEquipment(outputRoot, existingData.equipment);
+    equipment = equipmentResult;
     for (const lang of ['en', 'fr']) {
       allWarnings.push(
         ...checkDataDivergence(
-          'equipments',
-          existingData.equipments?.equipments?.[lang],
-          equipmentsResult?.equipments?.[lang],
+          'equipment',
+          existingData.equipment?.equipment?.[lang],
+          equipmentResult?.equipment?.[lang],
           lang
         )
       );
     }
   } catch (error) {
-    console.error('[fetch-all] Failed to fetch equipments:', error.message);
-    equipments = existingData.equipments;
+    console.error('[fetch-all] Failed to fetch equipment:', error.message);
+    equipment = existingData.equipment;
   }
 
   try {
@@ -258,17 +258,17 @@ async function main() {
   const reconciler = new RelationshipReconciler();
 
   // Reconcile tutorials with all related entities
-  if (tutorials && equipments && courses) {
+  if (tutorials && equipment && courses) {
     for (const language of ['en', 'fr']) {
       const tutorialLangData = tutorials.tutorials?.[language];
-      const equipmentLangData = equipments.equipments?.[language];
+      const equipmentLangData = equipment.equipment?.[language];
       const categoryData = categories?.categories?.[language];
       
       if (tutorialLangData || equipmentLangData) {
         reconciler.reconcileTutorialRelationships(
           {
             tutorials: tutorialLangData?.tutorials || [],
-            equipments: equipmentLangData?.equipments || [],
+            equipment: equipmentLangData?.equipment || [],
             categories: categoryData || [],
             software: tutorialLangData?.software || [],
             courses: tutorialLangData?.courses || []
@@ -285,24 +285,24 @@ async function main() {
     }
   }
 
-  // Reconcile equipments with categories
-  if (equipments && categories) {
+  // Reconcile equipment with categories
+  if (equipment && categories) {
     for (const language of ['en', 'fr']) {
-      const equipmentLangData = equipments.equipments?.[language];
+      const equipmentLangData = equipment.equipment?.[language];
       const categoryData = categories?.categories?.[language];
 
       if (equipmentLangData || categoryData) {
         reconciler.reconcileEquipmentRelationships(
           {
-            equipments: equipmentLangData?.equipments || [],
+            equipment: equipmentLangData?.equipment || [],
             categories: categoryData || []
           },
           language
         );
         allWarnings.push(...reconciler.getWarnings());
         
-        // Sync reconciled categories back to equipments.json structure for backward compatibility
-        if (categoryData && equipmentLangData?.equipments) {
+        // Sync reconciled categories back to equipment.json structure for backward compatibility
+        if (categoryData && equipmentLangData?.equipment) {
           equipmentLangData.categories = categoryData;
         }
       }
@@ -310,7 +310,7 @@ async function main() {
   }
 
   // Persist all data
-  persistAllData(outputRoot, { events, categories, popup, courses, equipments, tutorials }, allWarnings);
+  persistAllData(outputRoot, { events, categories, popup, courses, equipment, tutorials }, allWarnings);
 }
 
 function resolveOutputRoot() {

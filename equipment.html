@@ -38,9 +38,9 @@
     </div>
 
     <div class="main">
-        <div class="container" id="equipments-list">
+        <div class="container" id="equipment-list">
             <h4 style="margin-top:60px" class="red-text"><b>Equipment</b></h4>
-            <div id="equipmentsRoot"></div>
+            <div id="equipmentRoot"></div>
             <div class="row center" style="margin-top: 2em;">
                 <div class="equipment-categories-menu"></div>
             </div>
@@ -65,10 +65,10 @@
         {{/if}}
     </script>
 
-    <script id="equipments-template" type="text/x-handlebars-template">
+    <script id="equipment-template" type="text/x-handlebars-template">
         {{#if hasCategories}}
             <h5 id="{{headingAnchorId}}" class="grey-text text-darken-3"><b>{{headingLabel}}</b></h5>
-            {{#if hasEquipments}}
+            {{#if hasEquipment}}
                 {{#each equipmentRows}}
                     <div class="row">
                         {{#each this}}
@@ -101,7 +101,7 @@
                     </div>
                 {{/each}}
             {{else}}
-                <p class="grey-text text-darken-1 flow-text">{{noEquipmentsMessage}}</p>
+                <p class="grey-text text-darken-1 flow-text">{{noEquipmentMessage}}</p>
             {{/if}}
         {{else}}
             <p class="grey-text text-darken-1 flow-text">{{ui.noCategoriesLabel}}</p>
@@ -120,7 +120,7 @@
             });
         }
     </script>
-    <script src="./js/equipments.js" charset="utf-8"></script>
+    <script src="./js/equipment.js" charset="utf-8"></script>
 </body>
 
 </html>

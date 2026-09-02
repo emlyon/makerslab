@@ -12,7 +12,7 @@ class TutorialMapper extends NotionDataMapper {
                          this.findFirstPropertyByType(properties, 'title');
     const slugProperty = this.findPropertyByAliases(properties, ['slug']);
     const summaryProperty = this.findPropertyByAliases(properties, ['Summary', 'summary', 'résumé', 'resume', 'description', 'content']);
-    const equipmentsProperty = this.findPropertyByAliases(properties, ['Equipment', 'Equipements', 'equipements']);
+    const equipmentProperty = this.findPropertyByAliases(properties, ['Equipment', 'Equipements', 'equipements']);
     const categoriesProperty = this.findPropertyByAliases(properties, ['Categories', 'Catégories', 'catégories', 'categories']);
     const softwaresProperty = this.findPropertyByAliases(properties, ['Software', 'Logiciels', 'logiciels', 'software', 'softwares']);
     const coursesProperty = this.findPropertyByAliases(properties, ['Courses', 'cours', 'courses']);
@@ -34,7 +34,7 @@ class TutorialMapper extends NotionDataMapper {
     // Treat null/empty status as published (unless explicitly "archived" or "unpublished")
     const isPublished = !statusValue || this.isPublishedStatus(statusValue);
     
-    const equipmentIds = this.sortAndDedupe(this.getRelationIdsFromProperty(equipmentsProperty));
+    const equipmentIds = this.sortAndDedupe(this.getRelationIdsFromProperty(equipmentProperty));
 
     return {
       id: page.id,
@@ -119,7 +119,7 @@ class CategoryMapper extends NotionDataMapper {
     const slugProperty = this.findPropertyByAliases(properties, ['slug']);
     const colorProperty = this.findPropertyByAliases(properties, ['color', 'colour']);
     const tutorialsProperty = this.findPropertyByAliases(properties, ['tutoriels', 'tutorials', '🔌 tutoriels']);
-    const equipmentsProperty = this.findPropertyByAliases(properties, ['equipements', 'equipment', '⚙️ machines', '⚙️ equipements']);
+    const equipmentProperty = this.findPropertyByAliases(properties, ['equipements', 'equipment', '⚙️ machines', '⚙️ equipements']);
     const languageProperty = this.findPropertyByAliases(properties, ['language', 'lang', 'langue']);
 
     const name = this.getPlainTextFromProperty(nameProperty);
@@ -135,7 +135,7 @@ class CategoryMapper extends NotionDataMapper {
       color: this.normalizeHexColor(this.getPlainTextFromProperty(colorProperty)),
       language: this.normalizeLanguageValue(this.getPlainTextFromProperty(languageProperty), language),
       tutorialIds: this.sortAndDedupe(this.getRelationIdsFromProperty(tutorialsProperty)),
-      equipmentIds: this.sortAndDedupe(this.getRelationIdsFromProperty(equipmentsProperty))
+      equipmentIds: this.sortAndDedupe(this.getRelationIdsFromProperty(equipmentProperty))
     };
   }
 }

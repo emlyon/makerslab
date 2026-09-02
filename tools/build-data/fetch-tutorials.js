@@ -61,15 +61,15 @@ async function loadCategoriesFromFile(outputRoot, language) {
   }
 }
 
-function loadEquipmentsFromFile(outputRoot, language) {
+function loadEquipmentFromFile(outputRoot, language) {
   try {
-    const equipmentsPath = path.join(outputRoot, 'data', 'equipments.json');
-    if (!fs.existsSync(equipmentsPath)) {
-      console.warn(`[tutorials] Equipment file not found at ${equipmentsPath}. Run fetch:equipments first.`);
+    const equipmentPath = path.join(outputRoot, 'data', 'equipment.json');
+    if (!fs.existsSync(equipmentPath)) {
+      console.warn(`[tutorials] Equipment file not found at ${equipmentPath}. Run fetch:equipment first.`);
       return [];
     }
-    const data = JSON.parse(fs.readFileSync(equipmentsPath, 'utf8'));
-    return Array.isArray(data.equipments?.[language]?.equipments) ? data.equipments[language].equipments : [];
+    const data = JSON.parse(fs.readFileSync(equipmentPath, 'utf8'));
+    return Array.isArray(data.equipment?.[language]?.equipment) ? data.equipment[language].equipment : [];
   } catch (error) {
     console.warn(`[tutorials] Failed to load equipment from file: ${error.message}`);
     return [];
@@ -191,11 +191,11 @@ async function main() {
   // Apply relationship reconciliation for CLI usage
   const reconciler = new RelationshipReconciler();
   for (const language of ['en', 'fr']) {
-    const equipments = loadEquipmentsFromFile(outputRoot, language);
+    const equipment = loadEquipmentFromFile(outputRoot, language);
     reconciler.reconcileTutorialRelationships(
       {
         tutorials: output.tutorials[language].tutorials,
-        equipments: equipments,
+        equipment: equipment,
         categories: output.tutorials[language].categories,
         software: output.tutorials[language].software,
         courses: output.tutorials[language].courses
