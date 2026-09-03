@@ -79,7 +79,6 @@ class EquipmentMapper extends NotionDataMapper {
     const categoriesProperty = this.findPropertyByAliases(properties, ['Categories', 'Catégories', 'catégories', 'categories']);
     const tutorialsProperty = this.findPropertyByAliases(properties, ['Tutoriels', 'tutoriels', 'Tutorials', 'tutorials']);
     const userManualProperty = this.findPropertyByAliases(properties, ['manuel utilisateur', 'user manual']);
-    const iconProperty = this.findPropertyByAliases(properties, ['icon']);
     const statusProperty = this.findPropertyByAliases(properties, ['status', 'statut']);
 
     const name = this.getPlainTextFromProperty(nameProperty);
@@ -103,7 +102,7 @@ class EquipmentMapper extends NotionDataMapper {
       categoryIds: this.sortAndDedupe(this.getRelationIdsFromProperty(categoriesProperty)),
       tutorialIds: this.sortAndDedupe(this.getRelationIdsFromProperty(tutorialsProperty)),
       userManualUrl: this.getImageUrlFromProperty(userManualProperty),
-      iconUrl: this.getImageUrlFromProperty(iconProperty)
+      iconUrl: this.getPageIconUrl(page.icon)
     };
   }
 }

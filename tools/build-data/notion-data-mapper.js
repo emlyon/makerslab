@@ -123,6 +123,26 @@ class NotionDataMapper {
   }
 
   /**
+   * Extract icon URL from page.icon (Notion page icon, not a property)
+   * Returns URL for external/file icons, emoji string for emojis
+   */
+  getPageIconUrl(pageIcon) {
+    if (!pageIcon) return '';
+    
+    switch (pageIcon.type) {
+      case 'external':
+        return pageIcon.external?.url || '';
+      case 'file':
+        return pageIcon.file?.url || '';
+      case 'emoji':
+        // Return the emoji character itself (can be used for display)
+        return pageIcon.emoji || '';
+      default:
+        return '';
+    }
+  }
+
+  /**
    * Sort and deduplicate array values
    */
   sortAndDedupe(values) {
