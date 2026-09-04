@@ -39,44 +39,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch latest events
-        run: npm run fetch:events -- --output-root=${{ runner.temp }}/pages-build
+      - name: Fetch data
+        run: npm run fetch:all -- --output-root=${{ runner.temp }}/pages-build
         env:
           EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
           EVENTBRITE_ORGANIZATION_ID: ${{ secrets.EVENTBRITE_ORGANIZATION_ID }}
-
-      - name: Fetch latest popup
-        run: npm run fetch:popup -- --output-root=${{ runner.temp }}/pages-build
-        env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_POPUP_DB_ID: ${{ secrets.NOTION_POPUP_DB_ID }}
-
-      - name: Fetch latest courses
-        run: npm run fetch:courses -- --output-root=${{ runner.temp }}/pages-build
-        env:
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_COURSES_DB_ID: ${{ secrets.NOTION_COURSES_DB_ID }}
-
-      - name: Fetch latest equipment
-        run: npm run fetch:equipment -- --output-root=${{ runner.temp }}/pages-build
-        env:
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_EQUIPMENT_EN_DB_ID: ${{ secrets.NOTION_EQUIPMENT_EN_DB_ID }}
           NOTION_CATEGORIES_EN_DB_ID: ${{ secrets.NOTION_CATEGORIES_EN_DB_ID }}
-          NOTION_EQUIPEMENTS_FR_DB_ID: ${{ secrets.NOTION_EQUIPEMENTS_FR_DB_ID }}
-          NOTION_CATEGORIES_FR_DB_ID: ${{ secrets.NOTION_CATEGORIES_FR_DB_ID }}
-
-      - name: Fetch latest tutorials
-        run: npm run fetch:tutorials -- --output-root=${{ runner.temp }}/pages-build
-        env:
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_TUTORIALS_EN_DB_ID: ${{ secrets.NOTION_TUTORIALS_EN_DB_ID }}
-          NOTION_EQUIPMENT_EN_DB_ID: ${{ secrets.NOTION_EQUIPMENT_EN_DB_ID }}
-          NOTION_CATEGORIES_EN_DB_ID: ${{ secrets.NOTION_CATEGORIES_EN_DB_ID }}
           NOTION_SOFTWARE_EN_DB_ID: ${{ secrets.NOTION_SOFTWARE_EN_DB_ID }}
-          NOTION_TUTORIALS_FR_DB_ID: ${{ secrets.NOTION_TUTORIALS_FR_DB_ID }}
           NOTION_EQUIPEMENTS_FR_DB_ID: ${{ secrets.NOTION_EQUIPEMENTS_FR_DB_ID }}
           NOTION_CATEGORIES_FR_DB_ID: ${{ secrets.NOTION_CATEGORIES_FR_DB_ID }}
+          NOTION_TUTORIALS_FR_DB_ID: ${{ secrets.NOTION_TUTORIALS_FR_DB_ID }}
           NOTION_SOFTWARE_FR_DB_ID: ${{ secrets.NOTION_SOFTWARE_FR_DB_ID }}
 
       - name: Detect data changes
