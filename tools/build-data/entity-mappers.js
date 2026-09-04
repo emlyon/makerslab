@@ -48,7 +48,8 @@ class TutorialMapper extends NotionDataMapper {
       categoryIds: this.sortAndDedupe(this.getRelationIdsFromProperty(categoriesProperty)),
       softwareIds: this.sortAndDedupe(this.getRelationIdsFromProperty(softwaresProperty)),
       courseIds: coursesValue.relationIds,
-      courseNames: coursesValue.names
+      courseNames: coursesValue.names,
+      iconUrl: this.getPageIconUrl(page.icon)
     };
   }
 

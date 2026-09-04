@@ -6,6 +6,7 @@ const { Client } = require('@notionhq/client');
 const { loadDotEnvIfPresent } = require('./utils');
 const { TutorialMapper, SoftwareMapper, CourseMapper } = require('./entity-mappers');
 const RelationshipReconciler = require('./relationship-reconciler');
+const { downloadAndCacheImages } = require('./image-downloader');
 
 const repoRoot = path.resolve(__dirname, '../..');
 
@@ -160,6 +161,28 @@ async function fetchTutorials(outputRoot, existingData, categoriesData) {
         allWarnings.push(`[tutorials][${language}] Software count changed from ${oldSoftCount} to ${newSoftCount}`);
       }
     }
+  }
+
+  // Download and cache images for each language
+  if (process.env.NODE_ENV !== 'test') {
+    console.log('[tutorials] Downloading and caching images...');
+  }
+  
+  for (const language of ['en', 'fr']) {
+    const languageData = perLanguageData[language];
+    if (!languageData || !Array.isArray(languageData.tutorials)) {
+      continue;
+    }
+
+    const { records: processedRecords, warnings: imageWarnings } = await downloadAndCacheImages(
+      languageData.tutorials,
+      ['iconUrl'],
+      'tutorials',
+      outputRoot
+    );
+
+    perLanguageData[language].tutorials = processedRecords;
+    allWarnings.push(...imageWarnings);
   }
 
   const output = {

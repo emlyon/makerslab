@@ -128,6 +128,13 @@
             min-height: 100%;
             justify-content: space-between;
 
+            .card-image {
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+
             .card-content {
                 flex: 1;
             }

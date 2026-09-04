@@ -5,6 +5,12 @@
   let hasResizeListener = false;
   let hasSearchShortcutListener = false;
 
+  
+  // Register appPath helper for template rendering
+  if (typeof Handlebars !== 'undefined' && typeof window.appPath === 'function') {
+    Handlebars.registerHelper('appPath', (value) => window.appPath(value));
+  }
+
   function isFrenchPage() {
     return (document.documentElement.lang || '').toLowerCase().startsWith('fr');
   }
@@ -136,6 +142,7 @@
       ...tutorial,
       anchorId: toAnchorId('tutorial', tutorial),
       summary: String(tutorial.summary || '').trim(),
+      iconUrl: tutorial.iconUrl || null,
       equipment: (Array.isArray(tutorial.equipmentIds) ? tutorial.equipmentIds : [])
         .map((equipmentId) => equipmentNameById.get(equipmentId))
         .filter(Boolean),
