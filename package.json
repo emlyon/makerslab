@@ -5,7 +5,8 @@
     "events:diff": "node tools/build-data/detect-data-changes.js",
     "build:css": "sass css/style.scss css/style.min.css --style=compressed --source-map",
     "prebuild:pages": "npm run build:css",
-    "build:pages": "node tools/build-data/build-pages-artifact.js"
+    "build:pages": "node tools/build-data/build-pages-artifact.js",
+    "gen-makersboard-data": "node workshops-data/generate-makersboard-html.js"
   },
   "dependencies": {
     "@notionhq/client": "^5.22.0",
