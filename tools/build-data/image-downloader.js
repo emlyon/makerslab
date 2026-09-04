@@ -97,7 +97,7 @@ function calculateHash(buffer) {
  * Returns local path like "/media/equipment/{hash}-equipment-{slug}.png" on success
  * 
  * @param {string} url - The URL to download
- * @param {string} outputDir - Output directory (e.g., "build/media/equipment")
+ * @param {string} outputDir - Output directory (e.g., "media/equipment")
  * @param {string} resourceName - Resource name for filename (e.g., "equipment")
  * @param {object} record - Record object with id/name for slug generation
  * @returns {Promise<string|null>} - Local path or null
@@ -152,12 +152,20 @@ async function downloadImage(url, outputDir, resourceName, record) {
  * @param {Array} records - Array of records to process
  * @param {Array<string>} imageFieldNames - Fields to process (e.g., ["iconUrl", "userManualUrl"])
  * @param {string} resourceName - Resource name for filenames (e.g., "equipment")
- * @param {string} outputRoot - Root output directory (e.g., "build")
+ * @param {string} outputRoot - Root output directory. If repo root, media goes to outputRoot/build/media; otherwise to outputRoot/media
  * @returns {Promise<{records: Array, warnings: Array}>} - Modified records and warnings
  */
 async function downloadAndCacheImages(records, imageFieldNames, resourceName, outputRoot) {
   const warnings = [];
-  const outputDir = path.join(outputRoot, 'build', 'media', resourceName);
+  
+  // Detect if we're running in the repo root (local) or a temp directory (CI)
+  // If running locally (in repo), add 'build/' subdirectory
+  // If running in CI (temp directory), media goes directly under outputRoot
+  const isLocalRepo = fs.existsSync(path.join(outputRoot, 'tools')) || 
+                      fs.existsSync(path.join(outputRoot, '.git')) || 
+                      fs.existsSync(path.join(outputRoot, 'package.json'));
+  const mediaSubdir = isLocalRepo ? path.join('build', 'media') : 'media';
+  const outputDir = path.join(outputRoot, mediaSubdir, resourceName);
 
   if (!Array.isArray(records)) {
     return { records, warnings };
