@@ -11,7 +11,7 @@ class TutorialMapper extends NotionDataMapper {
     const nameProperty = this.findPropertyByAliases(properties, ['Name', 'name', 'nom', 'title', 'titre']) || 
                          this.findFirstPropertyByType(properties, 'title');
     const slugProperty = this.findPropertyByAliases(properties, ['slug']);
-    const summaryProperty = this.findPropertyByAliases(properties, ['Summary', 'summary', 'résumé', 'resume', 'description', 'content']);
+    const summaryProperty = this.findPropertyByAliases(properties, ['Summary', 'summary', 'Résumé', 'résumé']);
     const equipmentProperty = this.findPropertyByAliases(properties, ['Equipment', 'Equipements', 'equipements']);
     const categoriesProperty = this.findPropertyByAliases(properties, ['Categories', 'Catégories', 'catégories', 'categories']);
     const softwaresProperty = this.findPropertyByAliases(properties, ['Software', 'Logiciels', 'logiciels', 'software', 'softwares']);
