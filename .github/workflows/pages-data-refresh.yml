@@ -81,6 +81,7 @@ jobs:
           BUILD_DIR: ${{ runner.temp }}/pages-artifact
           SOURCE_EVENTS_PATH: ${{ runner.temp }}/pages-build/data/events.json
           SOURCE_POPUP_PATH: ${{ runner.temp }}/pages-build/data/popup.json
+          SOURCE_CATEGORIES_PATH: ${{ runner.temp }}/pages-build/data/categories.json
           SOURCE_COURSES_PATH: ${{ runner.temp }}/pages-build/data/courses.json
           SOURCE_EQUIPMENT_PATH: ${{ runner.temp }}/pages-build/data/equipment.json
           SOURCE_TUTORIALS_PATH: ${{ runner.temp }}/pages-build/data/tutorials.json
