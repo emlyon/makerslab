@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-
+const repoRoot = path.resolve(__dirname, '..');
 /**
  * Unescape HTML entities
  */
@@ -178,7 +178,7 @@ function generateIcsContent(events, calendarName) {
 function generateIcsFile() {
   try {
     // Read events.json
-    const eventsPath = path.join(__dirname, 'events.json');
+    const eventsPath = path.join(repoRoot, 'data', 'events.json');
     if (!fs.existsSync(eventsPath)) {
       console.error('❌ events.json not found');
       process.exit(1);
