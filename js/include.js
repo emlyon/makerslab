@@ -212,4 +212,11 @@
         document.write(html);
         document.close();
     };
+
+    // Register Handlebars helpers for template rendering
+    if (typeof Handlebars !== 'undefined') {
+        Handlebars.registerHelper('appPath', (value) => {
+            return appPath(value);
+        });
+    }
 })();

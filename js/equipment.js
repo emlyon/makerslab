@@ -106,6 +106,11 @@
       return;
     }
 
+    // Register appPath helper for template rendering
+    if (typeof Handlebars !== 'undefined' && typeof window.appPath === 'function') {
+      Handlebars.registerHelper('appPath', (value) => window.appPath(value));
+    }
+
     const categoriesTemplate = Handlebars.compile(categoriesTemplateSource);
     const equipmentTemplate = Handlebars.compile(equipmentTemplateSource);
     const ui = buildUi(locale);
@@ -128,7 +133,7 @@
       anchorId: toAnchorId('equipment', equipment),
       type: String(equipment.type || '').trim(),
       places: Array.isArray(equipment.placeNames) ? equipment.placeNames : [],
-      iconUrl: String(equipment.iconUrl || '').trim(),
+      iconUrl: equipment.iconUrl || null,
       categories: [...new Set(
         (Array.isArray(equipment.categoryIds) ? equipment.categoryIds : [])
           .map((categoryId) => categoriesById.get(categoryId)?.name)

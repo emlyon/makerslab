@@ -124,21 +124,30 @@ class NotionDataMapper {
 
   /**
    * Extract icon URL from page.icon (Notion page icon, not a property)
-   * Returns URL for external/file icons, emoji string for emojis
+   * Returns URL only for downloadable types (external/file), null for emojis/icons
+   * 
+   * Type reference:
+   * - "emoji": standard emoji (skip - not downloadable)
+   * - "custom_emoji": workspace emoji (skip - not downloadable)
+   * - "icon": native Notion icon (skip - not downloadable)
+   * - "external": externally hosted image URL (download)
+   * - "file": Notion-hosted file (download)
    */
   getPageIconUrl(pageIcon) {
-    if (!pageIcon) return '';
+    if (!pageIcon || !pageIcon.type) return null;
     
     switch (pageIcon.type) {
       case 'external':
-        return pageIcon.external?.url || '';
+        return pageIcon.external?.url || null;
       case 'file':
-        return pageIcon.file?.url || '';
+        return pageIcon.file?.url || null;
+      // Emoji types and native icons are not downloadable
       case 'emoji':
-        // Return the emoji character itself (can be used for display)
-        return pageIcon.emoji || '';
+      case 'custom_emoji':
+      case 'icon':
+        return null;
       default:
-        return '';
+        return null;
     }
   }
 

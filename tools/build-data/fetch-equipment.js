@@ -6,6 +6,7 @@ const { Client } = require('@notionhq/client');
 const { loadDotEnvIfPresent } = require('./utils');
 const { EquipmentMapper } = require('./entity-mappers');
 const RelationshipReconciler = require('./relationship-reconciler');
+const { downloadAndCacheImages } = require('./image-downloader');
 
 const repoRoot = path.resolve(__dirname, '../..');
 
@@ -84,9 +85,10 @@ async function fetchLanguageData(outputRoot, language, ids) {
 
 /**
  * Core fetch function for equipment - can be used by fetch-all.js or CLI
+ * Downloads Notion data and caches images locally
  * @param {string} outputRoot - Root output directory
  * @param {object} existingData - Existing equipment data to check for divergences
- * @returns {Promise<object>} - Equipment data with warnings and metadata (without relationship reconciliation)
+ * @returns {Promise<object>} - Equipment data with local image URLs, warnings and metadata
  */
 async function fetchEquipment(outputRoot, existingData) {
   const perLanguageData = { en: {}, fr: {} };
@@ -105,6 +107,28 @@ async function fetchEquipment(outputRoot, existingData) {
         allWarnings.push(`[equipment][${language}] Record count changed from ${oldCount} to ${newCount}`);
       }
     }
+  }
+
+  // Download and cache images for each language
+  if (process.env.NODE_ENV !== 'test') {
+    console.log('[equipment] Downloading and caching images...');
+  }
+  
+  for (const language of ['en', 'fr']) {
+    const languageData = perLanguageData[language];
+    if (!languageData || !Array.isArray(languageData.equipment)) {
+      continue;
+    }
+
+    const { records: processedRecords, warnings: imageWarnings } = await downloadAndCacheImages(
+      languageData.equipment,
+      ['iconUrl', 'userManualUrl'],
+      'equipment',
+      outputRoot
+    );
+
+    perLanguageData[language].equipment = processedRecords;
+    allWarnings.push(...imageWarnings);
   }
 
   const output = {
