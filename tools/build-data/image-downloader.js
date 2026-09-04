@@ -122,10 +122,8 @@ async function downloadImage(url, outputDir, resourceName, record) {
     const extension = getFileExtension(trimmedUrl, 'png');
     
     // Generate slug from record name or id
-    const slug = record && record.name ? slugify(record.name) : (record?.id || '');
-    const filename = slug 
-      ? `${hash}-${resourceName}-${slug}.${extension}`
-      : `${hash}-${resourceName}.${extension}`;
+    const slug = record && record.name ? slugify(record.name) : `${resourceName}-${record?.id}`;
+    const filename = `${hash}-${slug}.${extension}`;
     
     const filePath = path.join(outputDir, filename);
 
