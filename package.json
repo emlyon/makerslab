@@ -12,7 +12,9 @@
     "prebuild:pages": "npm run build:css",
     "build:pages": "node tools/build-data/build-pages-artifact.js",
     "build": "npm run fetch:all && npm run build:pages",
-    "serve": "live-server build"
+    "serve": "live-server build",
+    "gen-makersboard-data": "node workshops-data/generate-makersboard-html.js",
+    "gen-events-ics": "node workshops-data/generate-ics.js"
   },
   "dependencies": {
     "@notionhq/client": "^5.22.0",

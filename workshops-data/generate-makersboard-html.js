@@ -1,8 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
-const config = JSON.parse(fs.readFileSync('workshops-data/eventbrite-config.json', 'utf8'));
-const TOKEN = config.TOKEN;
+const repoRoot = path.resolve(__dirname, '..');
+loadDotEnvIfPresent();
+
+const TOKEN = process.env.EVENTBRITE_TOKEN;
+if (!TOKEN) {
+  throw new Error('Environment variable EVENTBRITE_TOKEN is missing.');
+}
+
 const OPTIONS = {
   method: 'GET',
   headers: {
@@ -10,9 +16,26 @@ const OPTIONS = {
   }
 };
 
+function loadDotEnvIfPresent() {
+  const envPath = path.join(repoRoot, '.env');
+  if (!fs.existsSync(envPath)) {
+    return;
+  }
+
+  try {
+    require('dotenv').config({ path: envPath });
+  } catch (_error) {
+    // Do nothing when dotenv is unavailable in CI.
+  }
+}
+
 async function main() {
-  // Read events.json
-  const events = JSON.parse(fs.readFileSync('workshops-data/events.json', 'utf8'));
+  // Clean makersboard-html directory
+  cleanDirectory();
+  
+  // Read events.json from repo root data directory
+  const eventsPath = path.join(repoRoot, 'data', 'events.json');
+  const events = JSON.parse(fs.readFileSync(eventsPath, 'utf8'));
   
   // Exclude events with specific titles
   const excludedTitles = [
@@ -35,6 +58,29 @@ async function main() {
 }
 
 main();
+
+// Clean all files from makersboard-html directory
+function cleanDirectory() {
+  const dirPath = path.join(`${__dirname}/makersboard-html`);
+  
+  // Create directory if it doesn't exist
+  if (!fs.existsSync(dirPath)) {
+    fs.mkdirSync(dirPath, { recursive: true });
+    console.log('Created makersboard-html directory');
+    return;
+  }
+  
+  // Remove existing files
+  const files = fs.readdirSync(dirPath);
+  files.forEach(file => {
+    const filePath = path.join(dirPath, file);
+    const stat = fs.statSync(filePath);
+    if (stat.isFile()) {
+      fs.unlinkSync(filePath);
+      console.log(`Removed: ${file}`);
+    }
+  });
+}
 
 // Write an index.json file with the list of events names, summary, start and end dates in format "08/11/2024 11:20"
 function writeIndexJson(events) {
