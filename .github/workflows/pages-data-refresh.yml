@@ -115,6 +115,7 @@ jobs:
     if: needs.build.outputs.changed == 'true' ||
       needs.build.outputs.popup_changed == 'true' ||
       needs.build.outputs.courses_changed == 'true' ||
+      needs.build.outputs.equipment_changed == 'true' ||
       needs.build.outputs.tutorials_changed == 'true' ||
       needs.build.outputs.source_changed == 'true'
     runs-on: ubuntu-latest

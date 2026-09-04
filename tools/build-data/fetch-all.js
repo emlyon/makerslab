@@ -217,7 +217,7 @@ async function main() {
 
   try {
     console.log('[fetch-all] Fetching equipment...');
-    const equipmentResult = await fetchEquipment(outputRoot, existingData.equipment);
+    const equipmentResult = await fetchEquipment(outputRoot, existingData.equipment, categories);
     equipment = equipmentResult;
     for (const lang of ['en', 'fr']) {
       allWarnings.push(
@@ -236,7 +236,7 @@ async function main() {
 
   try {
     console.log('[fetch-all] Fetching tutorials...');
-    const tutorialsResult = await fetchTutorials(outputRoot, existingData.tutorials);
+    const tutorialsResult = await fetchTutorials(outputRoot, existingData.tutorials, categories);
     tutorials = tutorialsResult;
     for (const lang of ['en', 'fr']) {
       allWarnings.push(

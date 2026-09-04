@@ -59,7 +59,7 @@ async function loadCategoriesFromFile(outputRoot, language) {
   }
 }
 
-async function fetchLanguageData(outputRoot, language, ids) {
+async function fetchLanguageData(outputRoot, language, ids, categoriesForLanguage) {
   const equipmentMapper = new EquipmentMapper(notion);
 
   const equipmentPages = await equipmentMapper.fetchAllPages(ids.equipmentDbId);
@@ -68,7 +68,10 @@ async function fetchLanguageData(outputRoot, language, ids) {
     .map((page) => equipmentMapper.mapPage(page, language))
     .filter(Boolean);
 
-  const categories = await loadCategoriesFromFile(outputRoot, language);
+  let categories = categoriesForLanguage;
+  if (!categories) {
+    categories = await loadCategoriesFromFile(outputRoot, language);
+  }
 
   const equipment_sorted = equipmentMapper.sortRecords(equipment);
 
@@ -88,14 +91,16 @@ async function fetchLanguageData(outputRoot, language, ids) {
  * Downloads Notion data and caches images locally
  * @param {string} outputRoot - Root output directory
  * @param {object} existingData - Existing equipment data to check for divergences
+ * @param {object} categoriesData - Optional pre-fetched categories data to avoid disk I/O during fetch-all
  * @returns {Promise<object>} - Equipment data with local image URLs, warnings and metadata
  */
-async function fetchEquipment(outputRoot, existingData) {
+async function fetchEquipment(outputRoot, existingData, categoriesData) {
   const perLanguageData = { en: {}, fr: {} };
   const allWarnings = [];
 
   for (const [language, ids] of Object.entries(LANGUAGE_DB_CONFIG)) {
-    const { equipment, categories, warnings } = await fetchLanguageData(outputRoot, language, ids);
+    const categoriesForLanguage = categoriesData?.categories?.[language];
+    const { equipment, categories, warnings } = await fetchLanguageData(outputRoot, language, ids, categoriesForLanguage);
     perLanguageData[language] = { equipment, categories };
     allWarnings.push(...warnings);
 

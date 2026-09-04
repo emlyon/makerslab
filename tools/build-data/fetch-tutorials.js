@@ -76,7 +76,7 @@ function loadEquipmentFromFile(outputRoot, language) {
   }
 }
 
-async function fetchLanguageData(outputRoot, language, ids) {
+async function fetchLanguageData(outputRoot, language, ids, categoriesForLanguage) {
   const tutorialMapper = new TutorialMapper(notion);
   const softwareMapper = new SoftwareMapper(notion);
 
@@ -95,7 +95,10 @@ async function fetchLanguageData(outputRoot, language, ids) {
     .filter(Boolean)
     .filter((softwareItem) => softwareItem.language === language);
 
-  const categories = await loadCategoriesFromFile(outputRoot, language);
+  let categories = categoriesForLanguage;
+  if (!categories) {
+    categories = await loadCategoriesFromFile(outputRoot, language);
+  }
 
   const tutorials_sorted = tutorialMapper.sortRecords(tutorials);
   const software_sorted = softwareMapper.sortRecords(software);
@@ -117,16 +120,18 @@ async function fetchLanguageData(outputRoot, language, ids) {
  * Core fetch function for tutorials - can be used by fetch-all.js or CLI
  * @param {string} outputRoot - Root output directory
  * @param {object} existingData - Existing tutorials data to check for divergences
+ * @param {object} categoriesData - Optional pre-fetched categories data to avoid disk I/O during fetch-all
  * @returns {Promise<object>} - Tutorials data with warnings and metadata (without relationship reconciliation)
  */
-async function fetchTutorials(outputRoot, existingData) {
+async function fetchTutorials(outputRoot, existingData, categoriesData) {
   const perLanguageData = { en: {}, fr: {} };
   const allWarnings = [];
   const coursesPages = NOTION_COURSES_DB_ID ? 
     await new CourseMapper(notion).fetchAllPages(NOTION_COURSES_DB_ID) : [];
 
   for (const [language, ids] of Object.entries(LANGUAGE_DB_CONFIG)) {
-    const { tutorials, software, categories, warnings, sourceMeta } = await fetchLanguageData(outputRoot, language, ids);
+    const categoriesForLanguage = categoriesData?.categories?.[language];
+    const { tutorials, software, categories, warnings, sourceMeta } = await fetchLanguageData(outputRoot, language, ids, categoriesForLanguage);
     
     let courses = [];
     if (coursesPages.length > 0) {
