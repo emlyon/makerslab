@@ -34,6 +34,9 @@ class NotionDataMapper {
    * Find a property by checking multiple alias names
    */
   findPropertyByAliases(properties, aliases) {
+    aliases = [aliases, ...new Set(aliases.map(alias => String(alias).toLowerCase().trim())), 
+      // Capitalized versions (first letter uppercase, rest lowercase)
+      ...new Set(aliases.map(alias => String(alias).toLowerCase().trim().replace(/^\w/, c => c.toUpperCase())))];
     if (!properties || !Array.isArray(aliases)) return null;
     
     for (const alias of aliases) {
