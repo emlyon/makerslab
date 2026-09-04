@@ -11,6 +11,7 @@ const sourceCategoriesPath = path.resolve(process.env.SOURCE_CATEGORIES_PATH || 
 const sourceCoursesPath = path.resolve(process.env.SOURCE_COURSES_PATH || path.join(repoRoot, 'data', 'courses.json'));
 const sourceTutorialsPath = path.resolve(process.env.SOURCE_TUTORIALS_PATH || path.join(repoRoot, 'data', 'tutorials.json'));
 const sourceEquipmentPath = path.resolve(process.env.SOURCE_EQUIPMENT_PATH || path.join(repoRoot, 'data', 'equipment.json'));
+const sourceMediaPath = process.env.SOURCE_MEDIA_PATH ? path.resolve(process.env.SOURCE_MEDIA_PATH) : null;
 const tempMediaBackupDir = path.join(repoRoot, '.build-media-backup');
 const buildDirRelativeToRepo = path.relative(repoRoot, buildDir).replaceAll('\\', '/');
 const buildDirIsInsideRepo =
@@ -108,6 +109,24 @@ function restoreExternalMedia() {
     
     // Clean up backup
     fs.rmSync(tempMediaBackupDir, { recursive: true, force: true });
+  }
+  
+  // If SOURCE_MEDIA_PATH is provided (e.g., from fetch:all output),
+  // copy media from that location as well
+  if (sourceMediaPath && fs.existsSync(sourceMediaPath)) {
+    fs.mkdirSync(buildMediaDir, { recursive: true });
+    
+    for (const file of fs.readdirSync(sourceMediaPath)) {
+      const srcPath = path.join(sourceMediaPath, file);
+      const dstPath = path.join(buildMediaDir, file);
+      
+      if (fs.statSync(srcPath).isDirectory()) {
+        fs.mkdirSync(dstPath, { recursive: true });
+        copyTree(srcPath, dstPath);
+      } else {
+        fs.copyFileSync(srcPath, dstPath);
+      }
+    }
   }
 }
 
