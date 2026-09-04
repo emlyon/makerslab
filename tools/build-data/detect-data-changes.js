@@ -63,6 +63,7 @@ function emitGithubOutput(summary) {
     `events_changed=${summary.eventsChanged}`,
     `popup_changed=${summary.popupChanged}`,
     `courses_changed=${summary.coursesChanged}`,
+    `equipment_changed=${summary.equipmentChanged}`,
     `tutorials_changed=${summary.tutorialsChanged}`,
     `added=${summary.added}`,
     `removed=${summary.removed}`,
@@ -73,6 +74,8 @@ function emitGithubOutput(summary) {
     `popup_current_hash=${summary.popupCurrentHash}`,
     `courses_new_hash=${summary.coursesNewHash}`,
     `courses_current_hash=${summary.coursesCurrentHash}`,
+    `equipment_new_hash=${summary.equipmentNewHash}`,
+    `equipment_current_hash=${summary.equipmentCurrentHash}`,
     `tutorials_new_hash=${summary.tutorialsNewHash}`,
     `tutorials_current_hash=${summary.tutorialsCurrentHash}`
   ];
@@ -201,6 +204,48 @@ function defaultCoursesPayload() {
   };
 }
 
+function normalizeEquipment(payload) {
+  const normalized = sortObjectKeys(payload || {});
+  const normalizeLanguageSection = (section) => {
+    const value = section && typeof section === 'object' ? section : {};
+    const toSortedList = (list) =>
+      (Array.isArray(list) ? list : [])
+        .map((item) => sortObjectKeys(item))
+        .sort((left, right) => String(left.id || '').localeCompare(String(right.id || '')));
+
+    return {
+      equipment: toSortedList(value.equipment),
+      categories: toSortedList(value.categories),
+      software: toSortedList(value.software)
+    };
+  };
+
+  return {
+    ...normalized,
+    equipment: {
+      en: normalizeLanguageSection(normalized.equipment?.en),
+      fr: normalizeLanguageSection(normalized.equipment?.fr)
+    }
+  };
+}
+
+function defaultEquipmentPayload() {
+  return {
+    equipment: {
+      en: {
+        equipment: [],
+        categories: [],
+        software: []
+      },
+      fr: {
+        equipment: [],
+        categories: [],
+        software: []
+      }
+    }
+  };
+}
+
 function normalizeTutorials(payload) {
   const normalized = sortObjectKeys(payload || {});
   const normalizeLanguageSection = (section) => {
@@ -257,6 +302,8 @@ async function main() {
   const currentPopupFile = args['current-popup-file'];
   const newCoursesFile = args['new-courses-file'];
   const currentCoursesFile = args['current-courses-file'];
+  const newEquipmentFile = args['new-equipment-file'];
+  const currentEquipmentFile = args['current-equipment-file'];
   const newTutorialsFile = args['new-tutorials-file'];
   const currentTutorialsFile = args['current-tutorials-file'];
 
@@ -269,6 +316,8 @@ async function main() {
   const currentPopupUrl = args['current-popup-url'] || (currentBaseUrl ? `${currentBaseUrl}/data/popup.json` : undefined);
   const currentCoursesUrl =
     args['current-courses-url'] || (currentBaseUrl ? `${currentBaseUrl}/data/courses.json` : undefined);
+  const currentEquipmentUrl =
+    args['current-equipment-url'] || (currentBaseUrl ? `${currentBaseUrl}/data/equipment.json` : undefined);
   const currentTutorialsUrl =
     args['current-tutorials-url'] || (currentBaseUrl ? `${currentBaseUrl}/data/tutorials.json` : undefined);
 
@@ -286,6 +335,11 @@ async function main() {
     resolvedNewCoursesPath && fs.existsSync(resolvedNewCoursesPath)
       ? loadJsonFromFile(resolvedNewCoursesPath)
       : defaultCoursesPayload();
+  const resolvedNewEquipmentPath = newEquipmentFile ? path.resolve(newEquipmentFile) : null;
+  const newEquipment =
+    resolvedNewEquipmentPath && fs.existsSync(resolvedNewEquipmentPath)
+      ? loadJsonFromFile(resolvedNewEquipmentPath)
+      : defaultEquipmentPayload();
   const resolvedNewTutorialsPath = newTutorialsFile ? path.resolve(newTutorialsFile) : null;
   const newTutorials =
     resolvedNewTutorialsPath && fs.existsSync(resolvedNewTutorialsPath)
@@ -295,6 +349,7 @@ async function main() {
   let currentEvents = null;
   let currentPopup = null;
   let currentCourses = null;
+  let currentEquipment = null;
   let currentTutorials = null;
 
   try {
@@ -328,6 +383,16 @@ async function main() {
   }
 
   try {
+    if (currentEquipmentFile) {
+      currentEquipment = loadJsonFromFile(path.resolve(currentEquipmentFile));
+    } else if (currentEquipmentUrl) {
+      currentEquipment = await loadJsonFromUrl(currentEquipmentUrl);
+    }
+  } catch (error) {
+    console.warn(`Unable to load current equipment snapshot (${error.message}). Will force equipment deploy.`);
+  }
+
+  try {
     if (currentTutorialsFile) {
       currentTutorials = loadJsonFromFile(path.resolve(currentTutorialsFile));
     } else if (currentTutorialsUrl) {
@@ -343,6 +408,8 @@ async function main() {
     const normalizedPopupCurrent = normalizePopup(currentPopup || defaultPopupPayload());
     const normalizedCoursesNew = normalizeCourses(newCourses);
     const normalizedCoursesCurrent = normalizeCourses(currentCourses || defaultCoursesPayload());
+    const normalizedEquipmentNew = normalizeEquipment(newEquipment);
+    const normalizedEquipmentCurrent = normalizeEquipment(currentEquipment || defaultEquipmentPayload());
     const normalizedTutorialsNew = normalizeTutorials(newTutorials);
     const normalizedTutorialsCurrent = normalizeTutorials(currentTutorials || defaultTutorialsPayload());
 
@@ -351,6 +418,7 @@ async function main() {
       eventsChanged: true,
       popupChanged: hashValue(normalizedPopupNew) !== hashValue(normalizedPopupCurrent),
       coursesChanged: hashValue(normalizedCoursesNew) !== hashValue(normalizedCoursesCurrent),
+      equipmentChanged: hashValue(normalizedEquipmentNew) !== hashValue(normalizedEquipmentCurrent),
       tutorialsChanged: hashValue(normalizedTutorialsNew) !== hashValue(normalizedTutorialsCurrent),
       added: normalizedNewEvents.length,
       removed: 0,
@@ -361,6 +429,8 @@ async function main() {
       popupCurrentHash: currentPopup ? hashValue(normalizedPopupCurrent) : 'none',
       coursesNewHash: hashValue(normalizedCoursesNew),
       coursesCurrentHash: currentCourses ? hashValue(normalizedCoursesCurrent) : 'none',
+      equipmentNewHash: hashValue(normalizedEquipmentNew),
+      equipmentCurrentHash: currentEquipment ? hashValue(normalizedEquipmentCurrent) : 'none',
       tutorialsNewHash: hashValue(normalizedTutorialsNew),
       tutorialsCurrentHash: currentTutorials ? hashValue(normalizedTutorialsCurrent) : 'none'
     };
@@ -381,6 +451,11 @@ async function main() {
   const coursesNewHash = hashValue(normalizedCoursesNew);
   const coursesCurrentHash = currentCourses ? hashValue(normalizedCoursesCurrent) : 'none';
   const coursesChanged = !currentCourses || coursesNewHash !== coursesCurrentHash;
+  const normalizedEquipmentNew = normalizeEquipment(newEquipment);
+  const normalizedEquipmentCurrent = normalizeEquipment(currentEquipment || defaultEquipmentPayload());
+  const equipmentNewHash = hashValue(normalizedEquipmentNew);
+  const equipmentCurrentHash = currentEquipment ? hashValue(normalizedEquipmentCurrent) : 'none';
+  const equipmentChanged = !currentEquipment || equipmentNewHash !== equipmentCurrentHash;
   const normalizedTutorialsNew = normalizeTutorials(newTutorials);
   const normalizedTutorialsCurrent = normalizeTutorials(currentTutorials || defaultTutorialsPayload());
   const tutorialsNewHash = hashValue(normalizedTutorialsNew);
@@ -388,10 +463,11 @@ async function main() {
   const tutorialsChanged = !currentTutorials || tutorialsNewHash !== tutorialsCurrentHash;
 
   const summary = {
-    changed: eventsDiff.eventsChanged || popupChanged || coursesChanged || tutorialsChanged,
+    changed: eventsDiff.eventsChanged || popupChanged || coursesChanged || equipmentChanged || tutorialsChanged,
     eventsChanged: eventsDiff.eventsChanged,
     popupChanged,
     coursesChanged,
+    equipmentChanged,
     tutorialsChanged,
     added: eventsDiff.added,
     removed: eventsDiff.removed,
@@ -402,6 +478,8 @@ async function main() {
     popupCurrentHash,
     coursesNewHash,
     coursesCurrentHash,
+    equipmentNewHash,
+    equipmentCurrentHash,
     tutorialsNewHash,
     tutorialsCurrentHash
   };
