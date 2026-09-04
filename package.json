@@ -1,16 +1,24 @@
 {
   "scripts": {
     "fetch:events": "node tools/build-data/fetch-events.js",
+    "fetch:categories": "node tools/build-data/fetch-categories.js",
     "fetch:popup": "node tools/build-data/fetch-popup.js",
+    "fetch:courses": "node tools/build-data/fetch-courses.js",
+    "fetch:tutorials": "node tools/build-data/fetch-tutorials.js",
+    "fetch:equipment": "node tools/build-data/fetch-equipment.js",
+    "fetch:all": "node tools/build-data/fetch-all.js",
     "events:diff": "node tools/build-data/detect-data-changes.js",
     "build:css": "sass css/style.scss css/style.min.css --style=compressed --source-map",
     "prebuild:pages": "npm run build:css",
     "build:pages": "node tools/build-data/build-pages-artifact.js",
+    "build": "npm run fetch:all && npm run build:pages",
+    "serve": "live-server build",
     "gen-makersboard-data": "node workshops-data/generate-makersboard-html.js",
     "gen-events-ics": "node workshops-data/generate-ics.js"
   },
   "dependencies": {
     "@notionhq/client": "^5.22.0",
+    "fuse.js": "^7.5.0",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {

@@ -2,8 +2,8 @@
 <html lang="fr">
 
 <head>
-    <script src="/js/include.js" charset="utf-8"></script>
-    <script src="/includes/head.js" charset="utf-8"></script>
+    <script src="./js/include.js" charset="utf-8"></script>
+    <script src="./includes/head.js" charset="utf-8"></script>
 </head>
 
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -17,7 +17,7 @@
 </script>
 
 <body>
-    <script src="/includes/navbar.js"></script>
+    <script src="./includes/navbar.js"></script>
 
     <div id="index-banner">
         <div class="background"></div>
@@ -26,16 +26,23 @@
             <div style="width: 70%">
                 <h1 class="header center white-text"><strong>404</strong></h1>
                 <p class="center">
-                    <a href="/" class="waves-effect waves-light btn btn-large link" style="background-color: #e2001a">Back to homepage</a>
+                    <a href="javascript:void(0)" id="homeLink404" class="waves-effect waves-light btn btn-large link" style="background-color: #e2001a">Back to homepage</a>
                 </p>
             </div>
         </div>
     </div>
 
-    <script src="/includes/footer.js" charset="utf-8"></script>
+    <script>
+        const link404 = document.getElementById('homeLink404');
+        if (link404 && typeof appPath === 'function') {
+            link404.setAttribute('href', appPath('/'));
+        }
+    </script>
 
-    <script src="/includes/scripts.js" charset="utf-8"></script>
-    <script src="/js/agenda.js" charset="utf-8"></script>
+    <script src="./includes/footer.js" charset="utf-8"></script>
+
+    <script src="./includes/scripts.js" charset="utf-8"></script>
+    <script src="./js/agenda.js" charset="utf-8"></script>
 </body>
 
 </html>
