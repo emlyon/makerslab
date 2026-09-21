@@ -78,6 +78,10 @@
                                         <div class="card-image">
                                             <img src="{{appPath iconUrl}}" alt="{{name}}">
                                         </div>
+                                    {{else}}
+                                        <div class="card-image">
+                                            <img src="{{appPath 'media/250x250.svg'}}" alt="{{name}}">
+                                        </div>                                        
                                     {{/if}}
                                     <!-- Card body : used to contain the card's content together with flex-card -->
                                     <div class="card-body">
