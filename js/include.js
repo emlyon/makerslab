@@ -199,6 +199,22 @@
         });
     }
 
+    function waitForImages(root) {
+        const images = Array.from(root.querySelectorAll('img'));
+        if (images.length === 0) return Promise.resolve();
+        
+        return Promise.all(
+            images.map(img => 
+                img.complete 
+                    ? Promise.resolve()  // Already loaded (cached)
+                    : new Promise(resolve => {
+                        img.addEventListener('load', resolve, { once: true });
+                        img.addEventListener('error', resolve, { once: true });  // Resolve even on error
+                    })
+            )
+        );
+    }
+
     window.APP_BASE_PATH = APP_BASE_PATH;
     window.appPath = appPath;
     window.stripAppBasePrefix = stripAppBasePrefix;
@@ -206,6 +222,7 @@
     window.normalizeHexColor = normalizeHexColor;
     window.applyDataColorStyles = applyDataColorStyles;
     window.equalizeCardHeightsByRow = equalizeCardHeightsByRow;
+    window.waitForImages = waitForImages;
 
     window.include = function include(html) {
         document.open();

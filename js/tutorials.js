@@ -88,6 +88,9 @@
     target.scrollIntoView({ behavior: 'auto', block: 'start' });
   }
 
+  // Helper: wait for all images in a container to load
+  const waitForImages = window.waitForImages;
+
   function renderTutorials(payload) {
     const categoriesRoots = Array.from(document.querySelectorAll('.tutorial-categories-menu'));
     const searchRoot = document.getElementById('tutorialSearchRoot');
@@ -415,7 +418,7 @@
       }
     }
 
-    function renderTutorialCards({ animatedScroll = false } = {}) {
+    async function renderTutorialCards({ animatedScroll = false } = {}) {
       const selectedCategory = selectedCategoryId ? categoriesById.get(selectedCategoryId) : null;
       const visibleTutorials = getVisibleTutorials();
       const headingLabel = selectedCategory ? selectedCategory.name : ui.allTutorialsLabel;
@@ -451,6 +454,10 @@
         }
         pendingScrollTargetId = '';
       }
+
+      // Wait for images to load, then equalize card heights
+      await waitForImages(tutorialsRoot);
+      equalizeCardHeightsByRow(tutorialsRoot, { cardSelector: '.flex-card' });
     }
 
     renderCategories();
@@ -467,9 +474,6 @@
         equalizeCardHeightsByRow(tutorialsRoot, { cardSelector: '.flex-card' });
       });
     }
-    window.addEventListener('load', () => {
-      equalizeCardHeightsByRow(tutorialsRoot, { cardSelector: '.flex-card' });
-    });
   }
 
   const tutorialsDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/tutorials.json') : '/data/tutorials.json';
