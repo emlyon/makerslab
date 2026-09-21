@@ -80,6 +80,9 @@
     target.scrollIntoView({ behavior: 'auto', block: 'start' });
   }
 
+  // Helper: wait for all images in a container to load
+  const waitForImages = window.waitForImages;
+
   function renderEquipment(payload) {
     const categoriesRoots = Array.from(document.querySelectorAll('.equipment-categories-menu'));
     const searchRoot = document.getElementById('equipmentSearchRoot');
@@ -405,7 +408,7 @@
       }
     }
 
-    function renderEquipmentCards({ animatedScroll = false } = {}) {
+    async function renderEquipmentCards({ animatedScroll = false } = {}) {
       const selectedCategory = selectedCategoryId ? categoriesById.get(selectedCategoryId) : null;
       const visibleEquipment = getVisibleEquipment();
       const headingLabel = selectedCategory ? selectedCategory.name : ui.allEquipmentLabel;
@@ -441,6 +444,10 @@
         }
         pendingScrollTargetId = '';
       }
+
+      // Wait for images to load, then equalize card heights
+      await waitForImages(equipmentRoot);
+      equalizeCardHeightsByRow(equipmentRoot, { cardSelector: '.flex-card' });
     }
 
     renderCategories();
@@ -457,9 +464,6 @@
         equalizeCardHeightsByRow(equipmentRoot, { cardSelector: '.flex-card' });
       });
     }
-    window.addEventListener('load', () => {
-      equalizeCardHeightsByRow(equipmentRoot, { cardSelector: '.flex-card' });
-    });
   }
 
   const equipmentDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/equipment.json') : '/data/equipment.json';
