@@ -442,7 +442,6 @@
         },
         { selector: '.tutorial-cta', styleProperty: 'backgroundColor' }
       ]);
-      equalizeCardHeightsByRow(tutorialsRoot, { cardSelector: '.flex-card' });
 
       if (pendingScrollTargetId) {
         const target = document.getElementById(pendingScrollTargetId);
@@ -468,6 +467,9 @@
         equalizeCardHeightsByRow(tutorialsRoot, { cardSelector: '.flex-card' });
       });
     }
+    window.addEventListener('load', () => {
+      equalizeCardHeightsByRow(tutorialsRoot, { cardSelector: '.flex-card' });
+    });
   }
 
   const tutorialsDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/tutorials.json') : '/data/tutorials.json';

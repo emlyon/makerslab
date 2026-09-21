@@ -135,7 +135,14 @@
                 }
             }
 
-            .card-content {
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+
+            .card-body, .card-content {
                 flex: 1;
             }
 

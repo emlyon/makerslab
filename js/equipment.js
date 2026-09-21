@@ -432,7 +432,6 @@
         },
         { selector: '.equipment-cta', styleProperty: 'backgroundColor' }
       ]);
-      equalizeCardHeightsByRow(equipmentRoot, { cardSelector: '.flex-card' });
 
       if (pendingScrollTargetId) {
         const target = document.getElementById(pendingScrollTargetId);
@@ -458,6 +457,9 @@
         equalizeCardHeightsByRow(equipmentRoot, { cardSelector: '.flex-card' });
       });
     }
+    window.addEventListener('load', () => {
+      equalizeCardHeightsByRow(equipmentRoot, { cardSelector: '.flex-card' });
+    });
   }
 
   const equipmentDataUrl = typeof window.appPath === 'function' ? window.appPath('/data/equipment.json') : '/data/equipment.json';
